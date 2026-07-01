@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #fbfbfd;
+  --foreground: #0e0e12;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: auto; /* Lenis handles smooth scrolling */
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-feature-settings: 'ss01', 'cv01';
+  }
+
+  ::selection {
+    background-color: rgba(124, 58, 237, 0.18);
+    color: #0e0e12;
+  }
+
+  /* Visible keyboard focus — accessibility floor */
+  :focus-visible {
+    outline: 2px solid #7c3aed;
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  /* Reduced motion: kill non-essential animation */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  .container-px {
+    @apply mx-auto w-full max-w-container px-5 sm:px-8 lg:px-10;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-xs font-medium uppercase tracking-[0.18em] text-brand-violet;
+  }
+
+  .eyebrow::before {
+    content: '';
+    @apply inline-block h-1.5 w-1.5 rounded-full bg-brand-violet;
+  }
+
+  .h-display {
+    @apply font-display font-semibold tracking-tightest text-ink;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-medium transition-all duration-300 will-change-transform;
+  }
+
+  .btn-primary {
+    @apply btn bg-brand-gradient text-white shadow-lift hover:-translate-y-0.5 hover:shadow-[0_30px_70px_-22px_rgba(124,58,237,0.5)];
+  }
+
+  .btn-ghost {
+    @apply btn border border-line bg-white text-ink hover:border-ink/20 hover:-translate-y-0.5;
+  }
+
+  .card {
+    @apply rounded-3xl border border-line bg-white shadow-soft;
+  }
+
+  /* Hidden initial state for GSAP reveals — content is visible if JS fails (progressive enhancement handled in JS by clearing) */
+  .reveal {
+    opacity: 1;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .text-pretty {
+    text-wrap: pretty;
+  }
+  .mask-fade-x {
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent,
+      #000 8%,
+      #000 92%,
+      transparent
+    );
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      #000 8%,
+      #000 92%,
+      transparent
+    );
+  }
+}
