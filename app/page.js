@@ -1,23 +1,21 @@
 import Hero from '@/components/Hero';
-import Trust from '@/components/Trust';
+import TrustPoints from '@/components/TrustPoints';
 import Services from '@/components/Services';
-import Portfolio from '@/components/Portfolio';
-import WhyPrideHire from '@/components/WhyPrideHire';
-import Process from '@/components/Process';
-import Testimonials from '@/components/Testimonials';
-import CTA from '@/components/CTA';
+import Industries from '@/components/Industries';
+import WhyUs from '@/components/WhyUs';
+import PortfolioPreview from '@/components/PortfolioPreview';
+import AuditCTA from '@/components/AuditCTA';
 
 export default function HomePage() {
   return (
     <>
       <Hero />
-      <Trust />
+      <TrustPoints />
       <Services />
-      <Portfolio />
-      <WhyPrideHire />
-      <Process />
-      <Testimonials />
-      <CTA />
+      <Industries />
+      <WhyUs />
+      <PortfolioPreview />
+      <AuditCTA />
     </>
   );
 }

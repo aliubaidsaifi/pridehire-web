@@ -1,5 +1,5 @@
 import PageHeader from '@/components/PageHeader';
-import CTA from '@/components/CTA';
+import AuditCTA from '@/components/AuditCTA';
 import { SERVICES } from '@/lib/site';
 
 export const metadata = {
@@ -52,7 +52,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <CTA />
+  <AuditCTA />
     </>
   );
 }
