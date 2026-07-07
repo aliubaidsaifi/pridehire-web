@@ -11,8 +11,8 @@
 @layer base {
   html { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; scroll-behavior: auto; }
   body { background-color: var(--background); color: var(--foreground); font-feature-settings: 'ss01', 'cv01'; }
-  ::selection { background-color: rgba(10,10,11,0.08); color: #0a0a0b; }
-  :focus-visible { outline: 2px solid #0A0A0B; outline-offset: 3px; border-radius: 4px; }
+  ::selection { background-color: rgba(238,106,82,0.16); color: #0a0a0b; }
+:focus-visible { outline: 2px solid #EE6A52; outline-offset: 3px; border-radius: 4px; } 
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after {
       animation-duration: 0.01ms !important;
@@ -36,7 +36,7 @@
   }
   .btn:hover { transform: translateY(-2px) scale(1.02); }
   .btn:active { transform: translateY(0) scale(0.98); }
-  .btn-primary { @apply btn bg-ink text-white shadow-lift hover:bg-ink-soft; }
+.btn-primary { @apply btn bg-accent text-white shadow-lift hover:bg-accent-dark; }
   .btn-ghost { @apply btn border border-line bg-white text-ink hover:border-ink/25; }
 
   .card { @apply rounded-3xl border border-line bg-white shadow-soft; }

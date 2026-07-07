@@ -20,10 +20,15 @@ export default function PortfolioPreview() {
         <div className="mt-12 grid gap-5 sm:grid-cols-3">
           {RESULTS.map((r) => (
             <article key={r.client} className="group flex flex-col overflow-hidden rounded-3xl border border-line bg-white transition-all duration-500 ease-expo hover:-translate-y-1.5 hover:shadow-lift">
-              <div className="relative aspect-[16/10] border-b border-line bg-paper">
-                <div className="absolute inset-0 grid place-items-center">
-                  <span className="font-display text-4xl font-semibold tracking-tightest text-ink/80">{r.metric}</span>
-                </div>
+              <div className="relative aspect-[16/10] overflow-hidden border-b border-line bg-paper">
+                {r.image ? (
+                  <img src={r.image} alt={r.client} loading="lazy"
+                    className="h-full w-full object-cover transition-transform duration-700 ease-expo group-hover:scale-105" />
+                ) : (
+                  <div className="absolute inset-0 grid place-items-center">
+                    <span className="font-display text-4xl font-semibold tracking-tightest text-ink/80">{r.metric}</span>
+                  </div>
+                )}
                 <span className="absolute left-4 top-4 rounded-full border border-line bg-white px-3 py-1 text-[11px] font-semibold text-ink">{r.industry}</span>
               </div>
               <div className="flex flex-1 flex-col p-6">

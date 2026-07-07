@@ -10,6 +10,7 @@ module.exports = {
         canvas: '#FFFFFF',
         paper: '#F6F6F6',
         brand: { violet: '#0A0A0B', indigo: '#26262A', glow: '#A1A1AA' },
+        accent: { DEFAULT: '#EE6A52', dark: '#E4573C', soft: '#FDEEEA' },
       },
       fontFamily: {
         display: ['var(--font-display)', 'system-ui', 'sans-serif'],

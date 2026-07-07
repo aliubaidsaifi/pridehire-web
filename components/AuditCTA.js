@@ -16,7 +16,7 @@ export default function AuditCTA() {
               Get a free, honest audit of your website and Google presence — delivered within 24 hours.
             </p>
             <div className="mt-9">
-              <Link href="/free-audit" className="btn bg-white text-ink hover:shadow-lift">
+              <Link href="/free-audit" className="btn bg-accent text-white shadow-lift hover:bg-accent-dark">
                 Get Free Website Audit
               </Link>
             </div>

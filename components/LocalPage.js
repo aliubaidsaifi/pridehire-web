@@ -87,7 +87,7 @@ export default function LocalPage({ page }) {
               Ready to grow your business?
             </h2>
             <div className="mt-8">
-              <Link href="/free-audit" className="btn bg-white text-ink hover:shadow-lift">Get Free Website Audit</Link>
+              <Link href="/free-audit" className="btn bg-accent text-white shadow-lift hover:bg-accent-dark">Get Free Website Audit</Link>
             </div>
           </div>
         </div>

@@ -3,8 +3,6 @@
 import Link from 'next/link';
 import { INDUSTRIES } from '@/lib/site';
 
-const ICON = <path d="M4 20h16M6 20V9l6-5 6 5v11M10 20v-6h4v6" />;
-
 export default function Industries() {
   return (
     <section className="bg-paper py-24 sm:py-32">
@@ -19,14 +17,17 @@ export default function Industries() {
           </p>
         </div>
 
-        <div className="mt-12 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
-          {INDUSTRIES.map((name) => (
+        <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+          {INDUSTRIES.map(({ name, image }) => (
             <div key={name}
-              className="group flex items-center gap-3 rounded-2xl border border-line bg-white px-5 py-4 transition-all duration-500 ease-expo hover:-translate-y-0.5 hover:shadow-soft">
-              <span className="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-paper text-ink transition-colors duration-500 group-hover:bg-ink group-hover:text-white">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="h-[18px] w-[18px]">{ICON}</svg>
+              className="group relative aspect-[4/5] overflow-hidden rounded-3xl border border-line bg-ink">
+              <img src={image} alt={name} loading="lazy"
+                className="absolute inset-0 h-full w-full object-cover opacity-80 transition-transform duration-700 ease-expo group-hover:scale-110" />
+              {/* dark gradient for text readability */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+              <span className="absolute inset-x-0 bottom-0 p-4 font-display text-base font-semibold text-white sm:text-lg">
+                {name}
               </span>
-              <span className="font-display text-sm font-semibold text-ink sm:text-base">{name}</span>
             </div>
           ))}
         </div>
