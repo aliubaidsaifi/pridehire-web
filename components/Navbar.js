@@ -5,20 +5,20 @@ import Link from 'next/link';
 import Logo from '@/components/Logo';
 import { NAV, SERVICES, SITE } from '@/lib/site';
 
-function ServicesDropdown() {
-  return (
-    <div role="menu" className="invisible absolute left-1/2 top-full z-50 mt-3 w-[min(92vw,640px)] -translate-x-1/2 translate-y-1 rounded-3xl border border-line bg-white p-3 opacity-0 shadow-lift transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
-      <div className="grid gap-1.5 sm:grid-cols-2">
-        {SERVICES.map((s) => (
-          <Link key={s.slug} href={`/services#${s.slug}`} className="rounded-2xl p-4 transition-colors hover:bg-paper">
-            <div className="font-display text-sm font-semibold text-ink">{s.title}</div>
-            <p className="mt-1 text-xs leading-relaxed text-muted">{s.outcome}</p>
-          </Link>
-        ))}
-      </div>
-    </div>
-  );
-}
+// function ServicesDropdown() {
+//   return (
+//     <div role="menu" className="invisible absolute left-1/2 top-full z-50 mt-3 w-[min(92vw,640px)] -translate-x-1/2 translate-y-1 rounded-3xl border border-line bg-white p-3 opacity-0 shadow-lift transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
+//       <div className="grid gap-1.5 sm:grid-cols-2">
+//         {SERVICES.map((s) => (
+//           <Link key={s.slug} href={`/services#${s.slug}`} className="rounded-2xl p-4 transition-colors hover:bg-paper">
+//             <div className="font-display text-sm font-semibold text-ink">{s.title}</div>
+//             <p className="mt-1 text-xs leading-relaxed text-muted">{s.outcome}</p>
+//           </Link>
+//         ))}
+//       </div>
+//     </div>
+//   );
+// }
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);

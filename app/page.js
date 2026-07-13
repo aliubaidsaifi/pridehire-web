@@ -5,6 +5,7 @@ import Industries from '@/components/Industries';
 import WhyUs from '@/components/WhyUs';
 import PortfolioPreview from '@/components/PortfolioPreview';
 import AuditCTA from '@/components/AuditCTA';
+import Reviews from '@/components/Reviews';
 
 export default function HomePage() {
   return (
@@ -12,9 +13,10 @@ export default function HomePage() {
       <Hero />
       <TrustPoints />
       <Services />
-      <Industries />
-      <WhyUs />
       <PortfolioPreview />
+      {/* <Industries /> */}
+      <WhyUs />
+      <Reviews />
       <AuditCTA />
     </>
   );

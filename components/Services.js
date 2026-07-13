@@ -15,21 +15,43 @@ const ICONS = {
   'website-maintenance': <path d="M14 6l4 4-8 8-4 1 1-4 8-8zM13 7l4 4" />,
 };
 
-function Card({ s }) {
+const TINTS = [
+  'from-accent/15 to-accent/5',
+  'from-ink/10 to-ink/[0.03]',
+  'from-[#EADFff]/60 to-[#EADFff]/20',
+  'from-accent/12 to-paper',
+  'from-[#DDEBFF]/70 to-[#DDEBFF]/20',
+  'from-ink/[0.08] to-paper',
+  'from-accent/10 to-accent/[0.03]',
+];
+
+function Card({ s, i }) {
+  const offset = i % 2 === 1 ? 'lg:mt-24' : '';
   return (
-    <Link href={`/services#${s.slug}`}
-      className="svc-card group flex flex-col rounded-3xl border border-line bg-white p-7 transition-all duration-500 ease-expo hover:-translate-y-1.5 hover:shadow-lift">
-      <span className="grid h-11 w-11 place-items-center rounded-2xl bg-paper text-ink transition-colors duration-500 group-hover:bg-ink group-hover:text-white">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">{ICONS[s.slug]}</svg>
-      </span>
-      <h3 className="mt-6 font-display text-lg font-semibold text-ink">{s.title}</h3>
-      <p className="mt-2 flex-1 text-sm leading-relaxed text-muted">{s.outcome}</p>
-      <span className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-ink">
-        Learn more
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-4 w-4 transition-transform duration-500 ease-expo group-hover:translate-x-1">
-          <path d="M5 12h14M13 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
-      </span>
+    <Link href={`/services#${s.slug}`} className={`svc-card group block ${offset}`}>
+      <div className="svc-media relative aspect-[4/3] overflow-hidden rounded-[2rem] border border-line">
+        <div className={`absolute inset-0 bg-gradient-to-br ${TINTS[i % TINTS.length]}`} />
+        <div className="svc-float absolute inset-0 grid place-items-center">
+          <span className="grid h-24 w-24 place-items-center rounded-3xl border border-line bg-white/80 text-ink shadow-soft backdrop-blur-sm transition-transform duration-700 ease-expo group-hover:-translate-y-2 group-hover:rotate-3">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" className="h-11 w-11">{ICONS[s.slug]}</svg>
+          </span>
+        </div>
+        <img
+          src={`/services/${s.slug}.webp`}
+          alt={s.title}
+          loading="lazy"
+          onError={(e) => { e.currentTarget.style.display = 'none'; }}
+          className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-expo group-hover:scale-[1.06]"
+        />
+        <span className="absolute right-4 top-4 grid h-11 w-11 translate-y-1 place-items-center rounded-full bg-white text-ink opacity-0 shadow-soft transition-all duration-500 ease-expo group-hover:translate-y-0 group-hover:opacity-100">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-4 w-4"><path d="M7 17L17 7M9 7h8v8" strokeLinecap="round" strokeLinejoin="round" /></svg>
+        </span>
+      </div>
+
+      <h3 className="mt-5 font-display text-xl font-semibold tracking-tight text-ink transition-colors duration-300 group-hover:text-accent sm:text-2xl">
+        {s.title}
+      </h3>
+      <p className="mt-2 max-w-sm text-sm leading-relaxed text-muted sm:text-base">{s.outcome}</p>
     </Link>
   );
 }
@@ -42,8 +64,19 @@ export default function Services() {
     const cards = gsap.utils.toArray(el.querySelectorAll('.svc-card'));
     if (!cards.length || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     const ctx = gsap.context(() => {
-      gsap.set(cards, { opacity: 0, y: 26 });
-      ScrollTrigger.batch(cards, { start: 'top 92%', once: true, onEnter: (b) => gsap.to(b, { opacity: 1, y: 0, duration: 0.8, ease: 'expo.out', stagger: 0.07, overwrite: true }) });
+      gsap.set(cards, { opacity: 0, y: 48 });
+      ScrollTrigger.batch(cards, {
+        start: 'top 92%', once: true,
+        onEnter: (b) => gsap.to(b, { opacity: 1, y: 0, duration: 1, ease: 'expo.out', stagger: 0.12, overwrite: true }),
+      });
+      cards.forEach((card) => {
+        const media = card.querySelector('.svc-media');
+        if (!media) return;
+        gsap.fromTo(media, { y: 18 }, {
+          y: -18, ease: 'none',
+          scrollTrigger: { trigger: card, start: 'top bottom', end: 'bottom top', scrub: 1 },
+        });
+      });
     }, el);
     const refresh = () => ScrollTrigger.refresh();
     const raf = requestAnimationFrame(refresh);
@@ -57,13 +90,18 @@ export default function Services() {
       <div className="container-px">
         <div className="max-w-2xl">
           <span className="eyebrow">Services</span>
-          <h2 className="mt-4 font-display text-3xl font-semibold tracking-tightest text-ink sm:text-5xl">
-            Everything you need to get more customers
-          </h2>
-          <p className="mt-4 text-pretty text-muted sm:text-lg">One team for your website, Google ranking and ads — all pulling in the same direction.</p>
+          <h2 className="mt-4 font-display text-4xl font-semibold tracking-tightest text-ink sm:text-6xl">Our services</h2>
+          <p className="mt-4 text-pretty text-muted sm:text-lg">
+            From high-converting websites to SEO and ads — everything your business needs to get more customers.
+          </p>
         </div>
-        <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {SERVICES.map((s) => <Card key={s.slug} s={s} />)}
+
+        <div className="mt-14 grid gap-x-6 gap-y-12 sm:grid-cols-2">
+          {SERVICES.map((s, i) => <Card key={s.slug} s={s} i={i} />)}
+        </div>
+
+        <div className="mt-16 flex justify-center">
+          <Link href="/services" className="btn-ghost">View all services</Link>
         </div>
       </div>
     </section>

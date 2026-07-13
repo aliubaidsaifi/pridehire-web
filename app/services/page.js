@@ -1,58 +1,50 @@
-import PageHeader from '@/components/PageHeader';
+import Link from 'next/link';
 import AuditCTA from '@/components/AuditCTA';
-import { SERVICES } from '@/lib/site';
+import ServicesList from '@/components/ServicesList';
+import { WHY} from '@/lib/site';
 
 export const metadata = {
   title: 'Services',
-  description:
-    'UI/UX design, web development, SaaS development, branding and performance marketing — one senior team across the whole product lifecycle.',
+  description: 'Websites, SEO, Google Ads, Meta Ads and AI automation — everything Auckland businesses need to get more customers.',
 };
 
 export default function ServicesPage() {
   return (
     <>
-      <PageHeader
-        eyebrow="Services"
-        title="Design, build and scale — under one roof"
-        subtitle="Five disciplines, one team. We move from research to launch without the handoffs that slow most agencies down."
-      />
-
-      <section className="py-12 sm:py-16">
-        <div className="container-px space-y-5">
-          {SERVICES.map((s, i) => (
-            <div
-              key={s.slug}
-              id={s.slug}
-              className="scroll-mt-28 rounded-4xl border border-line bg-white p-8 shadow-soft sm:p-12"
-            >
-              <div className="grid gap-8 lg:grid-cols-[0.4fr_0.6fr]">
-                <div>
-                  <span className="font-display text-sm font-semibold text-brand-violet">
-                    {String(i + 1).padStart(2, '0')}
-                  </span>
-                  <h2 className="mt-2 font-display text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
-                    {s.title}
-                  </h2>
-                  <p className="mt-3 max-w-sm text-pretty text-muted">{s.summary}</p>
-                </div>
-                <ul className="grid gap-3 sm:grid-cols-2">
-                  {s.points.map((p) => (
-                    <li
-                      key={p}
-                      className="flex items-center gap-3 rounded-2xl bg-canvas px-4 py-3 text-sm font-medium text-ink/80"
-                    >
-                      <span className="h-1.5 w-1.5 rounded-full bg-brand-gradient" />
-                      {p}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          ))}
+      <section className="relative overflow-hidden pt-32 sm:pt-44">
+        <div aria-hidden className="bg-grid bg-grid-fade pointer-events-none absolute inset-x-0 top-0 h-[420px]" />
+        <div className="container-px relative pb-8 text-center sm:pb-12">
+          <span className="eyebrow justify-center">Our services</span>
+          <h1 className="mx-auto mt-5 max-w-4xl text-balance font-display text-5xl font-semibold leading-[1.02] tracking-tightest text-ink sm:text-7xl lg:text-[5.5rem]">
+            Going beyond <span className="text-accent">what&apos;s possible</span>
+          </h1>
+          <p className="mx-auto mt-6 max-w-xl text-pretty text-lg leading-relaxed text-muted">
+            From high-converting websites to SEO and ads — everything your business needs to get more calls, bookings and customers.
+          </p>
         </div>
       </section>
 
-  <AuditCTA />
+      <ServicesList />
+
+     <section className="bg-paper py-24 sm:py-32">
+        <div className="container-px">
+          <h2 className="max-w-2xl font-display text-4xl font-semibold leading-[1.05] tracking-tightest text-ink sm:text-6xl">
+            Benefits of<br />working with us
+          </h2>
+
+          <div className="mt-16 divide-y divide-line border-y border-line">
+            {WHY.map((w, i) => (
+              <div key={w.title} className="grid gap-4 py-8 sm:grid-cols-[64px_1fr_1.2fr] sm:items-start sm:gap-8 sm:py-10">
+                <span className="font-display text-sm font-semibold text-accent">{String(i + 1).padStart(2, '0')}</span>
+                <h3 className="font-display text-xl font-semibold text-ink sm:text-2xl">{w.title}</h3>
+                <p className="text-pretty leading-relaxed text-muted">{w.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <AuditCTA />
     </>
   );
 }

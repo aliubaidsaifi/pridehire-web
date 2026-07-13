@@ -3,7 +3,7 @@ import Logo from '@/components/Logo';
 import { SITE, SERVICES } from '@/lib/site';
 
 const COMPANY = [
-  { label: 'About', href: '/about' },
+  { label: 'Company', href: '/about' },
   { label: 'Portfolio', href: '/portfolio' },
   { label: 'Blog', href: '/blog' },
   { label: 'Free Audit', href: '/free-audit' },
