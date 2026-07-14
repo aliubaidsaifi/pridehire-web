@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function AuditCTA() {
   return (
-    <section className="py-24 sm:py-32">
+    <section className="py-4 sm:py-16">
       <div className="container-px">
         <div className="relative overflow-hidden rounded-4xl bg-ink px-7 py-20 text-center sm:px-12 sm:py-28">
           <div aria-hidden className="pointer-events-none absolute -top-28 left-1/2 h-72 w-[560px] -translate-x-1/2 rounded-full bg-white/10 blur-[120px]" />

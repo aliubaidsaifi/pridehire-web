@@ -66,7 +66,7 @@ export default function PortfolioGrid() {
   }, [active]);
 
   return (
-    <section ref={root} className="pb-8">
+    <section ref={root} className="pb-4">
       <div className="container-px">
         <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 border-b border-line pb-8">
           {PROJECT_CATEGORIES.map((cat) => (

@@ -45,7 +45,7 @@ export default function WhyUs() {
   }, []);
 
   return (
-    <section ref={root} className="py-24 sm:py-32">
+    <section ref={root} className="py-4 sm:py-16">
       <div className="container-px grid gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20">
         <div className="lg:sticky lg:top-28 lg:self-start">
           <span className="eyebrow">Why Pride Hire</span>

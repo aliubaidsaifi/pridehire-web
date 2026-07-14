@@ -27,7 +27,7 @@ export default function CompanyPage() {
         </div>
 
         <div className="container-px mt-14">
-          <CompanyMedia src="/about/team.webp" alt="The Pride Hire team" ratio="aspect-[16/8]" tint="from-[#0f172a] to-[#334155]" />
+          <CompanyMedia src="/about/team.webp" alt="The Pride Hire team" ratio="aspect-[4/3] sm:aspect-[16/8]" tint="from-[#0f172a] to-[#334155]" />
         </div>
       </section>
 
@@ -78,13 +78,13 @@ export default function CompanyPage() {
         </div>
       </section>
 
-      <section className="pb-8">
+      <section className="pb-2">
         <div className="container-px">
-          <CompanyMedia src="/about/office-wide.webp" alt="Pride Hire workspace" ratio="aspect-[16/7]" tint="from-[#111113] to-[#3f3f46]" />
+          <CompanyMedia src="/about/office-wide.webp" alt="Pride Hire workspace" ratio="aspect-[4/3] sm:aspect-[16/7]" tint="from-[#111113] to-[#3f3f46]" />
         </div>
       </section>
 
-     <section className="py-20 sm:py-28">
+     <section className="py-20 sm:py-10">
         <div className="container-px grid gap-8 sm:grid-cols-[220px_1fr] sm:gap-16">
           <span className="font-display text-xs font-semibold uppercase tracking-[0.16em] text-muted">Get to know us</span>
           <div>

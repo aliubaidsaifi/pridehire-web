@@ -49,7 +49,7 @@ export default function Hero() {
           </h1>
 
           <p data-r="sub" className="mt-6 max-w-lg text-pretty text-lg leading-relaxed text-muted">
-            Helping Auckland businesses generate more leads, customers and sales with premium digital solutions.
+            Helping  businesses generate more leads, customers and sales with premium digital solutions.
           </p>
 
           <div className="mt-9 flex flex-wrap items-center gap-3">
@@ -105,7 +105,7 @@ function HeroImageOrDashboard() {
           <div className="rounded-2xl border border-line p-4">
             <div className="text-[11px] font-medium uppercase tracking-wider text-muted">Google rank</div>
             <div className="mt-1.5 font-display text-3xl font-semibold tracking-tight text-ink">#1</div>
-            <div className="mt-1 text-xs text-muted">&ldquo;plumber auckland&rdquo;</div>
+            <div className="mt-1 text-xs text-muted">&ldquo;plumber&rdquo;</div>
           </div>
 
           <div className="rounded-2xl border border-line p-4 sm:col-span-2">
