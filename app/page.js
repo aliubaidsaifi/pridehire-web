@@ -3,9 +3,10 @@ import TrustPoints from '@/components/TrustPoints';
 import Services from '@/components/Services';
 import Industries from '@/components/Industries';
 import WhyUs from '@/components/WhyUs';
-import PortfolioPreview from '@/components/PortfolioPreview';
-import AuditCTA from '@/components/AuditCTA';
 import Reviews from '@/components/Reviews';
+import PortfolioPreview from '@/components/PortfolioPreview';
+import BlogPreview from '@/components/BlogPreview';
+import AuditCTA from '@/components/AuditCTA';
 
 export default function HomePage() {
   return (
@@ -13,10 +14,11 @@ export default function HomePage() {
       <Hero />
       <TrustPoints />
       <Services />
-      <PortfolioPreview />
       {/* <Industries /> */}
       <WhyUs />
       <Reviews />
+      <PortfolioPreview />
+      <BlogPreview />
       <AuditCTA />
     </>
   );

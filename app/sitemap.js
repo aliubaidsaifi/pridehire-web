@@ -46,5 +46,12 @@ export default function sitemap() {
     priority: 0.6,
   }));
 
-  return [...staticPages, ...servicePages, ...blogPosts];
+   const projectPages = RESULTS.map((p) => ({
+    url: `${BASE}/portfolio/${p.slug}`,
+    lastModified: now,
+    changeFrequency: 'monthly',
+    priority: 0.7,
+  }));
+
+  return [...staticPages, ...servicePages,projectPages, ...blogPosts];
 }
