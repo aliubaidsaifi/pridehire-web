@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { SITE, SERVICES } from '@/lib/site';
 
-const inputCls = 'w-full rounded-xl border border-line bg-paper px-4 py-3 text-[0.95rem] text-ink placeholder:text-ink/40 outline-none transition focus:border-ink focus:ring-4 focus:ring-ink/5';
+const inputCls = 'w-full rounded-xl border border-line bg-paper px-4 py-3 text-[0.95rem] text-ink placeholder:text-ink/40 outline-none transition focus:border-accent focus:ring-4 focus:ring-accent/10';
 
 const CARDS = [
   { label: 'Call us', value: SITE.phone, href: `tel:${SITE.phone.replace(/\s/g, '')}`, icon: <path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" /> },
@@ -35,41 +35,54 @@ export default function ContactPage() {
   };
 
   return (
-    <section className="relative overflow-hidden pt-32 pb-24 sm:pt-40">
-      <div aria-hidden className="bg-grid bg-grid-fade pointer-events-none absolute inset-x-0 top-0 h-[380px]" />
-      <div className="container-px relative">
-        <span className="eyebrow">Contact</span>
-        <h1 className="mt-4 max-w-2xl font-display text-4xl font-semibold tracking-tightest text-ink sm:text-6xl">
-          Let&apos;s talk about your growth
-        </h1>
-        <p className="mt-5 max-w-xl text-pretty text-muted sm:text-lg">
-          Call, email, WhatsApp or book a time — whatever&apos;s easiest. We reply within one business day.
-        </p>
-
-        <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {CARDS.map((c) => (
-            <a key={c.label} href={c.href} target={c.href.startsWith('http') ? '_blank' : undefined} rel="noopener noreferrer"
-              className="group rounded-3xl border border-line bg-white p-6 transition-all duration-500 ease-expo hover:-translate-y-1 hover:shadow-lift">
-              <span className="grid h-11 w-11 place-items-center rounded-2xl bg-paper text-ink transition-colors duration-500 group-hover:bg-ink group-hover:text-white">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">{c.icon}</svg>
-              </span>
-              <div className="mt-5 font-display font-semibold text-ink">{c.label}</div>
-              <div className="mt-1 text-sm text-muted">{c.value}</div>
-            </a>
-          ))}
+    <>
+      <section className="relative overflow-hidden pt-32 sm:pt-44">
+        <div aria-hidden className="bg-grid bg-grid-fade pointer-events-none absolute inset-x-0 top-0 h-[400px]" />
+        <div className="container-px relative pb-10 text-center sm:pb-14">
+          <span className="eyebrow justify-center">Contact</span>
+          <h1 className="mx-auto mt-5 max-w-3xl text-balance font-display text-5xl font-semibold leading-[1.02] tracking-tightest text-ink sm:text-7xl">
+            Let&apos;s talk about<br />your <span className="text-accent">growth.</span>
+          </h1>
+          <p className="mx-auto mt-6 max-w-xl text-pretty text-lg leading-relaxed text-muted">
+            Call, email, WhatsApp or book a time — whatever&apos;s easiest. We reply within one business day.
+          </p>
         </div>
+      </section>
 
-        <div className="mt-14 grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
-          <div>
-            <h2 className="font-display text-2xl font-semibold tracking-tight text-ink sm:text-3xl">Or send a message</h2>
-            <p className="mt-3 max-w-sm text-pretty text-muted">Tell us a little about your business and what you need — we&apos;ll come back with honest next steps.</p>
+      <section className="pb-4">
+        <div className="container-px">
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {CARDS.map((c) => (
+              <a key={c.label} href={c.href} target={c.href.startsWith('http') ? '_blank' : undefined} rel="noopener noreferrer"
+                className="group rounded-3xl border border-line bg-white p-6 transition-all duration-500 ease-expo hover:-translate-y-1 hover:shadow-lift">
+                <span className="grid h-11 w-11 place-items-center rounded-2xl bg-paper text-ink transition-colors duration-500 group-hover:bg-accent group-hover:text-white">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">{c.icon}</svg>
+                </span>
+                <div className="mt-5 font-display font-semibold text-ink">{c.label}</div>
+                <div className="mt-1 break-words text-sm text-muted">{c.value}</div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 sm:py-24">
+        <div className="container-px">
+          <div className="mx-auto max-w-3xl text-center">
+            <span className="eyebrow justify-center">Send a message</span>
+            <h2 className="mt-4 font-display text-3xl font-semibold tracking-tightest text-ink sm:text-5xl">
+              Tell us what you need
+            </h2>
+            <p className="mx-auto mt-4 max-w-lg text-pretty text-muted">
+              A little about your business and what you&apos;re after — we&apos;ll come back with honest next steps.
+            </p>
           </div>
 
-          <div className="rounded-4xl border border-line bg-white p-7 sm:p-10">
+          <div className="mx-auto mt-12 max-w-2xl rounded-4xl border border-line bg-white p-7 shadow-soft sm:p-10">
             {status === 'sent' ? (
               <div className="grid min-h-[320px] place-items-center text-center">
                 <div>
-                  <div className="mx-auto grid h-14 w-14 place-items-center rounded-2xl bg-ink text-2xl text-white">✓</div>
+                  <div className="mx-auto grid h-14 w-14 place-items-center rounded-2xl bg-accent text-2xl text-white">✓</div>
                   <h3 className="mt-5 font-display text-2xl font-semibold text-ink">Message sent</h3>
                   <p className="mt-2 text-muted">Thanks, {f.name.split(' ')[0] || 'there'}. We&apos;ll reply within one business day.</p>
                 </div>
@@ -94,19 +107,20 @@ export default function ContactPage() {
                 <button type="submit" disabled={status === 'sending'} className="btn-primary w-full disabled:opacity-70">
                   {status === 'sending' ? 'Sending…' : 'Send message'}
                 </button>
+                <p className="text-center text-xs text-muted">We reply within one business day. Your details stay private.</p>
               </form>
             )}
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
 
 function Field({ label, req, children }) {
   return (
     <label className="block">
-      <span className="mb-2 block text-sm font-medium text-ink">{label}{req && <span className="text-muted"> *</span>}</span>
+      <span className="mb-2 block text-sm font-medium text-ink">{label}{req && <span className="text-accent"> *</span>}</span>
       {children}
     </label>
   );

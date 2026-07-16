@@ -1,36 +1,18 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { REVIEWS, SITE } from '@/lib/site';
-import { gsap, ScrollTrigger, registerGsap } from '@/animations/scrollAnimations';
 
 const AV_TINTS = ['bg-accent', 'bg-ink', 'bg-[#4b3df5]', 'bg-[#1e40af]', 'bg-[#7c3aed]', 'bg-[#0f766e]'];
-const initials = (name) => name.split(' ').map((n) => n[0]).slice(0, 2).join('').toUpperCase();
+const initials = (n) => n.split(' ').map((x) => x[0]).slice(0, 2).join('').toUpperCase();
+const AUTOPLAY = 7000;
 
-function Stars({ n = 5, className = '' }) {
+function Stars({ n = 5, size = 'h-4 w-4' }) {
   return (
-    <div className={`flex gap-0.5 ${className}`} aria-label={`${n} out of 5 stars`}>
+    <div className="flex gap-0.5" aria-label={`${n} out of 5 stars`}>
       {Array.from({ length: 5 }).map((_, i) => (
-        <svg key={i} viewBox="0 0 24 24" className={`h-4 w-4 ${i < n ? 'fill-accent' : 'fill-line'}`}><path d="M12 2l2.9 6.2 6.8.8-5 4.6 1.3 6.7L12 17.8 5.9 20.3 7.2 13.6l-5-4.6 6.8-.8z" /></svg>
+        <svg key={i} viewBox="0 0 24 24" className={`${size} ${i < n ? 'fill-accent' : 'fill-line'}`}><path d="M12 2l2.9 6.2 6.8.8-5 4.6 1.3 6.7L12 17.8 5.9 20.3 7.2 13.6l-5-4.6 6.8-.8z" /></svg>
       ))}
-    </div>
-  );
-}
-
-function ReviewCard({ r, i }) {
-  return (
-    <div className="review-card mb-6 break-inside-avoid rounded-3xl border border-line bg-white p-7 shadow-soft">
-      <Stars n={r.rating} />
-      <p className="mt-4 text-pretty leading-relaxed text-ink">&ldquo;{r.comment}&rdquo;</p>
-      <div className="mt-6 flex items-center gap-3.5">
-        <span className={`grid h-11 w-11 shrink-0 place-items-center rounded-full font-display text-sm font-semibold text-white ${AV_TINTS[i % AV_TINTS.length]}`}>
-          {initials(r.name)}
-        </span>
-        <div className="min-w-0">
-          <div className="font-display text-sm font-semibold text-ink">{r.name}</div>
-          <div className="truncate text-xs text-muted">{r.role} · {r.business}</div>
-        </div>
-      </div>
     </div>
   );
 }
@@ -81,7 +63,6 @@ function ReviewForm({ onClose }) {
                 <input type="text" value={f.business} onChange={u('business')} placeholder="Business name *" className={input} />
               </div>
               <input type="text" value={f.role} onChange={u('role')} placeholder="Your role (e.g. Owner)" className={input} />
-
               <div>
                 <span className="mb-2 block text-sm font-medium text-ink">Your rating</span>
                 <div className="flex gap-1.5">
@@ -92,7 +73,6 @@ function ReviewForm({ onClose }) {
                   ))}
                 </div>
               </div>
-
               <textarea rows={4} value={f.comment} onChange={u('comment')} placeholder="Tell us about your experience… *" className={`${input} resize-none`} />
               {error && <p className="rounded-xl bg-red-50 px-4 py-3 text-sm text-red-600">{error}</p>}
               <button type="submit" disabled={status === 'sending'} className="btn-primary w-full disabled:opacity-70">
@@ -108,46 +88,101 @@ function ReviewForm({ onClose }) {
 }
 
 export default function Reviews() {
+  const [i, setI] = useState(0);
   const [open, setOpen] = useState(false);
-  const root = useRef(null);
+  const [paused, setPaused] = useState(false);
+  const r = REVIEWS[i] || REVIEWS[0];
+
+  const go = useCallback((n) => setI((c) => (n + REVIEWS.length) % REVIEWS.length), []);
+
+  useEffect(() => {
+    if (paused || open || REVIEWS.length < 2) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const t = setTimeout(() => go(i + 1), AUTOPLAY);
+    return () => clearTimeout(t);
+  }, [i, paused, open, go]);
 
   useEffect(() => {
     document.body.style.overflow = open ? 'hidden' : '';
     return () => { document.body.style.overflow = ''; };
   }, [open]);
 
-  useEffect(() => {
-    registerGsap();
-    const el = root.current; if (!el) return;
-    const cards = gsap.utils.toArray(el.querySelectorAll('.review-card'));
-    if (!cards.length || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-    const ctx = gsap.context(() => {
-      gsap.set(cards, { opacity: 0, y: 40 });
-      ScrollTrigger.batch(cards, { start: 'top 92%', once: true, onEnter: (b) => gsap.to(b, { opacity: 1, y: 0, duration: 0.8, ease: 'expo.out', stagger: 0.1, overwrite: true }) });
-    }, el);
-    const raf = requestAnimationFrame(() => ScrollTrigger.refresh());
-    const safety = setTimeout(() => gsap.to(cards, { opacity: 1, y: 0, duration: 0.4, overwrite: true }), 2400);
-    return () => { cancelAnimationFrame(raf); clearTimeout(safety); ctx.revert(); };
-  }, []);
-
   return (
-    <section ref={root} className="bg-paper py-4 sm:py-16">
-      <div className="container-px">
-        <div className="flex flex-wrap items-end justify-between gap-6">
-          <div className="max-w-2xl">
-            <span className="eyebrow">Reviews</span>
-            <h2 className="mt-4 font-display text-4xl font-semibold tracking-tightest text-ink sm:text-6xl">What our clients say</h2>
-            <p className="mt-4 text-pretty text-muted sm:text-lg">Real words from real business owners we&apos;ve helped grow.</p>
+    <section className="relative overflow-hidden bg-paper py-16 sm:py-28"
+      onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)}>
+      <div aria-hidden className="pointer-events-none absolute -left-32 top-1/2 h-[420px] w-[420px] -translate-y-1/2 rounded-full bg-accent/[0.07] blur-[120px]" />
+
+      <div className="container-px relative grid gap-12 lg:grid-cols-[0.75fr_1.25fr] lg:gap-16">
+        <div className="lg:sticky lg:top-28 lg:self-start">
+          <span className="eyebrow">Reviews</span>
+          <h2 className="mt-4 font-display text-4xl font-semibold leading-[1.02] tracking-tightest text-ink sm:text-5xl">
+            What our<br />clients say
+          </h2>
+          <div className="mt-7 flex items-center gap-3">
+            <Stars n={5} size="h-5 w-5" />
+            <span className="text-sm text-muted">5.0 · {REVIEWS.length} reviews</span>
           </div>
-          <button type="button" onClick={() => setOpen(true)} className="btn-primary">Leave a review</button>
+          <button type="button" onClick={() => setOpen(true)} className="btn-primary mt-7">Leave a review</button>
         </div>
 
-        <div className="mt-14 columns-1 gap-6 sm:columns-2 lg:columns-3">
-          {REVIEWS.map((r, i) => <ReviewCard key={r.name + i} r={r} i={i} />)}
+        <div className="relative">
+          <span aria-hidden className="pointer-events-none absolute -left-2 -top-10 font-display text-[9rem] leading-none text-accent/15 sm:-left-6 sm:-top-16 sm:text-[13rem]">&ldquo;</span>
+
+          <blockquote key={i} className="rev-fade relative min-h-[260px] sm:min-h-[300px]">
+            <p className="text-balance font-display text-2xl font-medium leading-[1.3] tracking-tight text-ink sm:text-4xl">
+              {r.comment}
+            </p>
+            <footer className="mt-8 flex items-center gap-4">
+              <span className={`grid h-14 w-14 shrink-0 place-items-center rounded-full font-display text-base font-semibold text-white ${AV_TINTS[i % AV_TINTS.length]}`}>
+                {initials(r.name)}
+              </span>
+              <div>
+                <div className="font-display text-base font-semibold text-ink">{r.name}</div>
+                <div className="text-sm text-muted">{r.role} · {r.business}</div>
+              </div>
+            </footer>
+          </blockquote>
+
+          <div className="mt-10 flex items-center justify-between gap-6 border-t border-line pt-6">
+            <div className="flex items-center gap-2.5">
+              {REVIEWS.map((rv, n) => (
+                <button key={rv.name + n} type="button" onClick={() => setI(n)} aria-label={`Review by ${rv.name}`}
+                  className={`grid h-10 w-10 place-items-center rounded-full font-display text-xs font-semibold text-white transition-all duration-500 ease-expo ${AV_TINTS[n % AV_TINTS.length]} ${n === i ? 'scale-110 ring-2 ring-accent ring-offset-2 ring-offset-paper' : 'opacity-40 hover:opacity-80'}`}>
+                  {initials(rv.name)}
+                </button>
+              ))}
+            </div>
+
+            <div className="flex gap-2">
+              <button type="button" onClick={() => go(i - 1)} aria-label="Previous review"
+                className="grid h-11 w-11 place-items-center rounded-full border border-line text-ink transition-colors hover:bg-ink hover:text-white">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-4 w-4"><path d="M19 12H5M11 18l-6-6 6-6" strokeLinecap="round" strokeLinejoin="round" /></svg>
+              </button>
+              <button type="button" onClick={() => go(i + 1)} aria-label="Next review"
+                className="grid h-11 w-11 place-items-center rounded-full border border-line text-ink transition-colors hover:bg-ink hover:text-white">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-4 w-4"><path d="M5 12h14M13 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" /></svg>
+              </button>
+            </div>
+          </div>
+
+          <div className="mt-4 h-0.5 w-full overflow-hidden rounded-full bg-line">
+            <div key={`p-${i}-${paused}`} className={`rev-progress h-full bg-accent ${paused || open ? 'is-paused' : ''}`} />
+          </div>
         </div>
       </div>
 
       {open && <ReviewForm onClose={() => setOpen(false)} />}
+
+      <style jsx>{`
+        @keyframes revFade { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+        .rev-fade { animation: revFade 0.7s cubic-bezier(0.16, 1, 0.3, 1) both; }
+        @keyframes revProgress { from { transform: translateX(-100%); } to { transform: translateX(0); } }
+        .rev-progress { animation: revProgress ${AUTOPLAY}ms linear both; }
+        .rev-progress.is-paused { animation-play-state: paused; }
+        @media (prefers-reduced-motion: reduce) {
+          .rev-fade, .rev-progress { animation: none; }
+        }
+      `}</style>
     </section>
   );
 }
