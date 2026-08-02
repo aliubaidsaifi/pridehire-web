@@ -4,20 +4,42 @@ import { SITE } from '@/lib/site';
 import SmoothScroll from '@/components/SmoothScroll';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import CookieConsent from '@/components/CookieConsent';
+import { OrganizationSchema, WebsiteSchema } from '@/components/Schema';
 
 const inter = Inter({ subsets: ['latin'], display: 'swap', variable: '--font-body' });
-
+const BASE = 'https://pridehire.com';
 export const metadata = {
-  metadataBase: new URL('https://pridehire.com'),
+  metadataBase: new URL(BASE),
   title: {
-    default: `${SITE.name} — Websites, SEO & Google Ads for Auckland businesses`,
-    template: `%s · ${SITE.name}`,
+    default: 'Pride Hire — Premium Digital Solutions | Websites, SEO, Ads & Automation',
+    template: '%s | Pride Hire',
   },
   description: SITE.description,
-  keywords: ['web design Auckland', 'SEO Auckland', 'Google Ads Auckland', 'digital agency Auckland', 'website development NZ'],
-  openGraph: { title: `${SITE.name} — Grow your business`, description: SITE.description, type: 'website', siteName: SITE.name, locale: 'en_NZ' },
-  twitter: { card: 'summary_large_image', title: SITE.name, description: SITE.description },
-  robots: { index: true, follow: true },
+  keywords: ['digital agency', 'website development', 'SEO', 'Google Ads', 'Meta Ads', 'business automation', 'graphic design'],
+  authors: [{ name: SITE.name }],
+  creator: SITE.name,
+  alternates: { canonical: '/' },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: BASE,
+    siteName: SITE.name,
+    title: 'Pride Hire — Premium Digital Solutions',
+    description: SITE.description,
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: SITE.name }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Pride Hire — Premium Digital Solutions',
+    description: SITE.description,
+    images: ['/og-image.png'],
+  },
+  robots: {
+    index: true, follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
+  icons: { icon: '/icon.svg', apple: '/icon.svg' },
 };
 
 export const viewport = { themeColor: '#ffffff', width: 'device-width', initialScale: 1 };
@@ -40,9 +62,12 @@ export default function RootLayout({ children }) {
       <body className="min-h-screen bg-canvas font-sans text-ink antialiased">
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
         <SmoothScroll>
+        <OrganizationSchema />
+        <WebsiteSchema />
           <Navbar />
           <main>{children}</main>
           <Footer />
+           <CookieConsent />
         </SmoothScroll>
       </body>
     </html>

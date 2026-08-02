@@ -1,6 +1,11 @@
+const BASE = 'https://pridehire.com';
+
 export default function robots() {
   return {
-    rules: { userAgent: '*', allow: '/' },
-    sitemap: 'https://pridehire.com/sitemap.xml',
+    rules: [
+      { userAgent: '*', allow: '/', disallow: ['/lp/', '/api/'] },
+    ],
+    sitemap: `${BASE}/sitemap.xml`,
+    host: BASE,
   };
 }

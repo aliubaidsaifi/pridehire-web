@@ -1,7 +1,9 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import AuditCTA from '@/components/AuditCTA';
-import { SERVICES, SERVICE_DETAILS, RESULTS, SITE } from '@/lib/site';
+import { SERVICES, SERVICE_DETAILS, RESULTS, SITE, LANDING } from '@/lib/site';
+import { ServiceSchema, FaqSchema, BreadcrumbSchema } from '@/components/Schema';
+
 
 export function generateStaticParams() {
   return SERVICES.map((s) => ({ slug: s.slug }));
@@ -26,6 +28,9 @@ export default async function ServiceDetail({ params }) {
 
   return (
     <>
+    <ServiceSchema name={service.title} description={detail.intro} slug={slug} />
+      <FaqSchema faqs={LANDING[slug]?.faqs || []} />
+      <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: 'Services', path: '/services' }, { name: service.title, path: `/services/${slug}` }]} />
       <section className="relative overflow-hidden pt-32 sm:pt-44">
         <div aria-hidden className="bg-grid bg-grid-fade pointer-events-none absolute inset-x-0 top-0 h-[440px]" />
         <div className="container-px relative pb-8 text-center sm:pb-14">

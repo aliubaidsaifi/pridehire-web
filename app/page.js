@@ -7,11 +7,13 @@ import Reviews from '@/components/Reviews';
 import PortfolioPreview from '@/components/PortfolioPreview';
 import BlogPreview from '@/components/BlogPreview';
 import AuditCTA from '@/components/AuditCTA';
+import TrustStats from '@/components/TrustStats';
 
 export default function HomePage() {
   return (
     <>
       <Hero />
+      <TrustStats/>
       <TrustPoints />
       <Services />
       {/* <Industries /> */}

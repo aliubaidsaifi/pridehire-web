@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from 'react';
 import Link from 'next/link';
-import { SITE } from '@/lib/site';
+import { SITE , SERVICES} from '@/lib/site';
 import { gsap, ScrollTrigger, registerGsap } from '@/animations/scrollAnimations';
 
 export default function Hero() {
@@ -16,7 +16,7 @@ export default function Hero() {
       tl.from('[data-r="eyebrow"]', { y: 18, opacity: 0, duration: 0.8 })
         .from('[data-r="line"]', { yPercent: 110, duration: 1.05, stagger: 0.09 }, '-=0.5')
         .from('[data-r="sub"]', { y: 22, opacity: 0, duration: 0.9 }, '-=0.65')
-        .from('[data-r="cta"]', { y: 18, opacity: 0, duration: 0.8, stagger: 0.08 }, '-=0.6')
+        .from('[data-r="pill"]', { y: 14, opacity: 0, duration: 0.5, stagger: 0.05 }, '-=0.5')
         .from('[data-r="visual"]', { y: 50, opacity: 0, scale: 0.96, duration: 1.15 }, '-=0.85')
         .from('[data-r="float"]', { y: 20, opacity: 0, duration: 0.7, stagger: 0.12 }, '-=0.7');
 
@@ -40,16 +40,16 @@ export default function Hero() {
 
       <div className="container-px relative grid items-center gap-14 pb-16 lg:grid-cols-[1.05fr_0.95fr] lg:pb-24">
         <div>
-          <span data-r="eyebrow" className="eyebrow">Digital growth agency ·</span>
+          <span data-r="eyebrow" className="eyebrow">Premium digital agency ·</span>
 
           <h1 className="mt-6 font-display text-[2.7rem] font-semibold leading-[1.03] tracking-tightest text-ink sm:text-6xl lg:text-[4.2rem]">
-            <span className="block overflow-hidden pb-0.5"><span data-r="line" className="block">Grow your business</span></span>
-            <span className="block overflow-hidden pb-0.5"><span data-r="line" className="block">with high-converting</span></span>
-            <span className="block overflow-hidden pb-1"><span data-r="line" className="block">websites, SEO &amp; ads.</span></span>
+            <span className="block overflow-hidden pb-0.5"><span data-r="line" className="block">Grow Your Business</span></span>
+            <span className="block overflow-hidden pb-0.5"><span data-r="line" className="block">With Premium</span></span>
+            <span className="block overflow-hidden pb-1"><span data-r="line" className="block text-accent">Digital Solutions</span></span>
           </h1>
 
           <p data-r="sub" className="mt-6 max-w-lg text-pretty text-lg leading-relaxed text-muted">
-            Helping  businesses generate more leads, customers and sales with premium digital solutions.
+            Websites, design, ads and automation — everything you need to get found, look premium and win more customers.
           </p>
 
           <div className="mt-9 flex flex-wrap items-center gap-3">
@@ -57,12 +57,10 @@ export default function Hero() {
             <Link data-r="cta" href="/contact" className="btn-ghost">{SITE.cta.secondary}</Link>
           </div>
 
-          <div data-r="cta" className="mt-10 flex flex-wrap items-center gap-x-7 gap-y-2 text-sm text-muted">
-            <span>Free 24-hour audits</span>
-            <span className="h-1 w-1 rounded-full bg-line" />
-            <span>No lock-in contracts</span>
-            <span className="h-1 w-1 rounded-full bg-line" />
-            <span>You own everything</span>
+          <div className="mt-9 flex flex-wrap gap-2.5">
+            {SERVICES.map((s) => (
+              <span key={s.slug} data-r="pill" className="rounded-full border border-line bg-white px-4 py-2 text-sm font-medium text-ink shadow-soft">{s.title}</span>
+            ))}
           </div>
         </div>
 
