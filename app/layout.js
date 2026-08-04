@@ -15,7 +15,7 @@ const BASE = 'https://pridehire.com';
 export const metadata = {
   metadataBase: new URL(BASE),
   title: {
-    default: 'Pride Hire — Premium Digital Solutions | Websites, SEO, Ads & Automation',
+    default: 'Pride Hire',
     template: '%s | Pride Hire',
   },
   description: SITE.description,
@@ -42,7 +42,7 @@ export const metadata = {
     index: true, follow: true,
     googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
   },
-  icons: { icon: '/icon.svg', apple: '/icon.svg' },
+  icons: { icon: '/icon.png', apple: '/icon.png' },
 };
 
 export const viewport = { themeColor: '#ffffff', width: 'device-width', initialScale: 1 };
