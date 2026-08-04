@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { SITE } from '@/lib/site';
+import { track } from '@/lib/track';
 
 const input = 'w-full rounded-xl border border-line bg-paper px-4 py-3 text-[0.95rem] text-ink placeholder:text-ink/40 outline-none transition focus:border-accent focus:ring-4 focus:ring-accent/10';
 
@@ -29,8 +30,8 @@ export default function LeadForm({ service = '' }) {
       const data = await res.json().catch(() => ({}));
       if (!res.ok || !data.ok) throw new Error();
       setStatus('sent');
-      if (typeof window !== 'undefined' && window.gtag) window.gtag('event', 'generate_lead', { service });
-      if (typeof window !== 'undefined' && window.fbq) window.fbq('track', 'Lead', { content_name: service });
+     track('Lead', { label: service, service });
+      track('SubmitForm', { label: service, service });
     } catch { setStatus('error'); setError(`Couldn’t send. Call or WhatsApp us instead.`); }
   };
 

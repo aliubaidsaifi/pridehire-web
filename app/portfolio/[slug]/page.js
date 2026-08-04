@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import AuditCTA from '@/components/AuditCTA';
 import ProjectMedia from '@/components/ProjectMedia';
 import { RESULTS, PROJECT_DETAILS } from '@/lib/site';
+import PortfolioView from '@/components/PortfolioView';
 
 const TINTS = ['from-[#4b3df5] to-[#7c6cff]', 'from-[#0f172a] to-[#334155]', 'from-accent to-[#f5a58f]', 'from-[#1e40af] to-[#3b82f6]', 'from-[#111113] to-[#3f3f46]', 'from-[#7c3aed] to-[#c084fc]'];
 
@@ -34,6 +35,7 @@ export default async function ProjectDetail({ params }) {
 
   return (
     <>
+    <PortfolioView slug={slug} />
       <section className="relative overflow-hidden pt-32 sm:pt-44">
         <div aria-hidden className="bg-grid bg-grid-fade pointer-events-none absolute inset-x-0 top-0 h-[420px]" />
         <div className="container-px relative pb-10 text-center sm:pb-14">

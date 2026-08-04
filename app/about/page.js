@@ -107,13 +107,13 @@ export default function CompanyPage() {
               </div>
 
               {/* Founder */}
-              <figure>
+              {/* <figure>
                 <CompanyMedia src="/about/founder.webp" alt="Founder — Pride Hire" ratio="aspect-[3/4]" tint="from-[#1e40af] to-[#3b82f6]" />
                 <figcaption className="mt-4">
                   <div className="font-display text-base font-semibold text-ink">Mohd Suhail</div>
                   <div className="text-sm text-muted">Founder, Pride Hire</div>
                 </figcaption>
-              </figure>
+              </figure> */}
             </div>
           </div>
         </div>

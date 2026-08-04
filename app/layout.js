@@ -6,6 +6,8 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import CookieConsent from '@/components/CookieConsent';
 import { OrganizationSchema, WebsiteSchema } from '@/components/Schema';
+import { GTMScript, GTMNoScript } from '@/components/Analytics';
+import PageTracking from '@/components/PageTracking';
 
 const inter = Inter({ subsets: ['latin'], display: 'swap', variable: '--font-body' });
 const BASE = 'https://pridehire.com';
@@ -59,7 +61,12 @@ const schema = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en-NZ" className={inter.variable} style={{ '--font-display': 'var(--font-body)' }}>
+    <head>
+        <GTMScript />
+      </head>
       <body className="min-h-screen bg-canvas font-sans text-ink antialiased">
+       <GTMNoScript />
+        <PageTracking />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
         <SmoothScroll>
         <OrganizationSchema />

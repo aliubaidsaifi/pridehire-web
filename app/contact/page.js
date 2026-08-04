@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { SITE, SERVICES } from '@/lib/site';
+import { track } from '@/lib/track';
 
 const inputCls = 'w-full rounded-xl border border-line bg-paper px-4 py-3 text-[0.95rem] text-ink placeholder:text-ink/40 outline-none transition focus:border-accent focus:ring-4 focus:ring-accent/10';
 
@@ -40,6 +41,8 @@ export default function ContactPage() {
       const data = await res.json().catch(() => ({}));
       if (!res.ok || !data.ok) throw new Error();
       setStatus('sent');
+       track('Contact', { label: f.service, service: f.service, email: f.email, phone: f.phone });
+      track('SubmitForm', { label: f.service, service: f.service });
     } catch { setStatus('error'); setError(`Couldn’t send right now. Email us at ${SITE.contactEmail}.`); }
   };
 
@@ -63,12 +66,13 @@ export default function ContactPage() {
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {CARDS.map((c) => (
               <a key={c.label} href={c.href} target={c.href.startsWith('http') ? '_blank' : undefined} rel="noopener noreferrer"
+                onClick={() => {
+                  if (c.label === 'WhatsApp') track('WhatsAppClick', { location: 'contact' });
+                  else if (c.label === 'Call us') track('PhoneClick', { location: 'contact' });
+                  else if (c.label === 'Email') track('EmailClick', { location: 'contact' });
+                  else if (c.label === 'Google Meet') track('BookConsultation', { location: 'contact' });
+                }}
                 className="group rounded-3xl border border-line bg-white p-6 transition-all duration-500 ease-expo hover:-translate-y-1 hover:shadow-lift">
-                <span className="grid h-11 w-11 place-items-center rounded-2xl bg-paper text-ink transition-colors duration-500 group-hover:bg-accent group-hover:text-white">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">{c.icon}</svg>
-                </span>
-                <div className="mt-5 font-display font-semibold text-ink">{c.label}</div>
-                <div className="mt-1 break-words text-sm text-muted">{c.value}</div>
               </a>
             ))}
           </div>
