@@ -8,6 +8,7 @@ import CookieConsent from '@/components/CookieConsent';
 import { OrganizationSchema, WebsiteSchema } from '@/components/Schema';
 import { GTMScript, GTMNoScript } from '@/components/Analytics';
 import PageTracking from '@/components/PageTracking';
+import GoogleAnalytics from '@/components/GoogleAnalytics';
 
 const inter = Inter({ subsets: ['latin'], display: 'swap', variable: '--font-body' });
 const BASE = 'https://pridehire.com';
@@ -65,6 +66,7 @@ export default function RootLayout({ children }) {
         <GTMScript />
       </head>
       <body className="min-h-screen bg-canvas font-sans text-ink antialiased">
+      <GoogleAnalytics />
        <GTMNoScript />
         <PageTracking />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
