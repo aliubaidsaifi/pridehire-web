@@ -99,23 +99,17 @@ export default async function ServiceDetail({ params }) {
       <section className="border-t border-line bg-paper py-20 sm:py-28">
         <div className="container-px">
           <div className="flex flex-wrap items-end justify-between gap-6">
-            <h2 className="font-display text-3xl font-semibold tracking-tightest text-ink sm:text-5xl">Recent results</h2>
+            <h2 className="font-display text-3xl font-semibold tracking-tightest text-ink sm:text-5xl">Selected work</h2>
             <Link href="/portfolio" className="btn-ghost">View all work</Link>
           </div>
-          <div className="mt-12 grid gap-5 sm:grid-cols-3">
+          <div className="mt-12 grid gap-5 sm:grid-cols-2">
             {RESULTS.map((r) => (
-              <article key={r.client} className="flex flex-col overflow-hidden rounded-3xl border border-line bg-white">
-                <div className="relative aspect-[16/10] border-b border-line bg-paper">
-                  <div className="absolute inset-0 grid place-items-center">
-                    <span className="font-display text-4xl font-semibold tracking-tightest text-ink/80">{r.metric}</span>
-                  </div>
-                  <span className="absolute left-4 top-4 rounded-full border border-line bg-white px-3 py-1 text-[11px] font-semibold text-ink">{r.industry}</span>
-                </div>
-                <div className="p-6">
-                  <h3 className="font-display text-lg font-semibold text-ink">{r.client}</h3>
-                  <p className="mt-1 text-sm text-muted">{r.metric} {r.label}</p>
-                </div>
-              </article>
+              <Link key={r.slug} href={`/portfolio/${r.slug}`} className="flex flex-col rounded-3xl border border-line bg-white p-6">
+                <span className="text-[11px] font-semibold uppercase tracking-[0.14em] text-accent">{r.tag}</span>
+                <h3 className="mt-1 font-display text-lg font-semibold text-ink">{r.client}</h3>
+                <p className="mt-1 text-sm text-muted">{r.blurb}</p>
+                {r.metric && <p className="mt-3 text-sm font-semibold text-ink">{r.metric} {r.label}</p>}
+              </Link>
             ))}
           </div>
         </div>

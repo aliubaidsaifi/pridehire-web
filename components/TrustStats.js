@@ -65,7 +65,7 @@ export default function TrustStats() {
   return (
     <section ref={root} className="border-y border-line bg-paper py-14 sm:py-16">
       <div className="container-px">
-        <div className="grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-3 lg:grid-cols-6">
+        <div className="flex flex-wrap items-start justify-center gap-x-16 gap-y-10">
           {TRUST_STATS.map((s) => <Stat key={s.label} s={s} />)}
         </div>
 

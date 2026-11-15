@@ -92,6 +92,7 @@ export default function Reviews() {
   const [open, setOpen] = useState(false);
   const [paused, setPaused] = useState(false);
   const r = REVIEWS[i] || REVIEWS[0];
+  const hasReviews = REVIEWS.length > 0;
 
   const go = useCallback((n) => setI((c) => (n + REVIEWS.length) % REVIEWS.length), []);
 
@@ -118,13 +119,22 @@ export default function Reviews() {
           <h2 className="mt-4 font-display text-4xl font-semibold leading-[1.02] tracking-tightest text-ink sm:text-5xl">
             What our<br />clients say
           </h2>
-          <div className="mt-7 flex items-center gap-3">
-            <Stars n={5} size="h-5 w-5" />
-            <span className="text-sm text-muted">5.0 · {REVIEWS.length} reviews</span>
-          </div>
+          {hasReviews && (
+            <div className="mt-7 flex items-center gap-3">
+              <Stars n={Math.round(REVIEWS.reduce((a, x) => a + x.rating, 0) / REVIEWS.length)} size="h-5 w-5" />
+              <span className="text-sm text-muted">{(REVIEWS.reduce((a, x) => a + x.rating, 0) / REVIEWS.length).toFixed(1)} · {REVIEWS.length} {REVIEWS.length === 1 ? 'review' : 'reviews'}</span>
+            </div>
+          )}
           <button type="button" onClick={() => setOpen(true)} className="btn-primary mt-7">Leave a review</button>
         </div>
 
+        {!hasReviews ? (
+          <div className="flex items-center">
+            <p className="max-w-xl text-pretty font-display text-2xl font-medium leading-[1.3] tracking-tight text-ink sm:text-3xl">
+              Worked with us? We&apos;d value your honest feedback. Reviews are verified with you before they appear here.
+            </p>
+          </div>
+        ) : (
         <div className="relative">
           <span aria-hidden className="pointer-events-none absolute -left-2 -top-10 font-display text-[9rem] leading-none text-accent/15 sm:-left-6 sm:-top-16 sm:text-[13rem]">&ldquo;</span>
 
@@ -169,6 +179,7 @@ export default function Reviews() {
             <div key={`p-${i}-${paused}`} className={`rev-progress h-full bg-accent ${paused || open ? 'is-paused' : ''}`} />
           </div>
         </div>
+        )}
       </div>
 
       {open && <ReviewForm onClose={() => setOpen(false)} />}
