@@ -32,11 +32,9 @@ function Card({ p, i }) {
           />
         </div>
 
-        {p.metric && (
-          <span className="absolute bottom-4 left-4 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold tracking-tight text-ink shadow-soft backdrop-blur">
-            {p.metric} {p.label}
-          </span>
-        )}
+        <span className="absolute bottom-4 left-4 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold tracking-tight text-ink shadow-soft backdrop-blur">
+          {p.metric} {p.label}
+        </span>
 
         <span className="absolute right-4 top-4 grid h-11 w-11 translate-y-1 place-items-center rounded-full bg-white text-ink opacity-0 shadow-soft transition-all duration-500 ease-expo group-hover:translate-y-0 group-hover:opacity-100">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-4 w-4"><path d="M7 17L17 7M9 7h8v8" strokeLinecap="round" strokeLinejoin="round" /></svg>

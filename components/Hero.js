@@ -9,6 +9,13 @@ function toQuery(title) {
   return title.toLowerCase().replace(/[^a-z0-9]+/g, '+').replace(/^\+|\+$/g, '');
 }
 
+const TRUST = [
+  { value: '5.0', label: 'Rating', star: true },
+  { value: '100+', label: 'Projects' },
+  { value: '5+', label: 'Years' },
+  { value: '24h', label: 'Response' },
+];
+
 export default function Hero() {
   const root = useRef(null);
   const queries = SERVICES.length ? SERVICES.map((s) => toQuery(s.title)) : ['web+agency'];
@@ -74,6 +81,18 @@ export default function Hero() {
             <Link data-r="cta" href="/contact" className="btn-ghost">{SITE.cta.secondary}</Link>
           </div>
 
+          {/* trust row: editorial divider list instead of default stat-card grid */}
+          {/* <div className="mt-10 flex flex-wrap items-center divide-x divide-line">
+            {TRUST.map((t) => (
+              <div key={t.label} data-r="trust" className="flex flex-col gap-0.5 px-4 first:pl-0">
+                <span className="flex items-baseline gap-1 font-display text-xl font-semibold tracking-tight text-ink">
+                  {t.value}{t.star && <span className="text-accent">★</span>}
+                </span>
+                <span className="text-xs uppercase tracking-wide text-muted">{t.label}</span>
+              </div>
+            ))}
+          </div> */}
+
           <div className="mt-10 flex flex-wrap gap-2">
             {SERVICES.map((s) => (
               <span key={s.slug} data-r="pill" className="rounded-full border border-line bg-white/50 px-3.5 py-1.5 text-[0.8rem] font-medium text-muted transition-colors hover:border-accent/40 hover:text-ink">{s.title}</span>
@@ -110,9 +129,15 @@ export default function Hero() {
                 google.com/search?q={queries[queryIdx]}
               </span>
             </div>
-            <div className="px-4 py-3">
-              <div className="text-[10px] uppercase tracking-wide text-muted">What we do</div>
-              <div className="font-display text-base font-semibold text-ink">SEO, ads &amp; websites that get found</div>
+            <div className="flex items-center justify-between px-4 py-3">
+              <div>
+                <div className="text-[10px] uppercase tracking-wide text-muted">Search ranking</div>
+                <div className="font-display text-base font-semibold text-ink">#1 result</div>
+              </div>
+              <div className="text-right">
+                <div className="text-[10px] uppercase tracking-wide text-muted">Leads, 30d</div>
+                <div className="font-display text-base font-semibold text-accent">+42%</div>
+              </div>
             </div>
           </div>
         </div>

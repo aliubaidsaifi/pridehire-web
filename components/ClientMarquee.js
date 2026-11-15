@@ -3,7 +3,6 @@
 import { CLIENTS } from '@/lib/site';
 
 export default function ClientMarquee() {
-  if (!CLIENTS.length) return null; // no real client names yet — render nothing
   const row = [...CLIENTS, ...CLIENTS]; // duplicate for seamless loop
 
   return (

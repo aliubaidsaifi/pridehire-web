@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import AuditCTA from '@/components/AuditCTA';
 import ProjectMedia from '@/components/ProjectMedia';
-import { RESULTS, PROJECT_DETAILS, verifiedMetrics } from '@/lib/site';
+import { RESULTS, PROJECT_DETAILS } from '@/lib/site';
 import PortfolioView from '@/components/PortfolioView';
 
 const TINTS = ['from-[#4b3df5] to-[#7c6cff]', 'from-[#0f172a] to-[#334155]', 'from-accent to-[#f5a58f]', 'from-[#1e40af] to-[#3b82f6]', 'from-[#111113] to-[#3f3f46]', 'from-[#7c3aed] to-[#c084fc]'];
@@ -32,7 +32,6 @@ export default async function ProjectDetail({ params }) {
   const idx = RESULTS.findIndex((x) => x.slug === slug);
   const next = RESULTS[(idx + 1) % RESULTS.length];
   const tint = TINTS[idx % TINTS.length];
-  const results = verifiedMetrics(d.results);
 
   return (
     <>
@@ -74,12 +73,10 @@ export default async function ProjectDetail({ params }) {
               <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Timeline</dt>
               <dd className="mt-1.5 font-display font-semibold text-ink">{d.timeline}</dd>
             </div>
-            {p.metric && (
-              <div>
-                <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Result</dt>
-                <dd className="mt-1.5 font-display font-semibold text-accent">{p.metric} {p.label}</dd>
-              </div>
-            )}
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Result</dt>
+              <dd className="mt-1.5 font-display font-semibold text-accent">{p.metric} {p.label}</dd>
+            </div>
             <div className="col-span-2">
               <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Services</dt>
               <dd className="mt-3 flex flex-wrap gap-2">
@@ -113,7 +110,6 @@ export default async function ProjectDetail({ params }) {
         </div>
       </section>
 
-      {results.length > 0 && (
       <section className="py-16 sm:py-24">
         <div className="container-px">
           <span className="eyebrow">The results</span>
@@ -121,7 +117,7 @@ export default async function ProjectDetail({ params }) {
             What changed for the business
           </h2>
           <div className="mt-12 grid gap-6 sm:grid-cols-3">
-            {results.map((r) => (
+            {d.results.map((r) => (
               <div key={r.label} className="rounded-3xl border border-line bg-white p-7">
                 <div className="font-display text-4xl font-semibold tracking-tightest text-ink sm:text-5xl">{r.value}</div>
                 <div className="mt-2 text-sm text-muted">{r.label}</div>
@@ -130,7 +126,6 @@ export default async function ProjectDetail({ params }) {
           </div>
         </div>
       </section>
-      )}
 
       <section className="border-t border-line py-14">
         <div className="container-px">

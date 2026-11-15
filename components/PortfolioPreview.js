@@ -19,12 +19,10 @@ function Card({ p }) {
 
         <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-black/25 to-transparent opacity-70" />
 
-        {p.metric && (
-          <span className="absolute left-4 top-4 inline-flex items-baseline gap-1.5 rounded-full bg-white/95 px-3.5 py-1.5 shadow-soft backdrop-blur">
-            <span className="font-display text-sm font-semibold text-ink">{p.metric}</span>
-            <span className="text-[11px] text-muted">{p.label}</span>
-          </span>
-        )}
+        <span className="absolute left-4 top-4 inline-flex items-baseline gap-1.5 rounded-full bg-white/95 px-3.5 py-1.5 shadow-soft backdrop-blur">
+          <span className="font-display text-sm font-semibold text-ink">{p.metric}</span>
+          <span className="text-[11px] text-muted">{p.label}</span>
+        </span>
 
         {p.category && (
           <span className="absolute right-4 top-4 rounded-full bg-ink/75 px-3 py-1 text-[11px] font-semibold text-white backdrop-blur">{p.category}</span>
@@ -79,12 +77,12 @@ export default function PortfolioPreview() {
           <div className="max-w-2xl">
             <span className="eyebrow">Portfolio</span>
             <h2 className="mt-4 font-display text-4xl font-semibold tracking-tightest text-ink sm:text-6xl">Featured projects</h2>
-            <p className="mt-4 text-pretty text-muted sm:text-lg">Selected projects we&apos;ve designed and built.</p>
+            <p className="mt-4 text-pretty text-muted sm:text-lg">A few of the businesses we&apos;ve helped grow — measured in real results.</p>
           </div>
           <Link href="/portfolio" className="btn-ghost hidden sm:inline-flex">View all projects</Link>
         </div>
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-2">
+        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {RESULTS.map((p) => <Card key={p.slug} p={p} />)}
         </div>
 

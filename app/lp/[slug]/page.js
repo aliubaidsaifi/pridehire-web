@@ -54,6 +54,9 @@ export default async function LandingPage({ params }) {
                 </span>
               ))}
             </div>
+            <div className="mt-8 flex items-center gap-4 text-sm text-muted">
+              <span className="font-display text-lg font-semibold text-ink">5.0★</span> Rated · 100+ Projects · 5+ Years
+            </div>
           </div>
           <div className="lg:sticky lg:top-24" id="quote"><LeadForm service={lp.badge} /></div>
         </div>
@@ -95,7 +98,7 @@ export default async function LandingPage({ params }) {
         <div className="container-px">
           <div className="max-w-2xl">
             <span className="eyebrow">Our work</span>
-            <h2 className="mt-4 font-display text-3xl font-semibold tracking-tightest text-ink sm:text-5xl">Selected work</h2>
+            <h2 className="mt-4 font-display text-3xl font-semibold tracking-tightest text-ink sm:text-5xl">Results we’ve delivered</h2>
           </div>
           <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {showProjects.map((p, i) => (
@@ -105,7 +108,7 @@ export default async function LandingPage({ params }) {
                   <div className="absolute inset-0 grid place-items-center p-6">
                    <LpProjectImg src={p.image} alt={p.client} />
                   </div>
-                  {p.metric && <span className="absolute bottom-4 left-4 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-ink shadow-soft backdrop-blur">{p.metric} {p.label}</span>}
+                  <span className="absolute bottom-4 left-4 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-ink shadow-soft backdrop-blur">{p.metric} {p.label}</span>
                 </div>
                 <h3 className="mt-4 font-display text-lg font-semibold tracking-tight text-ink">{p.client}</h3>
                 <p className="mt-1 text-sm text-muted">{p.blurb}</p>
