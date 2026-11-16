@@ -1,9 +1,7 @@
 import { SITE } from '@/lib/site';
+import { buildMetadata } from '@/lib/seo';
 
-export const metadata = {
-  title: 'Privacy Policy',
-  description: 'How Pride Hire collects, uses and protects your personal information.',
-};
+export const metadata = buildMetadata({ title: 'Privacy Policy', description: 'How Pride Hire collects, uses and protects your personal information.', path: '/privacy' });
 
 const UPDATED = 'July 2026';
 

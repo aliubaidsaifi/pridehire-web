@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { absoluteUrl } from '@/lib/markets';
 
 const ICONS = {
   x: <path d="M18.9 2H22l-7 8 8.2 12h-6.4l-5-7.3L5.9 22H2.7l7.5-8.6L2.3 2h6.6l4.5 6.6L18.9 2zm-1.1 18h1.8L7.4 3.9H5.5L17.8 20z" />,
@@ -11,7 +12,7 @@ const ICONS = {
 
 export default function ShareLinks({ title, slug }) {
   const [copied, setCopied] = useState(false);
-  const url = `https://pridehire.com/blog/${slug}`;
+  const url = absoluteUrl(`/blog/${slug}`);
   const t = encodeURIComponent(title);
   const u = encodeURIComponent(url);
 

@@ -2,7 +2,8 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import AuditCTA from '@/components/AuditCTA';
 import { SERVICES, SERVICE_DETAILS, RESULTS, SITE, LANDING } from '@/lib/site';
-import { ServiceSchema, FaqSchema, BreadcrumbSchema } from '@/components/Schema';
+import { ServiceSchema, FaqSchema, BreadcrumbSchema, WebPageSchema } from '@/components/Schema';
+import { buildMetadata } from '@/lib/seo';
 
 
 export function generateStaticParams() {
@@ -14,7 +15,7 @@ export async function generateMetadata({ params }) {
   const s = SERVICES.find((x) => x.slug === slug);
   const d = SERVICE_DETAILS[slug];
   if (!s) return {};
-  return { title: s.title, description: d?.intro || s.outcome };
+  return buildMetadata({ title: s.title, description: d?.intro || s.outcome, path: `/services/${slug}` });
 }
 
 export default async function ServiceDetail({ params }) {
@@ -28,6 +29,7 @@ export default async function ServiceDetail({ params }) {
 
   return (
     <>
+    <WebPageSchema path={`/services/${slug}`} name={s.title} description={d.intro} />
     <ServiceSchema name={s.title} description={d.intro} slug={slug} />
       <FaqSchema faqs={LANDING[slug]?.faqs || []} />
       <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: 'Services', path: '/services' }, { name: s.title, path: `/services/${slug}` }]} />
@@ -109,7 +111,7 @@ export default async function ServiceDetail({ params }) {
                   <div className="absolute inset-0 grid place-items-center">
                     <span className="font-display text-4xl font-semibold tracking-tightest text-ink/80">{r.metric}</span>
                   </div>
-                  <span className="absolute left-4 top-4 rounded-full border border-line bg-white px-3 py-1 text-[11px] font-semibold text-ink">{r.industry}</span>
+                  <span className="absolute start-4 top-4 rounded-full border border-line bg-white px-3 py-1 text-[11px] font-semibold text-ink">{r.industry}</span>
                 </div>
                 <div className="p-6">
                   <h3 className="font-display text-lg font-semibold text-ink">{r.client}</h3>
@@ -127,7 +129,7 @@ export default async function ServiceDetail({ params }) {
             <span className="text-sm font-semibold uppercase tracking-[0.14em] text-muted">Next service</span>
             <span className="flex items-center gap-3 font-display text-xl font-semibold tracking-tight text-ink transition-colors group-hover:text-accent sm:text-3xl">
               {next.title}
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-6 w-6 transition-transform duration-500 ease-expo group-hover:translate-x-1"><path d="M5 12h14M13 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" /></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-6 w-6 transition-transform duration-500 ease-expo ltr:group-hover:translate-x-1 rtl:group-hover:-translate-x-1 rtl:-scale-x-100"><path d="M5 12h14M13 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" /></svg>
             </span>
           </Link>
         </div>

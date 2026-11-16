@@ -3,6 +3,9 @@ import { notFound } from 'next/navigation';
 import AuditCTA from '@/components/AuditCTA';
 import ShareLinks from '@/components/ShareLinks';
 import { getAllPosts, getPost } from '@/lib/blog';
+import { buildMetadata } from '@/lib/seo';
+import { absoluteUrl } from '@/lib/markets';
+import { getLastModified } from '@/lib/content-dates';
 
 const TINTS = ['from-accent/15 to-accent/5', 'from-[#DDEBFF]/70 to-[#DDEBFF]/20', 'from-[#EADFff]/60 to-[#EADFff]/20', 'from-ink/[0.08] to-paper'];
 
@@ -14,19 +17,13 @@ export async function generateMetadata({ params }) {
   const { slug } = await params;
   const post = getPost(slug);
   if (!post) return {};
-  return {
+  return buildMetadata({
     title: post.meta.title,
     description: post.meta.excerpt,
-    alternates: { canonical: `https://pridehire.com/blog/${slug}` },
-    openGraph: {
-      title: post.meta.title,
-      description: post.meta.excerpt,
-      type: 'article',
-      publishedTime: post.meta.date,
-      images: post.meta.image ? [post.meta.image] : undefined,
-    },
-    twitter: { card: 'summary_large_image', title: post.meta.title, description: post.meta.excerpt },
-  };
+    path: `/blog/${slug}`,
+    type: 'article',
+    openGraph: { publishedTime: post.meta.date, ...(post.meta.image ? { images: [post.meta.image] } : {}) },
+  });
 }
 
 export default async function BlogPost({ params }) {
@@ -43,9 +40,10 @@ export default async function BlogPost({ params }) {
     headline: post.meta.title,
     description: post.meta.excerpt,
     datePublished: post.meta.date,
+    dateModified: getLastModified(`/blog/${slug}`),
     author: { '@type': 'Organization', name: 'Pride Hire' },
     publisher: { '@type': 'Organization', name: 'Pride Hire' },
-    mainEntityOfPage: `https://pridehire.com/blog/${slug}`,
+    mainEntityOfPage: absoluteUrl(`/blog/${slug}`),
   };
 
   return (

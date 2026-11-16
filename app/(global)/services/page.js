@@ -2,11 +2,9 @@ import Link from 'next/link';
 import AuditCTA from '@/components/AuditCTA';
 import ServicesList from '@/components/ServicesList';
 import { WHY} from '@/lib/site';
+import { buildMetadata } from '@/lib/seo';
 
-export const metadata = {
-  title: 'Services',
-  description: 'Websites, SEO, Google Ads, Meta Ads and AI automation — everything Auckland businesses need to get more customers.',
-};
+export const metadata = buildMetadata({ title: 'Services', description: 'Websites, SEO, Google Ads, Meta Ads and AI automation — everything a business needs to get more customers.', path: '/services' });
 
 export default function ServicesPage() {
   return (

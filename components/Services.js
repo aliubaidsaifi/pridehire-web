@@ -31,7 +31,7 @@ function Card({ s, i }) {
   const offset = i % 2 === 1 ? 'sm:mt-20' : 'sm:mt-0';
 
   return (
-    <Link href={`/services#${s.slug}`} className={`svc-card group block ${offset}`}>
+    <Link href={`/services/${s.slug}`} className={`svc-card group block ${offset}`}>
 
       {/* ✅ Fix 2: p-4 added — breathing space around image (Cuberto style floating) */}
       <div className="svc-media relative overflow-hidden rounded-[2rem] border border-line bg-paper p-4">
@@ -64,7 +64,7 @@ function Card({ s, i }) {
           />
 
           {/* Arrow button on hover */}
-          <span className="absolute right-4 top-4 grid h-11 w-11 translate-y-1
+          <span className="absolute end-4 top-4 grid h-11 w-11 translate-y-1
                            place-items-center rounded-full bg-white text-ink opacity-0
                            shadow-soft transition-all duration-500 ease-expo
                            group-hover:translate-y-0 group-hover:opacity-100">

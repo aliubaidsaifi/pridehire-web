@@ -69,9 +69,9 @@ export default function Navbar() {
 
           <button type="button" onClick={() => setOpen((v) => !v)} className="grid h-10 w-10 place-items-center rounded-xl border border-line bg-white lg:hidden" aria-label={open ? 'Close menu' : 'Open menu'} aria-expanded={open}>
             <span className="relative block h-3 w-4">
-              <span className={`absolute left-0 block h-0.5 w-4 bg-ink transition-all ${open ? 'top-1.5 rotate-45' : 'top-0'}`} />
-              <span className={`absolute left-0 top-1.5 block h-0.5 w-4 bg-ink transition-all ${open ? 'opacity-0' : 'opacity-100'}`} />
-              <span className={`absolute left-0 block h-0.5 w-4 bg-ink transition-all ${open ? 'top-1.5 -rotate-45' : 'top-3'}`} />
+              <span className={`absolute start-0 block h-0.5 w-4 bg-ink transition-all ${open ? 'top-1.5 rotate-45' : 'top-0'}`} />
+              <span className={`absolute start-0 top-1.5 block h-0.5 w-4 bg-ink transition-all ${open ? 'opacity-0' : 'opacity-100'}`} />
+              <span className={`absolute start-0 block h-0.5 w-4 bg-ink transition-all ${open ? 'top-1.5 -rotate-45' : 'top-3'}`} />
             </span>
           </button>
         </nav>
@@ -90,7 +90,7 @@ export default function Navbar() {
                       <Chevron className={`transition-transform duration-300 ${servicesOpen ? 'rotate-180' : ''}`} />
                     </button>
                     <div className={`overflow-hidden transition-all duration-300 ${servicesOpen ? 'max-h-96' : 'max-h-0'}`}>
-                      <ul className="ml-3 border-l border-line pl-3">
+                      <ul className="ms-3 border-s border-line ps-3">
                         {SERVICES.map((s) => (
                           <li key={s.slug}>
                             <Link href={`/services/${s.slug}`} onClick={() => setOpen(false)}

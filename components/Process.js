@@ -54,10 +54,10 @@ export default function Process() {
           </h2>
         </div>
 
-        <div className="relative mt-16 pl-8 sm:pl-0">
+        <div className="relative mt-16 ps-8 sm:ps-0">
           {/* Rail */}
-          <div className="absolute left-[7px] top-2 h-full w-px bg-line sm:left-1/2 sm:-translate-x-1/2" />
-          <div className="progress-line absolute left-[7px] top-2 h-full w-px origin-top bg-brand-gradient sm:left-1/2 sm:-translate-x-1/2" />
+          <div className="absolute start-[7px] top-2 h-full w-px bg-line sm:left-1/2 sm:-translate-x-1/2" />
+          <div className="progress-line absolute start-[7px] top-2 h-full w-px origin-top bg-brand-gradient sm:left-1/2 sm:-translate-x-1/2" />
 
           <ol className="space-y-12">
             {PROCESS.map((p, i) => (
@@ -68,15 +68,15 @@ export default function Process() {
                 }`}
               >
                 {/* node */}
-                <span className="absolute -left-8 top-1.5 grid h-4 w-4 place-items-center rounded-full border-2 border-white bg-brand-gradient shadow-lift sm:left-1/2 sm:-translate-x-1/2" />
+                <span className="absolute -start-8 top-1.5 grid h-4 w-4 place-items-center rounded-full border-2 border-white bg-brand-gradient shadow-lift sm:left-1/2 sm:-translate-x-1/2" />
 
-                <div className={i % 2 === 0 ? 'sm:text-right sm:pr-12' : 'sm:pl-12'}>
+                <div className={i % 2 === 0 ? 'sm:text-end sm:pe-12' : 'sm:ps-12'}>
                   <span className="font-display text-sm font-semibold text-brand-violet">
                     {String(i + 1).padStart(2, '0')}
                   </span>
                   <h3 className="mt-1 font-display text-xl font-semibold text-ink">{p.step}</h3>
                 </div>
-                <div className={i % 2 === 0 ? 'sm:pl-12' : 'sm:text-right sm:pr-12'}>
+                <div className={i % 2 === 0 ? 'sm:ps-12' : 'sm:text-end sm:pe-12'}>
                   <p className="mt-1 max-w-sm text-sm leading-relaxed text-muted sm:inline-block">
                     {p.body}
                   </p>

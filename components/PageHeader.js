@@ -3,7 +3,7 @@ export default function PageHeader({ eyebrow, title, subtitle }) {
     <section className="relative overflow-hidden bg-soft-radial pt-36 pb-16 sm:pt-44 sm:pb-20">
       <div
         aria-hidden
-        className="pointer-events-none absolute -left-24 top-16 h-64 w-64 rounded-full bg-brand-violet/15 blur-[110px]"
+        className="pointer-events-none absolute -start-24 top-16 h-64 w-64 rounded-full bg-brand-violet/15 blur-[110px]"
       />
       <div className="container-px">
         {eyebrow && <span className="eyebrow">{eyebrow}</span>}

@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { SITE } from '@/lib/site';
+import { waLink } from '@/lib/markets';
 import { track } from '@/lib/track';
 
 const input = 'w-full rounded-xl border border-line bg-paper px-4 py-3 text-[0.95rem] text-ink placeholder:text-ink/40 outline-none transition focus:border-accent focus:ring-4 focus:ring-accent/10';
@@ -42,7 +43,7 @@ export default function LeadForm({ service = '' }) {
           <div className="mx-auto grid h-16 w-16 place-items-center rounded-2xl bg-accent text-3xl text-white">✓</div>
           <h3 className="mt-5 font-display text-2xl font-semibold text-ink">Thank you, {f.name.split(' ')[0]}!</h3>
           <p className="mt-2 text-pretty text-muted">We’ve received your enquiry and will get back to you within one business day. For anything urgent, WhatsApp us anytime.</p>
-          <a href={`https://wa.me/${SITE.whatsapp}`} target="_blank" rel="noopener noreferrer" className="btn-primary mt-6">Message us on WhatsApp</a>
+          <a href={waLink()} target="_blank" rel="noopener noreferrer" className="btn-primary mt-6">Message us on WhatsApp</a>
         </div>
       </div>
     );

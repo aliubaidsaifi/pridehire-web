@@ -1,7 +1,8 @@
 import AuditCTA from '@/components/AuditCTA';
 import PortfolioGrid from '@/components/PortfolioGrid';
+import { buildMetadata } from '@/lib/seo';
 
-export const metadata = { title: 'Portfolio', description: 'Our work — websites, applications and branding built to grow real businesses.' };
+export const metadata = buildMetadata({ title: 'Portfolio', description: 'Our work — websites, applications and branding built to grow real businesses.', path: '/portfolio' });
 
 export default function PortfolioPage() {
   return (

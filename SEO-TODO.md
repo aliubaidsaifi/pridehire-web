@@ -1,0 +1,23 @@
+# SEO placeholders and open items
+
+Every value below is a clearly-marked placeholder in code (`grep -rn "TODO(" lib app components`). Nothing here was invented.
+
+| Where | Placeholder | Needs |
+|---|---|---|
+| `lib/site.js` `SITE.calendly` | `https://calendly.com/pridehire/free-consultation` returns 404 | Correct Calendly URL (used by `components/ContactClient.js`: iframe, card link, button) |
+| `lib/markets.js` `ORG.address` | Only `addressCountry: 'IN'` is emitted in schema | Full real registered Indian address (street, locality, region, postal code) |
+| `lib/markets.js` `ORG.officeLabel/addressDisplay` | Footer still prints "India (Head Office) / Delhi NCR / Remote Delivery Worldwide" (kept byte-for-byte, no visible change) | Same real address; then replace |
+| `lib/markets.js` `sa.phone`, `sa.whatsapp` | `null` — Saudi pages fall back to the global number | Saudi number when it arrives. Until set, no Saudi `contactPoint` is emitted |
+| `lib/markets.js` `sa.businessHours`, `global.businessHours` | Days set, times `null` | Real hours; must match Calendly settings (Sun–Thu / AST must be configured IN Calendly, not in code) |
+| `lib/markets.js` `sa.availableLanguage` | `['English','Arabic']` | Confirm Arabic is actually offered |
+| `lib/markets.js` `global.currency` | `null` | Currency for the global audience |
+| `lib/markets.js` `ORG.ogImagePath` | `/public/og-image.png` does not exist — every social share preview currently 404s | Create a 1200x630 image |
+| `lib/markets.js` `ORG.sameAs` | LinkedIn only | Add other profiles only when real. Footer Instagram icon still links to `#` (visible UI, left alone) |
+| `lib/lastmod.generated.json` | Real dates from git history | Commit it after each content change (see `scripts/lastmod.js`) |
+
+## Manual steps outside the code
+- **Calendly**: fix the URL; set working days/hours/timezone there (Sun–Thu, AST for Saudi) — cannot be done in code.
+- **Vercel → Domains**: confirm apex→www is a permanent redirect and that `http://` upgrades to `https://` in one hop.
+- **Search Console**: add the `www` URL-prefix property (and Domain property); submit `https://www.pridehire.com/sitemap.xml`; use URL Inspection on `/`; check the Pages report for the four restored portfolio URLs.
+- **Rich Results Test / Schema validator**: run on `/`, `/services/seo`, a blog post (only a structural local check was possible offline).
+- **Enable `experimental.globalNotFound`** is on (Next 16.2.10): re-check on Next upgrades.

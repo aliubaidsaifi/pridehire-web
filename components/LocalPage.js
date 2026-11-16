@@ -1,17 +1,18 @@
-'use client';
-
 import Link from 'next/link';
-import { PROCESS, SITE } from '@/lib/site';
+import { PROCESS, SITE, LOCAL_PAGE_DEFAULTS } from '@/lib/site';
 import FAQ from '@/components/FAQ';
 
+// Server component. Page-specific strings come from `page` (falling back to LOCAL_PAGE_DEFAULTS); `page.faqs` overrides the shared FAQ.
 export default function LocalPage({ page }) {
+  const eyebrow = page.eyebrow ?? LOCAL_PAGE_DEFAULTS.eyebrow;
+  const whyBody = page.whyBody ?? LOCAL_PAGE_DEFAULTS.whyBody;
   return (
     <>
       {/* Hero */}
       <section className="relative overflow-hidden pt-32 sm:pt-40">
         <div aria-hidden className="bg-grid bg-grid-fade pointer-events-none absolute inset-x-0 top-0 h-[420px]" />
         <div className="container-px relative pb-14 sm:pb-20">
-          <span className="eyebrow">Auckland · New Zealand</span>
+          <span className="eyebrow">{eyebrow}</span>
           <h1 className="mt-5 max-w-3xl text-balance font-display text-4xl font-semibold leading-[1.05] tracking-tightest text-ink sm:text-6xl">
             {page.h1}
           </h1>
@@ -46,10 +47,7 @@ export default function LocalPage({ page }) {
           <div>
             <span className="eyebrow">Why choose us</span>
             <h2 className="mt-4 font-display text-3xl font-semibold tracking-tightest text-ink sm:text-5xl">Honest, local, results-focused</h2>
-            <p className="mt-4 text-pretty leading-relaxed text-muted">
-              We&apos;re an Auckland-based team that tells you the truth: what will work, what won&apos;t,
-              and what it should cost. No lock-in contracts — you own your website, domain and accounts.
-            </p>
+            <p className="mt-4 text-pretty leading-relaxed text-muted">{whyBody}</p>
           </div>
           <ul className="grid gap-3">
             {['Free 24-hour audit before any commitment', 'Fixed, transparent quotes', 'No lock-in contracts — ever', 'Reporting in plain English'].map((t) => (
@@ -77,7 +75,7 @@ export default function LocalPage({ page }) {
         </div>
       </section>
 
-      <FAQ />
+      <FAQ faqs={page.faqs} />
 
       {/* CTA */}
       <section className="pb-24 sm:pb-32">

@@ -2,11 +2,9 @@ import Link from 'next/link';
 import AuditCTA from '@/components/AuditCTA';
 import { WHY } from '@/lib/site';
 import CompanyMedia from '@/components/CompanyMedia';
+import { buildMetadata } from '@/lib/seo';
 
-export const metadata = {
-  title: 'Company',
-  description: 'Pride Hire is a small, honest digital team helping businesses grow with high-converting websites, SEO and Google Ads.',
-};
+export const metadata = buildMetadata({ title: 'Company', description: 'Pride Hire is a small, honest digital team helping businesses grow with high-converting websites, SEO and Google Ads.', path: '/about' });
 
 const STATS = [
   { value: '40+', label: 'projects delivered' },

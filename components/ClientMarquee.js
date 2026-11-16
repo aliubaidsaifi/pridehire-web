@@ -32,6 +32,12 @@ export default function ClientMarquee() {
           from { transform: translateX(0); }
           to { transform: translateX(-50%); }
         }
+        /* RTL: the track starts at the right edge, so it must travel the other way. */
+        @keyframes marquee-rtl {
+          from { transform: translateX(0); }
+          to { transform: translateX(50%); }
+        }
+        :global([dir='rtl']) .marquee-track { animation-name: marquee-rtl; }
         @media (prefers-reduced-motion: reduce) {
           .marquee-track { animation: none; }
         }

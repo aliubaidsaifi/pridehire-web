@@ -41,7 +41,7 @@ function ReviewForm({ onClose }) {
     <div className="fixed inset-0 z-50 flex items-end justify-center sm:items-center" role="dialog" aria-modal="true">
       <div className="absolute inset-0 bg-ink/40 backdrop-blur-sm" onClick={onClose} />
       <div className="relative m-0 w-full max-w-lg rounded-t-4xl border border-line bg-white p-7 shadow-lift sm:m-5 sm:rounded-4xl sm:p-9">
-        <button type="button" onClick={onClose} aria-label="Close" className="absolute right-5 top-5 grid h-9 w-9 place-items-center rounded-full border border-line text-ink hover:bg-paper">
+        <button type="button" onClick={onClose} aria-label="Close" className="absolute end-5 top-5 grid h-9 w-9 place-items-center rounded-full border border-line text-ink hover:bg-paper">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-4 w-4"><path d="M6 6l12 12M18 6L6 18" strokeLinecap="round" /></svg>
         </button>
 
@@ -110,7 +110,7 @@ export default function Reviews() {
   return (
     <section className="relative overflow-hidden bg-paper py-16 sm:py-28"
       onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)}>
-      <div aria-hidden className="pointer-events-none absolute -left-32 top-1/2 h-[420px] w-[420px] -translate-y-1/2 rounded-full bg-accent/[0.07] blur-[120px]" />
+      <div aria-hidden className="pointer-events-none absolute -start-32 top-1/2 h-[420px] w-[420px] -translate-y-1/2 rounded-full bg-accent/[0.07] blur-[120px]" />
 
       <div className="container-px relative grid gap-12 lg:grid-cols-[0.75fr_1.25fr] lg:gap-16">
         <div className="lg:sticky lg:top-28 lg:self-start">
@@ -126,7 +126,7 @@ export default function Reviews() {
         </div>
 
         <div className="relative">
-          <span aria-hidden className="pointer-events-none absolute -left-2 -top-10 font-display text-[9rem] leading-none text-accent/15 sm:-left-6 sm:-top-16 sm:text-[13rem]">&ldquo;</span>
+          <span aria-hidden className="pointer-events-none absolute -start-2 -top-10 font-display text-[9rem] leading-none text-accent/15 sm:-start-6 sm:-top-16 sm:text-[13rem]">&ldquo;</span>
 
           <blockquote key={i} className="rev-fade relative min-h-[260px] sm:min-h-[300px]">
             <p className="text-balance font-display text-2xl font-medium leading-[1.3] tracking-tight text-ink sm:text-4xl">
@@ -177,6 +177,8 @@ export default function Reviews() {
         @keyframes revFade { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
         .rev-fade { animation: revFade 0.7s cubic-bezier(0.16, 1, 0.3, 1) both; }
         @keyframes revProgress { from { transform: translateX(-100%); } to { transform: translateX(0); } }
+        @keyframes revProgressRtl { from { transform: translateX(100%); } to { transform: translateX(0); } }
+        :global([dir='rtl']) .rev-progress { animation-name: revProgressRtl; }
         .rev-progress { animation: revProgress ${AUTOPLAY}ms linear both; }
         .rev-progress.is-paused { animation-play-state: paused; }
         @media (prefers-reduced-motion: reduce) {

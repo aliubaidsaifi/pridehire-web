@@ -37,7 +37,7 @@ export default function BlogPreview() {
                   <img src={p.image} alt={p.title} loading="lazy"
                     className="absolute inset-0 h-full w-full object-cover transition-transform duration-[900ms] ease-expo group-hover:scale-[1.05]" />
                 )}
-                <span className="absolute right-4 top-4 grid h-11 w-11 translate-y-1 place-items-center rounded-full bg-white text-ink opacity-0 shadow-soft transition-all duration-500 ease-expo group-hover:translate-y-0 group-hover:opacity-100">
+                <span className="absolute end-4 top-4 grid h-11 w-11 translate-y-1 place-items-center rounded-full bg-white text-ink opacity-0 shadow-soft transition-all duration-500 ease-expo group-hover:translate-y-0 group-hover:opacity-100">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-4 w-4"><path d="M7 17L17 7M9 7h8v8" strokeLinecap="round" strokeLinejoin="round" /></svg>
                 </span>
               </div>
@@ -50,7 +50,7 @@ export default function BlogPreview() {
                   <span className="text-muted">{p.readTime}</span>
                 </div>
 
-                <h3 className="mt-3 text-balance font-display text-2xl font-semibold leading-tight tracking-tight text-ink transition-all duration-500 ease-expo group-hover:translate-x-1 group-hover:text-accent sm:text-4xl">
+                <h3 className="mt-3 text-balance font-display text-2xl font-semibold leading-tight tracking-tight text-ink transition-all duration-500 ease-expo ltr:group-hover:translate-x-1 rtl:group-hover:-translate-x-1 rtl:-scale-x-100 group-hover:text-accent sm:text-4xl">
                   {p.title}
                 </h3>
 
@@ -58,7 +58,7 @@ export default function BlogPreview() {
 
                 <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-ink">
                   Read article
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-4 w-4 transition-transform duration-500 ease-expo group-hover:translate-x-1">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-4 w-4 transition-transform duration-500 ease-expo ltr:group-hover:translate-x-1 rtl:group-hover:-translate-x-1 rtl:-scale-x-100">
                     <path d="M5 12h14M13 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </span>

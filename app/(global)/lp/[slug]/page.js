@@ -3,6 +3,7 @@ import LpNav from '@/components/LpNav';
 import LeadForm from '@/components/LeadForm';
 import LpProjectImg from '@/components/LpProjectImg';
 import { LANDING, SERVICE_DETAILS, RESULTS, REVIEWS, SITE } from '@/lib/site';
+import { contactFor, waLink, telLink } from '@/lib/markets';
 import { FaqSchema } from '@/components/Schema';
 
 const TINTS = ['from-[#4b3df5] to-[#7c6cff]', 'from-[#0f172a] to-[#334155]', 'from-accent to-[#f5a58f]', 'from-[#1e40af] to-[#3b82f6]', 'from-[#111113] to-[#3f3f46]', 'from-[#7c3aed] to-[#c084fc]'];
@@ -40,7 +41,7 @@ export default async function LandingPage({ params }) {
 
       <section className="relative overflow-hidden pt-14 sm:pt-20">
         <div aria-hidden className="bg-grid bg-grid-fade pointer-events-none absolute inset-x-0 top-0 h-[520px]" />
-        <div aria-hidden className="pointer-events-none absolute -right-32 top-10 h-[380px] w-[420px] rounded-full bg-accent/[0.08] blur-[120px]" />
+        <div aria-hidden className="pointer-events-none absolute -end-32 top-10 h-[380px] w-[420px] rounded-full bg-accent/[0.08] blur-[120px]" />
         <div className="container-px relative grid items-start gap-12 pb-14 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16 lg:pb-20">
           <div className="lg:pt-8">
             <span className="eyebrow">{lp.badge}</span>
@@ -108,7 +109,7 @@ export default async function LandingPage({ params }) {
                   <div className="absolute inset-0 grid place-items-center p-6">
                    <LpProjectImg src={p.image} alt={p.client} />
                   </div>
-                  <span className="absolute bottom-4 left-4 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-ink shadow-soft backdrop-blur">{p.metric} {p.label}</span>
+                  <span className="absolute bottom-4 start-4 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-ink shadow-soft backdrop-blur">{p.metric} {p.label}</span>
                 </div>
                 <h3 className="mt-4 font-display text-lg font-semibold tracking-tight text-ink">{p.client}</h3>
                 <p className="mt-1 text-sm text-muted">{p.blurb}</p>
@@ -150,7 +151,7 @@ export default async function LandingPage({ params }) {
             <span className="eyebrow">FAQ</span>
             <h2 className="mt-4 font-display text-3xl font-semibold tracking-tightest text-ink sm:text-4xl">Common questions</h2>
             <p className="mt-4 text-muted">Still unsure? Message us on WhatsApp — we reply fast.</p>
-            <a href={`https://wa.me/${SITE.whatsapp}`} target="_blank" rel="noopener noreferrer" className="btn-ghost mt-6">Ask on WhatsApp</a>
+            <a href={waLink()} target="_blank" rel="noopener noreferrer" className="btn-ghost mt-6">Ask on WhatsApp</a>
           </div>
           <div className="divide-y divide-line border-y border-line">
             {lp.faqs.map((item) => (
@@ -172,9 +173,9 @@ export default async function LandingPage({ params }) {
             <h2 className="font-display text-3xl font-semibold tracking-tightest sm:text-5xl">Ready to grow your business?</h2>
             <p className="mt-5 max-w-md text-pretty text-lg leading-relaxed text-white/70">Get a free quote today. No obligation, no pressure — just honest advice on what will actually work for you.</p>
             <div className="mt-8 space-y-3 text-sm text-white/80">
-              <a href={`tel:${SITE.phone}`} className="flex items-center gap-3 hover:text-white"><span className="text-accent">Phone</span> {SITE.phone}</a>
+              <a href={telLink()} className="flex items-center gap-3 hover:text-white"><span className="text-accent">Phone</span> {contactFor().phone}</a>
               <a href={`mailto:${SITE.contactEmail}`} className="flex items-center gap-3 hover:text-white"><span className="text-accent">Email</span> {SITE.contactEmail}</a>
-              <a href={`https://wa.me/${SITE.whatsapp}`} className="flex items-center gap-3 hover:text-white"><span className="text-accent">WhatsApp</span> Chat with us</a>
+              <a href={waLink()} className="flex items-center gap-3 hover:text-white"><span className="text-accent">WhatsApp</span> Chat with us</a>
             </div>
           </div>
           <LeadForm service={lp.badge} />

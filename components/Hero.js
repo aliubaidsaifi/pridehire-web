@@ -55,7 +55,7 @@ export default function Hero() {
       {/* subject-tied background glyph, replaces generic blur blob */}
       <div
         aria-hidden
-        className="pointer-events-none absolute -right-16 top-4 select-none font-display text-[26rem] font-semibold leading-none text-ink/[0.03]"
+        className="pointer-events-none absolute -end-16 top-4 select-none font-display text-[26rem] font-semibold leading-none text-ink/[0.03]"
       >
         {'</>'}
       </div>
@@ -84,7 +84,7 @@ export default function Hero() {
           {/* trust row: editorial divider list instead of default stat-card grid */}
           {/* <div className="mt-10 flex flex-wrap items-center divide-x divide-line">
             {TRUST.map((t) => (
-              <div key={t.label} data-r="trust" className="flex flex-col gap-0.5 px-4 first:pl-0">
+              <div key={t.label} data-r="trust" className="flex flex-col gap-0.5 px-4 first:ps-0">
                 <span className="flex items-baseline gap-1 font-display text-xl font-semibold tracking-tight text-ink">
                   {t.value}{t.star && <span className="text-accent">★</span>}
                 </span>
@@ -107,25 +107,20 @@ export default function Hero() {
               src="/hero-photo.webp"
               alt="Our team building premium digital experiences"
               className="absolute inset-0 h-full w-full object-cover object-center"
-              onError={(e) => { e.currentTarget.parentElement.classList.add('show-ph'); e.currentTarget.style.display = 'none'; }}
             />
             {/* duotone overlay ties the photo to the accent palette */}
             <div aria-hidden className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/55 via-ink/0 to-accent/10 mix-blend-multiply" />
             <div aria-hidden className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_70%_20%,theme(colors.accent/25%),transparent_55%)]" />
 
-            <div className="hero-ph absolute inset-0 hidden flex-col items-center justify-center gap-3 bg-gradient-to-br from-paper to-white text-center">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2" className="h-14 w-14 text-ink/25"><rect x="3" y="3" width="18" height="18" rx="3" /><circle cx="8.5" cy="8.5" r="1.5" /><path d="M21 15l-5-5L5 21" strokeLinecap="round" strokeLinejoin="round" /></svg>
-              <p className="max-w-[200px] text-sm text-muted">Add <code className="rounded bg-ink/5 px-1.5 py-0.5 text-xs text-ink">/public/hero-photo.webp</code></p>
-            </div>
           </div>
 
           {/* signature element: a browser-chrome card — ties the "ranked on Google" claim to the agency's own medium (the web) instead of a generic badge */}
-          <div data-r="chrome" className="absolute -bottom-0 left-1/2 w-[92%] -translate-x-1/2 overflow-hidden rounded-xl border border-line bg-white shadow-lift lg:-bottom-7 lg:left-6 lg:w-72 lg:translate-x-0">
+          <div data-r="chrome" className="absolute -bottom-0 left-1/2 w-[92%] -translate-x-1/2 overflow-hidden rounded-xl border border-line bg-white shadow-lift lg:-bottom-7 lg:start-6 lg:w-72 lg:translate-x-0">
             <div className="flex items-center gap-1.5 border-b border-line bg-paper px-3 py-2">
               <span className="h-2 w-2 rounded-full bg-ink/15" />
               <span className="h-2 w-2 rounded-full bg-ink/15" />
               <span className="h-2 w-2 rounded-full bg-ink/15" />
-              <span className="ml-2 flex-1 truncate rounded-md bg-white px-2 py-0.5 text-[10px] text-muted transition-opacity duration-300">
+              <span className="ms-2 flex-1 truncate rounded-md bg-white px-2 py-0.5 text-[10px] text-muted transition-opacity duration-300">
                 google.com/search?q={queries[queryIdx]}
               </span>
             </div>
@@ -134,7 +129,7 @@ export default function Hero() {
                 <div className="text-[10px] uppercase tracking-wide text-muted">Search ranking</div>
                 <div className="font-display text-base font-semibold text-ink">#1 result</div>
               </div>
-              <div className="text-right">
+              <div className="text-end">
                 <div className="text-[10px] uppercase tracking-wide text-muted">Leads, 30d</div>
                 <div className="font-display text-base font-semibold text-accent">+42%</div>
               </div>
@@ -143,9 +138,6 @@ export default function Hero() {
         </div>
       </div>
 
-      <style jsx>{`
-        :global([data-r="photo"] .show-ph .hero-ph) { display: flex; }
-      `}</style>
     </section>
   );
 }

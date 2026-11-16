@@ -1,44 +1,16 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import { TRUST_STATS, TRUST_BADGES } from '@/lib/site';
 import { gsap, ScrollTrigger, registerGsap } from '@/animations/scrollAnimations';
 
-function parseValue(v) {
-  const m = String(v).match(/^(\D*)(\d+(?:\.\d+)?)(\D*)$/);
-  if (!m) return { prefix: '', num: null, suffix: '', raw: v };
-  const dec = m[2].includes('.') ? m[2].split('.')[1].length : 0;
-  return { prefix: m[1], num: parseFloat(m[2]), suffix: m[3], dec };
-}
-
+// Rendered as static text so the value is in the server HTML (a JS counter shows "0" to crawlers and AI engines).
 function Stat({ s }) {
-  const ref = useRef(null);
-  const [display, setDisplay] = useState('0');
-  const parsed = parseValue(s.value);
-
-  useEffect(() => {
-    const el = ref.current; if (!el) return;
-    if (parsed.num === null || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      setDisplay(s.value); return;
-    }
-    const obj = { n: 0 };
-    const st = ScrollTrigger.create({
-      trigger: el, start: 'top 90%', once: true,
-      onEnter: () => {
-        gsap.to(obj, {
-          n: parsed.num, duration: 1.6, ease: 'expo.out',
-          onUpdate: () => setDisplay(`${parsed.prefix}${obj.n.toFixed(parsed.dec)}${parsed.suffix}`),
-        });
-      },
-    });
-    return () => st.kill();
-  }, [s.value]);
-
   return (
-    <div ref={ref} className="trust-item text-center">
+    <div className="trust-item text-center">
       <div className="font-display text-4xl font-semibold tracking-tightest text-ink sm:text-5xl">
-        {parsed.num === null ? s.value : display}
-        {s.star && <span className="ml-1 text-accent">★</span>}
+        {s.value}
+        {s.star && <span className="ms-1 text-accent">★</span>}
       </div>
       <div className="mt-2 text-xs font-medium uppercase tracking-[0.12em] text-muted sm:text-sm">{s.label}</div>
     </div>

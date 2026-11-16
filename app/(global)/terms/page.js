@@ -1,9 +1,7 @@
 import { SITE } from '@/lib/site';
+import { buildMetadata } from '@/lib/seo';
 
-export const metadata = {
-  title: 'Terms of Service',
-  description: 'The terms that apply when you use the Pride Hire website and our services.',
-};
+export const metadata = buildMetadata({ title: 'Terms of Service', description: 'The terms that apply when you use the Pride Hire website and our services.', path: '/terms' });
 
 const UPDATED = 'July 2026';
 

@@ -19,13 +19,13 @@ function Card({ p }) {
 
         <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-black/25 to-transparent opacity-70" />
 
-        <span className="absolute left-4 top-4 inline-flex items-baseline gap-1.5 rounded-full bg-white/95 px-3.5 py-1.5 shadow-soft backdrop-blur">
+        <span className="absolute start-4 top-4 inline-flex items-baseline gap-1.5 rounded-full bg-white/95 px-3.5 py-1.5 shadow-soft backdrop-blur">
           <span className="font-display text-sm font-semibold text-ink">{p.metric}</span>
           <span className="text-[11px] text-muted">{p.label}</span>
         </span>
 
         {p.category && (
-          <span className="absolute right-4 top-4 rounded-full bg-ink/75 px-3 py-1 text-[11px] font-semibold text-white backdrop-blur">{p.category}</span>
+          <span className="absolute end-4 top-4 rounded-full bg-ink/75 px-3 py-1 text-[11px] font-semibold text-white backdrop-blur">{p.category}</span>
         )}
 
         <div className="absolute inset-x-0 bottom-0 translate-y-full bg-gradient-to-t from-ink via-ink/95 to-transparent p-6 pt-16 transition-transform duration-500 ease-expo group-hover:translate-y-0">
@@ -47,7 +47,7 @@ function Card({ p }) {
           <span className="text-[11px] font-semibold uppercase tracking-[0.14em] text-accent">{p.tag}</span>
           <h3 className="mt-1 truncate font-display text-lg font-semibold tracking-tight text-ink">{p.client}</h3>
         </div>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-5 w-5 shrink-0 text-muted transition-transform duration-500 ease-expo group-hover:translate-x-1"><path d="M5 12h14M13 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" /></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-5 w-5 shrink-0 text-muted transition-transform duration-500 ease-expo ltr:group-hover:translate-x-1 rtl:group-hover:-translate-x-1 rtl:-scale-x-100"><path d="M5 12h14M13 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" /></svg>
       </div>
     </Link>
   );

@@ -19,7 +19,7 @@ function Card({ p, i }) {
           <img src={p.image} alt={p.title} loading="lazy"
             className="absolute inset-0 h-full w-full object-cover transition-transform duration-[900ms] ease-expo group-hover:scale-[1.04]" />
         )}
-        <span className="absolute right-5 top-5 grid h-11 w-11 translate-y-1 place-items-center rounded-full bg-white text-ink opacity-0 shadow-soft transition-all duration-500 ease-expo group-hover:translate-y-0 group-hover:opacity-100">
+        <span className="absolute end-5 top-5 grid h-11 w-11 translate-y-1 place-items-center rounded-full bg-white text-ink opacity-0 shadow-soft transition-all duration-500 ease-expo group-hover:translate-y-0 group-hover:opacity-100">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-4 w-4"><path d="M7 17L17 7M9 7h8v8" strokeLinecap="round" strokeLinejoin="round" /></svg>
         </span>
       </div>
@@ -56,7 +56,7 @@ export default function BlogGrid({ posts = [] }) {
             <button key={c} type="button" onClick={() => setActive(c)}
               className={`relative font-display text-base font-semibold tracking-tight transition-colors sm:text-lg ${active === c ? 'text-ink' : 'text-muted hover:text-ink'}`}>
               {c}
-              <span className={`absolute -bottom-[7px] left-0 h-0.5 w-full origin-left rounded-full bg-accent transition-transform duration-500 ease-expo ${active === c ? 'scale-x-100' : 'scale-x-0'}`} />
+              <span className={`absolute -bottom-[7px] start-0 h-0.5 w-full ltr:origin-left rtl:origin-right rounded-full bg-accent transition-transform duration-500 ease-expo ${active === c ? 'scale-x-100' : 'scale-x-0'}`} />
             </button>
           ))}
         </div>

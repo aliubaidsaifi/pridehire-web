@@ -46,7 +46,7 @@ export default function Testimonials() {
         <div className="mt-10 flex items-center gap-3">
           <NavBtn dir="prev" onClick={() => go(active - 1)} />
           <NavBtn dir="next" onClick={() => go(active + 1)} />
-          <div className="ml-2 flex items-center gap-2">
+          <div className="ms-2 flex items-center gap-2">
             {TESTIMONIALS.map((x, i) => (
               <button key={x.name} onClick={() => setActive(i)} aria-label={`Show testimonial ${i + 1}`} aria-current={i === active}
                 className={`h-1.5 rounded-full transition-all duration-500 ease-expo ${i === active ? 'w-8 bg-brand-gradient' : 'w-3 bg-line hover:bg-ink/20'}`} />

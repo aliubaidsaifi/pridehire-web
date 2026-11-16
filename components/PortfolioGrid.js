@@ -32,11 +32,11 @@ function Card({ p, i }) {
           />
         </div>
 
-        <span className="absolute bottom-4 left-4 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold tracking-tight text-ink shadow-soft backdrop-blur">
+        <span className="absolute bottom-4 start-4 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold tracking-tight text-ink shadow-soft backdrop-blur">
           {p.metric} {p.label}
         </span>
 
-        <span className="absolute right-4 top-4 grid h-11 w-11 translate-y-1 place-items-center rounded-full bg-white text-ink opacity-0 shadow-soft transition-all duration-500 ease-expo group-hover:translate-y-0 group-hover:opacity-100">
+        <span className="absolute end-4 top-4 grid h-11 w-11 translate-y-1 place-items-center rounded-full bg-white text-ink opacity-0 shadow-soft transition-all duration-500 ease-expo group-hover:translate-y-0 group-hover:opacity-100">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-4 w-4"><path d="M7 17L17 7M9 7h8v8" strokeLinecap="round" strokeLinejoin="round" /></svg>
         </span>
       </div>
@@ -80,7 +80,7 @@ export default function PortfolioGrid() {
             <button key={cat} type="button" onClick={() => setActive(cat)}
               className={`relative font-display text-base font-semibold tracking-tight transition-colors sm:text-lg ${active === cat ? 'text-ink' : 'text-muted hover:text-ink'}`}>
               {cat}
-              <span className={`absolute -bottom-[7px] left-0 h-0.5 w-full origin-left rounded-full bg-accent transition-transform duration-500 ease-expo ${active === cat ? 'scale-x-100' : 'scale-x-0'}`} />
+              <span className={`absolute -bottom-[7px] start-0 h-0.5 w-full ltr:origin-left rtl:origin-right rounded-full bg-accent transition-transform duration-500 ease-expo ${active === cat ? 'scale-x-100' : 'scale-x-0'}`} />
             </button>
           ))}
         </div>

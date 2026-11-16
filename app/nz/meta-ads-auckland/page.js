@@ -1,14 +1,11 @@
 import LocalPage from '@/components/LocalPage';
 import { LOCAL_PAGES } from '@/lib/site';
+import { buildMetadata } from '@/lib/seo';
 
 const page = LOCAL_PAGES.find((p) => p.slug === 'meta-ads-auckland');
+const PATH = '/nz/meta-ads-auckland';
 
-export const metadata = {
-  title: page.title,
-  description: page.intro,
-  keywords: page.keywords,
-  alternates: { canonical: 'https://pridehire.com/meta-ads-auckland' },
-};
+export const metadata = buildMetadata({ title: page.title, description: page.intro, path: PATH, market: 'nz' });
 
 export default function Page() {
   return <LocalPage page={page} />;

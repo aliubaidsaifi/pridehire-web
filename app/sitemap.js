@@ -1,10 +1,13 @@
-import { SERVICES, RESULTS } from '@/lib/site';
+import { SERVICES, RESULTS, LOCAL_PAGES } from '@/lib/site';
 import { getAllPosts } from '@/lib/blog';
+import { absoluteUrl, getMarket } from '@/lib/markets';
+import { hreflangFor } from '@/lib/seo';
+import { getLastModified } from '@/lib/content-dates';
 
-const BASE = 'https://pridehire.com';
-
+// Emits ONLY final, canonical-host (www) URLs — nothing here redirects. lastmod is a real content date or omitted
+// (never the build time). Every entry carries the hreflang alternates (self + any live locale equivalents) from lib/locale-pages.js.
 const STATIC = [
-  { path: '', priority: 1, freq: 'weekly' },
+  { path: '/', priority: 1, freq: 'weekly' },
   { path: '/services', priority: 0.9, freq: 'monthly' },
   { path: '/portfolio', priority: 0.8, freq: 'monthly' },
   { path: '/about', priority: 0.7, freq: 'monthly' },
@@ -15,38 +18,23 @@ const STATIC = [
   { path: '/terms', priority: 0.3, freq: 'yearly' },
 ];
 
+function entry({ path, priority, freq, market = 'global', locale = 'en', images }) {
+  const lastModified = getLastModified(path);
+  return {
+    url: absoluteUrl(path),
+    ...(lastModified ? { lastModified } : {}),
+    changeFrequency: freq,
+    priority,
+    alternates: { languages: hreflangFor({ market, locale, path }) },
+    ...(images ? { images } : {}),
+  };
+}
+
 export default function sitemap() {
-  const now = new Date();
-
-  const staticPages = STATIC.map((r) => ({
-    url: `${BASE}${r.path}`,
-    lastModified: now,
-    changeFrequency: r.freq,
-    priority: r.priority,
-  }));
-
-  const servicePages = SERVICES.map((s) => ({
-    url: `${BASE}/services/${s.slug}`,
-    lastModified: now,
-    changeFrequency: 'monthly',
-    priority: 0.8,
-  }));
-
-  const projectPages = RESULTS.map((p) => ({
-    url: `${BASE}/portfolio/${p.slug}`,
-    lastModified: now,
-    changeFrequency: 'monthly',
-    priority: 0.7,
-    images: p.image ? [`${BASE}${p.image}`] : undefined,
-  }));
-
-  const blogPosts = getAllPosts().map((p) => ({
-    url: `${BASE}/blog/${p.slug}`,
-    lastModified: p.date ? new Date(p.date) : now,
-    changeFrequency: 'monthly',
-    priority: 0.6,
-    images: p.image ? [`${BASE}${p.image}`] : undefined,
-  }));
-
-  return [...staticPages, ...servicePages, ...projectPages, ...blogPosts];
+  const staticPages = STATIC.map((r) => entry(r));
+  const servicePages = SERVICES.map((s) => entry({ path: `/services/${s.slug}`, priority: 0.8, freq: 'monthly' }));
+  const projectPages = RESULTS.map((p) => entry({ path: `/portfolio/${p.slug}`, priority: 0.7, freq: 'monthly', images: p.image ? [absoluteUrl(p.image)] : undefined }));
+  const nzPages = getMarket('nz').live ? LOCAL_PAGES.map((p) => entry({ path: `/nz/${p.slug}`, priority: 0.4, freq: 'yearly', market: 'nz' })) : [];
+  const blogPosts = getAllPosts().map((p) => entry({ path: `/blog/${p.slug}`, priority: 0.6, freq: 'monthly', images: p.image ? [absoluteUrl(p.image)] : undefined }));
+  return [...staticPages, ...servicePages, ...projectPages, ...blogPosts, ...nzPages];
 }

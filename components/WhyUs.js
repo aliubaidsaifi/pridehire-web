@@ -57,9 +57,9 @@ export default function WhyUs() {
           </p>
         </div>
 
-        <div className="why-list relative pl-6 sm:pl-8">
-          <span aria-hidden className="absolute left-0 top-0 h-full w-px bg-line" />
-          <span aria-hidden className="why-progress absolute left-0 top-0 h-full w-[2px] origin-top bg-accent" />
+        <div className="why-list relative ps-6 sm:ps-8">
+          <span aria-hidden className="absolute start-0 top-0 h-full w-px bg-line" />
+          <span aria-hidden className="why-progress absolute start-0 top-0 h-full w-[2px] origin-top bg-accent" />
 
           {WHY.map((w, i) => (
             <div key={w.title} className="why-row group relative py-7 sm:py-9">
@@ -83,12 +83,14 @@ export default function WhyUs() {
 
       <style jsx>{`
         .why-row .why-title { transform: translateX(0); }
+        :global([dir='rtl']) .why-row.is-active .why-title { transform: translateX(-10px); }
         .why-row.is-active .why-index { color: #EE6A52; }
         .why-row.is-active .why-title { transform: translateX(10px); }
         .why-row:not(.is-active) .why-title { color: #9a9aa2; }
         .why-row:not(.is-active) .why-body { opacity: 0.55; }
         @media (hover: hover) {
           .why-row:hover .why-title { transform: translateX(10px); }
+          :global([dir='rtl']) .why-row:hover .why-title { transform: translateX(-10px); }
           .why-row:hover .why-index { color: #EE6A52; }
         }
         @media (prefers-reduced-motion: reduce) {

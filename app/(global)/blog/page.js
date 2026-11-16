@@ -2,11 +2,9 @@ import Link from 'next/link';
 import AuditCTA from '@/components/AuditCTA';
 import BlogGrid from '@/components/BlogGrid';
 import { getAllPosts } from '@/lib/blog';
+import { buildMetadata } from '@/lib/seo';
 
-export const metadata = {
-  title: 'Blog',
-  description: 'Honest, practical advice on websites, SEO and ads for local businesses.',
-};
+export const metadata = buildMetadata({ title: 'Blog', description: 'Honest, practical advice on websites, SEO and ads for local businesses.', path: '/blog' });
 
 export default function BlogPage() {
   const posts = getAllPosts();

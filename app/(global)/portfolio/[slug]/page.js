@@ -4,6 +4,8 @@ import AuditCTA from '@/components/AuditCTA';
 import ProjectMedia from '@/components/ProjectMedia';
 import { RESULTS, PROJECT_DETAILS } from '@/lib/site';
 import PortfolioView from '@/components/PortfolioView';
+import { buildMetadata } from '@/lib/seo';
+import { WebPageSchema } from '@/components/Schema';
 
 const TINTS = ['from-[#4b3df5] to-[#7c6cff]', 'from-[#0f172a] to-[#334155]', 'from-accent to-[#f5a58f]', 'from-[#1e40af] to-[#3b82f6]', 'from-[#111113] to-[#3f3f46]', 'from-[#7c3aed] to-[#c084fc]'];
 
@@ -16,11 +18,7 @@ export async function generateMetadata({ params }) {
   const p = RESULTS.find((x) => x.slug === slug);
   const d = PROJECT_DETAILS[slug];
   if (!p) return {};
-  return {
-    title: p.client,
-    description: d?.intro || p.blurb,
-    alternates: { canonical: `https://pridehire.com/portfolio/${slug}` },
-  };
+  return buildMetadata({ title: p.client, description: d?.intro || p.blurb, path: `/portfolio/${slug}` });
 }
 
 export default async function ProjectDetail({ params }) {
@@ -35,6 +33,7 @@ export default async function ProjectDetail({ params }) {
 
   return (
     <>
+    <WebPageSchema path={`/portfolio/${slug}`} name={p.client} description={d.intro} />
     <PortfolioView slug={slug} />
       <section className="relative overflow-hidden pt-32 sm:pt-44">
         <div aria-hidden className="bg-grid bg-grid-fade pointer-events-none absolute inset-x-0 top-0 h-[420px]" />
@@ -133,7 +132,7 @@ export default async function ProjectDetail({ params }) {
             <span className="text-sm font-semibold uppercase tracking-[0.14em] text-muted">Next project</span>
             <span className="flex items-center gap-3 font-display text-xl font-semibold tracking-tight text-ink transition-colors group-hover:text-accent sm:text-3xl">
               {next.client}
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-6 w-6 shrink-0 transition-transform duration-500 ease-expo group-hover:translate-x-1"><path d="M5 12h14M13 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" /></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-6 w-6 shrink-0 transition-transform duration-500 ease-expo ltr:group-hover:translate-x-1 rtl:group-hover:-translate-x-1 rtl:-scale-x-100"><path d="M5 12h14M13 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" /></svg>
             </span>
           </Link>
         </div>
