@@ -14,6 +14,14 @@ Every value below is a clearly-marked placeholder in code (`grep -rn "TODO(" lib
 | `lib/markets.js` `ORG.sameAs` | LinkedIn only | Add other profiles only when real. Footer Instagram icon still links to `#` (visible UI, left alone) |
 | `lib/lastmod.generated.json` | Real dates from git history | Commit it after each content change (see `scripts/lastmod.js`) |
 
+## Rule for schema
+Schema describes what the site actually does today, never what it will do. If unsure whether a value is currently true, leave it out and flag it.
+
+## Phase 3 reminders (do not forget)
+- [ ] **Add `'ar'` back to `MARKETS.sa.availableLanguage` in `lib/markets.js` in the SAME commit that ships the first native-reviewed Arabic page.** It was removed from the Saudi `contactPoint` because nothing yet backs an Arabic enquiry.
+- [ ] Decide which phone number (Saudi / India) shows on which page once `/sa/` pages exist. The Saudi number is currently in schema only.
+- [ ] Add the Saudi equivalents to `lib/locale-pages.js` when the first `/sa/` page goes live (hreflang + sitemap alternates follow automatically).
+
 ## Manual steps outside the code
 - **Calendly**: fix the URL; set working days/hours/timezone there (Sun–Thu, AST for Saudi) — cannot be done in code.
 - **Vercel → Domains**: confirm apex→www is a permanent redirect and that `http://` upgrades to `https://` in one hop.
