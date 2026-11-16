@@ -1,28 +1,106 @@
 {
-  "/": "2026-11-16T12:55:31.000Z",
-  "/about": "2026-11-16T12:55:31.000Z",
-  "/services": "2026-11-16T12:55:31.000Z",
-  "/portfolio": "2026-11-16T12:55:31.000Z",
-  "/blog": "2026-11-16T12:55:31.000Z",
-  "/contact": "2026-11-16T12:55:31.000Z",
-  "/free-audit": "2026-11-16T12:55:31.000Z",
-  "/privacy": "2026-11-16T12:55:31.000Z",
-  "/terms": "2026-11-16T12:55:31.000Z",
-  "/services/website-development": "2026-11-16T12:55:31.000Z",
-  "/services/graphic-design": "2026-11-16T12:55:31.000Z",
-  "/services/business-automation": "2026-11-16T12:55:31.000Z",
-  "/services/meta-ads": "2026-11-16T12:55:31.000Z",
-  "/services/google-ads": "2026-11-16T12:55:31.000Z",
-  "/services/seo": "2026-11-16T12:55:31.000Z",
-  "/portfolio/modora-elan": "2026-11-16T12:55:31.000Z",
-  "/portfolio/salonflow": "2026-11-16T12:55:31.000Z",
-  "/portfolio/auckland-plumbing": "2026-11-16T12:55:31.000Z",
-  "/portfolio/smile-dental": "2026-11-16T12:55:31.000Z",
-  "/portfolio/north-shore-roofing": "2026-11-16T12:55:31.000Z",
-  "/portfolio/coastal-electric": "2026-11-16T12:55:31.000Z",
-  "/nz/web-design-auckland": "2026-11-16T12:55:31.000Z",
-  "/nz/seo-auckland": "2026-11-16T12:55:31.000Z",
-  "/nz/google-ads-auckland": "2026-11-16T12:55:31.000Z",
-  "/nz/meta-ads-auckland": "2026-11-16T12:55:31.000Z",
-  "/nz/ecommerce-auckland": "2026-11-16T12:55:31.000Z"
+  "/": {
+    "date": "2026-11-16T12:55:31.000Z",
+    "source": "git-history"
+  },
+  "/about": {
+    "date": "2026-11-16T12:55:31.000Z",
+    "source": "git-history"
+  },
+  "/services": {
+    "date": "2026-11-16T12:55:31.000Z",
+    "source": "git-history"
+  },
+  "/portfolio": {
+    "date": "2026-11-16T12:55:31.000Z",
+    "source": "git-history"
+  },
+  "/blog": {
+    "date": "2026-11-16T12:55:31.000Z",
+    "source": "git-history"
+  },
+  "/contact": {
+    "date": "2026-11-16T12:55:31.000Z",
+    "source": "git-history"
+  },
+  "/free-audit": {
+    "date": "2026-11-16T12:55:31.000Z",
+    "source": "git-history"
+  },
+  "/privacy": {
+    "date": "2026-11-16T12:55:31.000Z",
+    "source": "git-history"
+  },
+  "/terms": {
+    "date": "2026-11-16T12:55:31.000Z",
+    "source": "git-history"
+  },
+  "/services/website-development": {
+    "date": "2026-11-16T12:55:31.000Z",
+    "source": "git-history"
+  },
+  "/services/graphic-design": {
+    "date": "2026-11-16T12:55:31.000Z",
+    "source": "git-history"
+  },
+  "/services/business-automation": {
+    "date": "2026-11-16T12:55:31.000Z",
+    "source": "git-history"
+  },
+  "/services/meta-ads": {
+    "date": "2026-11-16T12:55:31.000Z",
+    "source": "git-history"
+  },
+  "/services/google-ads": {
+    "date": "2026-11-16T12:55:31.000Z",
+    "source": "git-history"
+  },
+  "/services/seo": {
+    "date": "2026-11-16T12:55:31.000Z",
+    "source": "git-history"
+  },
+  "/portfolio/modora-elan": {
+    "date": "2026-11-16T12:55:31.000Z",
+    "source": "git-history"
+  },
+  "/portfolio/salonflow": {
+    "date": "2026-11-16T12:55:31.000Z",
+    "source": "git-history"
+  },
+  "/portfolio/auckland-plumbing": {
+    "date": "2026-11-16T12:55:31.000Z",
+    "source": "git-history"
+  },
+  "/portfolio/smile-dental": {
+    "date": "2026-11-16T12:55:31.000Z",
+    "source": "git-history"
+  },
+  "/portfolio/north-shore-roofing": {
+    "date": "2026-11-16T12:55:31.000Z",
+    "source": "git-history"
+  },
+  "/portfolio/coastal-electric": {
+    "date": "2026-11-16T12:55:31.000Z",
+    "source": "git-history"
+  },
+  "/nz/web-design-auckland": {
+    "date": "2026-11-16T12:55:31.000Z",
+    "source": "git-history"
+  },
+  "/nz/seo-auckland": {
+    "date": "2026-11-16T12:55:31.000Z",
+    "source": "git-history"
+  },
+  "/nz/google-ads-auckland": {
+    "date": "2026-11-16T12:55:31.000Z",
+    "source": "git-history"
+  },
+  "/nz/meta-ads-auckland": {
+    "date": "2026-11-16T12:55:31.000Z",
+    "source": "git-history"
+  },
+  "/nz/ecommerce-auckland": {
+    "date": "2026-11-16T12:55:31.000Z",
+    "source": "git-history"
+  }
 }

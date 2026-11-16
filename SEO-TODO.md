@@ -12,7 +12,7 @@ Every value below is a clearly-marked placeholder in code (`grep -rn "TODO(" lib
 | `lib/markets.js` `global.currency` | `null` | Currency for the global audience |
 | `lib/markets.js` `ORG.ogImagePath` | `/public/og-image.png` does not exist — every social share preview currently 404s | Create a 1200x630 image |
 | `lib/markets.js` `ORG.sameAs` | LinkedIn only | Add other profiles only when real. Footer Instagram icon still links to `#` (visible UI, left alone) |
-| `lib/lastmod.generated.json` | Real dates from git history | Commit it after each content change (see `scripts/lastmod.js`) |
+| `lib/lastmod.generated.json` | Committed date map; the build only READS it (no git at build time) | A pre-commit hook (`.githooks/pre-commit`) stamps pages whose source files are in each commit. After a fresh clone run `npm run hooks:install`. Repair/rebuild from full history: `npm run lastmod:seed` |
 
 ## Rule for schema
 Schema describes what the site actually does today, never what it will do. If unsure whether a value is currently true, leave it out and flag it.

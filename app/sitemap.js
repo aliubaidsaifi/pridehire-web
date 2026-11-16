@@ -2,7 +2,7 @@ import { SERVICES, RESULTS, LOCAL_PAGES } from '@/lib/site';
 import { getAllPosts } from '@/lib/blog';
 import { absoluteUrl, getMarket } from '@/lib/markets';
 import { hreflangFor } from '@/lib/seo';
-import { getLastModified } from '@/lib/content-dates';
+import { getLastModifiedInfo } from '@/lib/content-dates';
 
 // Emits ONLY final, canonical-host (www) URLs — nothing here redirects. lastmod is a real content date or omitted
 // (never the build time). Every entry carries the hreflang alternates (self + any live locale equivalents) from lib/locale-pages.js.
@@ -18,8 +18,13 @@ const STATIC = [
   { path: '/terms', priority: 0.3, freq: 'yearly' },
 ];
 
+const lastmodSources = {}; // build-log summary of where each <lastmod> came from
+
 function entry({ path, priority, freq, market = 'global', locale = 'en', images }) {
-  const lastModified = getLastModified(path);
+  const info = getLastModifiedInfo(path);
+  const lastModified = info?.date;
+  const key = info ? info.source : 'omitted (no recorded date)';
+  lastmodSources[key] = (lastmodSources[key] || 0) + 1;
   return {
     url: absoluteUrl(path),
     ...(lastModified ? { lastModified } : {}),
@@ -36,5 +41,9 @@ export default function sitemap() {
   const projectPages = RESULTS.map((p) => entry({ path: `/portfolio/${p.slug}`, priority: 0.7, freq: 'monthly', images: p.image ? [absoluteUrl(p.image)] : undefined }));
   const nzPages = getMarket('nz').live ? LOCAL_PAGES.map((p) => entry({ path: `/nz/${p.slug}`, priority: 0.4, freq: 'yearly', market: 'nz' })) : [];
   const blogPosts = getAllPosts().map((p) => entry({ path: `/blog/${p.slug}`, priority: 0.6, freq: 'monthly', images: p.image ? [absoluteUrl(p.image)] : undefined }));
-  return [...staticPages, ...servicePages, ...projectPages, ...blogPosts, ...nzPages];
+  const all = [...staticPages, ...servicePages, ...projectPages, ...blogPosts, ...nzPages];
+  // stdout (not console.*, which production builds strip) so a silent gap is visible in the build log
+  process.stdout.write(`[sitemap] ${all.length} URLs; lastmod sources: ${JSON.stringify(lastmodSources)}
+`);
+  return all;
 }

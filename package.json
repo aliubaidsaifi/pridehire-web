@@ -7,7 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prebuild": "node scripts/lastmod.js"
+    "prebuild": "node scripts/check-lastmod.js",
+    "lastmod:seed": "node scripts/lastmod.js --seed",
+    "lastmod:staged": "node scripts/lastmod.js --staged",
+    "hooks:install": "git config core.hooksPath .githooks"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",

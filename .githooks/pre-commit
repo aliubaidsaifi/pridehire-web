@@ -1,0 +1,4 @@
+#!/bin/sh
+# Stamps lib/lastmod.generated.json for pages whose source files are in this commit. Never blocks a commit.
+node scripts/lastmod.js --staged || echo "[lastmod] hook skipped"
+exit 0
