@@ -12,23 +12,18 @@ export function servedCountries() {
   return Object.values(MARKETS).filter((m) => m.serving && m.country).map((m) => ({ '@type': 'Country', name: COUNTRY_NAMES[m.country] || m.country }));
 }
 
-/** One contactPoint per market that has its OWN phone. A market with no number yet (e.g. Saudi) is skipped, never faked. */
+/** One contactPoint per market that declares `contactPoint` and has a phone (India, Saudi). Phone lines only — no addresses attached. */
 function contactPoints() {
-  const seen = new Set();
-  const out = [];
-  for (const m of Object.values(MARKETS)) {
-    if (!m.phone || seen.has(m.phone)) continue;
-    seen.add(m.phone);
-    out.push(dropNulls({
+  return Object.values(MARKETS)
+    .filter((m) => m.contactPoint && m.phone)
+    .map((m) => dropNulls({
       '@type': 'ContactPoint',
-      contactType: 'sales',
+      contactType: m.contactPoint.contactType,
       telephone: m.phone,
       email: ORG.email,
       areaServed: m.areaServed?.length ? m.areaServed : undefined,
       availableLanguage: m.availableLanguage,
     }));
-  }
-  return out;
 }
 
 // Organization — NOT LocalBusiness: we have no premises in the markets we serve. Address is the real (Indian) entity only.

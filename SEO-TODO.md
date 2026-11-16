@@ -7,9 +7,8 @@ Every value below is a clearly-marked placeholder in code (`grep -rn "TODO(" lib
 | `lib/site.js` `SITE.calendly` | `https://calendly.com/pridehire/free-consultation` returns 404 | Correct Calendly URL (used by `components/ContactClient.js`: iframe, card link, button) |
 | `lib/markets.js` `ORG.address` | Only `addressCountry: 'IN'` is emitted in schema | Full real registered Indian address (street, locality, region, postal code) |
 | `lib/markets.js` `ORG.officeLabel/addressDisplay` | Footer still prints "India (Head Office) / Delhi NCR / Remote Delivery Worldwide" (kept byte-for-byte, no visible change) | Same real address; then replace |
-| `lib/markets.js` `sa.phone`, `sa.whatsapp` | `null` — Saudi pages fall back to the global number | Saudi number when it arrives. Until set, no Saudi `contactPoint` is emitted |
 | `lib/markets.js` `sa.businessHours`, `global.businessHours` | Days set, times `null` | Real hours; must match Calendly settings (Sun–Thu / AST must be configured IN Calendly, not in code) |
-| `lib/markets.js` `sa.availableLanguage` | `['English','Arabic']` | Confirm Arabic is actually offered |
+| Saudi number (+966535239163) | In `PHONES.SA`; in schema only. No page displays it yet | Phase 3 decision: which number shows on which page |
 | `lib/markets.js` `global.currency` | `null` | Currency for the global audience |
 | `lib/markets.js` `ORG.ogImagePath` | `/public/og-image.png` does not exist — every social share preview currently 404s | Create a 1200x630 image |
 | `lib/markets.js` `ORG.sameAs` | LinkedIn only | Add other profiles only when real. Footer Instagram icon still links to `#` (visible UI, left alone) |
