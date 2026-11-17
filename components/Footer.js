@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Logo from '@/components/Logo';
 import { SITE, OFFICES } from '@/lib/site';
-import { waLink } from '@/lib/markets';
+import { waLink, ORG } from '@/lib/markets';
 
 const NAV_LEFT = [
   { label: 'Services', href: '/services' },
@@ -35,11 +35,12 @@ export default function Footer({ market = 'global' }) {
             <div className="mt-5 space-y-3">
               <a href={`mailto:${SITE.contactEmail}`} className="link-underline block text-sm text-ink">{SITE.contactEmail}</a>
               {OFFICES.map((o) => (
-                <div key={o.label} className="text-sm text-muted">
-                  <span className="text-xs font-semibold uppercase tracking-wider text-ink">{o.label}</span>
-                  <br />{o.address}
+                <div key={o.label || 'address'} className="text-sm text-muted">
+                  {o.label && <><span className="text-xs font-semibold uppercase tracking-wider text-ink">{o.label}</span><br /></>}
+                  {o.address.split('\n').map((line, i) => <span key={i} className="block">{line}</span>)}
                 </div>
               ))}
+              <p className="text-sm text-muted">Udyam Registration No: {ORG.udyam}</p>
             </div>
             <Link href="/free-audit" className="btn-primary mt-6">{SITE.cta.primary}</Link>
           </div>

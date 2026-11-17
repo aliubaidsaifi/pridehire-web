@@ -7,7 +7,12 @@
  */
 const BASE = process.argv[2] || 'http://localhost:3000';
 const HOST = 'https://www.pridehire.com';
-const get = async (u) => { const r = await fetch(u, { redirect: 'manual' }); return { status: r.status, loc: r.headers.get('location'), text: r.status === 200 || r.status < 300 ? await r.text() : '' }; };
+const get = async (u) => {
+  for (let i = 0; ; i++) {
+    try { const r = await fetch(u, { redirect: 'manual' }); return { status: r.status, loc: r.headers.get('location'), text: r.status === 200 || r.status < 300 ? await r.text() : '' }; }
+    catch (e) { if (i >= 4) throw e; await new Promise((res) => setTimeout(res, 1500 * (i + 1))); } // retry transient network errors
+  }
+};
 const attr = (tag, name) => (tag.match(new RegExp(`${name}="([^"]*)"`)) || [])[1];
 const decode = (s = '') => s.replace(/&amp;/g, '&').replace(/&#x27;|&#39;/g, "'").replace(/&quot;/g, '"');
 

@@ -12,6 +12,12 @@ export function servedCountries() {
   return Object.values(MARKETS).filter((m) => m.serving && m.country).map((m) => ({ '@type': 'Country', name: COUNTRY_NAMES[m.country] || m.country }));
 }
 
+/** City service areas (from markets' serviceAreas). schema.org City has no addressRegion property, so region/country sit in a nested PostalAddress. */
+function serviceCities() {
+  return Object.values(MARKETS).filter((m) => m.serving && m.serviceAreas).flatMap((m) =>
+    m.serviceAreas.map((c) => ({ '@type': 'City', name: c.name, address: { '@type': 'PostalAddress', addressRegion: c.region, addressCountry: m.country } })));
+}
+
 /** One contactPoint per market that declares `contactPoint` and has a phone (India, Saudi). Phone lines only — no addresses attached. */
 function contactPoints() {
   return Object.values(MARKETS)
@@ -28,7 +34,7 @@ function contactPoints() {
 
 // Organization — NOT LocalBusiness: we have no premises in the markets we serve. Address is the real (Indian) entity only.
 export function OrganizationSchema() {
-  const served = servedCountries();
+  const served = [...servedCountries(), ...serviceCities()];
   return ld({
     '@context': 'https://schema.org',
     '@type': 'Organization',
@@ -38,6 +44,7 @@ export function OrganizationSchema() {
     logo: `${BASE}${ORG.logoPath}`,
     description: SITE.description,
     email: ORG.email,
+    identifier: { '@type': 'PropertyValue', name: 'Udyam Registration Number', value: ORG.udyam },
     address: { '@type': 'PostalAddress', ...dropNulls(ORG.address) },
     areaServed: served.length ? served : undefined,
     contactPoint: contactPoints(),

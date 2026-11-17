@@ -173,7 +173,7 @@ export default async function LandingPage({ params }) {
             <h2 className="font-display text-3xl font-semibold tracking-tightest sm:text-5xl">Ready to grow your business?</h2>
             <p className="mt-5 max-w-md text-pretty text-lg leading-relaxed text-white/70">Get a free quote today. No obligation, no pressure — just honest advice on what will actually work for you.</p>
             <div className="mt-8 space-y-3 text-sm text-white/80">
-              <a href={telLink()} className="flex items-center gap-3 hover:text-white"><span className="text-accent">Phone</span> {contactFor().phone}</a>
+              <a href={telLink()} className="flex items-center gap-3 hover:text-white"><span className="text-accent">Phone</span> {contactFor().display}</a>
               <a href={`mailto:${SITE.contactEmail}`} className="flex items-center gap-3 hover:text-white"><span className="text-accent">Email</span> {SITE.contactEmail}</a>
               <a href={waLink()} className="flex items-center gap-3 hover:text-white"><span className="text-accent">WhatsApp</span> Chat with us</a>
             </div>
