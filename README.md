@@ -8,6 +8,10 @@ Three.js / React Three Fiber · Lenis smooth scroll. **No TypeScript.**
 
 ---
 
+## After a fresh clone: install the git hook
+
+Run `npm run hooks:install` once after cloning. It points git at `.githooks/`, whose pre-commit hook stamps `lib/lastmod.generated.json` (the real last-modified date used in the sitemap and schema `dateModified`) for every page whose source files are in the commit. **If you skip this, lastmod silently stops updating** — nothing fails, the dates just go stale. The build never runs git; it only reads the committed JSON and prints where each date came from (`[lastmod]` and `[sitemap]` lines in the build log). To rebuild all dates from full git history (not possible on a shallow clone), run `npm run lastmod:seed`.
+
 ## Quick start
 
 ```bash
