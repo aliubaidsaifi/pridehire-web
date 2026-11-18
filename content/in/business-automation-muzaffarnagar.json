@@ -1,0 +1,335 @@
+{
+  "id": "business-automation-muzaffarnagar",
+  "market": "in",
+  "langs": [
+    "en"
+  ],
+  "paths": {
+    "en": "/in/business-automation-muzaffarnagar"
+  },
+  "cluster": "business automation, Muzaffarnagar",
+  "ctaHref": "/contact",
+  "notes": "India page, English only (Hinglish phrasing inside English headings/answers, no Hindi page yet). No proof/stats/reviews/images. No street address in visible text. Scope agreed in writing before work starts is confirmed; do not add claims about timelines, prices, hours or in-person visits until supplied.",
+  "fields": {
+    "meta.title": {
+      "context": "Browser tab / search result title",
+      "required": true,
+      "kind": "text",
+      "maxChars": 60,
+      "en": {
+        "text": "Business Automation in Muzaffarnagar | WhatsApp & Leads",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "meta.description": {
+      "context": "Search result description under the title",
+      "required": true,
+      "kind": "text",
+      "maxChars": 160,
+      "en": {
+        "text": "Pride Hire automates repetitive business work in Muzaffarnagar: replying to enquiries, following up leads and handling WhatsApp messages.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "h1": {
+      "context": "Main page heading",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Business automation in Muzaffarnagar",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "answer": {
+      "context": "Short answer block directly under the H1",
+      "required": true,
+      "kind": "answer",
+      "en": {
+        "text": "Pride Hire automates the repetitive parts of running a business in Muzaffarnagar: replying to new enquiries, following up leads, handling WhatsApp messages and moving customer details into the tools you already use. We agree with you what to automate before we build it.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.1.heading": {
+      "context": "Section 1 heading (H2) — the question a buyer asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "What is business automation?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.1.answer": {
+      "context": "Section 1 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "Business automation means setting up software to do routine work that a person would otherwise do by hand, such as sending a reply when an enquiry arrives or reminding you to follow up a lead. It does not replace your judgement. It removes repetitive steps so that enquiries are handled consistently.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.2.heading": {
+      "context": "Section 2 heading (H2) — the question a buyer asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "What can be automated?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.2.answer": {
+      "context": "Section 2 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "Common examples are replying to new enquiries, following up leads, sending reminders, handling WhatsApp messages, and passing customer details into a spreadsheet or CRM. We start from the tasks you repeat most often, and agree with you which ones are worth automating before we build anything.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.3.heading": {
+      "context": "Section 3 heading (H2) — the question a buyer asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "WhatsApp automation kya hota hai? (What is WhatsApp automation?)",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.3.answer": {
+      "context": "Section 3 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "It means WhatsApp messages are sent or answered automatically, for example an instant reply to a new enquiry. Beyond simple replies, this usually goes through the WhatsApp Business Platform, where Meta charges businesses per message sent, depending on the message type and country. Meta’s rates change, so check the current rate card.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "Meta: Pricing on the WhatsApp Business Platform",
+            "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing",
+            "accessed": "2026-11-18"
+          }
+        ],
+        "history": []
+      }
+    },
+    "sections.4.heading": {
+      "context": "Section 4 heading (H2) — the question a buyer asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "How do we agree what gets built?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.4.answer": {
+      "context": "Section 4 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "You tell us about your business and which tasks take up your time. We reply with a recommendation and a proposed scope in writing, and work starts once you agree to it. We do not build automation that you have not agreed to, and you can ask questions at any point.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.5.heading": {
+      "context": "Section 5 heading (H2) — the question a buyer asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Do you work with businesses outside Muzaffarnagar?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.5.answer": {
+      "context": "Section 5 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "Yes. Pride Hire is in Muzaffarnagar, and because the work is delivered online we also work with businesses in Shamli, Meerut and Saharanpur, and in other cities as well. You can see how this works on our [areas we serve](/in/areas-we-serve) page.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.6.heading": {
+      "context": "Section 6 heading (H2) — the question a buyer asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "How do I get started?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.6.answer": {
+      "context": "Section 6 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "Send us a message or use the contact form. Tell us about your business and which repetitive tasks you would like to remove. We review your situation and reply with a recommendation and a proposed scope, so you can decide what makes sense without any obligation.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "related": {
+      "context": "Closing line after the last section (internal link)",
+      "required": false,
+      "kind": "related",
+      "en": {
+        "text": "Want a website to go with it? See [website design in Muzaffarnagar](/in/web-design-muzaffarnagar).",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "cta.text": {
+      "context": "Button text at the end of the page (links to /contact)",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Contact us",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    }
+  }
+}

@@ -1,0 +1,329 @@
+{
+  "id": "graphic-design-muzaffarnagar",
+  "market": "in",
+  "langs": [
+    "en"
+  ],
+  "paths": {
+    "en": "/in/graphic-design-muzaffarnagar"
+  },
+  "cluster": "graphic design, Muzaffarnagar",
+  "ctaHref": "/contact",
+  "notes": "India page, English only (Hinglish phrasing inside English headings/answers, no Hindi page yet). No proof/stats/reviews/images. No street address in visible text. Scope agreed in writing before work starts is confirmed; do not add claims about timelines, prices, hours or in-person visits until supplied.",
+  "fields": {
+    "meta.title": {
+      "context": "Browser tab / search result title",
+      "required": true,
+      "kind": "text",
+      "maxChars": 60,
+      "en": {
+        "text": "Graphic Design in Muzaffarnagar | Logo & Brand Identity",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "meta.description": {
+      "context": "Search result description under the title",
+      "required": true,
+      "kind": "text",
+      "maxChars": 160,
+      "en": {
+        "text": "Pride Hire designs logos, brand identities and marketing materials for businesses in Muzaffarnagar, Shamli, Meerut and Saharanpur.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "h1": {
+      "context": "Main page heading",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Graphic design in Muzaffarnagar: logos, brand identity and marketing materials",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "answer": {
+      "context": "Short answer block directly under the H1",
+      "required": true,
+      "kind": "answer",
+      "en": {
+        "text": "Pride Hire designs logos and full brand identities for businesses in Muzaffarnagar, along with social media creatives, advertising graphics and other marketing materials. Design can be a standalone job, or done alongside your website so everything looks consistent. We agree the scope with you in writing before work starts.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.1.heading": {
+      "context": "Section 1 heading (H2) — the question a buyer asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "What graphic design work do you do?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.1.answer": {
+      "context": "Section 1 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "We design [logos and full brand identities](/services/graphic-design), and the materials that go with them: social media creatives, advertising graphics and other marketing materials. Design work can stand alone, or it can be done alongside your website so that everything your customers see looks consistent and recognisably yours.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.2.heading": {
+      "context": "Section 2 heading (H2) — the question a buyer asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Logo aur brand identity mein kya farak hai? (What is the difference?)",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.2.answer": {
+      "context": "Section 2 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "A logo is a single mark. A brand identity is the whole system around it: colours, fonts, how the logo is used and the style of everything you publish. A logo alone can be enough for a small business. An identity helps when you advertise in several places and want everything to look consistent.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.3.heading": {
+      "context": "Section 3 heading (H2) — the question a buyer asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "What do you need from me to start?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.3.answer": {
+      "context": "Section 3 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "Your business name, what you do, who your customers are, and any existing logo, colours or designs you want to keep. Examples of designs you like also help. We reply with a recommendation and a proposed scope in writing, and work starts once you agree to it.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.4.heading": {
+      "context": "Section 4 heading (H2) — the question a buyer asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Can you design for my website and my ads as well?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.4.answer": {
+      "context": "Section 4 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "Yes. Design can be done together with your [website](/services/website-development) and your advertising graphics, so a customer sees the same look on your site, on social media and in your marketing materials. You can also hire us for design on its own, without a website.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.5.heading": {
+      "context": "Section 5 heading (H2) — the question a buyer asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Do you work with businesses outside Muzaffarnagar?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.5.answer": {
+      "context": "Section 5 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "Yes. Pride Hire is in Muzaffarnagar, and because the work is delivered online we also work with businesses in Shamli, Meerut and Saharanpur, and in other cities as well. You can see how this works on our [areas we serve](/in/areas-we-serve) page.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.6.heading": {
+      "context": "Section 6 heading (H2) — the question a buyer asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "How do I get started?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.6.answer": {
+      "context": "Section 6 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "Send us a message or use the contact form. Tell us about your business and what you need designed, and share any examples you like. We review your situation and reply with a recommendation and a proposed scope, so you can decide what makes sense without any obligation.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "related": {
+      "context": "Closing line after the last section (internal link)",
+      "required": false,
+      "kind": "related",
+      "en": {
+        "text": "Planning a website too? See [website design in Muzaffarnagar](/in/web-design-muzaffarnagar).",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "cta.text": {
+      "context": "Button text at the end of the page (links to /contact)",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Contact us",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    }
+  }
+}

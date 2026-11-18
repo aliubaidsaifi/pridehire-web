@@ -12,24 +12,25 @@ const C = require('../lib/content-review');
 const args = process.argv.slice(2);
 const flag = (n) => { const i = args.indexOf(n); return i >= 0 ? args[i + 1] : null; };
 const reviewer = flag('--reviewer');
+const market = flag('--market') || 'sa';
 if (!reviewer) { console.error('--reviewer "Name" is required (the native reviewer is recorded)'); process.exit(1); }
 const now = new Date().toISOString();
 
 if (args[0] === '--glossary') {
   const rows = parseCsv(fs.readFileSync(args[1], 'utf8')).slice(1);
-  const g = C.loadGlossary();
+  const g = C.loadGlossary(market);
   let n = 0;
   for (const r of rows) {
     const t = g.terms.find((x) => x.key === r[0]);
     if (t && r[3].trim()) { t.decision = r[3].trim(); t.decidedBy = reviewer; t.decidedAt = now; if (r[4].trim()) t.note = r[4].trim(); n++; }
   }
-  fs.writeFileSync(require('node:path').join(C.DIR, '_glossary.json'), JSON.stringify(g, null, 2) + '\n', 'utf8');
+  fs.writeFileSync(require('node:path').join(C.dirFor(market), '_glossary.json'), JSON.stringify(g, null, 2) + '\n', 'utf8');
   console.log(`glossary: ${n} decision(s) recorded`);
   process.exit(0);
 }
 
 const [id, file] = args;
-const page = C.loadPage(id);
+const page = C.loadPage(id, market);
 const rows = parseCsv(fs.readFileSync(file, 'utf8'));
 const head = rows[0].map((h) => h.trim());
 const col = (name) => head.findIndex((h) => h.toLowerCase().startsWith(name));

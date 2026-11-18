@@ -1,0 +1,329 @@
+{
+  "id": "web-design-muzaffarnagar",
+  "market": "in",
+  "langs": [
+    "en"
+  ],
+  "paths": {
+    "en": "/in/web-design-muzaffarnagar"
+  },
+  "cluster": "web design, Muzaffarnagar",
+  "ctaHref": "/free-audit",
+  "notes": "India page, English only (Hinglish phrasing inside English headings/answers, no Hindi page yet). No proof/stats/reviews/images. No street address in visible text. Scope agreed in writing before work starts is confirmed; do not add claims about timelines, prices, hours or in-person visits until supplied.",
+  "fields": {
+    "meta.title": {
+      "context": "Browser tab / search result title",
+      "required": true,
+      "kind": "text",
+      "maxChars": 60,
+      "en": {
+        "text": "Web Designer in Muzaffarnagar | Website Design & Development",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "meta.description": {
+      "context": "Search result description under the title",
+      "required": true,
+      "kind": "text",
+      "maxChars": 160,
+      "en": {
+        "text": "Pride Hire designs and builds business websites in Muzaffarnagar, and works with businesses in Shamli, Meerut and Saharanpur. Free website audit available.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "h1": {
+      "context": "Main page heading",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Website design and development in Muzaffarnagar",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "answer": {
+      "context": "Short answer block directly under the H1",
+      "required": true,
+      "kind": "answer",
+      "en": {
+        "text": "Pride Hire designs and builds websites for businesses in Muzaffarnagar: company sites, landing pages and online stores. We also work with businesses in Shamli, Meerut and Saharanpur. We agree the scope with you in writing before work starts, and you can reach us on WhatsApp, by phone or through the contact form.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.1.heading": {
+      "context": "Section 1 heading (H2) — the question a buyer asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "What does website design and development include?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.1.answer": {
+      "context": "Section 1 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "We design and build [company websites](/services/website-development), landing pages and online stores. Every site is built mobile-first and for fast loading, and structured so that search engines can read it clearly. We agree the pages, features and content with you at the start, so you know what is being built before work begins.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.2.heading": {
+      "context": "Section 2 heading (H2) — the question a buyer asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Website banwane ke liye kya chahiye? (What do I need to get started?)",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.2.answer": {
+      "context": "Section 2 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "Only the basics: your business name, what you offer, your logo if you have one, and any photos or text you want on the site. If something is missing, we can help you work it out. Tell us what the site needs to do, and we suggest the pages it should have.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.3.heading": {
+      "context": "Section 3 heading (H2) — the question a buyer asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "How does the process work?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.3.answer": {
+      "context": "Section 3 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "You tell us about your business and what the website needs to do. We reply with a recommendation and a proposed scope in writing, and work starts once you agree to it. You can reach us by phone, WhatsApp or the contact form at any point while the work is going on.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.4.heading": {
+      "context": "Section 4 heading (H2) — the question a buyer asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Do you work with businesses outside Muzaffarnagar?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.4.answer": {
+      "context": "Section 4 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "Yes. Pride Hire is in Muzaffarnagar, and because the work is delivered online we also work with businesses in Shamli, Meerut and Saharanpur, and in other cities as well. You can see how this works on our [areas we serve](/in/areas-we-serve) page.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.5.heading": {
+      "context": "Section 5 heading (H2) — the question a buyer asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Can you promise that my website will rank on Google?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.5.answer": {
+      "context": "Section 5 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "No. Nobody can honestly promise a ranking, because it depends on competition, content and time. What we can do is build the site so that search engines can crawl and read it properly. If you want to know where your current site stands, ask us for a free audit when you get in touch.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.6.heading": {
+      "context": "Section 6 heading (H2) — the question a buyer asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "How do I get started?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.6.answer": {
+      "context": "Section 6 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "Request a [free website & SEO audit](/free-audit), or send us a message. Tell us about your business, what you want to achieve and any deadline you have in mind. We review your situation and reply with a recommendation and a proposed scope, so you can decide what makes sense without any obligation.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "related": {
+      "context": "Closing line after the last section (internal link)",
+      "required": false,
+      "kind": "related",
+      "en": {
+        "text": "Need a logo or brand identity as well? See [graphic design in Muzaffarnagar](/in/graphic-design-muzaffarnagar).",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "cta.text": {
+      "context": "Button text at the end of the page (links to /free-audit)",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Get your free website & SEO audit",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    }
+  }
+}

@@ -7,9 +7,10 @@
 const C = require('../lib/content-review');
 const a = process.argv.slice(2);
 const flag = (n) => { const i = a.indexOf(n); return i >= 0 ? a[i + 1] : null; };
+const market = flag('--market') || 'sa';
 const id = a[0], lang = flag('--lang'), by = flag('--by'), only = flag('--field');
 if (!id || !['en', 'ar'].includes(lang) || !by) { console.error('usage: content-approve <pageId> --lang en|ar --by "Name" [--field key]'); process.exit(1); }
-const page = C.loadPage(id);
+const page = C.loadPage(id, market);
 let n = 0;
 for (const [key, f] of Object.entries(page.fields)) {
   if (only && key !== only) continue;
@@ -20,4 +21,4 @@ for (const [key, f] of Object.entries(page.fields)) {
   e.reviewStatus = 'approved'; e.approvedBy = by; e.approvedAt = new Date().toISOString(); n++;
 }
 C.savePage(page);
-console.log(`${id}/${lang}: ${n} field(s) approved by ${by}. Gate licensingCleared = ${C.loadGate().licensingCleared}`);
+console.log(`${id}/${lang}: ${n} field(s) approved by ${by}. Gate licensingCleared = ${C.loadGate(market).licensingCleared}`);

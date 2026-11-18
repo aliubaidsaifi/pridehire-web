@@ -1,0 +1,11 @@
+{
+  "note": "Patterns that must never appear in India page copy. Enforced by scripts/check-content.js. Edit freely.",
+  "patterns": [
+    { "regex": "trusted by|clients across|businesses across|our clients|worked with|happy clients|satisfied (clients|customers)|years of experience|award", "reason": "no proof / track-record wording — we have none to show for India pages yet" },
+    { "regex": "\\b\\d+\\+? (clients|projects|customers|websites|businesses)\\b", "reason": "no counts of clients/projects" },
+    { "regex": "guaranteed|guarantee[sd]? (rank|result|top)|#1 |first page of google|top ranking|rank (on )?(page )?(1|one)\\b", "reason": "no outcome guarantees" },
+    { "regex": "\\boffices? (in|at)\\b|\\bbranch(es)?\\b|our (shamli|meerut|saharanpur|delhi|noida) |delhi ?-?ncr", "reason": "implies a presence/office we do not have (we are in Muzaffarnagar only)" },
+    { "regex": "visit us|walk-?in|our (shop|store|showroom)|showroom", "reason": "implies public premises — we are a service-area business" },
+    { "regex": "3413|kareem nagar|251002", "reason": "no street address in visible text (decision: footer shows country only; address lives in schema and directories)" }
+  ]
+}

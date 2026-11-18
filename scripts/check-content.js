@@ -1,17 +1,28 @@
-/** Validate every content/sa/*.json page. Exit 1 on errors. Also reports publish readiness (informational).  npm run content:check */
+/** Validate every content/<market>/*.json page. Exit 1 on errors. Also reports publish readiness (informational).  npm run content:check */
 const C = require('../lib/content-review');
 let bad = 0;
-const gate = C.loadGate();
-if (gate.error) console.log(`WARNING gate problem: ${gate.error} — treated as CLOSED`);
-console.log(`licensing gate: ${gate.licensingCleared ? 'OPEN' : 'CLOSED — nothing under /sa/ may be served'}`);
-for (const id of C.listPageIds()) {
-  const page = C.loadPage(id);
-  const { errors, warnings } = C.validatePage(page);
-  const counts = { en: {}, ar: {} };
-  for (const lang of C.LANGS) for (const f of Object.values(page.fields)) { const e = f[lang]; const k = e && e.text ? e.reviewStatus : 'empty'; counts[lang][k] = (counts[lang][k] || 0) + 1; }
-  console.log(`\n${id}  (${page.paths.en} / ${page.paths.ar})  en ${JSON.stringify(counts.en)}  ar ${JSON.stringify(counts.ar)}`);
-  for (const l of C.LANGS) console.log(`  ${l}: publishable=${C.isPublishable(page, l)}${C.isPublishable(page, l) ? '' : `  (${C.publishProblems(page, l).length} blocker(s)${gate.licensingCleared ? '' : ' + licensing gate'})`}`);
-  warnings.forEach((w) => console.log(`  warn  ${w}`));
-  errors.forEach((e) => { console.log(`  ERROR ${e}`); bad++; });
+for (const market of C.MARKETS) {
+  const ids = C.listPageIds(market);
+  if (!ids.length) continue;
+  const gate = C.loadGate(market);
+  console.log(`\n=== market: ${market} ===`);
+  if (gate.error) console.log(`WARNING gate problem: ${gate.error} — treated as CLOSED`);
+  console.log(`gate: ${gate.licensingCleared ? 'OPEN' : 'CLOSED — nothing for this market may be served'}`);
+  for (const id of ids) {
+    const page = C.loadPage(id, market);
+    const langs = C.langsOf(page);
+    const { errors, warnings } = C.validatePage(page);
+    const counts = Object.fromEntries(langs.map((l) => [l, {}]));
+    for (const lang of langs) for (const f of Object.values(page.fields)) { const e = f[lang]; const k = e && e.text ? e.reviewStatus : 'empty'; counts[lang][k] = (counts[lang][k] || 0) + 1; }
+    console.log(`\n${id}  (${langs.map((l) => page.paths[l]).join(' / ')})  ${langs.map((l) => `${l} ${JSON.stringify(counts[l])}`).join('  ')}`);
+    for (const l of langs) {
+      const pub = C.isPublishable(page, l);
+      const probs = C.publishProblems(page, l);
+      console.log(`  ${l}: publishable=${pub}${pub ? '' : `  (${probs.length} blocker(s)${gate.licensingCleared ? '' : ' + gate closed'})`}`);
+      probs.filter((p) => p.includes('needs:')).forEach((p) => console.log(`      owner input: ${p}`));
+    }
+    warnings.forEach((w) => console.log(`  warn  ${w}`));
+    errors.forEach((e) => { console.log(`  ERROR ${e}`); bad++; });
+  }
 }
 process.exit(bad ? 1 : 0);

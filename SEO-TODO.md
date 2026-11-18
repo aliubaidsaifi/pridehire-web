@@ -37,6 +37,15 @@ Schema describes what the site actually does today, never what it will do. If un
 - Limits: assistants/apps that send no referrer are invisible to this; it counts visits, not mentions.
 - Saudi scope is web development (incl. Arabic/RTL), business automation, graphic design ONLY; no marketing/SEO/ads, no flex printing.
 
+## India NAP / directories (flag: footer vs directories)
+- **Decision (owner):** publish the full address on IndiaMART, JustDial and other directories. Canonical NAP, byte-identical everywhere:
+  `Pride Hire` · `3413 Kareem Nagar, Muzaffarnagar, Uttar Pradesh 251002` · `+91 94566 15609` · `https://www.pridehire.com/`
+- **Known inconsistency:** the site footer shows only "India / Remote Delivery Worldwide" and the GBP hides the address (service-area business), while directories will show the full address. Owner may revisit the footer decision once directories are live. Schema `PostalAddress` already carries the full address.
+- India page copy lives in `content/in/` (English; Hinglish inside English pages; Hindi pages deferred until Keyword Planner shows Devanagari demand). India pages are NOT built as routes yet.
+- Directory order of value: GBP, IndiaMART, JustDial, Sulekha, Bing Places + Apple Business Connect, then TradeIndia/UrbanPro.
+- GBP secondary categories: add only accurate ones, from Google's own list, after verification clears.
+- Pending owner answers: flex printing in-house or outsourced (page 2 on hold); real rupee price bands (page 5); in-person meetings in India? (not claimed anywhere).
+
 ## Manual steps outside the code
 - **Calendly**: fix the URL; set working days/hours/timezone there (Sun–Thu, AST for Saudi) — cannot be done in code.
 - **Vercel → Domains**: confirm apex→www is a permanent redirect and that `http://` upgrades to `https://` in one hop.

@@ -9,8 +9,12 @@ const { toCsv } = require('./csv');
 const C = require('../lib/content-review');
 
 const OUT = path.join(__dirname, '..', 'review-out');
-const arg = process.argv[2];
-const ids = arg === '--all' || !arg ? C.listPageIds() : [arg];
+const argv = process.argv.slice(2);
+const mi = argv.indexOf('--market');
+const market = mi >= 0 ? argv[mi + 1] : 'sa';
+if (mi >= 0) argv.splice(mi, 2);
+const arg = argv[0];
+const ids = arg === '--all' || !arg ? C.listPageIds(market) : [arg];
 fs.mkdirSync(OUT, { recursive: true });
 
 const GUIDE = `# Reviewer guide — Pride Hire Saudi pages
@@ -47,7 +51,7 @@ Please return the sheet; we will import your corrections. Nothing is published u
 `;
 
 for (const id of ids) {
-  const page = C.loadPage(id);
+  const page = C.loadPage(id, market);
   const rows = [['Key', 'Where it appears', 'English', 'Arabic (current)', 'Status', 'Verdict (OK / EDIT / REWRITE)', 'Corrected Arabic', 'Comment']];
   for (const [key, f] of Object.entries(page.fields)) {
     const ar = f.ar;
@@ -59,7 +63,8 @@ for (const id of ids) {
   console.log(`${id}: ${rows.length - 1} Arabic field(s) -> ${path.relative(process.cwd(), file)}`);
 }
 
-const g = C.loadGlossary();
+if (!require('node:fs').existsSync(path.join(C.dirFor(market), '_glossary.json'))) { console.log('(no glossary for this market)'); process.exit(0); }
+const g = C.loadGlossary(market);
 const grows = [['Key', 'English term', 'Candidates (UNVERIFIED - non-native desk research; you overrule all of them)', 'Your choice', 'Note / alternative']];
 for (const t of g.terms) grows.push([t.key, t.en, t.candidates.join(' | '), t.decision || '', t.note || '']);
 fs.writeFileSync(path.join(OUT, 'glossary.review.csv'), toCsv(grows), 'utf8');
