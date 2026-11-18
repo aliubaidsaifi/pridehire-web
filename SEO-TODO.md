@@ -30,6 +30,12 @@ Schema describes what the site actually does today, never what it will do. If un
 - [ ] Owner confirms licensing with a Saudi consultant -> then open the gate.
 - [ ] Reviewer fills `content/sa/_glossary.json` decisions (via the glossary sheet) before Arabic drafts are written.
 
+## AI-referrer measurement (internal only — never mentioned on a page, not a client service)
+- `components/AiReferrerTracking.js` + `lib/ai-referrer.js` push one `AiReferral` event per session landing (dataLayer -> GTM/GA) for chatgpt.com, perplexity.ai, gemini.google.com, copilot.microsoft.com, claude.ai (and chat.openai.com, utm_source=chatgpt.com).
+- [ ] In GTM/GA: create a trigger on event `AiReferral` and register `ai_source`, `ai_detect`, `landing_path`, `tracking_version` as custom dimensions. **The baseline starts the day that is live — write that date here: ____**
+- Limits: assistants/apps that send no referrer are invisible to this; it counts visits, not mentions.
+- Saudi scope is web development (incl. Arabic/RTL), business automation, graphic design ONLY; no marketing/SEO/ads, no flex printing.
+
 ## Manual steps outside the code
 - **Calendly**: fix the URL; set working days/hours/timezone there (Sun–Thu, AST for Saudi) — cannot be done in code.
 - **Vercel → Domains**: confirm apex→www is a permanent redirect and that `http://` upgrades to `https://` in one hop.

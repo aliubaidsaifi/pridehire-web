@@ -5,6 +5,7 @@ import CookieConsent from '@/components/CookieConsent';
 import { OrganizationSchema, WebsiteSchema } from '@/components/Schema';
 import { GTMScript, GTMNoScript } from '@/components/Analytics';
 import PageTracking from '@/components/PageTracking';
+import AiReferrerTracking from '@/components/AiReferrerTracking';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
 import { getLocale } from '@/lib/markets';
 
@@ -23,6 +24,7 @@ export default function RootShell({ market = 'global', locale = 'en', fontClass 
         <GoogleAnalytics />
         <GTMNoScript />
         <PageTracking />
+        <AiReferrerTracking />
         <SmoothScroll>
           <OrganizationSchema />
           <WebsiteSchema />
