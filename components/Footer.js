@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Logo from '@/components/Logo';
 import { SITE, OFFICES } from '@/lib/site';
 import { waLink, ORG } from '@/lib/markets';
+import { saFooterLink } from '@/lib/sa-links';
 
 const NAV_LEFT = [
   { label: 'Services', href: '/services' },
@@ -20,7 +21,8 @@ const SOCIAL = [
   { label: 'Instagram', href: '#', icon: <><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" strokeWidth="2" /><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" strokeWidth="2" /><circle cx="17.2" cy="6.8" r="1.2" /></> },
 ];
 
-export default function Footer({ market = 'global' }) {
+export default function Footer({ market = 'global', locale = 'en' }) {
+  const saLink = saFooterLink({ market, locale }); // null unless the licensing gate is open (see lib/sa-links.js)
   const year = new Date().getFullYear(); // founding year is unverified, so only the current year is shown
   return (
     <footer className="border-t border-line bg-white">
@@ -75,6 +77,7 @@ export default function Footer({ market = 'global' }) {
         <div className="mt-14 flex flex-col items-start justify-between gap-3 border-t border-line pt-8 text-sm text-muted sm:flex-row sm:items-center">
           <p>© {year} {SITE.name}. All rights reserved.</p>
           <div className="flex gap-6">
+            {saLink && <Link href={saLink.href} className="link-underline hover:text-ink">{saLink.label}</Link>}
             <Link href="/privacy" className="link-underline hover:text-ink">Privacy</Link>
             <Link href="/terms" className="link-underline hover:text-ink">Terms</Link>
           </div>

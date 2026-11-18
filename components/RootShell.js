@@ -30,7 +30,7 @@ export default function RootShell({ market = 'global', locale = 'en', fontClass 
           <WebsiteSchema />
           <Navbar />
           <main>{children}</main>
-          <Footer market={market} />
+          <Footer market={market} locale={locale} />
           <CookieConsent />
         </SmoothScroll>
       </body>

@@ -16,11 +16,11 @@
       "maxChars": 60,
       "en": {
         "text": "AI Visibility: How AI Assistants Choose Sources to Cite",
-        "reviewStatus": "draft",
+        "reviewStatus": "approved",
         "reviewedBy": null,
         "reviewedAt": null,
-        "approvedBy": null,
-        "approvedAt": null,
+        "approvedBy": "Suhail",
+        "approvedAt": "2026-11-18T12:55:39.127Z",
         "reviewerNote": null,
         "sources": [],
         "history": []
@@ -44,11 +44,11 @@
       "maxChars": 160,
       "en": {
         "text": "How ChatGPT, Gemini and Perplexity find and cite web content, what we can and cannot influence, and what AI visibility work involves for Saudi businesses.",
-        "reviewStatus": "draft",
+        "reviewStatus": "approved",
         "reviewedBy": null,
         "reviewedAt": null,
-        "approvedBy": null,
-        "approvedAt": null,
+        "approvedBy": "Suhail",
+        "approvedAt": "2026-11-18T12:55:39.128Z",
         "reviewerNote": null,
         "sources": [],
         "history": []
@@ -71,11 +71,11 @@
       "kind": "text",
       "en": {
         "text": "AI visibility: how AI assistants choose which sources to cite",
-        "reviewStatus": "draft",
+        "reviewStatus": "approved",
         "reviewedBy": null,
         "reviewedAt": null,
-        "approvedBy": null,
-        "approvedAt": null,
+        "approvedBy": "Suhail",
+        "approvedAt": "2026-11-18T12:55:39.128Z",
         "reviewerNote": null,
         "sources": [],
         "history": []
@@ -98,11 +98,11 @@
       "kind": "answer",
       "en": {
         "text": "AI assistants such as ChatGPT, Gemini and Perplexity answer questions using web content, and some show links to the sources they used. We can make your website easier for them to reach, read and understand. We cannot control what any assistant says, and we do not promise that your business will be mentioned.",
-        "reviewStatus": "draft",
+        "reviewStatus": "approved",
         "reviewedBy": null,
         "reviewedAt": null,
-        "approvedBy": null,
-        "approvedAt": null,
+        "approvedBy": "Suhail",
+        "approvedAt": "2026-11-18T12:55:39.128Z",
         "reviewerNote": null,
         "sources": [],
         "history": []
@@ -125,11 +125,11 @@
       "kind": "text",
       "en": {
         "text": "How do AI assistants decide which sources to cite?",
-        "reviewStatus": "draft",
+        "reviewStatus": "approved",
         "reviewedBy": null,
         "reviewedAt": null,
-        "approvedBy": null,
-        "approvedAt": null,
+        "approvedBy": "Suhail",
+        "approvedAt": "2026-11-18T12:55:39.128Z",
         "reviewerNote": null,
         "sources": [],
         "history": []
@@ -156,11 +156,11 @@
       ],
       "en": {
         "text": "No assistant publishes a full formula. What the providers document is basic. For Google’s AI features, a page must be indexed and eligible to appear in Search with a snippet. OpenAI says to allow its search crawler, OAI-SearchBot. Anything more specific is unproven, so we treat it as a hypothesis, not a fact.",
-        "reviewStatus": "draft",
+        "reviewStatus": "approved",
         "reviewedBy": null,
         "reviewedAt": null,
-        "approvedBy": null,
-        "approvedAt": null,
+        "approvedBy": "Suhail",
+        "approvedAt": "2026-11-18T12:55:39.128Z",
         "reviewerNote": null,
         "sources": [
           {
@@ -205,11 +205,11 @@
       "kind": "text",
       "en": {
         "text": "Is AI visibility different from SEO?",
-        "reviewStatus": "draft",
+        "reviewStatus": "approved",
         "reviewedBy": null,
         "reviewedAt": null,
-        "approvedBy": null,
-        "approvedAt": null,
+        "approvedBy": "Suhail",
+        "approvedAt": "2026-11-18T12:55:39.128Z",
         "reviewerNote": null,
         "sources": [],
         "history": []
@@ -236,11 +236,11 @@
       ],
       "en": {
         "text": "It overlaps heavily. Google states that its AI features have no additional requirements beyond normal Search eligibility, and that no special markup or AI-specific files are needed. Other assistants use their own crawlers and sources. So the work starts with [SEO](/services/seo) fundamentals: crawlable, indexable, readable pages.",
-        "reviewStatus": "draft",
+        "reviewStatus": "approved",
         "reviewedBy": null,
         "reviewedAt": null,
-        "approvedBy": null,
-        "approvedAt": null,
+        "approvedBy": "Suhail",
+        "approvedAt": "2026-11-18T12:55:39.128Z",
         "reviewerNote": null,
         "sources": [
           {
@@ -295,11 +295,11 @@
       "kind": "text",
       "en": {
         "text": "What does AI visibility work involve?",
-        "reviewStatus": "draft",
+        "reviewStatus": "approved",
         "reviewedBy": null,
         "reviewedAt": null,
-        "approvedBy": null,
-        "approvedAt": null,
+        "approvedBy": "Suhail",
+        "approvedAt": "2026-11-18T12:55:39.128Z",
         "reviewerNote": null,
         "sources": [],
         "history": []
@@ -326,11 +326,11 @@
       ],
       "en": {
         "text": "We check that search and AI crawlers can reach your pages and are not blocked by robots.txt or hosting settings. We make sure each page states plainly who you are, what you offer and where you work, and that this stays consistent across your site. We add structured data only where it accurately describes the page.",
-        "reviewStatus": "draft",
+        "reviewStatus": "approved",
         "reviewedBy": null,
         "reviewedAt": null,
-        "approvedBy": null,
-        "approvedAt": null,
+        "approvedBy": "Suhail",
+        "approvedAt": "2026-11-18T12:55:39.128Z",
         "reviewerNote": null,
         "sources": [],
         "history": []
@@ -353,11 +353,11 @@
       "kind": "text",
       "en": {
         "text": "Can you guarantee my business will appear in ChatGPT, Gemini or Perplexity?",
-        "reviewStatus": "draft",
+        "reviewStatus": "approved",
         "reviewedBy": null,
         "reviewedAt": null,
-        "approvedBy": null,
-        "approvedAt": null,
+        "approvedBy": "Suhail",
+        "approvedAt": "2026-11-18T12:55:39.128Z",
         "reviewerNote": null,
         "sources": [],
         "history": []
@@ -384,11 +384,11 @@
       ],
       "en": {
         "text": "No. The providers control what their assistants cite, and answers can differ from one query to the next. We can remove technical barriers and make your information clearer. We cannot decide what an assistant says about you, or whether it mentions you at all, and we do not promise any ranking or result.",
-        "reviewStatus": "draft",
+        "reviewStatus": "approved",
         "reviewedBy": null,
         "reviewedAt": null,
-        "approvedBy": null,
-        "approvedAt": null,
+        "approvedBy": "Suhail",
+        "approvedAt": "2026-11-18T12:55:39.128Z",
         "reviewerNote": null,
         "sources": [],
         "history": []
@@ -411,11 +411,11 @@
       "kind": "text",
       "en": {
         "text": "How can AI visibility be measured?",
-        "reviewStatus": "draft",
+        "reviewStatus": "approved",
         "reviewedBy": null,
         "reviewedAt": null,
-        "approvedBy": null,
-        "approvedAt": null,
+        "approvedBy": "Suhail",
+        "approvedAt": "2026-11-18T12:55:39.128Z",
         "reviewerNote": null,
         "sources": [],
         "history": []
@@ -442,11 +442,11 @@
       ],
       "en": {
         "text": "There is no complete measure. Analytics tools can show visits that arrive from AI assistants, because those visits often carry a referring domain such as chatgpt.com or perplexity.ai. That counts visits, not mentions, and an assistant can mention a business without anyone clicking. Asking the same questions regularly and recording the answers is another, imperfect method.",
-        "reviewStatus": "draft",
+        "reviewStatus": "approved",
         "reviewedBy": null,
         "reviewedAt": null,
-        "approvedBy": null,
-        "approvedAt": null,
+        "approvedBy": "Suhail",
+        "approvedAt": "2026-11-18T12:55:39.128Z",
         "reviewerNote": null,
         "sources": [],
         "history": []
@@ -469,11 +469,11 @@
       "kind": "text",
       "en": {
         "text": "How can I find out whether AI assistants can read my website?",
-        "reviewStatus": "draft",
+        "reviewStatus": "approved",
         "reviewedBy": null,
         "reviewedAt": null,
-        "approvedBy": null,
-        "approvedAt": null,
+        "approvedBy": "Suhail",
+        "approvedAt": "2026-11-18T12:55:39.128Z",
         "reviewerNote": null,
         "sources": [],
         "history": []
@@ -500,11 +500,11 @@
       ],
       "en": {
         "text": "Request a [free website & SEO audit](/free-audit) and tell us you are interested in AI visibility. We look at whether search and AI crawlers can reach your key pages, what your site says about your business, and what to fix first. The audit is a review of your website, with no commitment to buy anything afterwards.",
-        "reviewStatus": "draft",
+        "reviewStatus": "approved",
         "reviewedBy": null,
         "reviewedAt": null,
-        "approvedBy": null,
-        "approvedAt": null,
+        "approvedBy": "Suhail",
+        "approvedAt": "2026-11-18T12:55:39.128Z",
         "reviewerNote": null,
         "sources": [],
         "history": []
@@ -527,11 +527,11 @@
       "kind": "text",
       "en": {
         "text": "Get your free website & SEO audit",
-        "reviewStatus": "draft",
+        "reviewStatus": "approved",
         "reviewedBy": null,
         "reviewedAt": null,
-        "approvedBy": null,
-        "approvedAt": null,
+        "approvedBy": "Suhail",
+        "approvedAt": "2026-11-18T12:55:39.128Z",
         "reviewerNote": null,
         "sources": [],
         "history": []
@@ -554,11 +554,11 @@
       "kind": "related",
       "en": {
         "text": "Looking for websites, automation or design? See what we offer businesses in [Khobar, Dammam and Dhahran](/sa).",
-        "reviewStatus": "draft",
+        "reviewStatus": "approved",
         "reviewedBy": null,
         "reviewedAt": null,
-        "approvedBy": null,
-        "approvedAt": null,
+        "approvedBy": "Suhail",
+        "approvedAt": "2026-11-18T12:55:39.128Z",
         "reviewerNote": null,
         "sources": [],
         "history": []
