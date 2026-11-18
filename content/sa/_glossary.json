@@ -1,0 +1,125 @@
+{
+  "note": "The candidates below come from desk research by a NON-NATIVE writer. They are unverified guesses, not recommendations. The native reviewer's judgement always wins, with no need to justify it. decision stays null until the reviewer fills it.",
+  "terms": [
+    {
+      "key": "seo",
+      "en": "SEO",
+      "candidates": [
+        "SEO (Latin)",
+        "سيو",
+        "تحسين محركات البحث"
+      ],
+      "decision": null,
+      "decidedBy": null,
+      "decidedAt": null,
+      "note": "Which form do Saudi business owners actually use and expect?"
+    },
+    {
+      "key": "google-ads",
+      "en": "Google Ads",
+      "candidates": [
+        "Google Ads (Latin)",
+        "إعلانات جوجل",
+        "إعلانات قوقل"
+      ],
+      "decision": null,
+      "decidedBy": null,
+      "decidedAt": null,
+      "note": "جوجل vs قوقل"
+    },
+    {
+      "key": "chatgpt",
+      "en": "ChatGPT",
+      "candidates": [
+        "ChatGPT (Latin)",
+        "شات جي بي تي"
+      ],
+      "decision": null,
+      "decidedBy": null,
+      "decidedAt": null,
+      "note": "Latin or Arabic transliteration"
+    },
+    {
+      "key": "ai",
+      "en": "AI / artificial intelligence",
+      "candidates": [
+        "الذكاء الاصطناعي",
+        "AI (Latin)"
+      ],
+      "decision": null,
+      "decidedBy": null,
+      "decidedAt": null,
+      "note": ""
+    },
+    {
+      "key": "ai-assistants",
+      "en": "AI assistants / AI answer engines",
+      "candidates": [
+        "مساعدات الذكاء الاصطناعي",
+        "محركات الإجابة بالذكاء الاصطناعي"
+      ],
+      "decision": null,
+      "decidedBy": null,
+      "decidedAt": null,
+      "note": "How would a Saudi marketer describe ChatGPT/Gemini-style tools?"
+    },
+    {
+      "key": "website",
+      "en": "website",
+      "candidates": [
+        "موقع إلكتروني",
+        "موقع الكتروني",
+        "website (Latin)"
+      ],
+      "decision": null,
+      "decidedBy": null,
+      "decidedAt": null,
+      "note": ""
+    },
+    {
+      "key": "khobar",
+      "en": "Al Khobar",
+      "candidates": [
+        "الخبر"
+      ],
+      "decision": null,
+      "decidedBy": null,
+      "decidedAt": null,
+      "note": "Confirm; also confirm how to refer to Dhahran and Dammam in running text"
+    },
+    {
+      "key": "eastern-province",
+      "en": "Eastern Province",
+      "candidates": [
+        "المنطقة الشرقية",
+        "الشرقية"
+      ],
+      "decision": null,
+      "decidedBy": null,
+      "decidedAt": null,
+      "note": ""
+    },
+    {
+      "key": "tri-city",
+      "en": "Khobar, Dammam and Dhahran",
+      "candidates": [
+        "الخبر والدمام والظهران"
+      ],
+      "decision": null,
+      "decidedBy": null,
+      "decidedAt": null,
+      "note": "Is there a more natural way locals refer to the three cities together?"
+    },
+    {
+      "key": "partner",
+      "en": "our partner in Al Khobar",
+      "candidates": [
+        "شريكنا في الخبر"
+      ],
+      "decision": null,
+      "decidedBy": null,
+      "decidedAt": null,
+      "note": "Must NOT imply an office or a Saudi team. Does the wording stay accurate and natural?"
+    }
+  ]
+}

@@ -22,6 +22,14 @@ Schema describes what the site actually does today, never what it will do. If un
 - [ ] Decide which phone number (Saudi / India) shows on which page once `/sa/` pages exist. The Saudi number is currently in schema only.
 - [ ] Add the Saudi equivalents to `lib/locale-pages.js` when the first `/sa/` page goes live (hreflang + sitemap alternates follow automatically).
 
+## Saudi content workflow (staged, NOT published)
+- Data: `content/sa/<page>.json` (en + ar per field, each with `reviewStatus` draft|reviewed|approved). `text: null` = section omitted.
+- `npm run content:check` validates (blocklist, TODO markers, sources, approved-needs-approver) and shows publish readiness.
+- `npm run content:export -- <page>` -> `review-out/` reviewer pack (CSV + guide + glossary); `content:import` records the reviewer's corrections as `reviewed`; only `content:approve` (owner) sets `approved`.
+- **Licensing gate:** `content/sa/_gate.json` `licensingCleared` must be set true by the owner before any /sa/ route is served. Routes must call `isPublishable()` (`lib/content-review.js`).
+- [ ] Owner confirms licensing with a Saudi consultant -> then open the gate.
+- [ ] Reviewer fills `content/sa/_glossary.json` decisions (via the glossary sheet) before Arabic drafts are written.
+
 ## Manual steps outside the code
 - **Calendly**: fix the URL; set working days/hours/timezone there (Sun–Thu, AST for Saudi) — cannot be done in code.
 - **Vercel → Domains**: confirm apex→www is a permanent redirect and that `http://` upgrades to `https://` in one hop.

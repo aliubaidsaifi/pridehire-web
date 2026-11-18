@@ -10,7 +10,11 @@
     "prebuild": "node scripts/check-lastmod.js",
     "lastmod:seed": "node scripts/lastmod.js --seed",
     "lastmod:staged": "node scripts/lastmod.js --staged",
-    "hooks:install": "git config core.hooksPath .githooks"
+    "hooks:install": "git config core.hooksPath .githooks",
+    "content:check": "node scripts/check-content.js",
+    "content:export": "node scripts/content-export.js",
+    "content:import": "node scripts/content-import.js",
+    "content:approve": "node scripts/content-approve.js"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",

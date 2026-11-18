@@ -1,0 +1,49 @@
+{
+  "note": "Patterns that must never appear in Saudi page copy. Enforced by scripts/check-content.js. The owner can extend this list; Arabic equivalents should be added by the native reviewer.",
+  "patterns": [
+    {
+      "regex": "waleed",
+      "reason": "Waleed Advertising is removed from scope entirely"
+    },
+    {
+      "regex": "\\bVAT\\b|ZATCA|e-?invoic|invoice|\\bcontract",
+      "reason": "no statements about contracts, invoicing, VAT or ZATCA"
+    },
+    {
+      "regex": "ضريبة القيمة المضافة|الزكاة والضريبة|فاتورة إلكترونية",
+      "reason": "no statements about VAT / ZATCA (Arabic)"
+    },
+    {
+      "regex": "based in|our (saudi|local|khobar) (team|office)|(saudi|khobar|dammam) office|our office|headquartered|head office",
+      "reason": "no office / 'based in' / 'our Saudi team' wording — in-person capability is only 'through our partner in Al Khobar'"
+    },
+    {
+      "regex": "trusted by|clients across|businesses across the region|our clients|worked with",
+      "reason": "no client-proof wording — we have no Saudi proof and must not imply any"
+    },
+    {
+      "regex": "guaranteed|guarantee[sd]? (rank|result|top)|#1 |first page of google",
+      "reason": "no outcome guarantees"
+    },
+    {
+      "regex": "مكتبنا|مقرنا|فريقنا السعودي|عملاؤنا",
+      "reason": "no office / Saudi-team / client-proof wording (Arabic)"
+    },
+    {
+      "regex": "our office in|locally[- ]based|on the ground in|\\boffices? in (saudi|khobar|dammam|dhahran|riyadh|jeddah)",
+      "reason": "implies a presence/office we do not have"
+    },
+    {
+      "regex": "\\blicen[sc]ed\\b|\\blicen[sc]e\\b|registered in (saudi|ksa)|\\bregistered (company|business|entity) in|\\bCR\\b( number| no)?|commercial registration|\\bMISA\\b",
+      "reason": "no wording implying Saudi registration or licensing"
+    },
+    {
+      "regex": "مكتبنا في|مقرنا الرئيسي|مقيمون في|متواجدون في|على أرض الواقع في|فريق محلي|مقرنا في",
+      "reason": "implies a presence/office we do not have (Arabic)"
+    },
+    {
+      "regex": "مرخص|مرخّص|ترخيص|مسجل في السعودية|مسجلة في السعودية|سجل تجاري|السجل التجاري|رقم السجل",
+      "reason": "no wording implying Saudi registration or licensing (Arabic)"
+    }
+  ]
+}

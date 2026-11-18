@@ -1,0 +1,122 @@
+{
+  "id": "hub",
+  "market": "sa",
+  "paths": {
+    "en": "/sa",
+    "ar": "/sa/ar"
+  },
+  "cluster": "tri-city hub (Khobar / Dammam / Dhahran)",
+  "notes": "Skeleton only: every text is null (= section omitted). Add fields (sections.N.heading / sections.N.body / faq.N.q / faq.N.a ...) as copy is written. No client proof, no office wording, nothing on contracts/invoicing/VAT/ZATCA.",
+  "fields": {
+    "meta.title": {
+      "context": "Browser tab / search result title",
+      "required": true,
+      "kind": "text",
+      "maxChars": 60,
+      "en": {
+        "text": null,
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": null,
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "meta.description": {
+      "context": "Search result description under the title",
+      "required": true,
+      "kind": "text",
+      "maxChars": 160,
+      "en": {
+        "text": null,
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": null,
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "h1": {
+      "context": "Main page heading",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": null,
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": null,
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "answer": {
+      "context": "Short direct answer block directly under the H1 (what the page is about, in 2-3 sentences)",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": null,
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": null,
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    }
+  }
+}

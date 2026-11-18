@@ -1,0 +1,6 @@
+{
+  "licensingCleared": false,
+  "note": "Set to true ONLY after the owner confirms with a Saudi business consultant that we may publish Saudi-facing pages (MISA/CR question). While false, isPublishable() returns false for every page and no /sa/ route may be served.",
+  "clearedBy": null,
+  "clearedAt": null
+}
