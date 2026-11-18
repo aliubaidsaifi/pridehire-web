@@ -28,6 +28,7 @@ Change it, replace it, or tell us the whole approach is off.
 - Do not edit the Key, Where it appears, English or Arabic (current) columns.
 - Verdict:  OK  = use as is  |  EDIT = small fix  |  REWRITE = this should be written differently
 - Corrected Arabic: for EDIT / REWRITE, put the full replacement text here (keep line breaks).
+- Links: text like [words](/path) is a link. Keep the square brackets, round brackets and the /path exactly as they are; you may change the words inside the square brackets (and where the link starts and ends), or tell us the link should go on different words.
 - Comment: anything we should know, including "this claim sounds like marketing hype".
 
 ## What to check (beyond translation accuracy)

@@ -6,7 +6,8 @@
     "ar": "/sa/ar/ai-visibility"
   },
   "cluster": "AI visibility / GEO",
-  "notes": "Skeleton only: every text is null (= section omitted). Add fields (sections.N.heading / sections.N.body / faq.N.q / faq.N.a ...) as copy is written. No client proof, no office wording, nothing on contracts/invoicing/VAT/ZATCA.",
+  "notes": "Services on Saudi pages: web development (incl. Arabic/RTL), business automation, graphic design ONLY. No digital marketing / SEO / ads, no flex printing, no staffing. No proof, no office wording, nothing on contracts/invoicing/VAT/ZATCA, no hours/time-zone claims. Arabic drafted by a non-native writer: unverified.",
+  "ctaHref": "/free-audit",
   "fields": {
     "meta.title": {
       "context": "Browser tab / search result title",
@@ -14,7 +15,7 @@
       "kind": "text",
       "maxChars": 60,
       "en": {
-        "text": null,
+        "text": "AI Visibility: How AI Assistants Choose Sources to Cite",
         "reviewStatus": "draft",
         "reviewedBy": null,
         "reviewedAt": null,
@@ -25,7 +26,7 @@
         "history": []
       },
       "ar": {
-        "text": null,
+        "text": "الظهور في الذكاء الاصطناعي: كيف تختار المساعدات مصادرها",
         "reviewStatus": "draft",
         "reviewedBy": null,
         "reviewedAt": null,
@@ -42,7 +43,7 @@
       "kind": "text",
       "maxChars": 160,
       "en": {
-        "text": null,
+        "text": "How ChatGPT, Gemini and Perplexity find and cite web content, what we can and cannot influence, and what AI visibility work involves for Saudi businesses.",
         "reviewStatus": "draft",
         "reviewedBy": null,
         "reviewedAt": null,
@@ -53,7 +54,7 @@
         "history": []
       },
       "ar": {
-        "text": null,
+        "text": "كيف يجد ChatGPT وGemini وPerplexity محتوى الويب ويستشهدون به، وما نستطيع التأثير فيه وما لا نستطيع، وماذا يشمل العمل على الظهور في الذكاء الاصطناعي.",
         "reviewStatus": "draft",
         "reviewedBy": null,
         "reviewedAt": null,
@@ -69,7 +70,7 @@
       "required": true,
       "kind": "text",
       "en": {
-        "text": null,
+        "text": "AI visibility: how AI assistants choose which sources to cite",
         "reviewStatus": "draft",
         "reviewedBy": null,
         "reviewedAt": null,
@@ -80,7 +81,7 @@
         "history": []
       },
       "ar": {
-        "text": null,
+        "text": "الظهور في الذكاء الاصطناعي: كيف تختار المساعدات المصادر التي تستشهد بها",
         "reviewStatus": "draft",
         "reviewedBy": null,
         "reviewedAt": null,
@@ -92,11 +93,11 @@
       }
     },
     "answer": {
-      "context": "Short direct answer block directly under the H1 (what the page is about, in 2-3 sentences)",
+      "context": "Short answer block directly under the H1",
       "required": true,
-      "kind": "text",
+      "kind": "answer",
       "en": {
-        "text": null,
+        "text": "AI assistants such as ChatGPT, Gemini and Perplexity answer questions using web content, and some show links to the sources they used. We can make your website easier for them to reach, read and understand. We cannot control what any assistant says, and we do not promise that your business will be mentioned.",
         "reviewStatus": "draft",
         "reviewedBy": null,
         "reviewedAt": null,
@@ -107,7 +108,463 @@
         "history": []
       },
       "ar": {
-        "text": null,
+        "text": "تجيب مساعدات الذكاء الاصطناعي مثل ChatGPT وGemini وPerplexity عن الأسئلة اعتمادًا على محتوى الويب، وبعضها يعرض روابط المصادر التي استخدمتها. نستطيع أن نجعل موقعك أسهل في الوصول إليه وقراءته وفهمه. لكننا لا نتحكم فيما يقوله أي مساعد، ولا نَعِد بأن يُذكر نشاطك.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.1.heading": {
+      "context": "Section 1 heading (H2) — the question a buyer asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "How do AI assistants decide which sources to cite?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "كيف تقرر مساعدات الذكاء الاصطناعي المصادر التي تستشهد بها؟",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.1.answer": {
+      "context": "Section 1 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "No assistant publishes a full formula. What the providers document is basic. For Google’s AI features, a page must be indexed and eligible to appear in Search with a snippet. OpenAI says to allow its search crawler, OAI-SearchBot. Anything more specific is unproven, so we treat it as a hypothesis, not a fact.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "Google Search Central: AI features and your website",
+            "url": "https://developers.google.com/search/docs/appearance/ai-features",
+            "accessed": "2026-11-18"
+          },
+          {
+            "title": "OpenAI: Overview of OpenAI crawlers",
+            "url": "https://developers.openai.com/api/docs/bots",
+            "accessed": "2026-11-18"
+          }
+        ],
+        "history": []
+      },
+      "ar": {
+        "text": "لا يعلن أي مساعد صيغة كاملة، وما تُوثّقه الجهات المزوّدة أمر أساسي. ففي ميزات الذكاء الاصطناعي من Google يجب أن تكون الصفحة مفهرسة ومؤهلة للظهور في البحث مع مقتطف. وتنصح OpenAI بالسماح لزاحف البحث لديها OAI-SearchBot. وما عدا ذلك غير مثبت، لذا نتعامل معه كفرضية لا كحقيقة.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "Google Search Central: AI features and your website",
+            "url": "https://developers.google.com/search/docs/appearance/ai-features",
+            "accessed": "2026-11-18"
+          },
+          {
+            "title": "OpenAI: Overview of OpenAI crawlers",
+            "url": "https://developers.openai.com/api/docs/bots",
+            "accessed": "2026-11-18"
+          }
+        ],
+        "history": []
+      }
+    },
+    "sections.2.heading": {
+      "context": "Section 2 heading (H2) — the question a buyer asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Is AI visibility different from SEO?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "هل يختلف الظهور في الذكاء الاصطناعي عن تحسين محركات البحث؟",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.2.answer": {
+      "context": "Section 2 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "It overlaps heavily. Google states that its AI features have no additional requirements beyond normal Search eligibility, and that no special markup or AI-specific files are needed. Other assistants use their own crawlers and sources. So the work starts with [SEO](/services/seo) fundamentals: crawlable, indexable, readable pages.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "Google Search Central: AI features and your website",
+            "url": "https://developers.google.com/search/docs/appearance/ai-features",
+            "accessed": "2026-11-18"
+          },
+          {
+            "title": "OpenAI: Overview of OpenAI crawlers",
+            "url": "https://developers.openai.com/api/docs/bots",
+            "accessed": "2026-11-18"
+          },
+          {
+            "title": "Perplexity Help Center: How does Perplexity work?",
+            "url": "https://www.perplexity.ai/help-center/en/articles/10352895-how-does-perplexity-work",
+            "accessed": "2026-11-18"
+          }
+        ],
+        "history": []
+      },
+      "ar": {
+        "text": "يتداخل معه كثيرًا. تذكر Google أن ميزات الذكاء الاصطناعي لديها لا تتطلب شيئًا إضافيًا بعد أهلية البحث المعتادة، ولا تحتاج إلى ترميز خاص أو ملفات مخصصة للذكاء الاصطناعي. وتستخدم المساعدات الأخرى زواحفها ومصادرها الخاصة. لذا يبدأ العمل بأساسيات [تحسين محركات البحث](/services/seo): صفحات يمكن الوصول إليها وفهرستها وقراءتها.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "Google Search Central: AI features and your website",
+            "url": "https://developers.google.com/search/docs/appearance/ai-features",
+            "accessed": "2026-11-18"
+          },
+          {
+            "title": "OpenAI: Overview of OpenAI crawlers",
+            "url": "https://developers.openai.com/api/docs/bots",
+            "accessed": "2026-11-18"
+          },
+          {
+            "title": "Perplexity Help Center: How does Perplexity work?",
+            "url": "https://www.perplexity.ai/help-center/en/articles/10352895-how-does-perplexity-work",
+            "accessed": "2026-11-18"
+          }
+        ],
+        "history": []
+      }
+    },
+    "sections.3.heading": {
+      "context": "Section 3 heading (H2) — the question a buyer asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "What does AI visibility work involve?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "ماذا يتضمن العمل على الظهور في الذكاء الاصطناعي؟",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.3.answer": {
+      "context": "Section 3 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "We check that search and AI crawlers can reach your pages and are not blocked by robots.txt or hosting settings. We make sure each page states plainly who you are, what you offer and where you work, and that this stays consistent across your site. We add structured data only where it accurately describes the page.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "نتحقق من أن زواحف البحث والذكاء الاصطناعي تستطيع الوصول إلى صفحاتك، وأنها غير محجوبة بملف robots.txt أو بإعدادات الاستضافة. ونتأكد من أن كل صفحة تذكر بوضوح من أنت وما تقدمه وأين تعمل، وأن ذلك متسق في موقعك كله. ونضيف البيانات المنظمة فقط حيث تصف الصفحة بدقة.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.4.heading": {
+      "context": "Section 4 heading (H2) — the question a buyer asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Can you guarantee my business will appear in ChatGPT, Gemini or Perplexity?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "هل تضمنون ظهور نشاطي في ChatGPT أو Gemini أو Perplexity؟",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.4.answer": {
+      "context": "Section 4 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "No. The providers control what their assistants cite, and answers can differ from one query to the next. We can remove technical barriers and make your information clearer. We cannot decide what an assistant says about you, or whether it mentions you at all, and we do not promise any ranking or result.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "لا. فالجهات المزوّدة هي التي تتحكم فيما تستشهد به مساعداتها، وقد تختلف الإجابة من سؤال إلى آخر. نستطيع إزالة العوائق التقنية وجعل معلوماتك أوضح. لكننا لا نقرر ما يقوله المساعد عنك، ولا إن كان سيذكرك أصلًا، ولا نعد بأي ترتيب أو نتيجة.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.5.heading": {
+      "context": "Section 5 heading (H2) — the question a buyer asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "How can AI visibility be measured?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "كيف يمكن قياس الظهور في الذكاء الاصطناعي؟",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.5.answer": {
+      "context": "Section 5 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "There is no complete measure. Analytics tools can show visits that arrive from AI assistants, because those visits often carry a referring domain such as chatgpt.com or perplexity.ai. That counts visits, not mentions, and an assistant can mention a business without anyone clicking. Asking the same questions regularly and recording the answers is another, imperfect method.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "لا يوجد مقياس كامل. تستطيع أدوات التحليلات إظهار الزيارات القادمة من مساعدات الذكاء الاصطناعي، لأن هذه الزيارات تحمل غالبًا نطاقًا مُحيلًا مثل chatgpt.com أو perplexity.ai. لكن هذا يحصي الزيارات لا مرات الذكر، وقد يذكر المساعد نشاطًا تجاريًا دون أن ينقر أحد. وطرح الأسئلة نفسها بانتظام وتسجيل الإجابات طريقة أخرى، وإن كانت غير كاملة.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.6.heading": {
+      "context": "Section 6 heading (H2) — the question a buyer asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "How can I find out whether AI assistants can read my website?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "كيف أعرف إن كانت مساعدات الذكاء الاصطناعي تستطيع قراءة موقعي؟",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.6.answer": {
+      "context": "Section 6 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "Request a [free website & SEO audit](/free-audit) and tell us you are interested in AI visibility. We look at whether search and AI crawlers can reach your key pages, what your site says about your business, and what to fix first. The audit is a review of your website, with no commitment to buy anything afterwards.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "اطلب [تدقيقًا مجانيًا لموقعك ولظهوره في محركات البحث](/free-audit) وأخبرنا أنك مهتم بالظهور في الذكاء الاصطناعي. نفحص هل تستطيع زواحف البحث والذكاء الاصطناعي الوصول إلى صفحاتك المهمة، وماذا يقول موقعك عن نشاطك، وما الذي يجب إصلاحه أولًا. التدقيق مراجعة لموقعك، دون أي التزام بالشراء بعده.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "cta.text": {
+      "context": "Button text at the end of the page (links to /free-audit)",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Get your free website & SEO audit",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "احصل على تدقيق مجاني لموقعك ولظهوره في محركات البحث",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "related": {
+      "context": "Closing line after the last section: link back to the Eastern Province hub",
+      "required": false,
+      "kind": "related",
+      "en": {
+        "text": "Looking for websites, automation or design? See what we offer businesses in [Khobar, Dammam and Dhahran](/sa).",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "تبحث عن مواقع أو أتمتة أو تصميم؟ تعرّف على ما نقدمه للشركات في [الخبر والدمام والظهران](/sa/ar).",
         "reviewStatus": "draft",
         "reviewedBy": null,
         "reviewedAt": null,
