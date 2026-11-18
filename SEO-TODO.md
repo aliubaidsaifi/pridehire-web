@@ -28,6 +28,7 @@ Schema describes what the site actually does today, never what it will do. If un
 - `npm run content:export -- <page>` -> `review-out/` reviewer pack (CSV + guide + glossary); `content:import` records the reviewer's corrections as `reviewed`; only `content:approve` (owner) sets `approved`.
 - **Licensing gate:** `content/sa/_gate.json` `licensingCleared` must be set true by the owner before any /sa/ route is served. Routes must call `isPublishable()` (`lib/content-review.js`).
 - [ ] Owner confirms licensing with a Saudi consultant -> then open the gate.
+- [ ] **BLOCKER for ANY Arabic page going live:** the shared Footer and Navbar are hard-coded English (Latin nav/labels). An Arabic page cannot ship with an English footer/nav. Build a localized Arabic footer + nav (visible-site change; do it only once the reviewer has approved the Arabic copy and Arabic is actually shipping). The Arabic footer must also carry the `/sa/ar` link (`lib/sa-links.js` already supports it).
 - [ ] Reviewer fills `content/sa/_glossary.json` decisions (via the glossary sheet) before Arabic drafts are written.
 
 ## AI-referrer measurement (internal only — never mentioned on a page, not a client service)

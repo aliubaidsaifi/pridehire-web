@@ -584,18 +584,18 @@
       "required": false,
       "kind": "label",
       "en": {
-        "text": "Eastern Province, Saudi Arabia",
+        "text": "Services in Saudi Arabia",
         "reviewStatus": "approved",
         "reviewedBy": null,
         "reviewedAt": null,
         "approvedBy": "Suhail",
-        "approvedAt": "2026-11-18T12:55:34.317Z",
+        "approvedAt": "2026-11-18T13:07:02.493Z",
         "reviewerNote": null,
         "sources": [],
         "history": []
       },
       "ar": {
-        "text": "المنطقة الشرقية، المملكة العربية السعودية",
+        "text": "خدمات في المملكة العربية السعودية",
         "reviewStatus": "draft",
         "reviewedBy": null,
         "reviewedAt": null,
