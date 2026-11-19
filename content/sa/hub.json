@@ -271,18 +271,18 @@
         60
       ],
       "en": {
-        "text": "Remotely, through video calls and messages. Our team works from India, and we agree the scope, deliverables and progress updates with you in writing before work starts. If you would rather meet in person, in-person meetings are available through our partner in Al Khobar.",
-        "reviewStatus": "approved",
+        "text": "Remotely, by phone and WhatsApp. Our team works from India, and we agree the scope, deliverables and progress updates with you in writing before work starts. If you would rather meet in person, in-person meetings are available through our partner in Al Khobar.",
+        "reviewStatus": "draft",
         "reviewedBy": null,
         "reviewedAt": null,
-        "approvedBy": "Suhail",
-        "approvedAt": "2026-11-18T12:55:34.317Z",
+        "approvedBy": null,
+        "approvedAt": null,
         "reviewerNote": null,
         "sources": [],
         "history": []
       },
       "ar": {
-        "text": "عن بُعد، عبر مكالمات الفيديو والرسائل. يعمل فريقنا من الهند، ونتفق معك كتابةً على نطاق العمل والمخرجات وتحديثات التقدم قبل البدء. وإذا فضّلت اللقاء حضوريًا، فاللقاءات الحضورية متاحة عبر شريكنا في الخبر.",
+        "text": "عن بُعد، عبر الهاتف وواتساب. يعمل فريقنا من الهند، ونتفق معك كتابةً على نطاق العمل والمخرجات وتحديثات التقدم قبل البدء. وإذا فضّلت اللقاء حضوريًا، فاللقاءات الحضورية متاحة عبر شريكنا في الخبر.",
         "reviewStatus": "draft",
         "reviewedBy": null,
         "reviewedAt": null,

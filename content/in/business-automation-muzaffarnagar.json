@@ -7,9 +7,9 @@
   "paths": {
     "en": "/in/business-automation-muzaffarnagar"
   },
-  "cluster": "business automation, Muzaffarnagar",
+  "cluster": "business automation + AI agents, Muzaffarnagar",
   "ctaHref": "/contact",
-  "notes": "India page, English only (Hinglish phrasing inside English headings/answers, no Hindi page yet). No proof/stats/reviews/images. No street address in visible text. Scope agreed in writing before work starts is confirmed; do not add claims about timelines, prices, hours or in-person visits until supplied.",
+  "notes": "India page, English only (Hinglish inside English headings/answers). No proof/stats/reviews/images/client counts. No street address in visible text. No video-call, timeline, price, hours or in-person claims unless the owner supplies them.",
   "fields": {
     "meta.title": {
       "context": "Browser tab / search result title",
@@ -17,7 +17,7 @@
       "kind": "text",
       "maxChars": 60,
       "en": {
-        "text": "Business Automation in Muzaffarnagar | WhatsApp & Leads",
+        "text": "Business Automation & AI Agents in Muzaffarnagar",
         "reviewStatus": "draft",
         "reviewedBy": null,
         "reviewedAt": null,
@@ -34,7 +34,7 @@
       "kind": "text",
       "maxChars": 160,
       "en": {
-        "text": "Pride Hire automates repetitive business work in Muzaffarnagar: replying to enquiries, following up leads and handling WhatsApp messages.",
+        "text": "Pride Hire connects the tools your business uses, automates WhatsApp and lead handling, and builds custom AI agents, for businesses in Muzaffarnagar.",
         "reviewStatus": "draft",
         "reviewedBy": null,
         "reviewedAt": null,
@@ -50,7 +50,7 @@
       "required": true,
       "kind": "text",
       "en": {
-        "text": "Business automation in Muzaffarnagar",
+        "text": "Business automation and custom AI agents in Muzaffarnagar",
         "reviewStatus": "draft",
         "reviewedBy": null,
         "reviewedAt": null,
@@ -66,7 +66,7 @@
       "required": true,
       "kind": "answer",
       "en": {
-        "text": "Pride Hire automates the repetitive parts of running a business in Muzaffarnagar: replying to new enquiries, following up leads, handling WhatsApp messages and moving customer details into the tools you already use. We agree with you what to automate before we build it.",
+        "text": "Pride Hire builds business automation and custom AI agents for businesses in Muzaffarnagar. We connect the tools you already use so routine work happens without someone doing it by hand, and we build AI agents that answer customers or make judgement calls within agreed rules. What gets built is agreed in writing first.",
         "reviewStatus": "draft",
         "reviewedBy": null,
         "reviewedAt": null,
@@ -82,7 +82,7 @@
       "required": true,
       "kind": "text",
       "en": {
-        "text": "What is business automation?",
+        "text": "What does business automation include?",
         "reviewStatus": "draft",
         "reviewedBy": null,
         "reviewedAt": null,
@@ -102,7 +102,7 @@
         60
       ],
       "en": {
-        "text": "Business automation means setting up software to do routine work that a person would otherwise do by hand, such as sending a reply when an enquiry arrives or reminding you to follow up a lead. It does not replace your judgement. It removes repetitive steps so that enquiries are handled consistently.",
+        "text": "We build two kinds of automation. Workflow automation connects the tools a business already uses, so routine work happens on its own. Custom AI agents handle a task in conversation, or make a judgement call within rules agreed with you. Before any work starts, we agree in writing exactly what will be built.",
         "reviewStatus": "draft",
         "reviewedBy": null,
         "reviewedAt": null,
@@ -118,7 +118,7 @@
       "required": true,
       "kind": "text",
       "en": {
-        "text": "What can be automated?",
+        "text": "What is workflow automation?",
         "reviewStatus": "draft",
         "reviewedBy": null,
         "reviewedAt": null,
@@ -138,7 +138,7 @@
         60
       ],
       "en": {
-        "text": "Common examples are replying to new enquiries, following up leads, sending reminders, handling WhatsApp messages, and passing customer details into a spreadsheet or CRM. We start from the tasks you repeat most often, and agree with you which ones are worth automating before we build anything.",
+        "text": "It connects the tools you already use so routine work happens without someone doing it by hand. Examples: a website enquiry arrives as a WhatsApp or email notification, new leads are captured into a spreadsheet or CRM automatically, and WhatsApp auto-replies and follow-up reminders go out on their own, as agreed with you.",
         "reviewStatus": "draft",
         "reviewedBy": null,
         "reviewedAt": null,
@@ -154,7 +154,7 @@
       "required": true,
       "kind": "text",
       "en": {
-        "text": "WhatsApp automation kya hota hai? (What is WhatsApp automation?)",
+        "text": "What is a custom AI agent?",
         "reviewStatus": "draft",
         "reviewedBy": null,
         "reviewedAt": null,
@@ -174,20 +174,14 @@
         60
       ],
       "en": {
-        "text": "It means WhatsApp messages are sent or answered automatically, for example an instant reply to a new enquiry. Beyond simple replies, this usually goes through the WhatsApp Business Platform, where Meta charges businesses per message sent, depending on the message type and country. Meta’s rates change, so check the current rate card.",
+        "text": "A custom AI agent is software that handles a task conversationally, or makes a judgement call within rules agreed with you, instead of following a fixed script. For example, an agent can answer common customer questions using your own business information. What it may and may not answer is agreed with you in writing before we build it.",
         "reviewStatus": "draft",
         "reviewedBy": null,
         "reviewedAt": null,
         "approvedBy": null,
         "approvedAt": null,
         "reviewerNote": null,
-        "sources": [
-          {
-            "title": "Meta: Pricing on the WhatsApp Business Platform",
-            "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing",
-            "accessed": "2026-11-18"
-          }
-        ],
+        "sources": [],
         "history": []
       }
     },
@@ -196,7 +190,7 @@
       "required": true,
       "kind": "text",
       "en": {
-        "text": "How do we agree what gets built?",
+        "text": "WhatsApp automation kya hota hai? (What is WhatsApp automation?)",
         "reviewStatus": "draft",
         "reviewedBy": null,
         "reviewedAt": null,
@@ -216,14 +210,20 @@
         60
       ],
       "en": {
-        "text": "You tell us about your business and which tasks take up your time. We reply with a recommendation and a proposed scope in writing, and work starts once you agree to it. We do not build automation that you have not agreed to, and you can ask questions at any point.",
+        "text": "It means WhatsApp messages are sent or answered automatically, for example an instant reply to a new enquiry. Beyond simple replies, this usually goes through the WhatsApp Business Platform, where Meta charges businesses per message sent, depending on the message type and country. Meta’s rates change, so check the current rate card.",
         "reviewStatus": "draft",
         "reviewedBy": null,
         "reviewedAt": null,
         "approvedBy": null,
         "approvedAt": null,
         "reviewerNote": null,
-        "sources": [],
+        "sources": [
+          {
+            "title": "Meta: Pricing on the WhatsApp Business Platform",
+            "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing",
+            "accessed": "2026-11-19"
+          }
+        ],
         "history": []
       }
     },
@@ -232,7 +232,7 @@
       "required": true,
       "kind": "text",
       "en": {
-        "text": "Do you work with businesses outside Muzaffarnagar?",
+        "text": "What exactly gets built, and what am I paying for?",
         "reviewStatus": "draft",
         "reviewedBy": null,
         "reviewedAt": null,
@@ -252,7 +252,7 @@
         60
       ],
       "en": {
-        "text": "Yes. Pride Hire is in Muzaffarnagar, and because the work is delivered online we also work with businesses in Shamli, Meerut and Saharanpur, and in other cities as well. You can see how this works on our [areas we serve](/in/areas-we-serve) page.",
+        "text": "Before work starts, we write down what will be built: which tools are connected, what triggers each step, and what should happen as a result. You agree to that in writing, and that is what you are paying for. We do not build anything you have not agreed to, and you can ask questions at any point.",
         "reviewStatus": "draft",
         "reviewedBy": null,
         "reviewedAt": null,
@@ -268,7 +268,7 @@
       "required": true,
       "kind": "text",
       "en": {
-        "text": "How do I get started?",
+        "text": "Do you work with businesses outside Muzaffarnagar?",
         "reviewStatus": "draft",
         "reviewedBy": null,
         "reviewedAt": null,
@@ -288,7 +288,43 @@
         60
       ],
       "en": {
-        "text": "Send us a message or use the contact form. Tell us about your business and which repetitive tasks you would like to remove. We review your situation and reply with a recommendation and a proposed scope, so you can decide what makes sense without any obligation.",
+        "text": "Yes. Pride Hire is in Muzaffarnagar, and because the work is delivered online we also work with businesses in Shamli, Meerut and Saharanpur, and in other cities as well. You can see how this works on our [areas we serve](/in/areas-we-serve) page.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.7.heading": {
+      "context": "Section 7 heading (H2) — the question a buyer asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "How do I get started?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.7.answer": {
+      "context": "Section 7 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "Send us a message or use the contact form. Tell us about your business and which repetitive tasks you would like to remove, or which customer questions you would like answered automatically. We review your situation and reply with a recommendation and a proposed scope, so you can decide what makes sense without any obligation.",
         "reviewStatus": "draft",
         "reviewedBy": null,
         "reviewedAt": null,

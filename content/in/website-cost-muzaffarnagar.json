@@ -1,0 +1,333 @@
+{
+  "id": "website-cost-muzaffarnagar",
+  "market": "in",
+  "langs": [
+    "en"
+  ],
+  "paths": {
+    "en": "/in/website-cost-muzaffarnagar"
+  },
+  "cluster": "website cost, Muzaffarnagar",
+  "ctaHref": "/contact",
+  "notes": "India page, English only (Hinglish inside English headings/answers). No proof/stats/reviews/images/client counts. No street address in visible text. No video-call, timeline, price, hours or in-person claims unless the owner supplies them.",
+  "fields": {
+    "meta.title": {
+      "context": "Browser tab / search result title",
+      "required": true,
+      "kind": "text",
+      "maxChars": 60,
+      "en": {
+        "text": "Website Cost in Muzaffarnagar | What Decides the Price",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "meta.description": {
+      "context": "Search result description under the title",
+      "required": true,
+      "kind": "text",
+      "maxChars": 160,
+      "en": {
+        "text": "What decides the cost of a business website in Muzaffarnagar, what is and is not included, and how to get a price from Pride Hire.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "h1": {
+      "context": "Main page heading",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "How much does a website cost in Muzaffarnagar?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "answer": {
+      "context": "Short answer block directly under the H1",
+      "required": true,
+      "kind": "answer",
+      "needs": "OWNER: the headline answer with real ₹ price bands (for example basic business website, larger website, online store) and what each includes. Do not publish ranges you cannot stand behind.",
+      "en": {
+        "text": null,
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.1.heading": {
+      "context": "Section 1 heading (H2) — the question a buyer asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "What decides what a website costs?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.1.answer": {
+      "context": "Section 1 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "The main drivers are the number of pages, the features you need, whether the design is custom or built from a template, how much content has to be written or prepared, and whether you need an online store. A simple site with a few pages costs less than a larger site with a shop and custom features.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.2.heading": {
+      "context": "Section 2 heading (H2) — the question a buyer asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Website banane ka kharcha kitna hota hai? (Basic business website)",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.2.answer": {
+      "context": "Section 2 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "needs": "OWNER: ₹ price band for a basic business website, and exactly what it includes (pages, design, content help).",
+      "en": {
+        "text": null,
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.3.heading": {
+      "context": "Section 3 heading (H2) — the question a buyer asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "How much does an online store cost?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.3.answer": {
+      "context": "Section 3 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "needs": "OWNER: ₹ price band for an online store, and what it includes (products, payments, shipping).",
+      "en": {
+        "text": null,
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.4.heading": {
+      "context": "Section 4 heading (H2) — the question a buyer asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "What is included in the price, and what is not?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.4.answer": {
+      "context": "Section 4 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "needs": "OWNER: what the price includes and excludes — domain, hosting, content, revisions, training, ongoing support.",
+      "en": {
+        "text": null,
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.5.heading": {
+      "context": "Section 5 heading (H2) — the question a buyer asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Are there running costs after the website is built?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.5.answer": {
+      "context": "Section 5 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "A website usually has running costs after launch, such as the domain name and hosting, whoever builds it. Ask any provider which of these are included in the price and which you pay separately, and get the answer in writing before you agree to anything.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.6.heading": {
+      "context": "Section 6 heading (H2) — the question a buyer asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "How do I get a price for my website?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.6.answer": {
+      "context": "Section 6 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "Tell us about your business and what the website needs to do. We reply with a recommendation and a proposed scope in writing, and you decide whether to go ahead, without any obligation. You can reach us by phone, WhatsApp or the contact form.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "related": {
+      "context": "Closing line after the last section (internal link)",
+      "required": false,
+      "kind": "related",
+      "en": {
+        "text": "See also: [website design in Muzaffarnagar](/in/web-design-muzaffarnagar).",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "cta.text": {
+      "context": "Button text at the end of the page (links to /contact)",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Contact us",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    }
+  }
+}

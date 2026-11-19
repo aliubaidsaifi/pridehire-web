@@ -3,6 +3,7 @@ import Logo from '@/components/Logo';
 import { SITE, OFFICES } from '@/lib/site';
 import { waLink, ORG } from '@/lib/markets';
 import { saFooterLink } from '@/lib/sa-links';
+import { inFooterLink } from '@/lib/in-links';
 
 const NAV_LEFT = [
   { label: 'Services', href: '/services' },
@@ -22,7 +23,8 @@ const SOCIAL = [
 ];
 
 export default function Footer({ market = 'global', locale = 'en' }) {
-  const saLink = saFooterLink({ market, locale }); // null unless the licensing gate is open (see lib/sa-links.js)
+  // Staged inbound links: each is null until its market gate is open, its page is approved and its routes are live (lib/sa-links.js, lib/in-links.js)
+  const marketLinks = [saFooterLink({ market, locale }), inFooterLink({ market, locale })].filter(Boolean);
   const year = new Date().getFullYear(); // founding year is unverified, so only the current year is shown
   return (
     <footer className="border-t border-line bg-white">
@@ -77,7 +79,7 @@ export default function Footer({ market = 'global', locale = 'en' }) {
         <div className="mt-14 flex flex-col items-start justify-between gap-3 border-t border-line pt-8 text-sm text-muted sm:flex-row sm:items-center">
           <p>© {year} {SITE.name}. All rights reserved.</p>
           <div className="flex gap-6">
-            {saLink && <Link href={saLink.href} className="link-underline hover:text-ink">{saLink.label}</Link>}
+            {marketLinks.map((l) => <Link key={l.href} href={l.href} className="link-underline hover:text-ink">{l.label}</Link>)}
             <Link href="/privacy" className="link-underline hover:text-ink">Privacy</Link>
             <Link href="/terms" className="link-underline hover:text-ink">Terms</Link>
           </div>

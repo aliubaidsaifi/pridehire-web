@@ -102,7 +102,7 @@
         60
       ],
       "en": {
-        "text": "We serve businesses in Muzaffarnagar, Shamli, Meerut and Saharanpur in Uttar Pradesh, and we also work with businesses elsewhere. Pride Hire is in Muzaffarnagar. Work for businesses in the other cities is delivered online, by phone, WhatsApp and video call.",
+        "text": "We serve businesses in Muzaffarnagar, Shamli, Meerut and Saharanpur in Uttar Pradesh, and we also work with businesses elsewhere. Pride Hire is in Muzaffarnagar. Work for businesses in the other cities is delivered entirely online, so you can reach us by phone and WhatsApp wherever you are.",
         "reviewStatus": "draft",
         "reviewedBy": null,
         "reviewedAt": null,
@@ -227,6 +227,22 @@
       "kind": "text",
       "en": {
         "text": "Contact us",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "footer.label": {
+      "context": "Footer link text on the main site pointing to this page (shown only once the page is live and approved)",
+      "required": false,
+      "kind": "label",
+      "en": {
+        "text": "Areas we serve",
         "reviewStatus": "draft",
         "reviewedBy": null,
         "reviewedAt": null,
