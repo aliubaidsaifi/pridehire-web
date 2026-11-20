@@ -3,20 +3,10 @@ import { getAllPosts } from '@/lib/blog';
 import { absoluteUrl, getMarket } from '@/lib/markets';
 import { hreflangFor } from '@/lib/seo';
 import { getLastModifiedInfo } from '@/lib/content-dates';
+import { STATIC_PAGES } from '@/lib/public-pages';
 
 // Emits ONLY final, canonical-host (www) URLs — nothing here redirects. lastmod is a real content date or omitted
 // (never the build time). Every entry carries the hreflang alternates (self + any live locale equivalents) from lib/locale-pages.js.
-const STATIC = [
-  { path: '/', priority: 1, freq: 'weekly' },
-  { path: '/services', priority: 0.9, freq: 'monthly' },
-  { path: '/portfolio', priority: 0.8, freq: 'monthly' },
-  { path: '/about', priority: 0.7, freq: 'monthly' },
-  { path: '/blog', priority: 0.8, freq: 'weekly' },
-  { path: '/free-audit', priority: 0.9, freq: 'monthly' },
-  { path: '/contact', priority: 0.8, freq: 'monthly' },
-  { path: '/privacy', priority: 0.3, freq: 'yearly' },
-  { path: '/terms', priority: 0.3, freq: 'yearly' },
-];
 
 const lastmodSources = {}; // build-log summary of where each <lastmod> came from
 
@@ -36,7 +26,7 @@ function entry({ path, priority, freq, market = 'global', locale = 'en', images 
 }
 
 export default function sitemap() {
-  const staticPages = STATIC.map((r) => entry(r));
+  const staticPages = STATIC_PAGES.map((r) => entry(r));
   const servicePages = SERVICES.map((s) => entry({ path: `/services/${s.slug}`, priority: 0.8, freq: 'monthly' }));
   const projectPages = RESULTS.map((p) => entry({ path: `/portfolio/${p.slug}`, priority: 0.7, freq: 'monthly', images: p.image ? [absoluteUrl(p.image)] : undefined }));
   const nzPages = getMarket('nz').live ? LOCAL_PAGES.map((p) => entry({ path: `/nz/${p.slug}`, priority: 0.4, freq: 'yearly', market: 'nz' })) : [];

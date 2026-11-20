@@ -1,9 +1,8 @@
 import { SITE, SERVICES } from '@/lib/site';
-import { CANONICAL_HOST, ORG, MARKETS, absoluteUrl } from '@/lib/markets';
+import { CANONICAL_HOST, ORG, MARKETS, COUNTRY_NAMES, absoluteUrl } from '@/lib/markets';
 import { getLastModified } from '@/lib/content-dates';
 
 const BASE = CANONICAL_HOST;
-const COUNTRY_NAMES = { SA: 'Saudi Arabia', IN: 'India', NZ: 'New Zealand' };
 const ld = (schema) => <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />;
 const dropNulls = (o) => Object.fromEntries(Object.entries(o).filter(([, v]) => v !== null && v !== undefined && v !== ''));
 
