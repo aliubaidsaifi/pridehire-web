@@ -1,10 +1,18 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import AuditCTA from '@/components/AuditCTA';
-import { SERVICES, SERVICE_DETAILS, RESULTS, SITE, LANDING } from '@/lib/site';
+import { SERVICES, SERVICE_DETAILS, SITE, LANDING } from '@/lib/site';
 import { ServiceSchema, FaqSchema, BreadcrumbSchema, WebPageSchema } from '@/components/Schema';
 import { buildMetadata } from '@/lib/seo';
 
+
+// Lower-case the first letter of a stage name unless it starts with an acronym (e.g. "SEO audit").
+const lc = (t) => (/^[A-Z]{2,}/.test(t) ? t : t.charAt(0).toLowerCase() + t.slice(1));
+// 40-60 word answer shown directly under the "stages" question. Built only from the service's own stage list plus the
+// confirmed rule that scope is agreed in writing before work starts — no new claims.
+function stagesIntro(title, stages) {
+  return `${title} at Pride Hire follows ${stages.length} stages, from ${lc(stages[0])} to ${lc(stages[stages.length - 1])}. We agree the scope with you in writing before work starts, and the stages below show the order the work follows. You can ask questions at any point.`;
+}
 
 export function generateStaticParams() {
   return SERVICES.map((s) => ({ slug: s.slug }));
@@ -49,11 +57,11 @@ export default async function ServiceDetail({ params }) {
           <div>
             <span className="eyebrow">Overview</span>
             <h2 className="mt-4 font-display text-3xl font-semibold tracking-tightest text-ink sm:text-5xl">
-              Tailored to your business
+              What does {s.title} include?
             </h2>
           </div>
           <div className="space-y-5 text-pretty text-lg leading-relaxed text-muted">
-            <p>{d.intro}</p>
+            <p>{d.intro} What&apos;s included: {s.points.join(', ')}.</p>
             <div className="flex flex-wrap gap-2.5 pt-2">
               {s.points.map((p) => (
                 <span key={p} className="rounded-full border border-line bg-paper px-4 py-2 text-sm font-medium text-ink">{p}</span>
@@ -70,7 +78,7 @@ export default async function ServiceDetail({ params }) {
       <section className="border-y border-line bg-paper py-20 sm:py-28">
         <div className="container-px">
           <h2 className="max-w-2xl font-display text-3xl font-semibold leading-[1.05] tracking-tightest text-ink sm:text-5xl">
-            What makes it exceptional
+            How does {s.title} work?
           </h2>
           <div className="mt-14 divide-y divide-line border-y border-line">
             {d.criteria.map((c, i) => (
@@ -86,38 +94,14 @@ export default async function ServiceDetail({ params }) {
 
       <section className="py-20 sm:py-28">
         <div className="container-px">
-          <h2 className="font-display text-3xl font-semibold tracking-tightest text-ink sm:text-5xl">The essential stages</h2>
+          <h2 className="font-display text-3xl font-semibold tracking-tightest text-ink sm:text-5xl">What are the stages of {s.title}?</h2>
+          <p className="mt-6 max-w-3xl text-pretty text-lg leading-relaxed text-muted">{stagesIntro(s.title, d.stages)}</p>
           <div className="mt-12 grid gap-x-6 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
             {d.stages.map((stage, i) => (
               <div key={stage} className="group flex items-baseline gap-5 border-t border-line pt-6">
                 <span className="font-display text-2xl font-semibold tracking-tight text-line transition-colors duration-300 group-hover:text-accent">{String(i + 1).padStart(2, '0')}</span>
                 <span className="font-display text-lg font-semibold text-ink">{stage}</span>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="border-t border-line bg-paper py-20 sm:py-28">
-        <div className="container-px">
-          <div className="flex flex-wrap items-end justify-between gap-6">
-            <h2 className="font-display text-3xl font-semibold tracking-tightest text-ink sm:text-5xl">Recent results</h2>
-            <Link href="/portfolio" className="btn-ghost">View all work</Link>
-          </div>
-          <div className="mt-12 grid gap-5 sm:grid-cols-3">
-            {RESULTS.map((r) => (
-              <article key={r.client} className="flex flex-col overflow-hidden rounded-3xl border border-line bg-white">
-                <div className="relative aspect-[16/10] border-b border-line bg-paper">
-                  <div className="absolute inset-0 grid place-items-center">
-                    <span className="font-display text-4xl font-semibold tracking-tightest text-ink/80">{r.metric}</span>
-                  </div>
-                  <span className="absolute start-4 top-4 rounded-full border border-line bg-white px-3 py-1 text-[11px] font-semibold text-ink">{r.industry}</span>
-                </div>
-                <div className="p-6">
-                  <h3 className="font-display text-lg font-semibold text-ink">{r.client}</h3>
-                  <p className="mt-1 text-sm text-muted">{r.metric} {r.label}</p>
-                </div>
-              </article>
             ))}
           </div>
         </div>

@@ -50,6 +50,16 @@ Schema describes what the site actually does today, never what it will do. If un
 - Cost page: basic business website = ₹15,000 supplied, but starting-vs-fixed is UNCONFIRMED; still owed: online-store band, inclusions, exclusions. Stored as `ownerSupplied` data, not copy. Do not infer other bands. No Saudi figure used anywhere.
 - Pending owner answers: real rupee price bands (page 5); in-person meetings in India? (not claimed anywhere).
 
+## Answer-first / GEO follow-ups
+- **Done (owner approved 2026-11-20):** the six `/services/*` pages (question H2s + 40-60 word answers; "Recent results" cut because there is no proof behind it) and `/blog/seo-basics`, `/blog/google-maps` (H2s as questions, 40-60 word openers; `updated: 2026-11-20` added so sitemap lastmod is honest).
+- **HOLD — `/blog/website-cost`:** do NOT rewrite until the owner has settled pricing (its ranges conflict with the ₹15,000 India figure). Rewriting it now would mean doing it twice.
+- **HOLD — homepage and `/about`:** leave alone until the owner resolves the claims on them (rotating unverified testimonials; "40+ projects").
+- **Owner's to resolve, not to be touched or worked around:** "40+ projects", "2–4 weeks", "fixed quote after your free audit", the blog price ranges.
+- **FLAG (schema accuracy):** every `/services/*` page emits FAQPage JSON-LD (from `LANDING[slug].faqs`) for questions that are NOT visible on the page. Google's FAQ markup rules require the markup to match visible content, and our schema rule is "describe what the page actually shows". Options: (a) stop emitting `FaqSchema` on service pages, or (b) render the FAQ visibly (existing Q&As already fit answer-first; they contain claims such as revision counts and turnaround that the owner must approve). Awaiting owner decision.
+- **"How does [service] work?" sections** list qualities (the old criteria), not a process, and have no 40-60 word intro. Heading was changed as instructed; content unchanged. Owner to decide whether to retitle ("What do you get with [service]?") or add an intro.
+- Remaining non-conforming H2s are the shared "Ready to grow your business?" CTA and navigational headings ("Related articles", etc.).
+- GEO: `/llms.txt` and `/llms-full.txt` are an EXPERIMENT (never described as a technique that works); AI-crawler allow rules are in `app/robots.js`. Owner is checking Vercel Bot Management/Firewall for AI-bot rules.
+
 ## Manual steps outside the code
 - **Calendly**: fix the URL; set working days/hours/timezone there (Sun–Thu, AST for Saudi) — cannot be done in code.
 - **Vercel → Domains**: confirm apex→www is a permanent redirect and that `http://` upgrades to `https://` in one hop.
