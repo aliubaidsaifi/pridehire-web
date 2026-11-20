@@ -44,7 +44,16 @@ export default async function ServiceDetail({ params }) {
       <section className="relative overflow-hidden pt-32 sm:pt-44">
         <div aria-hidden className="bg-grid bg-grid-fade pointer-events-none absolute inset-x-0 top-0 h-[440px]" />
         <div className="container-px relative pb-8 text-center sm:pb-14">
-          <Link href="/services" className="link-underline text-sm font-semibold text-muted">← All services</Link>
+          {/* Visible trail matching the BreadcrumbList markup above (Home > Services > this service). Replaces the old "← All services" link. */}
+          <nav aria-label="Breadcrumb" className="text-sm font-semibold text-muted">
+            <ol className="flex flex-wrap items-center justify-center gap-x-2.5 gap-y-1">
+              <li><Link href="/" className="link-underline hover:text-ink">Home</Link></li>
+              <li aria-hidden className="text-muted/50">/</li>
+              <li><Link href="/services" className="link-underline hover:text-ink">Services</Link></li>
+              <li aria-hidden className="text-muted/50">/</li>
+              <li aria-current="page" className="text-ink">{s.title}</li>
+            </ol>
+          </nav>
           <span className="mt-6 block font-display text-xs font-semibold uppercase tracking-[0.16em] text-accent">{s.title}</span>
           <h1 className="mx-auto mt-4 max-w-4xl text-balance font-display text-4xl font-semibold leading-[1.03] tracking-tightest text-ink sm:text-6xl lg:text-[4.6rem]">
             {d.heroTitle}
