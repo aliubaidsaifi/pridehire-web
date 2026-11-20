@@ -65,7 +65,7 @@
       "context": "Short answer block directly under the H1",
       "required": true,
       "kind": "answer",
-      "needs": "OWNER: the headline answer with real ₹ price bands (for example basic business website, larger website, online store) and what each includes. Do not publish ranges you cannot stand behind.",
+      "needs": "OWNER: the headline answer. Known so far: basic business website ₹15,000 (starting vs fixed unconfirmed). Online store band, inclusions and exclusions still outstanding. Do NOT infer other bands from ₹15,000.",
       "en": {
         "text": null,
         "reviewStatus": "draft",
@@ -138,7 +138,7 @@
         40,
         60
       ],
-      "needs": "OWNER: ₹ price band for a basic business website, and exactly what it includes (pages, design, content help).",
+      "needs": "OWNER: confirm whether ₹15,000 for a basic business website is a STARTING price (\"from ₹15,000\") or a FIXED price, and exactly what it includes. The page must say which. Not published until confirmed.",
       "en": {
         "text": null,
         "reviewStatus": "draft",
@@ -149,6 +149,11 @@
         "reviewerNote": null,
         "sources": [],
         "history": []
+      },
+      "ownerSupplied": {
+        "amountInr": 15000,
+        "pricingType": null,
+        "note": "Supplied by owner 2026-11-20. pricingType must be \"starting\" or \"fixed\" before any copy is written."
       }
     },
     "sections.3.heading": {

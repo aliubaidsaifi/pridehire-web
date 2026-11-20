@@ -46,7 +46,9 @@ Schema describes what the site actually does today, never what it will do. If un
 - GBP secondary categories: add only accurate ones, from Google's own list, after verification clears.
 - **Staged India footer link:** `lib/in-links.js` -> footer link to `/in/areas-we-serve` (label from `footer.label`, currently DRAFT: owner to review wording). Renders only when the India gate is open, that page AND every content page it links to are approved, and `MARKETS.in.locales.en.live` is switched on. Saudi equivalent now has the same dead-link guard. Other inbound links (e.g. from `/services/*` pages) are a visible change on existing pages: ask first.
 - When the website-cost page ships, add a link to it from `/in/web-design-muzaffarnagar` (not linked yet on purpose).
-- Pending owner answers: flex printing in-house or outsourced (page 2 on hold); real rupee price bands (page 5); in-person meetings in India? (not claimed anywhere).
+- Flex printing is OUTSOURCED to a local Muzaffarnagar printer (owner confirmed 2026-11-20); `content/in/flex-printing-muzaffarnagar.json` is built but cannot ship until the owner supplies, from the printer: materials, sizes, rates (fixed or starting), turnaround, delivery area / installation. Flex stays OFF all Saudi pages. Not yet listed on `/in/areas-we-serve` or linked from other pages (delivery area unknown).
+- Cost page: basic business website = ₹15,000 supplied, but starting-vs-fixed is UNCONFIRMED; still owed: online-store band, inclusions, exclusions. Stored as `ownerSupplied` data, not copy. Do not infer other bands. No Saudi figure used anywhere.
+- Pending owner answers: real rupee price bands (page 5); in-person meetings in India? (not claimed anywhere).
 
 ## Manual steps outside the code
 - **Calendly**: fix the URL; set working days/hours/timezone there (Sun–Thu, AST for Saudi) — cannot be done in code.
