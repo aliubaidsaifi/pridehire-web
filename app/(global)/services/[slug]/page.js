@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import AuditCTA from '@/components/AuditCTA';
-import { SERVICES, SERVICE_DETAILS, SITE, LANDING } from '@/lib/site';
-import { ServiceSchema, FaqSchema, BreadcrumbSchema, WebPageSchema } from '@/components/Schema';
+import { SERVICES, SERVICE_DETAILS, SITE } from '@/lib/site';
+import { ServiceSchema, BreadcrumbSchema, WebPageSchema } from '@/components/Schema';
 import { buildMetadata } from '@/lib/seo';
 
 
@@ -39,7 +39,7 @@ export default async function ServiceDetail({ params }) {
     <>
     <WebPageSchema path={`/services/${slug}`} name={s.title} description={d.intro} />
     <ServiceSchema name={s.title} description={d.intro} slug={slug} />
-      <FaqSchema faqs={LANDING[slug]?.faqs || []} />
+      {/* No FAQPage markup here: the FAQ is not visible on this page, and markup must match visible content. See SEO-TODO.md. */}
       <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: 'Services', path: '/services' }, { name: s.title, path: `/services/${slug}` }]} />
       <section className="relative overflow-hidden pt-32 sm:pt-44">
         <div aria-hidden className="bg-grid bg-grid-fade pointer-events-none absolute inset-x-0 top-0 h-[440px]" />
@@ -78,7 +78,7 @@ export default async function ServiceDetail({ params }) {
       <section className="border-y border-line bg-paper py-20 sm:py-28">
         <div className="container-px">
           <h2 className="max-w-2xl font-display text-3xl font-semibold leading-[1.05] tracking-tightest text-ink sm:text-5xl">
-            How does {s.title} work?
+            What do you get with {s.title}?
           </h2>
           <div className="mt-14 divide-y divide-line border-y border-line">
             {d.criteria.map((c, i) => (
