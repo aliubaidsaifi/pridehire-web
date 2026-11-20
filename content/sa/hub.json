@@ -272,11 +272,11 @@
       ],
       "en": {
         "text": "Remotely, by phone and WhatsApp. Our team works from India, and we agree the scope, deliverables and progress updates with you in writing before work starts. If you would rather meet in person, in-person meetings are available through our partner in Al Khobar.",
-        "reviewStatus": "draft",
+        "reviewStatus": "approved",
         "reviewedBy": null,
         "reviewedAt": null,
-        "approvedBy": null,
-        "approvedAt": null,
+        "approvedBy": "Suhail",
+        "approvedAt": "2026-11-20T09:05:33.012Z",
         "reviewerNote": null,
         "sources": [],
         "history": []
