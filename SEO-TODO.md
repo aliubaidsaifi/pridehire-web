@@ -22,6 +22,18 @@ Schema describes what the site actually does today, never what it will do. If un
 - [ ] Decide which phone number (Saudi / India) shows on which page once `/sa/` pages exist. The Saudi number is currently in schema only.
 - [ ] Add the Saudi equivalents to `lib/locale-pages.js` when the first `/sa/` page goes live (hreflang + sitemap alternates follow automatically).
 
+## Saudi English pages: BUILT, NOT PUBLISHED (licensing cleared 2026-11-21)
+- Routes: `app/sa/(en)/` -> `/sa` (hub) and `/sa/ai-visibility`, English only, rendered from `content/sa/*.json` by `components/MarketContentPage.js`. Arabic locale stays OFF (no `/sa/ar` pages; Arabic is draft, unreviewed). `content/sa/_gate.json` is `licensingCleared: true`.
+- **Three independent guards keep them out of production** (any one is enough):
+  1. **Render gate** (`lib/market-pages.js`): pages render only in local dev (`npm run dev`) or when `PH_SHOW_SA=1` is set. In a normal production build they are a prerendered 404.
+  2. **Locale live flag** (`MARKETS.sa.locales.en.live`, currently `false` in `lib/markets.js`): keeps the footer link, sitemap entries and `llms.txt` entries hidden.
+  3. **Not pushed** (commit exists locally only until the owner says go).
+- **To review locally:** `npm run dev`, open `http://localhost:3000/sa` and `/sa/ai-visibility` (first compile is slow). To review a production build: `PH_SHOW_SA=1 npm run build` then `PH_SHOW_SA=1 npm start`.
+- **To PUBLISH (when the owner says so), in this order:** (a) set `PH_SHOW_SA=1` in Vercel -> Environment Variables (Production); (b) set `MARKETS.sa.locales.en.live: true` in `lib/markets.js`; (c) push and deploy; (d) verify live: `/sa` and `/sa/ai-visibility` 200, sitemap has both, `/llms.txt` lists both, footer shows "Services in Saudi Arabia", `/sa/ar` still 404.
+- **To REVERSE:** remove the Vercel env var (pages 404 again after redeploy) and/or set the locale `live` flag back to `false`; set `licensingCleared: false` to hold all Saudi content.
+- Dry run done 2026-11-21 (flag ON + render gate ON): both pages 200; sitemap, llms.txt and footer link all appeared; then reverted.
+- Known: the shared Footer/Navbar are English-only and show the Udyam line on Saudi pages (fine for English; Arabic still blocked on a localized footer/nav).
+
 ## Saudi content workflow (staged, NOT published)
 - Data: `content/sa/<page>.json` (en + ar per field, each with `reviewStatus` draft|reviewed|approved). `text: null` = section omitted.
 - `npm run content:check` validates (blocklist, TODO markers, sources, approved-needs-approver) and shows publish readiness.

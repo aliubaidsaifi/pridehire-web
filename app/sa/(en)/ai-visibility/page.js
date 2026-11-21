@@ -1,0 +1,19 @@
+import { notFound } from 'next/navigation';
+import MarketContentPage from '@/components/MarketContentPage';
+import { loadRenderablePage, pageView } from '@/lib/market-pages';
+import { buildMetadata } from '@/lib/seo';
+
+const ID = 'ai-visibility'; // content/sa/ai-visibility.json
+
+export async function generateMetadata() {
+  const page = loadRenderablePage('sa', ID, 'en');
+  if (!page) return {};
+  const v = pageView(page, 'en');
+  return buildMetadata({ title: v.title, description: v.description, path: v.path, market: 'sa', locale: 'en', absoluteTitle: true });
+}
+
+export default function Page() {
+  const page = loadRenderablePage('sa', ID, 'en');
+  if (!page) notFound(); // gate closed, text not approved, or not allowed to render here
+  return <MarketContentPage view={pageView(page, 'en')} locale="en-SA" />;
+}

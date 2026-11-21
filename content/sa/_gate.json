@@ -1,6 +1,6 @@
 {
-  "licensingCleared": false,
-  "note": "Set to true ONLY after the owner confirms with a Saudi business consultant that we may publish Saudi-facing pages (MISA/CR question). While false, isPublishable() returns false for every page and no /sa/ route may be served.",
-  "clearedBy": null,
-  "clearedAt": null
+  "licensingCleared": true,
+  "note": "Licensing confirmed by the owner. isPublishable() can now return true for approved pages. This is NOT what keeps /sa out of production: that is the separate render gate in lib/market-pages.js (preview only unless PH_SHOW_SA=1) plus the locale live flag in lib/markets.js. Set back to false to hold everything again.",
+  "clearedBy": "owner (confirmed in session)",
+  "clearedAt": "2026-11-20T17:29:01Z"
 }
