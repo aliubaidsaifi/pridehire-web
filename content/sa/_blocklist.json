@@ -44,6 +44,16 @@
     {
       "regex": "مرخص|مرخّص|ترخيص|مسجل في السعودية|مسجلة في السعودية|سجل تجاري|السجل التجاري|رقم السجل",
       "reason": "no wording implying Saudi registration or licensing (Arabic)"
+    },
+    {
+      "id": "claims-healthy",
+      "regex": "\\bhealth(y|ier)\\b|wholesome|\\bbeneficial\\b|(^|[\\s،.:؛()\"'«»-])(صحي|صحية|سليم|سليمة|مفيد|مفيدة)([\\s،.:؛()\"'«»-]|$)",
+      "reason": "SFDA.FD 5016: menus may not describe meals as 'healthy', 'wholesome' or 'beneficial' (or translations) — and neither may our copy. A field may quote these words only with an explicit allow."
+    },
+    {
+      "id": "compliant",
+      "regex": "compliant|complies with|fully comply|ensures? compliance|guarantee[sd]? compliance|SFDA[- ](approved|certified)|certified by SFDA|(^|[\\s،.:؛()\"'«»-])(متوافق|متوافقة|مطابق|مطابقة|معتمد|معتمدة)([\\s،.:؛()\"'«»-]|$)|معتمد من هيئة الغذاء",
+      "reason": "we say menus 'support' the labels, never 'compliant'/'approved'/'certified': responsibility stays with the restaurant"
     }
   ]
 }

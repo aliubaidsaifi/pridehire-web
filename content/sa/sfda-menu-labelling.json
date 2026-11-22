@@ -1,0 +1,1209 @@
+{
+  "id": "sfda-menu-labelling",
+  "market": "sa",
+  "langs": [
+    "en"
+  ],
+  "paths": {
+    "en": "/sa/sfda-menu-labelling"
+  },
+  "cluster": "SFDA menu labelling guide (informational)",
+  "ctaHref": "/contact",
+  "notes": "ENGLISH ONLY, all draft. SFDA documents are the ONLY source of fact (guide PDF + two announcements + 2018 calorie announcement); no vendor/news source is cited as authority. The PAGE states what we could not verify (Mwasfah texts unread; guide metadata May 2024; no penalties/grace period found; guide pizza example not reproduced). \"Support\", never \"compliant\"; no \"healthy/wholesome/beneficial\" claims (only quoted when explaining SFDA.FD 5016, via explicit field allow). Arabic to follow after the English is approved.",
+  "fields": {
+    "meta.title": {
+      "context": "Browser tab / search result title",
+      "required": true,
+      "kind": "text",
+      "maxChars": 60,
+      "en": {
+        "text": "SFDA Menu Labelling Rules for Restaurants in Saudi Arabia",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      }
+    },
+    "meta.description": {
+      "context": "Search result description under the title",
+      "required": true,
+      "kind": "text",
+      "maxChars": 160,
+      "en": {
+        "text": "What SFDA’s own documents say restaurant and cafe menus must show, digital menus included, in plain language, with what we could not verify.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      }
+    },
+    "h1": {
+      "context": "Main page heading",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "SFDA menu labelling rules for restaurants and cafes in Saudi Arabia",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      }
+    },
+    "answer": {
+      "context": "Short answer block directly under the H1",
+      "required": true,
+      "kind": "answer",
+      "en": {
+        "text": "This guide explains what the Saudi Food and Drug Authority’s own documents say restaurant and cafe menus must show: calories, allergens, caffeine, a high-salt icon and physical-activity time. It covers digital menus too. We worked from an SFDA guide and two SFDA announcements, and we could not read the regulation texts, so check Mwasfah or call SFDA on 19999 for current wording.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          },
+          {
+            "title": "SFDA: The SFDA Issues Three New Regulations to Promote Healthy Community Nutrition (27 Feb 2025)",
+            "url": "https://www.sfda.gov.sa/en/news/17639",
+            "accessed": "2026-11-21"
+          },
+          {
+            "title": "SFDA: SFDA to Implement New Food Rules for Transparency and Consumer Health (18 Jun 2025)",
+            "url": "https://sfda.gov.sa/en/news/18680",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      }
+    },
+    "sections.1.heading": {
+      "context": "Section 1 heading (H2) — the question a reader asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Do SFDA’s menu rules apply to digital menus?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      }
+    },
+    "sections.1.answer": {
+      "context": "Section 1 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "Yes. SFDA’s Guide to Nutritional Requirements (section 2) says the required information must appear on an establishment’s physical or electronic menus, on all of its web pages, and on the ordering platforms and apps it uses. The guide’s definition of a menu (section 5) includes menus shown on websites and in smart-device apps.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      }
+    },
+    "sections.2.heading": {
+      "context": "Section 2 heading (H2) — the question a reader asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Which establishments must show this information?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      }
+    },
+    "sections.2.answer": {
+      "context": "Section 2 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "SFDA’s guide (section 2) applies to all food establishments that serve food outside the home: restaurant and cafe chains, ice cream and fresh-juice shops, bakeries and sweet shops, cafeterias and cloud kitchens. It also covers outlets inside stores, supermarkets, universities, hospitals, airports, cinemas and sports clubs.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      }
+    },
+    "sections.3.heading": {
+      "context": "Section 3 heading (H2) — the question a reader asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Which labels do SFDA’s documents say a menu must carry?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          },
+          {
+            "title": "SFDA: The SFDA Issues Three New Regulations to Promote Healthy Community Nutrition (27 Feb 2025)",
+            "url": "https://www.sfda.gov.sa/en/news/17639",
+            "accessed": "2026-11-21"
+          },
+          {
+            "title": "SFDA: announcement requiring restaurants and cafes to display calories (5 Aug 2018)",
+            "url": "https://www.sfda.gov.sa/en/node/4516",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      }
+    },
+    "sections.3.answer": {
+      "context": "Section 3 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "The guide lists five: calories (GSO 2604), allergens (GSO 2605), caffeine in drinks (SFDA.FD 5023), a high-salt icon (SFDA.FD 5026) and physical-activity time (SFDA.FD 5029). SFDA’s announcement of 27 February 2025 says the caffeine, salt and physical-activity rules take effect on 1 July 2025. Calories were already required from 2018.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          },
+          {
+            "title": "SFDA: The SFDA Issues Three New Regulations to Promote Healthy Community Nutrition (27 Feb 2025)",
+            "url": "https://www.sfda.gov.sa/en/news/17639",
+            "accessed": "2026-11-21"
+          },
+          {
+            "title": "SFDA: announcement requiring restaurants and cafes to display calories (5 Aug 2018)",
+            "url": "https://www.sfda.gov.sa/en/node/4516",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      }
+    },
+    "sections.4.heading": {
+      "context": "Section 4 heading (H2) — the question a reader asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "How must calories be shown?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      }
+    },
+    "sections.4.answer": {
+      "context": "Section 4 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "Under GSO 2604 (guide, section 7.1), calories go beside every item on every type of menu, in the same font size, type and colour as the item name or price, written in Arabic. A translation may sit alongside if it says the same thing. The permitted error is 20 percent either way.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      }
+    },
+    "sections.5.heading": {
+      "context": "Section 5 heading (H2) — the question a reader asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "How must add-ons and drinks be labelled?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      }
+    },
+    "sections.5.answer": {
+      "context": "Section 5 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "SFDA’s guide (section 7.1) says calories for main items and add-ons are shown separately. Add-ons are written in words and numbers, for example “add nuts, 50 calories”. Symbols such as plus signs or arrows may not be used to show an increase. For drinks, calories are based on the cup size served without ice.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      }
+    },
+    "sections.6.heading": {
+      "context": "Section 6 heading (H2) — the question a reader asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Must allergens be shown on a menu?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      }
+    },
+    "sections.6.answer": {
+      "context": "Section 6 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "Yes. GSO 2605 (guide, section 7.2) requires allergens on every type of menu, in Arabic, beside each item, with wording such as “contains…” or “may contain…”. The guide lists 14 allergens, from gluten cereals, crustaceans and eggs to sesame, lupin and soy, and allows icons if a key explains them.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      }
+    },
+    "sections.7.heading": {
+      "context": "Section 7 heading (H2) — the question a reader asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "How must caffeine be shown?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          },
+          {
+            "title": "SFDA: The SFDA Issues Three New Regulations to Promote Healthy Community Nutrition (27 Feb 2025)",
+            "url": "https://www.sfda.gov.sa/en/news/17639",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      }
+    },
+    "sections.7.answer": {
+      "context": "Section 7 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "For drinks that contain caffeine, SFDA.FD 5023 (guide, section 7.3) requires the amount in milligrams per 100 ml or per cup, in the same font size, type and colour as the drink name or price, on every type of menu. The front of the menu must also say adults should not exceed 400 mg of caffeine.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          },
+          {
+            "title": "SFDA: The SFDA Issues Three New Regulations to Promote Healthy Community Nutrition (27 Feb 2025)",
+            "url": "https://www.sfda.gov.sa/en/news/17639",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      }
+    },
+    "sections.8.heading": {
+      "context": "Section 8 heading (H2) — the question a reader asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "When does a dish need the salt icon?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          },
+          {
+            "title": "SFDA: The SFDA Issues Three New Regulations to Promote Healthy Community Nutrition (27 Feb 2025)",
+            "url": "https://www.sfda.gov.sa/en/news/17639",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      }
+    },
+    "sections.8.answer": {
+      "context": "Section 8 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "SFDA.FD 5026 (guide, section 8.2) requires a salt-shaker icon, called “الملاحة” in the guide, beside any meal with more than 5 g of salt, equal to 2,000 mg of sodium, per serving, on every type of menu. Two fixed statements go with it: what the icon means, and that adults should not exceed 5 g of salt a day.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          },
+          {
+            "title": "SFDA: The SFDA Issues Three New Regulations to Promote Healthy Community Nutrition (27 Feb 2025)",
+            "url": "https://www.sfda.gov.sa/en/news/17639",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      }
+    },
+    "sections.9.heading": {
+      "context": "Section 9 heading (H2) — the question a reader asks",
+      "required": true,
+      "kind": "text",
+      "allow": [
+        "claims-healthy"
+      ],
+      "en": {
+        "text": "How must physical-activity time be shown?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      }
+    },
+    "sections.9.answer": {
+      "context": "Section 9 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "allow": [
+        "claims-healthy"
+      ],
+      "en": {
+        "text": "Under SFDA.FD 5029 (guide, section 8.1), each item shows a walking icon and the time in minutes or hours beside its calories, in the same font size, type and colour. The guide gives the formula: calories × 60 ÷ (effort factor 3.3 × average weight 70 kg). No “healthy” or “nutritional” claim may be attached to the time.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      }
+    },
+    "sections.10.heading": {
+      "context": "Section 10 heading (H2) — the question a reader asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Can a QR code replace the per-item physical-activity labels?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      }
+    },
+    "sections.10.answer": {
+      "context": "Section 10 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "The guide (section 8.1) says this information may be given as a QR code in the page margins or at the start of the menu, beside a set sentence asking people to scan it for the burn time, as long as the code covers every meal on the menu. It describes this option for physical-activity time only.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      }
+    },
+    "sections.11.heading": {
+      "context": "Section 11 heading (H2) — the question a reader asks",
+      "required": true,
+      "kind": "text",
+      "allow": [
+        "claims-healthy"
+      ],
+      "en": {
+        "text": "Can a menu call a meal healthy?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      }
+    },
+    "sections.11.answer": {
+      "context": "Section 11 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "allow": [
+        "claims-healthy"
+      ],
+      "en": {
+        "text": "No. SFDA.FD 5016 (guide, section 7.4) does not allow an establishment to describe its meals as healthy, wholesome or beneficial, or to use translations of those words, on its menus. A “balanced meal” label is allowed only if the meal meets the guide’s energy and nutrient limits. We follow the same rule in our own copy.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      }
+    },
+    "sections.12.heading": {
+      "context": "Section 12 heading (H2) — the question a reader asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Do delivery and ordering apps have to show the labels?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          },
+          {
+            "title": "SFDA: The SFDA Issues Three New Regulations to Promote Healthy Community Nutrition (27 Feb 2025)",
+            "url": "https://www.sfda.gov.sa/en/news/17639",
+            "accessed": "2026-11-21"
+          },
+          {
+            "title": "SFDA: SFDA to Implement New Food Rules for Transparency and Consumer Health (18 Jun 2025)",
+            "url": "https://sfda.gov.sa/en/news/18680",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      }
+    },
+    "sections.12.answer": {
+      "context": "Section 12 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "SFDA’s guide (section 2) covers the online ordering platforms and apps an establishment uses. SFDA’s announcements say the salt icon applies to online food ordering platforms as well as paper and electronic menus (27 February 2025), and that the requirements extend to online food ordering platforms (18 June 2025).",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          },
+          {
+            "title": "SFDA: The SFDA Issues Three New Regulations to Promote Healthy Community Nutrition (27 Feb 2025)",
+            "url": "https://www.sfda.gov.sa/en/news/17639",
+            "accessed": "2026-11-21"
+          },
+          {
+            "title": "SFDA: SFDA to Implement New Food Rules for Transparency and Consumer Health (18 Jun 2025)",
+            "url": "https://sfda.gov.sa/en/news/18680",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      }
+    },
+    "sections.13.heading": {
+      "context": "Section 13 heading (H2) — the question a reader asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "What extra nutrition information must be available?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      }
+    },
+    "sections.13.answer": {
+      "context": "Section 13 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "SFDA’s guide (section 7.1) says further nutrition data for each item, such as protein, fats, carbohydrates, sugars, salt and sodium, must be available to give customers on request, shown as a percentage of the daily reference value. The guide does not require it to be printed on the menu itself, but it must be ready to provide.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      }
+    },
+    "sections.14.heading": {
+      "context": "Section 14 heading (H2) — the question a reader asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Which explanatory statements must a menu carry?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      }
+    },
+    "sections.14.answer": {
+      "context": "Section 14 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "The guide’s index (section 9) lists them: adults need 2,000 calories a day and children aged 4 to 13 need 1,200 to 1,500; the 400 mg caffeine statement; the two salt statements; and, for fresh juices and mixes, added-sugar statements of 50 g a day for adults and 25 g for children.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      }
+    },
+    "sections.15.heading": {
+      "context": "Section 15 heading (H2) — the question a reader asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Do the documents say anything about 3D, AR or other interactive menus?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      }
+    },
+    "sections.15.answer": {
+      "context": "Section 15 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "No. The documents we read do not mention 3D, augmented reality or other interactive menu formats, or say where labels must sit inside them. The guide’s wording covers any menu shown on a website or in an app. If you are building one, ask SFDA on 19999 how the labels should appear.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      }
+    },
+    "sections.16.heading": {
+      "context": "Section 16 heading (H2) — the question a reader asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Which items are exempt?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      }
+    },
+    "sections.16.answer": {
+      "context": "Section 16 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "SFDA’s guide (section 3) lists exceptions, including foods and drinks from productive families, supermarket tastings, temporary menu items, items prepared and sold on one particular day such as National Day, foods prepared for marketing, packaged food products, table spices and flavourings, and special orders that are not permanently on the menu.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      }
+    },
+    "sections.17.heading": {
+      "context": "Section 17 heading (H2) — the question a reader asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Who is responsible for getting the labels right?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      }
+    },
+    "sections.17.answer": {
+      "context": "Section 17 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "The restaurant. The guide assigns the allergen check to the establishment (section 7.2), and we have not seen it assign any of these duties to a menu supplier. Nothing on this page, and no menu software, takes that responsibility away. Pride Hire is not part of SFDA and cannot confirm that any menu meets the rules.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      }
+    },
+    "sections.18.heading": {
+      "context": "Section 18 heading (H2) — the question a reader asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Which SFDA documents is this guide based on?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          },
+          {
+            "title": "SFDA: The SFDA Issues Three New Regulations to Promote Healthy Community Nutrition (27 Feb 2025)",
+            "url": "https://www.sfda.gov.sa/en/news/17639",
+            "accessed": "2026-11-21"
+          },
+          {
+            "title": "SFDA: SFDA to Implement New Food Rules for Transparency and Consumer Health (18 Jun 2025)",
+            "url": "https://sfda.gov.sa/en/news/18680",
+            "accessed": "2026-11-21"
+          },
+          {
+            "title": "SFDA: announcement requiring restaurants and cafes to display calories (5 Aug 2018)",
+            "url": "https://www.sfda.gov.sa/en/node/4516",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      }
+    },
+    "sections.18.answer": {
+      "context": "Section 18 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "We worked from three SFDA documents, all read on 21 November 2026: the [Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home](https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf) and SFDA’s announcements of [27 February 2025](https://www.sfda.gov.sa/en/news/17639) and [18 June 2025](https://sfda.gov.sa/en/news/18680). For calories we also read SFDA’s [August 2018 announcement](https://www.sfda.gov.sa/en/node/4516).",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          },
+          {
+            "title": "SFDA: The SFDA Issues Three New Regulations to Promote Healthy Community Nutrition (27 Feb 2025)",
+            "url": "https://www.sfda.gov.sa/en/news/17639",
+            "accessed": "2026-11-21"
+          },
+          {
+            "title": "SFDA: SFDA to Implement New Food Rules for Transparency and Consumer Health (18 Jun 2025)",
+            "url": "https://sfda.gov.sa/en/news/18680",
+            "accessed": "2026-11-21"
+          },
+          {
+            "title": "SFDA: announcement requiring restaurants and cafes to display calories (5 Aug 2018)",
+            "url": "https://www.sfda.gov.sa/en/node/4516",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      }
+    },
+    "sections.19.heading": {
+      "context": "Section 19 heading (H2) — the question a reader asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "What could we not verify?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      }
+    },
+    "sections.19.answer": {
+      "context": "Section 19 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "We could not read the technical regulation texts on SFDA’s Mwasfah store, so this page follows SFDA’s guide and announcements. The guide’s PDF metadata dates it to May 2024, so it may not be the current edition. We found no penalties or grace period. The guide’s worked pizza example does not match its own formula, so we left it out.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      }
+    },
+    "sections.20.heading": {
+      "context": "Section 20 heading (H2) — the question a reader asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Where can I check the current rules?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "SFDA: The SFDA Issues Three New Regulations to Promote Healthy Community Nutrition (27 Feb 2025)",
+            "url": "https://www.sfda.gov.sa/en/news/17639",
+            "accessed": "2026-11-21"
+          },
+          {
+            "title": "SFDA: SFDA to Implement New Food Rules for Transparency and Consumer Health (18 Jun 2025)",
+            "url": "https://sfda.gov.sa/en/news/18680",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      }
+    },
+    "sections.20.answer": {
+      "context": "Section 20 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "SFDA’s [Mwasfah store](https://mwasfah.sfda.gov.sa/Home) holds the approved technical regulations, and SFDA’s announcements give 19999 as its number for technical questions. These rules can be amended, so treat this page as a plain-language reading of what we saw on 21 November 2026 and confirm the current wording with SFDA before you change a menu.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "SFDA: The SFDA Issues Three New Regulations to Promote Healthy Community Nutrition (27 Feb 2025)",
+            "url": "https://www.sfda.gov.sa/en/news/17639",
+            "accessed": "2026-11-21"
+          },
+          {
+            "title": "SFDA: SFDA to Implement New Food Rules for Transparency and Consumer Health (18 Jun 2025)",
+            "url": "https://sfda.gov.sa/en/news/18680",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      }
+    },
+    "cta.text": {
+      "context": "Button text at the end of the page (links to /contact)",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Contact us",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      }
+    }
+  }
+}

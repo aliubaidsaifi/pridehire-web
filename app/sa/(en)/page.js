@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import MarketContentPage from '@/components/MarketContentPage';
-import { loadRenderablePage, pageView } from '@/lib/market-pages';
+import { loadRenderablePage, pageView, isDraftPreview } from '@/lib/market-pages';
 import { buildMetadata } from '@/lib/seo';
 
 const ID = 'hub'; // content/sa/hub.json
@@ -15,5 +15,5 @@ export async function generateMetadata() {
 export default function Page() {
   const page = loadRenderablePage('sa', ID, 'en');
   if (!page) notFound(); // gate closed, text not approved, or not allowed to render here
-  return <MarketContentPage view={pageView(page, 'en')} locale="en-SA" />;
+  return <MarketContentPage view={pageView(page, 'en')} locale="en-SA" draft={isDraftPreview(page, 'en')} />;
 }

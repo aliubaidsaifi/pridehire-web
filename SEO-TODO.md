@@ -34,6 +34,14 @@ Schema describes what the site actually does today, never what it will do. If un
 - Dry run done 2026-11-21 (flag ON + render gate ON): both pages 200; sitemap, llms.txt and footer link all appeared; then reverted.
 - Known: the shared Footer/Navbar are English-only and show the Udyam line on Saudi pages (fine for English; Arabic still blocked on a localized footer/nav).
 
+## Saudi: SFDA menu-labelling guide (English drafted 2026-11-22; Arabic NOT started)
+- Page: `content/sa/sfda-menu-labelling.json` -> `/sa/sfda-menu-labelling` (route staged under `app/sa/(en)/`). ENGLISH ONLY, all `draft` until the owner approves. **Arabic is written only after the English is approved.**
+- **Rules for this page (owner, 2026-11-22):** SFDA's own documents are the only source of fact (no vendor/news article cited as authority); the page itself states what could not be verified (Mwasfah regulation texts unread; the guide PDF's metadata is May 2024 and may not be the current edition; no penalties/grace period found); the guide's inconsistent pizza example is not reproduced; readers are told to check Mwasfah or call SFDA 19999; "support", never "compliant"; no "healthy/wholesome/beneficial" claims in our copy (now in the Saudi blocklist as `claims-healthy`, also `compliant`).
+- A field may quote a blocked word only with an explicit per-field `allow` (used only where the page explains SFDA.FD 5016). External links are allowed only to `sfda.gov.sa` / `mwasfah.sfda.gov.sa`.
+- **Owner:** try to download SFDA.FD 5023, 5026, 5029 and GSO 2604 from Mwasfah in a browser (the store is unreachable from the dev machine). If obtained, update the guide to cite the exact regulation wording and remove "could not read" if true. If not, the page keeps the limitation text and names the documents used.
+- Dev preview: drafts render on localhost with a "DRAFT preview" banner; in any production build an unapproved page is a 404 even with `PH_SHOW_SA=1`.
+- Decisions recorded: 3D/AR menus are NOT an SEO target (no `/sa/3d-menus` page); one short conversion section inside the hub only. Hub rewrite (digital menus + automation; graphic design removed) comes after this guide and after the owner says what our menus carry.
+
 ## Saudi content workflow (staged, NOT published)
 - Data: `content/sa/<page>.json` (en + ar per field, each with `reviewStatus` draft|reviewed|approved). `text: null` = section omitted.
 - `npm run content:check` validates (blocklist, TODO markers, sources, approved-needs-approver) and shows publish readiness.

@@ -4,9 +4,10 @@ import { WebPageSchema } from '@/components/Schema';
 
 // Renders a content/<market>/<page>.json view (see lib/market-pages.js): H1, answer block, question-H2 sections with
 // self-contained answers, an optional closing line, and one CTA. Nothing here adds copy: every visible string comes from the data file.
-export default function MarketContentPage({ view, locale = 'en' }) {
+export default function MarketContentPage({ view, locale = 'en', draft = false }) {
   return (
     <>
+      {draft && <div className="fixed inset-x-0 top-0 z-[70] bg-amber-300 py-1.5 text-center text-xs font-semibold text-ink">DRAFT preview — not approved, not published</div>}
       <WebPageSchema path={view.path} name={view.h1} description={view.description} locale={locale} />
 
       <section className="relative overflow-hidden pt-32 sm:pt-40">
