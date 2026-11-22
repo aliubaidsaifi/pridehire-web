@@ -78,7 +78,7 @@ export function ServiceSchema({ name, description, slug }) {
 }
 
 /** WebPage node carrying a real dateModified (from lib/content-dates.js, never the build time). */
-export function WebPageSchema({ path, name, description, type = 'WebPage', locale = 'en' }) {
+export function WebPageSchema({ path, name, description, type = 'WebPage', locale = 'en', lastReviewed }) {
   const modified = getLastModified(path);
   return ld(dropNulls({
     '@context': 'https://schema.org',
@@ -91,6 +91,7 @@ export function WebPageSchema({ path, name, description, type = 'WebPage', local
     isPartOf: { '@id': `${BASE}/#website` },
     about: { '@id': `${BASE}/#organization` },
     dateModified: modified || undefined,
+    lastReviewed: lastReviewed || undefined, // only passed for pages that show a visible "reviewed" line
   }));
 }
 

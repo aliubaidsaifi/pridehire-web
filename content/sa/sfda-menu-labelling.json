@@ -2,14 +2,18 @@
   "id": "sfda-menu-labelling",
   "market": "sa",
   "langs": [
-    "en"
+    "en",
+    "ar"
   ],
+  "layout": "guide",
+  "reviewedDate": "2026-11-21",
   "paths": {
-    "en": "/sa/sfda-menu-labelling"
+    "en": "/sa/sfda-menu-labelling",
+    "ar": "/sa/ar/sfda-menu-labelling"
   },
   "cluster": "SFDA menu labelling guide (informational)",
   "ctaHref": "/contact",
-  "notes": "ENGLISH ONLY, all draft. SFDA documents are the ONLY source of fact (guide PDF + two announcements + 2018 calorie announcement); no vendor/news source is cited as authority. The PAGE states what we could not verify (Mwasfah texts unread; guide metadata May 2024; no penalties/grace period found; guide pizza example not reproduced). \"Support\", never \"compliant\"; no \"healthy/wholesome/beneficial\" claims (only quoted when explaining SFDA.FD 5016, via explicit field allow). Arabic to follow after the English is approved.",
+  "notes": "GUIDE layout: answer block, then the \"what we could not verify\" section directly under it, the visible \"Documents read\" line, a contents list linking every question, then the rest. SFDA documents are the ONLY source of fact. Arabic is a DRAFT written by a non-native writer, using SFDA's own Arabic wording where it exists (guide terms, the \"الملّاحة\" icon name, the 400 mg statement); the reviewer decides everything. \"Support\", never \"compliant\"; no healthy/wholesome/beneficial claims — quoted only in the three fields that explain SFDA.FD 5016 / 5029 (per-field allow; the validator fails if an allow is not needed). Commitment: re-review this page when the owner next checks Mwasfah.",
   "fields": {
     "meta.title": {
       "context": "Browser tab / search result title",
@@ -27,6 +31,23 @@
         "sources": [
           {
             "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      },
+      "ar": {
+        "text": "اشتراطات هيئة الغذاء والدواء لقوائم المطاعم في السعودية",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "الهيئة العامة للغذاء والدواء: دليل الاشتراطات التغذوية للمنشآت الغذائية التي تقدم الطعام للمستهلك خارج المنزل (PDF)",
             "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
             "accessed": "2026-11-21"
           }
@@ -55,6 +76,23 @@
           }
         ],
         "history": []
+      },
+      "ar": {
+        "text": "ما تقوله وثائق هيئة الغذاء والدواء نفسها عمّا يجب أن تعرضه قوائم المطاعم والمقاهي، ومنها القوائم الرقمية، بلغة واضحة، مع ما لم نتمكن من التحقق منه.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "الهيئة العامة للغذاء والدواء: دليل الاشتراطات التغذوية للمنشآت الغذائية التي تقدم الطعام للمستهلك خارج المنزل (PDF)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
       }
     },
     "h1": {
@@ -72,6 +110,23 @@
         "sources": [
           {
             "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      },
+      "ar": {
+        "text": "اشتراطات هيئة الغذاء والدواء لقوائم الطعام في المطاعم والمقاهي بالمملكة",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "الهيئة العامة للغذاء والدواء: دليل الاشتراطات التغذوية للمنشآت الغذائية التي تقدم الطعام للمستهلك خارج المنزل (PDF)",
             "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
             "accessed": "2026-11-21"
           }
@@ -109,10 +164,197 @@
           }
         ],
         "history": []
+      },
+      "ar": {
+        "text": "يشرح هذا الدليل ما تقوله وثائق الهيئة العامة للغذاء والدواء نفسها عمّا يجب أن تعرضه قوائم المطاعم والمقاهي: السعرات الحرارية، ومسببات الحساسية، والكافيين، ووسم الملح، والمدة اللازمة لحرق السعرات. ويشمل القوائم الرقمية. اعتمدنا على دليل للهيئة وإعلانين لها، ولم نتمكن من قراءة نصوص اللوائح الفنية، فراجعوا متجر مواصفة أو اتصلوا بالهيئة على 19999 للاطلاع على الصياغة الحالية.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "الهيئة العامة للغذاء والدواء: دليل الاشتراطات التغذوية للمنشآت الغذائية التي تقدم الطعام للمستهلك خارج المنزل (PDF)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          },
+          {
+            "title": "الهيئة العامة للغذاء والدواء: إعلان 27 فبراير 2025 (اللوائح الفنية الثلاث)",
+            "url": "https://www.sfda.gov.sa/ar/news/17639",
+            "accessed": "2026-11-21"
+          },
+          {
+            "title": "الهيئة العامة للغذاء والدواء: إعلان 18 يونيو 2025 (اقتراب تطبيق اللوائح)",
+            "url": "https://sfda.gov.sa/ar/news/18680",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      }
+    },
+    "reviewed.text": {
+      "context": "Visible \"last reviewed\" line under the limits section (also emitted as schema lastReviewed)",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Documents read 21 November 2026",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      },
+      "ar": {
+        "text": "تمت قراءة الوثائق في 21 نوفمبر 2026",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "الهيئة العامة للغذاء والدواء: دليل الاشتراطات التغذوية للمنشآت الغذائية التي تقدم الطعام للمستهلك خارج المنزل (PDF)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      }
+    },
+    "contents.title": {
+      "context": "Heading of the contents list",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Contents",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      },
+      "ar": {
+        "text": "المحتويات",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "الهيئة العامة للغذاء والدواء: دليل الاشتراطات التغذوية للمنشآت الغذائية التي تقدم الطعام للمستهلك خارج المنزل (PDF)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
       }
     },
     "sections.1.heading": {
       "context": "Section 1 heading (H2) — the question a reader asks",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "What could we not verify?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      },
+      "ar": {
+        "text": "ما الذي لم نتمكن من التحقق منه؟",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "الهيئة العامة للغذاء والدواء: دليل الاشتراطات التغذوية للمنشآت الغذائية التي تقدم الطعام للمستهلك خارج المنزل (PDF)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      }
+    },
+    "sections.1.answer": {
+      "context": "Section 1 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "We could not read the technical regulation texts on SFDA’s Mwasfah store, so this page follows SFDA’s guide and announcements. The guide’s PDF metadata dates it to May 2024, so it may not be the current edition. We found no penalties or grace period. The guide’s worked pizza example does not match its own formula, so we left it out.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      },
+      "ar": {
+        "text": "لم نتمكن من قراءة نصوص اللوائح الفنية في متجر مواصفة التابع للهيئة، لذا يتبع هذا الدليل دليل الهيئة وإعلاناتها. وتشير بيانات ملف الدليل (PDF) إلى أنه أُعدّ في مايو 2024، فقد لا يكون الإصدار الحالي. ولم نجد أي غرامات أو مهلة انتقالية. وتركنا مثال البيتزا الوارد في الدليل لأنه لا يتطابق مع معادلته.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "الهيئة العامة للغذاء والدواء: دليل الاشتراطات التغذوية للمنشآت الغذائية التي تقدم الطعام للمستهلك خارج المنزل (PDF)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      }
+    },
+    "sections.2.heading": {
+      "context": "Section 2 heading (H2) — the question a reader asks",
       "required": true,
       "kind": "text",
       "en": {
@@ -131,10 +373,27 @@
           }
         ],
         "history": []
+      },
+      "ar": {
+        "text": "هل تنطبق اشتراطات الهيئة على قوائم الطعام الرقمية؟",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "الهيئة العامة للغذاء والدواء: دليل الاشتراطات التغذوية للمنشآت الغذائية التي تقدم الطعام للمستهلك خارج المنزل (PDF)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
       }
     },
-    "sections.1.answer": {
-      "context": "Section 1 answer, directly under its heading (self-contained, 40-60 words)",
+    "sections.2.answer": {
+      "context": "Section 2 answer, directly under its heading (self-contained, 40-60 words)",
       "required": true,
       "kind": "answer",
       "words": [
@@ -157,10 +416,27 @@
           }
         ],
         "history": []
+      },
+      "ar": {
+        "text": "نعم. يذكر دليل الاشتراطات التغذوية للهيئة (البند 2) أن البيانات المطلوبة يجب أن تظهر في قوائم الطعام الفعلية أو الإلكترونية للمنشأة، وفي جميع صفحاتها الإلكترونية، وعلى منصات وتطبيقات طلب الطعام التي تستخدمها. ويشمل تعريف قائمة الطعام في الدليل (البند 5) القوائم المعروضة على المواقع الإلكترونية وتطبيقات الأجهزة الذكية.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "الهيئة العامة للغذاء والدواء: دليل الاشتراطات التغذوية للمنشآت الغذائية التي تقدم الطعام للمستهلك خارج المنزل (PDF)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
       }
     },
-    "sections.2.heading": {
-      "context": "Section 2 heading (H2) — the question a reader asks",
+    "sections.3.heading": {
+      "context": "Section 3 heading (H2) — the question a reader asks",
       "required": true,
       "kind": "text",
       "en": {
@@ -179,10 +455,27 @@
           }
         ],
         "history": []
+      },
+      "ar": {
+        "text": "ما المنشآت المطالبة بعرض هذه البيانات؟",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "الهيئة العامة للغذاء والدواء: دليل الاشتراطات التغذوية للمنشآت الغذائية التي تقدم الطعام للمستهلك خارج المنزل (PDF)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
       }
     },
-    "sections.2.answer": {
-      "context": "Section 2 answer, directly under its heading (self-contained, 40-60 words)",
+    "sections.3.answer": {
+      "context": "Section 3 answer, directly under its heading (self-contained, 40-60 words)",
       "required": true,
       "kind": "answer",
       "words": [
@@ -205,10 +498,27 @@
           }
         ],
         "history": []
+      },
+      "ar": {
+        "text": "ينطبق دليل الهيئة (البند 2) على جميع المنشآت الغذائية التي تقدم الطعام للمستهلك خارج المنزل: سلاسل المطاعم والمقاهي، ومحلات الآيس كريم وعصائر الفاكهة الطازجة، والمخابز والحلويات، والكافتيريات، والمطابخ السحابية. ويشمل كذلك المنافذ داخل المتاجر والسوبرماركت والجامعات والمستشفيات والمطارات ودور السينما والنوادي الرياضية.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "الهيئة العامة للغذاء والدواء: دليل الاشتراطات التغذوية للمنشآت الغذائية التي تقدم الطعام للمستهلك خارج المنزل (PDF)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
       }
     },
-    "sections.3.heading": {
-      "context": "Section 3 heading (H2) — the question a reader asks",
+    "sections.4.heading": {
+      "context": "Section 4 heading (H2) — the question a reader asks",
       "required": true,
       "kind": "text",
       "en": {
@@ -237,10 +547,37 @@
           }
         ],
         "history": []
+      },
+      "ar": {
+        "text": "ما البيانات التي تذكر وثائق الهيئة أن قائمة الطعام يجب أن تحملها؟",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "الهيئة العامة للغذاء والدواء: دليل الاشتراطات التغذوية للمنشآت الغذائية التي تقدم الطعام للمستهلك خارج المنزل (PDF)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          },
+          {
+            "title": "الهيئة العامة للغذاء والدواء: إعلان 27 فبراير 2025 (اللوائح الفنية الثلاث)",
+            "url": "https://www.sfda.gov.sa/ar/news/17639",
+            "accessed": "2026-11-21"
+          },
+          {
+            "title": "الهيئة العامة للغذاء والدواء: إعلان 5 أغسطس 2018 (عرض السعرات الحرارية)",
+            "url": "https://www.sfda.gov.sa/ar/node/4516",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
       }
     },
-    "sections.3.answer": {
-      "context": "Section 3 answer, directly under its heading (self-contained, 40-60 words)",
+    "sections.4.answer": {
+      "context": "Section 4 answer, directly under its heading (self-contained, 40-60 words)",
       "required": true,
       "kind": "answer",
       "words": [
@@ -273,10 +610,37 @@
           }
         ],
         "history": []
+      },
+      "ar": {
+        "text": "يسرد الدليل خمسة اشتراطات: السعرات الحرارية (GSO 2604)، ومسببات الحساسية (GSO 2605)، والكافيين في المشروبات (SFDA.FD 5023)، ووسم الوجبات عالية الملح (SFDA.FD 5026)، ووسم النشاط البدني (SFDA.FD 5029). ويذكر إعلان الهيئة بتاريخ 27 فبراير 2025 أن اشتراطات الكافيين والملح والنشاط البدني تدخل حيز النفاذ في 1 يوليو 2025. أما السعرات الحرارية فكانت مطلوبة منذ عام 2018.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "الهيئة العامة للغذاء والدواء: دليل الاشتراطات التغذوية للمنشآت الغذائية التي تقدم الطعام للمستهلك خارج المنزل (PDF)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          },
+          {
+            "title": "الهيئة العامة للغذاء والدواء: إعلان 27 فبراير 2025 (اللوائح الفنية الثلاث)",
+            "url": "https://www.sfda.gov.sa/ar/news/17639",
+            "accessed": "2026-11-21"
+          },
+          {
+            "title": "الهيئة العامة للغذاء والدواء: إعلان 5 أغسطس 2018 (عرض السعرات الحرارية)",
+            "url": "https://www.sfda.gov.sa/ar/node/4516",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
       }
     },
-    "sections.4.heading": {
-      "context": "Section 4 heading (H2) — the question a reader asks",
+    "sections.5.heading": {
+      "context": "Section 5 heading (H2) — the question a reader asks",
       "required": true,
       "kind": "text",
       "en": {
@@ -295,10 +659,27 @@
           }
         ],
         "history": []
+      },
+      "ar": {
+        "text": "كيف تُعرض السعرات الحرارية؟",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "الهيئة العامة للغذاء والدواء: دليل الاشتراطات التغذوية للمنشآت الغذائية التي تقدم الطعام للمستهلك خارج المنزل (PDF)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
       }
     },
-    "sections.4.answer": {
-      "context": "Section 4 answer, directly under its heading (self-contained, 40-60 words)",
+    "sections.5.answer": {
+      "context": "Section 5 answer, directly under its heading (self-contained, 40-60 words)",
       "required": true,
       "kind": "answer",
       "words": [
@@ -321,10 +702,27 @@
           }
         ],
         "history": []
+      },
+      "ar": {
+        "text": "وفق GSO 2604 (الدليل، البند 7.1)، تُوضع السعرات الحرارية بجانب كل صنف في جميع أنواع قوائم الطعام، بنفس حجم ونوع ولون خط اسم الصنف أو سعره، وباللغة العربية. ويجوز وضع ترجمة بجانبها بشرط ألا تختلف عنها. ولا يجوز أن تتجاوز نسبة الخطأ 20% زيادةً أو نقصاناً.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "الهيئة العامة للغذاء والدواء: دليل الاشتراطات التغذوية للمنشآت الغذائية التي تقدم الطعام للمستهلك خارج المنزل (PDF)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
       }
     },
-    "sections.5.heading": {
-      "context": "Section 5 heading (H2) — the question a reader asks",
+    "sections.6.heading": {
+      "context": "Section 6 heading (H2) — the question a reader asks",
       "required": true,
       "kind": "text",
       "en": {
@@ -343,10 +741,27 @@
           }
         ],
         "history": []
+      },
+      "ar": {
+        "text": "كيف تُوسم الإضافات والمشروبات؟",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "الهيئة العامة للغذاء والدواء: دليل الاشتراطات التغذوية للمنشآت الغذائية التي تقدم الطعام للمستهلك خارج المنزل (PDF)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
       }
     },
-    "sections.5.answer": {
-      "context": "Section 5 answer, directly under its heading (self-contained, 40-60 words)",
+    "sections.6.answer": {
+      "context": "Section 6 answer, directly under its heading (self-contained, 40-60 words)",
       "required": true,
       "kind": "answer",
       "words": [
@@ -369,10 +784,27 @@
           }
         ],
         "history": []
+      },
+      "ar": {
+        "text": "يوضح دليل الهيئة (البند 7.1) أن السعرات الحرارية للأصناف الأساسية وللإضافات تُعرض بشكل منفصل. وتُكتب الإضافات بالكلمات والأرقام، مثل «أضف مكسرات، 50 سعرة حرارية»، ويُمنع استخدام رموز أو أسهم مثل علامة (+) للتعبير عن الزيادة. أما المشروبات فتُحسب سعراتها بحسب حجم الكوب المقدَّم بدون ثلج.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "الهيئة العامة للغذاء والدواء: دليل الاشتراطات التغذوية للمنشآت الغذائية التي تقدم الطعام للمستهلك خارج المنزل (PDF)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
       }
     },
-    "sections.6.heading": {
-      "context": "Section 6 heading (H2) — the question a reader asks",
+    "sections.7.heading": {
+      "context": "Section 7 heading (H2) — the question a reader asks",
       "required": true,
       "kind": "text",
       "en": {
@@ -391,10 +823,27 @@
           }
         ],
         "history": []
+      },
+      "ar": {
+        "text": "هل يجب عرض مسببات الحساسية في قائمة الطعام؟",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "الهيئة العامة للغذاء والدواء: دليل الاشتراطات التغذوية للمنشآت الغذائية التي تقدم الطعام للمستهلك خارج المنزل (PDF)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
       }
     },
-    "sections.6.answer": {
-      "context": "Section 6 answer, directly under its heading (self-contained, 40-60 words)",
+    "sections.7.answer": {
+      "context": "Section 7 answer, directly under its heading (self-contained, 40-60 words)",
       "required": true,
       "kind": "answer",
       "words": [
@@ -417,10 +866,27 @@
           }
         ],
         "history": []
+      },
+      "ar": {
+        "text": "نعم. تشترط GSO 2605 (الدليل، البند 7.2) الإفصاح عن مسببات الحساسية في جميع أنواع قوائم الطعام، باللغة العربية، بجانب كل صنف، بصيغة مثل «يحتوي على…» أو «قد يحتوي على…». ويذكر الدليل 14 مسبباً للحساسية، من الحبوب الحاوية على الجلوتين والقشريات والبيض إلى السمسم واللوبين وفول الصويا، ويجيز استخدام رسومات توضيحية مع لوحة تعريفية بها.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "الهيئة العامة للغذاء والدواء: دليل الاشتراطات التغذوية للمنشآت الغذائية التي تقدم الطعام للمستهلك خارج المنزل (PDF)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
       }
     },
-    "sections.7.heading": {
-      "context": "Section 7 heading (H2) — the question a reader asks",
+    "sections.8.heading": {
+      "context": "Section 8 heading (H2) — the question a reader asks",
       "required": true,
       "kind": "text",
       "en": {
@@ -444,10 +910,32 @@
           }
         ],
         "history": []
+      },
+      "ar": {
+        "text": "كيف يُعرض الكافيين؟",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "الهيئة العامة للغذاء والدواء: دليل الاشتراطات التغذوية للمنشآت الغذائية التي تقدم الطعام للمستهلك خارج المنزل (PDF)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          },
+          {
+            "title": "الهيئة العامة للغذاء والدواء: إعلان 27 فبراير 2025 (اللوائح الفنية الثلاث)",
+            "url": "https://www.sfda.gov.sa/ar/news/17639",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
       }
     },
-    "sections.7.answer": {
-      "context": "Section 7 answer, directly under its heading (self-contained, 40-60 words)",
+    "sections.8.answer": {
+      "context": "Section 8 answer, directly under its heading (self-contained, 40-60 words)",
       "required": true,
       "kind": "answer",
       "words": [
@@ -475,10 +963,32 @@
           }
         ],
         "history": []
+      },
+      "ar": {
+        "text": "للمشروبات التي تحتوي على الكافيين، تشترط SFDA.FD 5023 (الدليل، البند 7.3) عرض الكمية بالمليغرام لكل 100 مل أو لكل كوب، بحجم خط ونوع ولون مماثل لاسم المشروب أو سعره، وفي جميع أنواع قوائم الطعام. ويجب أن تذكر الواجهة الأمامية للقائمة ألا يتجاوز استهلاك البالغ من الكافيين 400 مليغرام.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "الهيئة العامة للغذاء والدواء: دليل الاشتراطات التغذوية للمنشآت الغذائية التي تقدم الطعام للمستهلك خارج المنزل (PDF)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          },
+          {
+            "title": "الهيئة العامة للغذاء والدواء: إعلان 27 فبراير 2025 (اللوائح الفنية الثلاث)",
+            "url": "https://www.sfda.gov.sa/ar/news/17639",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
       }
     },
-    "sections.8.heading": {
-      "context": "Section 8 heading (H2) — the question a reader asks",
+    "sections.9.heading": {
+      "context": "Section 9 heading (H2) — the question a reader asks",
       "required": true,
       "kind": "text",
       "en": {
@@ -502,10 +1012,32 @@
           }
         ],
         "history": []
+      },
+      "ar": {
+        "text": "متى يحتاج الطبق إلى وسم الملح؟",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "الهيئة العامة للغذاء والدواء: دليل الاشتراطات التغذوية للمنشآت الغذائية التي تقدم الطعام للمستهلك خارج المنزل (PDF)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          },
+          {
+            "title": "الهيئة العامة للغذاء والدواء: إعلان 27 فبراير 2025 (اللوائح الفنية الثلاث)",
+            "url": "https://www.sfda.gov.sa/ar/news/17639",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
       }
     },
-    "sections.8.answer": {
-      "context": "Section 8 answer, directly under its heading (self-contained, 40-60 words)",
+    "sections.9.answer": {
+      "context": "Section 9 answer, directly under its heading (self-contained, 40-60 words)",
       "required": true,
       "kind": "answer",
       "words": [
@@ -533,15 +1065,34 @@
           }
         ],
         "history": []
+      },
+      "ar": {
+        "text": "تشترط SFDA.FD 5026 (الدليل، البند 8.2) وضع وسم «الملّاحة» بجانب أي وجبة تتجاوز فيها كمية الملح 5 غرامات (ما يعادل 2000 مليغرام صوديوم) للحصة الواحدة، في جميع أنواع قوائم الطعام. وترافقه عبارتان ثابتتان: معنى الوسم، وألا يتجاوز استهلاك الفرد من الملح 5 غرامات يومياً.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "الهيئة العامة للغذاء والدواء: دليل الاشتراطات التغذوية للمنشآت الغذائية التي تقدم الطعام للمستهلك خارج المنزل (PDF)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          },
+          {
+            "title": "الهيئة العامة للغذاء والدواء: إعلان 27 فبراير 2025 (اللوائح الفنية الثلاث)",
+            "url": "https://www.sfda.gov.sa/ar/news/17639",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
       }
     },
-    "sections.9.heading": {
-      "context": "Section 9 heading (H2) — the question a reader asks",
+    "sections.10.heading": {
+      "context": "Section 10 heading (H2) — the question a reader asks",
       "required": true,
       "kind": "text",
-      "allow": [
-        "claims-healthy"
-      ],
       "en": {
         "text": "How must physical-activity time be shown?",
         "reviewStatus": "draft",
@@ -558,10 +1109,27 @@
           }
         ],
         "history": []
+      },
+      "ar": {
+        "text": "كيف تُعرض المدة اللازمة لحرق السعرات الحرارية؟",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "الهيئة العامة للغذاء والدواء: دليل الاشتراطات التغذوية للمنشآت الغذائية التي تقدم الطعام للمستهلك خارج المنزل (PDF)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
       }
     },
-    "sections.9.answer": {
-      "context": "Section 9 answer, directly under its heading (self-contained, 40-60 words)",
+    "sections.10.answer": {
+      "context": "Section 10 answer, directly under its heading (self-contained, 40-60 words)",
       "required": true,
       "kind": "answer",
       "words": [
@@ -587,10 +1155,27 @@
           }
         ],
         "history": []
+      },
+      "ar": {
+        "text": "وفق SFDA.FD 5029 (الدليل، البند 8.1)، يُوضَّح على كل صنف وبجانب سعراته أيقونة رياضة المشي مع الوقت بالدقائق أو الساعات، بنفس حجم ونوع ولون الخط. ويعطي الدليل المعادلة: السعرات الحرارية × 60 ÷ (معامل الجهد 3.3 × متوسط الوزن 70 كيلوجراماً). ويُمنع وضع أي ادّعاء «صحي» أو «تغذوي» مرتبط بهذه المدة.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "الهيئة العامة للغذاء والدواء: دليل الاشتراطات التغذوية للمنشآت الغذائية التي تقدم الطعام للمستهلك خارج المنزل (PDF)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
       }
     },
-    "sections.10.heading": {
-      "context": "Section 10 heading (H2) — the question a reader asks",
+    "sections.11.heading": {
+      "context": "Section 11 heading (H2) — the question a reader asks",
       "required": true,
       "kind": "text",
       "en": {
@@ -609,10 +1194,27 @@
           }
         ],
         "history": []
+      },
+      "ar": {
+        "text": "هل يمكن أن يحل رمز الاستجابة السريع محل وسم النشاط البدني على كل صنف؟",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "الهيئة العامة للغذاء والدواء: دليل الاشتراطات التغذوية للمنشآت الغذائية التي تقدم الطعام للمستهلك خارج المنزل (PDF)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
       }
     },
-    "sections.10.answer": {
-      "context": "Section 10 answer, directly under its heading (self-contained, 40-60 words)",
+    "sections.11.answer": {
+      "context": "Section 11 answer, directly under its heading (self-contained, 40-60 words)",
       "required": true,
       "kind": "answer",
       "words": [
@@ -635,10 +1237,27 @@
           }
         ],
         "history": []
+      },
+      "ar": {
+        "text": "يذكر الدليل (البند 8.1) أنه يمكن تقديم هذه المعلومة على هيئة رمز الاستجابة السريع (QR Code) في هامش الصفحات أو في بداية القائمة، وبجانبه عبارة تطلب مسحه لمعرفة المدة اللازمة لحرق السعرات، بشرط أن يشمل الرمز جميع وجبات القائمة. ويذكر الدليل هذا الخيار للمدة الزمنية للنشاط البدني فقط.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "الهيئة العامة للغذاء والدواء: دليل الاشتراطات التغذوية للمنشآت الغذائية التي تقدم الطعام للمستهلك خارج المنزل (PDF)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
       }
     },
-    "sections.11.heading": {
-      "context": "Section 11 heading (H2) — the question a reader asks",
+    "sections.12.heading": {
+      "context": "Section 12 heading (H2) — the question a reader asks",
       "required": true,
       "kind": "text",
       "allow": [
@@ -660,10 +1279,27 @@
           }
         ],
         "history": []
+      },
+      "ar": {
+        "text": "هل يجوز وصف وجبة بأنها «صحية»؟",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "الهيئة العامة للغذاء والدواء: دليل الاشتراطات التغذوية للمنشآت الغذائية التي تقدم الطعام للمستهلك خارج المنزل (PDF)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
       }
     },
-    "sections.11.answer": {
-      "context": "Section 11 answer, directly under its heading (self-contained, 40-60 words)",
+    "sections.12.answer": {
+      "context": "Section 12 answer, directly under its heading (self-contained, 40-60 words)",
       "required": true,
       "kind": "answer",
       "words": [
@@ -689,10 +1325,27 @@
           }
         ],
         "history": []
+      },
+      "ar": {
+        "text": "لا. لا تسمح SFDA.FD 5016 (الدليل، البند 7.4) للمنشأة بوصف وجباتها في القوائم بأنها «صحية» أو «سليمة» أو «مفيدة»، ولا بترجمة هذه الكلمات. ويُسمح بتسمية «وجبة متوازنة العناصر الغذائية» فقط إذا استوفت الوجبة حدود الطاقة والعناصر الغذائية الواردة في الدليل. ونلتزم بالقاعدة نفسها في نصوصنا.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "الهيئة العامة للغذاء والدواء: دليل الاشتراطات التغذوية للمنشآت الغذائية التي تقدم الطعام للمستهلك خارج المنزل (PDF)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
       }
     },
-    "sections.12.heading": {
-      "context": "Section 12 heading (H2) — the question a reader asks",
+    "sections.13.heading": {
+      "context": "Section 13 heading (H2) — the question a reader asks",
       "required": true,
       "kind": "text",
       "en": {
@@ -721,10 +1374,37 @@
           }
         ],
         "history": []
+      },
+      "ar": {
+        "text": "هل يجب على تطبيقات التوصيل والطلب عرض هذه البيانات؟",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "الهيئة العامة للغذاء والدواء: دليل الاشتراطات التغذوية للمنشآت الغذائية التي تقدم الطعام للمستهلك خارج المنزل (PDF)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          },
+          {
+            "title": "الهيئة العامة للغذاء والدواء: إعلان 27 فبراير 2025 (اللوائح الفنية الثلاث)",
+            "url": "https://www.sfda.gov.sa/ar/news/17639",
+            "accessed": "2026-11-21"
+          },
+          {
+            "title": "الهيئة العامة للغذاء والدواء: إعلان 18 يونيو 2025 (اقتراب تطبيق اللوائح)",
+            "url": "https://sfda.gov.sa/ar/news/18680",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
       }
     },
-    "sections.12.answer": {
-      "context": "Section 12 answer, directly under its heading (self-contained, 40-60 words)",
+    "sections.13.answer": {
+      "context": "Section 13 answer, directly under its heading (self-contained, 40-60 words)",
       "required": true,
       "kind": "answer",
       "words": [
@@ -757,10 +1437,37 @@
           }
         ],
         "history": []
+      },
+      "ar": {
+        "text": "يشمل دليل الهيئة (البند 2) منصات وتطبيقات طلب الطعام الإلكترونية التي تستخدمها المنشأة. وتذكر إعلانات الهيئة أن وسم الملح ينطبق على منصات طلب الطعام الإلكترونية إضافة إلى القوائم الورقية والإلكترونية (27 فبراير 2025)، وأن الاشتراطات تمتد إلى منصات طلب الطعام الإلكترونية (18 يونيو 2025).",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "الهيئة العامة للغذاء والدواء: دليل الاشتراطات التغذوية للمنشآت الغذائية التي تقدم الطعام للمستهلك خارج المنزل (PDF)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          },
+          {
+            "title": "الهيئة العامة للغذاء والدواء: إعلان 27 فبراير 2025 (اللوائح الفنية الثلاث)",
+            "url": "https://www.sfda.gov.sa/ar/news/17639",
+            "accessed": "2026-11-21"
+          },
+          {
+            "title": "الهيئة العامة للغذاء والدواء: إعلان 18 يونيو 2025 (اقتراب تطبيق اللوائح)",
+            "url": "https://sfda.gov.sa/ar/news/18680",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
       }
     },
-    "sections.13.heading": {
-      "context": "Section 13 heading (H2) — the question a reader asks",
+    "sections.14.heading": {
+      "context": "Section 14 heading (H2) — the question a reader asks",
       "required": true,
       "kind": "text",
       "en": {
@@ -779,10 +1486,27 @@
           }
         ],
         "history": []
+      },
+      "ar": {
+        "text": "ما المعلومات التغذوية الإضافية التي يجب توفرها؟",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "الهيئة العامة للغذاء والدواء: دليل الاشتراطات التغذوية للمنشآت الغذائية التي تقدم الطعام للمستهلك خارج المنزل (PDF)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
       }
     },
-    "sections.13.answer": {
-      "context": "Section 13 answer, directly under its heading (self-contained, 40-60 words)",
+    "sections.14.answer": {
+      "context": "Section 14 answer, directly under its heading (self-contained, 40-60 words)",
       "required": true,
       "kind": "answer",
       "words": [
@@ -805,10 +1529,27 @@
           }
         ],
         "history": []
+      },
+      "ar": {
+        "text": "يذكر دليل الهيئة (البند 7.1) أنه يجب أن تتوفر لكل صنف بيانات تغذوية إضافية، مثل البروتين والدهون والكربوهيدرات والسكريات والملح والصوديوم، لتقديمها للمستهلك عند الطلب، وتُعرض كنسب مئوية من الاحتياج اليومي. ولا يشترط الدليل طباعتها على القائمة نفسها، لكن يجب أن تكون جاهزة للتقديم.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "الهيئة العامة للغذاء والدواء: دليل الاشتراطات التغذوية للمنشآت الغذائية التي تقدم الطعام للمستهلك خارج المنزل (PDF)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
       }
     },
-    "sections.14.heading": {
-      "context": "Section 14 heading (H2) — the question a reader asks",
+    "sections.15.heading": {
+      "context": "Section 15 heading (H2) — the question a reader asks",
       "required": true,
       "kind": "text",
       "en": {
@@ -827,10 +1568,27 @@
           }
         ],
         "history": []
+      },
+      "ar": {
+        "text": "ما العبارات التوضيحية التي يجب أن تحملها قائمة الطعام؟",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "الهيئة العامة للغذاء والدواء: دليل الاشتراطات التغذوية للمنشآت الغذائية التي تقدم الطعام للمستهلك خارج المنزل (PDF)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
       }
     },
-    "sections.14.answer": {
-      "context": "Section 14 answer, directly under its heading (self-contained, 40-60 words)",
+    "sections.15.answer": {
+      "context": "Section 15 answer, directly under its heading (self-contained, 40-60 words)",
       "required": true,
       "kind": "answer",
       "words": [
@@ -853,10 +1611,27 @@
           }
         ],
         "history": []
+      },
+      "ar": {
+        "text": "يسردها فهرس العبارات في الدليل (البند 9): يحتاج البالغون إلى 2000 سعرة حرارية يومياً ويحتاج الأطفال من 4 إلى 13 سنة إلى 1200–1500؛ وعبارة الكافيين (400 مليغرام)؛ وعبارتا الملح؛ وللعصائر الطازجة والخلطات عبارات السكر المضاف: 50 غراماً يومياً للبالغين و25 غراماً للأطفال.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "الهيئة العامة للغذاء والدواء: دليل الاشتراطات التغذوية للمنشآت الغذائية التي تقدم الطعام للمستهلك خارج المنزل (PDF)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
       }
     },
-    "sections.15.heading": {
-      "context": "Section 15 heading (H2) — the question a reader asks",
+    "sections.16.heading": {
+      "context": "Section 16 heading (H2) — the question a reader asks",
       "required": true,
       "kind": "text",
       "en": {
@@ -875,10 +1650,27 @@
           }
         ],
         "history": []
+      },
+      "ar": {
+        "text": "هل تتناول الوثائق القوائم ثلاثية الأبعاد أو بالواقع المعزز أو التفاعلية؟",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "الهيئة العامة للغذاء والدواء: دليل الاشتراطات التغذوية للمنشآت الغذائية التي تقدم الطعام للمستهلك خارج المنزل (PDF)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
       }
     },
-    "sections.15.answer": {
-      "context": "Section 15 answer, directly under its heading (self-contained, 40-60 words)",
+    "sections.16.answer": {
+      "context": "Section 16 answer, directly under its heading (self-contained, 40-60 words)",
       "required": true,
       "kind": "answer",
       "words": [
@@ -901,10 +1693,27 @@
           }
         ],
         "history": []
+      },
+      "ar": {
+        "text": "لا. الوثائق التي قرأناها لا تذكر القوائم ثلاثية الأبعاد أو الواقع المعزز أو غيرها من الصيغ التفاعلية، ولا تحدد مكان وضع الوسوم داخلها. وتشمل صياغة الدليل أي قائمة تُعرض على موقع إلكتروني أو تطبيق. إذا كنتم تبنون قائمة كهذه، فاسألوا الهيئة على الرقم 19999 عن طريقة عرض الوسوم.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "الهيئة العامة للغذاء والدواء: دليل الاشتراطات التغذوية للمنشآت الغذائية التي تقدم الطعام للمستهلك خارج المنزل (PDF)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
       }
     },
-    "sections.16.heading": {
-      "context": "Section 16 heading (H2) — the question a reader asks",
+    "sections.17.heading": {
+      "context": "Section 17 heading (H2) — the question a reader asks",
       "required": true,
       "kind": "text",
       "en": {
@@ -923,10 +1732,27 @@
           }
         ],
         "history": []
+      },
+      "ar": {
+        "text": "ما الأصناف المستثناة؟",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "الهيئة العامة للغذاء والدواء: دليل الاشتراطات التغذوية للمنشآت الغذائية التي تقدم الطعام للمستهلك خارج المنزل (PDF)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
       }
     },
-    "sections.16.answer": {
-      "context": "Section 16 answer, directly under its heading (self-contained, 40-60 words)",
+    "sections.17.answer": {
+      "context": "Section 17 answer, directly under its heading (self-contained, 40-60 words)",
       "required": true,
       "kind": "answer",
       "words": [
@@ -949,10 +1775,27 @@
           }
         ],
         "history": []
+      },
+      "ar": {
+        "text": "يسرد دليل الهيئة (البند 3) استثناءات، منها الأغذية والمشروبات المقدمة من الأسر المنتجة، والتذوق في السوبرماركت، وقوائم الطعام المؤقتة، والأصناف المعدة والمعروضة للبيع في يوم معين مثل اليوم الوطني، والأغذية المعدة لغرض التسويق، والمنتجات الغذائية المعبأة، والتوابل والمنكهات الموضوعة على الطاولة، والطلبات الخاصة غير المدرجة بشكل دائم على القائمة.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "الهيئة العامة للغذاء والدواء: دليل الاشتراطات التغذوية للمنشآت الغذائية التي تقدم الطعام للمستهلك خارج المنزل (PDF)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
       }
     },
-    "sections.17.heading": {
-      "context": "Section 17 heading (H2) — the question a reader asks",
+    "sections.18.heading": {
+      "context": "Section 18 heading (H2) — the question a reader asks",
       "required": true,
       "kind": "text",
       "en": {
@@ -971,10 +1814,27 @@
           }
         ],
         "history": []
+      },
+      "ar": {
+        "text": "من المسؤول عن دقة الوسوم والبيانات؟",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "الهيئة العامة للغذاء والدواء: دليل الاشتراطات التغذوية للمنشآت الغذائية التي تقدم الطعام للمستهلك خارج المنزل (PDF)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
       }
     },
-    "sections.17.answer": {
-      "context": "Section 17 answer, directly under its heading (self-contained, 40-60 words)",
+    "sections.18.answer": {
+      "context": "Section 18 answer, directly under its heading (self-contained, 40-60 words)",
       "required": true,
       "kind": "answer",
       "words": [
@@ -997,10 +1857,27 @@
           }
         ],
         "history": []
+      },
+      "ar": {
+        "text": "المطعم. يُسند الدليل التحقق من مسببات الحساسية إلى المنشأة الغذائية (البند 7.2)، ولم نجد فيه ما يسند هذه الواجبات إلى مورّد برنامج القوائم. ولا يرفع هذه المسؤولية عن المطعم شيء في هذه الصفحة ولا أي برنامج قوائم. وPride Hire ليست جزءاً من الهيئة ولا تستطيع تأكيد أن أي قائمة تستوفي الاشتراطات.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "الهيئة العامة للغذاء والدواء: دليل الاشتراطات التغذوية للمنشآت الغذائية التي تقدم الطعام للمستهلك خارج المنزل (PDF)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
       }
     },
-    "sections.18.heading": {
-      "context": "Section 18 heading (H2) — the question a reader asks",
+    "sections.19.heading": {
+      "context": "Section 19 heading (H2) — the question a reader asks",
       "required": true,
       "kind": "text",
       "en": {
@@ -1034,10 +1911,42 @@
           }
         ],
         "history": []
+      },
+      "ar": {
+        "text": "ما وثائق الهيئة التي يستند إليها هذا الدليل؟",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "الهيئة العامة للغذاء والدواء: دليل الاشتراطات التغذوية للمنشآت الغذائية التي تقدم الطعام للمستهلك خارج المنزل (PDF)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          },
+          {
+            "title": "الهيئة العامة للغذاء والدواء: إعلان 27 فبراير 2025 (اللوائح الفنية الثلاث)",
+            "url": "https://www.sfda.gov.sa/ar/news/17639",
+            "accessed": "2026-11-21"
+          },
+          {
+            "title": "الهيئة العامة للغذاء والدواء: إعلان 18 يونيو 2025 (اقتراب تطبيق اللوائح)",
+            "url": "https://sfda.gov.sa/ar/news/18680",
+            "accessed": "2026-11-21"
+          },
+          {
+            "title": "الهيئة العامة للغذاء والدواء: إعلان 5 أغسطس 2018 (عرض السعرات الحرارية)",
+            "url": "https://www.sfda.gov.sa/ar/node/4516",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
       }
     },
-    "sections.18.answer": {
-      "context": "Section 18 answer, directly under its heading (self-contained, 40-60 words)",
+    "sections.19.answer": {
+      "context": "Section 19 answer, directly under its heading (self-contained, 40-60 words)",
       "required": true,
       "kind": "answer",
       "words": [
@@ -1075,14 +1984,9 @@
           }
         ],
         "history": []
-      }
-    },
-    "sections.19.heading": {
-      "context": "Section 19 heading (H2) — the question a reader asks",
-      "required": true,
-      "kind": "text",
-      "en": {
-        "text": "What could we not verify?",
+      },
+      "ar": {
+        "text": "اعتمدنا على ثلاث وثائق للهيئة، قرأناها جميعاً في 21 نوفمبر 2026: [دليل الاشتراطات التغذوية للمنشآت الغذائية التي تقدم الطعام للمستهلك خارج المنزل](https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf) وإعلانَي الهيئة بتاريخ [27 فبراير 2025](https://www.sfda.gov.sa/ar/news/17639) و[18 يونيو 2025](https://sfda.gov.sa/ar/news/18680). وقرأنا للسعرات الحرارية أيضاً [إعلان الهيئة في أغسطس 2018](https://www.sfda.gov.sa/ar/node/4516).",
         "reviewStatus": "draft",
         "reviewedBy": null,
         "reviewedAt": null,
@@ -1091,34 +1995,23 @@
         "reviewerNote": null,
         "sources": [
           {
-            "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "title": "الهيئة العامة للغذاء والدواء: دليل الاشتراطات التغذوية للمنشآت الغذائية التي تقدم الطعام للمستهلك خارج المنزل (PDF)",
             "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
             "accessed": "2026-11-21"
-          }
-        ],
-        "history": []
-      }
-    },
-    "sections.19.answer": {
-      "context": "Section 19 answer, directly under its heading (self-contained, 40-60 words)",
-      "required": true,
-      "kind": "answer",
-      "words": [
-        40,
-        60
-      ],
-      "en": {
-        "text": "We could not read the technical regulation texts on SFDA’s Mwasfah store, so this page follows SFDA’s guide and announcements. The guide’s PDF metadata dates it to May 2024, so it may not be the current edition. We found no penalties or grace period. The guide’s worked pizza example does not match its own formula, so we left it out.",
-        "reviewStatus": "draft",
-        "reviewedBy": null,
-        "reviewedAt": null,
-        "approvedBy": null,
-        "approvedAt": null,
-        "reviewerNote": null,
-        "sources": [
+          },
           {
-            "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
-            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "title": "الهيئة العامة للغذاء والدواء: إعلان 27 فبراير 2025 (اللوائح الفنية الثلاث)",
+            "url": "https://www.sfda.gov.sa/ar/news/17639",
+            "accessed": "2026-11-21"
+          },
+          {
+            "title": "الهيئة العامة للغذاء والدواء: إعلان 18 يونيو 2025 (اقتراب تطبيق اللوائح)",
+            "url": "https://sfda.gov.sa/ar/news/18680",
+            "accessed": "2026-11-21"
+          },
+          {
+            "title": "الهيئة العامة للغذاء والدواء: إعلان 5 أغسطس 2018 (عرض السعرات الحرارية)",
+            "url": "https://www.sfda.gov.sa/ar/node/4516",
             "accessed": "2026-11-21"
           }
         ],
@@ -1146,6 +2039,28 @@
           {
             "title": "SFDA: SFDA to Implement New Food Rules for Transparency and Consumer Health (18 Jun 2025)",
             "url": "https://sfda.gov.sa/en/news/18680",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      },
+      "ar": {
+        "text": "أين أجد الاشتراطات الحالية؟",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "الهيئة العامة للغذاء والدواء: إعلان 27 فبراير 2025 (اللوائح الفنية الثلاث)",
+            "url": "https://www.sfda.gov.sa/ar/news/17639",
+            "accessed": "2026-11-21"
+          },
+          {
+            "title": "الهيئة العامة للغذاء والدواء: إعلان 18 يونيو 2025 (اقتراب تطبيق اللوائح)",
+            "url": "https://sfda.gov.sa/ar/news/18680",
             "accessed": "2026-11-21"
           }
         ],
@@ -1181,6 +2096,28 @@
           }
         ],
         "history": []
+      },
+      "ar": {
+        "text": "يضم [متجر مواصفة](https://mwasfah.sfda.gov.sa/Home) التابع للهيئة اللوائح الفنية المعتمدة، وتذكر إعلانات الهيئة الرقم 19999 للاستفسارات الفنية. وقد تُعدَّل هذه الاشتراطات، فاعتبروا هذه الصفحة قراءة مبسطة لما اطلعنا عليه في 21 نوفمبر 2026، وتأكدوا من الصياغة الحالية لدى الهيئة قبل تغيير أي قائمة.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "الهيئة العامة للغذاء والدواء: إعلان 27 فبراير 2025 (اللوائح الفنية الثلاث)",
+            "url": "https://www.sfda.gov.sa/ar/news/17639",
+            "accessed": "2026-11-21"
+          },
+          {
+            "title": "الهيئة العامة للغذاء والدواء: إعلان 18 يونيو 2025 (اقتراب تطبيق اللوائح)",
+            "url": "https://sfda.gov.sa/ar/news/18680",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
       }
     },
     "cta.text": {
@@ -1198,6 +2135,23 @@
         "sources": [
           {
             "title": "SFDA: Guide to Nutritional Requirements for Food Establishments Serving Food Outside the Home (PDF; metadata dated May 2024)",
+            "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
+            "accessed": "2026-11-21"
+          }
+        ],
+        "history": []
+      },
+      "ar": {
+        "text": "تواصلوا معنا",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [
+          {
+            "title": "الهيئة العامة للغذاء والدواء: دليل الاشتراطات التغذوية للمنشآت الغذائية التي تقدم الطعام للمستهلك خارج المنزل (PDF)",
             "url": "https://www.sfda.gov.sa/sites/default/files/2024-05/Food135aa1.pdf",
             "accessed": "2026-11-21"
           }

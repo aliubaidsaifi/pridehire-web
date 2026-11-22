@@ -28,6 +28,9 @@ spelling candidate in the glossary comes from desk research and is UNVERIFIED. P
 defer to it. If something sounds wrong to you, it is wrong — you do not need to justify it, and you do not need to be polite about it.
 Change it, replace it, or tell us the whole approach is off.
 
+## Pages based on an official document (e.g. SFDA)
+Some pages explain an official Saudi document, and that document is written in Arabic. Where the draft uses the official wording (for example the names of the rules, «الملّاحة», the 400 mg statement), prefer the official wording over a freer rewrite, and tell us if you think the official wording itself reads awkwardly. The English and the Arabic must say the same thing: please flag any sentence where they differ in meaning, in either direction.
+
 ## How to fill the sheet (*.review.csv — open in Excel, save as "CSV UTF-8")
 - Do not edit the Key, Where it appears, English or Arabic (current) columns.
 - Verdict:  OK  = use as is  |  EDIT = small fix  |  REWRITE = this should be written differently

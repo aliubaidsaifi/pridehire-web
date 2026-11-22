@@ -120,6 +120,94 @@
       "decidedBy": null,
       "decidedAt": null,
       "note": "Must NOT imply an office or a Saudi team. Does the wording stay accurate and natural?"
+    },
+    {
+      "key": "sfda",
+      "en": "SFDA (Saudi Food and Drug Authority)",
+      "candidates": [
+        "الهيئة العامة للغذاء والدواء",
+        "هيئة الغذاء والدواء",
+        "SFDA (Latin)"
+      ],
+      "note": "The draft uses the official full name once per section and 'الهيئة' after that. Is that how a Saudi restaurant owner would say it?",
+      "decision": null,
+      "decidedBy": null,
+      "decidedAt": null
+    },
+    {
+      "key": "mwasfah",
+      "en": "Mwasfah (SFDA's online store of technical regulations)",
+      "candidates": [
+        "متجر مواصفة",
+        "مواصفة (Mwasfah)",
+        "Mwasfah (Latin)"
+      ],
+      "note": "SFDA's own Arabic announcements write: المتجر الإلكتروني «مواصفة». Please confirm how to name it.",
+      "decision": null,
+      "decidedBy": null,
+      "decidedAt": null
+    },
+    {
+      "key": "salt-icon",
+      "en": "salt-shaker icon (high-salt label)",
+      "candidates": [
+        "وسم «الملّاحة»",
+        "أيقونة الملّاحة",
+        "وسم الملح"
+      ],
+      "note": "SFDA's own text uses «الملّاحة». Keep SFDA's term unless you strongly disagree.",
+      "decision": null,
+      "decidedBy": null,
+      "decidedAt": null
+    },
+    {
+      "key": "qr-code",
+      "en": "QR code",
+      "candidates": [
+        "رمز الاستجابة السريع (QR Code)",
+        "كيو آر كود",
+        "باركود"
+      ],
+      "note": "SFDA's guide writes 'رمز الاستجابة السريع (QR-CODE)' and its fixed sentence says 'الباركود'. Which should a menu page use?",
+      "decision": null,
+      "decidedBy": null,
+      "decidedAt": null
+    },
+    {
+      "key": "digits",
+      "en": "numerals (2,000 / 21 November 2026)",
+      "candidates": [
+        "Western digits 0-9",
+        "Arabic-Indic digits ٠-٩"
+      ],
+      "note": "The draft uses Western digits throughout, as SFDA's own pages do. Confirm.",
+      "decision": null,
+      "decidedBy": null,
+      "decidedAt": null
+    },
+    {
+      "key": "month-names",
+      "en": "Gregorian month names",
+      "candidates": [
+        "نوفمبر / يوليو / فبراير / يونيو / أغسطس / مايو",
+        "تشرين الثاني / تموز / شباط / حزيران / آب / أيار"
+      ],
+      "note": "The draft uses the Gulf/Saudi forms (نوفمبر …), matching SFDA's own pages. Confirm.",
+      "decision": null,
+      "decidedBy": null,
+      "decidedAt": null
+    },
+    {
+      "key": "limits-wording",
+      "en": "'we could not verify' / 'documents read on …'",
+      "candidates": [
+        "لم نتمكن من التحقق",
+        "تمت قراءة الوثائق في"
+      ],
+      "note": "This honesty wording matters for trust. Does it read naturally and not defensive or over-formal?",
+      "decision": null,
+      "decidedBy": null,
+      "decidedAt": null
     }
   ]
 }
