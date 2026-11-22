@@ -1,8 +1,10 @@
 'use client';
 
 import Link from 'next/link';
+import { PHONES } from '@/lib/markets';
 
-export default function AuditCTA() {
+// showPhones: the homepage closing block lists both numbers, labelled by who they serve.
+export default function AuditCTA({ showPhones = false }) {
   return (
     <section className="py-4 sm:py-16">
       <div className="container-px">
@@ -21,6 +23,12 @@ export default function AuditCTA() {
               </Link>
             </div>
             <p className="mt-7 text-xs text-white/40">Free · No obligation · No lock-in</p>
+            {showPhones && (
+              <div className="mt-8 flex flex-col items-center justify-center gap-3 text-sm text-white/60 sm:flex-row sm:gap-10">
+                <p>India &amp; international: <a href={`tel:${PHONES.IN.e164}`} className="font-medium text-white underline decoration-white/30 underline-offset-4 hover:decoration-white">{PHONES.IN.display}</a></p>
+                <p>Saudi Arabia: <a href={`tel:${PHONES.SA.e164}`} className="font-medium text-white underline decoration-white/30 underline-offset-4 hover:decoration-white">{PHONES.SA.display}</a></p>
+              </div>
+            )}
           </div>
         </div>
       </div>

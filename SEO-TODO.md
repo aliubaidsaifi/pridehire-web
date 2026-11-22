@@ -95,3 +95,11 @@ Schema describes what the site actually does today, never what it will do. If un
 - **Search Console**: add the `www` URL-prefix property (and Domain property); submit `https://www.pridehire.com/sitemap.xml`; use URL Inspection on `/`; check the Pages report for the four restored portfolio URLs.
 - **Rich Results Test / Schema validator**: run on `/`, `/services/seo`, a blog post (only a structural local check was possible offline).
 - **Enable `experimental.globalNotFound`** is on (Next 16.2.10): re-check on Next upgrades.
+
+## Contact routing (2026-11-22)
+- **Done:** `/contact` cards restored (owner commit b7ef248 had deleted their inner markup while adding click tracking). Footer + homepage closing block list both numbers ("India & international" / "Saudi Arabia"). Footer phone lines are path-aware (`/sa/*` Saudi only, `/in/*` India only). Saudi pages: `/sa/contact`, `/sa/free-audit` (+966 only, submit `market: sa`); Saudi navbar/footer audit + contact links point at them; English Saudi CTAs and inline links repointed. Lead `market` attribution (forms, API, notification, Brevo tags, `track()`).
+- **OWNER — draft Saudi copy to approve:** `/sa/contact` and `/sa/free-audit` reuse the global copy, adapted: service list = website development / digital menu for a restaurant / business automation and custom AI agents; no budget question (no approved SAR bands); no Google Meet card or booking section; "within 24 hours" and "We reply within one business day" are carried over from the global pages and are unverified for Saudi.
+- **Saudi navbar services dropdown** still lists the global services (Graphic Design, Meta Ads, Google Ads...) and links to global `/services/*` pages (which carry +91 links). Needs the Saudi service set decision; hub rewrite is blocked on the owner.
+- **Arabic:** the Arabic text still links to `/free-audit` and `/contact` (global pages, +91). Before any Arabic page ships: build `/sa/ar/contact` + `/sa/ar/free-audit` (Arabic copy, native review) and repoint.
+- **India:** `/in/*` routes do not exist yet. When built, verify in built HTML that only +91 appears (FooterContact already handles it by path); the Saudi switch link on `/in/*` and the India switch link on `/sa/*` appear automatically only when the other market's hub is live.
+- **Owner confirms:** WhatsApp active on +966 53 523 9163; Calendly URL.

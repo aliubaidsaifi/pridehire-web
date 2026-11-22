@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server';
+import { marketFromRequest, MARKET_LABEL } from '@/lib/lead-market';
 
 const TO_EMAIL = process.env.CONTACT_TO_EMAIL || 'contact@pridehire.com';
 const FROM_EMAIL = process.env.CONTACT_FROM_EMAIL || 'noreply@pridehire.com';
@@ -17,8 +18,9 @@ export async function POST(request) {
       return NextResponse.json({ ok: false, error: 'Not configured yet.' }, { status: 503 });
     }
 
+    const market = marketFromRequest(request, d.market);
     const rows = [
-      ['Name', d.name], ['Business', d.businessName], ['Has website', d.hasWebsite],
+      ['Market', MARKET_LABEL[market]], ['Name', d.name], ['Business', d.businessName], ['Has website', d.hasWebsite],
       ['Website', d.websiteUrl], ['Google Maps', d.mapsLink], ['Email', d.email],
       ['Phone', d.phone], ['Service', d.service], ['Budget', d.budget],
       ['Start', d.startWhen], ['Message', d.message],
@@ -32,7 +34,8 @@ export async function POST(request) {
         sender: { name: 'Pride Hire Website', email: FROM_EMAIL },
         to: [{ email: TO_EMAIL, name: 'Pride Hire' }],
         replyTo: { email: d.email, name: d.name },
-        subject: `🔍 New audit request — ${d.name}`,
+        subject: `🔍 [${market.toUpperCase()}] New audit request — ${d.name}`,
+        tags: ['website-lead', 'audit-form', `market-${market}`],
         htmlContent: `<div style="font-family:Inter,Arial,sans-serif;font-size:15px;color:#0a0a0b;line-height:1.6"><h2>New free-audit request</h2>${rows}</div>`,
       }),
     });

@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server';
+import { marketFromRequest, MARKET_LABEL } from '@/lib/lead-market';
 
 const TO_EMAIL = process.env.CONTACT_TO_EMAIL || 'hr@pridehire.com';
 const FROM_EMAIL = process.env.CONTACT_FROM_EMAIL || 'noreply@pridehire.com';
@@ -26,11 +27,13 @@ export async function POST(request) {
       return NextResponse.json({ ok: false, error: 'Email service isn’t configured yet.' }, { status: 503 });
     }
 
+    const market = marketFromRequest(request, data.market);
     const html = `
       <div style="font-family:Inter,Arial,sans-serif;font-size:15px;color:#0e0e12;line-height:1.6">
         <h2 style="margin:0 0 16px">New project enquiry</h2>
         <table cellpadding="0" cellspacing="0" style="width:100%;border-collapse:collapse">
-          <tr><td style="padding:6px 0;color:#6b6b76;width:130px">Name</td><td>${escapeHtml(name)}</td></tr>
+          <tr><td style="padding:6px 0;color:#6b6b76;width:130px">Market</td><td><b>${MARKET_LABEL[market]}</b></td></tr>
+          <tr><td style="padding:6px 0;color:#6b6b76">Name</td><td>${escapeHtml(name)}</td></tr>
           <tr><td style="padding:6px 0;color:#6b6b76">Email</td><td><a href="mailto:${escapeHtml(email)}">${escapeHtml(email)}</a></td></tr>
           <tr><td style="padding:6px 0;color:#6b6b76">Company</td><td>${escapeHtml(company) || '—'}</td></tr>
           <tr><td style="padding:6px 0;color:#6b6b76">Project type</td><td>${escapeHtml(projectType) || '—'}</td></tr>
@@ -48,7 +51,8 @@ export async function POST(request) {
         sender: { name: 'PrideHire Website', email: FROM_EMAIL },
         to: [{ email: TO_EMAIL, name: 'PrideHire' }],
         replyTo: { email, name },
-        subject: `New enquiry — ${name}${projectType ? ` · ${projectType}` : ''}`,
+        subject: `[${market.toUpperCase()}] New enquiry — ${name}${projectType ? ` · ${projectType}` : ''}`,
+        tags: ['website-lead', 'contact-form', `market-${market}`],
         htmlContent: html,
       }),
     });

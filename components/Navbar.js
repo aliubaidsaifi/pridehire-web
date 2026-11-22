@@ -28,7 +28,11 @@ function ServicesDropdown() {
   );
 }
 
-export default function Navbar() {
+// On Saudi pages the audit and contact links go to the Saudi (+966 only) pages.
+const SA_PATHS = { '/free-audit': '/sa/free-audit', '/contact': '/sa/contact' };
+
+export default function Navbar({ market = 'global' }) {
+  const to = (href) => (market === 'sa' && SA_PATHS[href]) || href;
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
@@ -54,7 +58,7 @@ export default function Navbar() {
           <ul className="hidden items-center gap-1 lg:flex">
             {NAV.map((item) => (
               <li key={item.href} className={item.hasDropdown ? 'group relative' : ''}>
-                <Link href={item.href} className="flex items-center gap-1 rounded-full px-4 py-2 text-sm font-medium text-ink/70 transition-colors hover:text-ink">
+                <Link href={to(item.href)} className="flex items-center gap-1 rounded-full px-4 py-2 text-sm font-medium text-ink/70 transition-colors hover:text-ink">
                   {item.label}
                   {item.hasDropdown && <Chevron className="text-ink/50 transition-transform duration-300 group-hover:rotate-180" />}
                 </Link>
@@ -64,7 +68,7 @@ export default function Navbar() {
           </ul>
 
           <div className="hidden lg:block">
-            <Link href="/free-audit" className="btn-primary">{SITE.cta.primary}</Link>
+            <Link href={to('/free-audit')} className="btn-primary">{SITE.cta.primary}</Link>
           </div>
 
           <button type="button" onClick={() => setOpen((v) => !v)} className="grid h-10 w-10 place-items-center rounded-xl border border-line bg-white lg:hidden" aria-label={open ? 'Close menu' : 'Open menu'} aria-expanded={open}>
@@ -103,14 +107,14 @@ export default function Navbar() {
                     </div>
                   </>
                 ) : (
-                  <Link href={item.href} onClick={() => setOpen(false)} className="block rounded-xl px-3 py-3 text-base font-medium text-ink/80 hover:bg-paper">
+                  <Link href={to(item.href)} onClick={() => setOpen(false)} className="block rounded-xl px-3 py-3 text-base font-medium text-ink/80 hover:bg-paper">
                     {item.label}
                   </Link>
                 )}
               </li>
             ))}
             <li className="pt-2">
-              <Link href="/free-audit" onClick={() => setOpen(false)} className="btn-primary w-full">{SITE.cta.primary}</Link>
+              <Link href={to('/free-audit')} onClick={() => setOpen(false)} className="btn-primary w-full">{SITE.cta.primary}</Link>
             </li>
           </ul>
         </div>

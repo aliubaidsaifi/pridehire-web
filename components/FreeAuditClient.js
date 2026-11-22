@@ -2,15 +2,19 @@
 
 import { useState } from 'react';
 import { SITE, SERVICES } from '@/lib/site';
+import { currentMarket } from '@/lib/lead-market';
 
 const inputCls = 'w-full rounded-xl border border-line bg-paper px-4 py-3 text-[0.95rem] text-ink placeholder:text-ink/40 outline-none transition focus:border-ink focus:ring-4 focus:ring-ink/5';
 const BUDGETS = ['Under $1k', '$1k–$3k', '$3k–$8k', '$8k+', 'Not sure yet'];
+// Saudi page: same structure, Saudi service set, no budget question (no approved SAR bands), +966 placeholder.
+const SA_SERVICES = ['Website development', 'Digital menu for a restaurant', 'Business automation and custom AI agents'];
 const START = ['ASAP', 'This month', 'In 1–3 months', 'Just exploring'];
 
-export default function FreeAuditPage() {
+export default function FreeAuditPage({ market = 'global' }) {
+  const sa = market === 'sa';
   const [f, setF] = useState({
     name: '', businessName: '', hasWebsite: 'Yes', websiteUrl: '', mapsLink: '',
-    email: '', phone: '', service: SERVICES[0].title, budget: BUDGETS[1], startWhen: START[0], message: '', website: '',
+    email: '', phone: '', service: sa ? SA_SERVICES[0] : SERVICES[0].title, budget: sa ? '' : BUDGETS[1], startWhen: START[0], message: '', website: '',
   });
   const [status, setStatus] = useState('idle');
   const [error, setError] = useState('');
@@ -23,7 +27,7 @@ export default function FreeAuditPage() {
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(f.email)) { setError('That email doesn’t look right.'); return; }
     setError(''); setStatus('sending');
     try {
-      const res = await fetch('/api/audit', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(f) });
+      const res = await fetch('/api/audit', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ ...f, market: sa ? 'sa' : currentMarket() }) });
       const data = await res.json().catch(() => ({}));
       if (!res.ok || !data.ok) throw new Error(data.error || 'Failed');
       setStatus('sent');
@@ -37,7 +41,7 @@ export default function FreeAuditPage() {
           <div className="mx-auto grid h-16 w-16 place-items-center rounded-2xl bg-ink text-3xl text-white">✓</div>
           <h1 className="mt-6 font-display text-3xl font-semibold tracking-tightest text-ink">Thank you</h1>
           <p className="mt-3 text-pretty text-muted">
-            Our team will send your <b className="text-ink">FREE website &amp; SEO audit within 24 hours</b>. Keep an eye on your inbox — a confirmation is on its way.
+            Our team will send your <b className="text-ink">{sa ? 'FREE website audit' : 'FREE website & SEO audit'} within 24 hours</b>. Keep an eye on your inbox — a confirmation is on its way.
           </p>
         </div>
       </section>
@@ -50,8 +54,8 @@ export default function FreeAuditPage() {
       <div className="container-px relative grid gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
         <div>
           <span className="eyebrow">Free · No obligation</span>
-          <h1 className="mt-4 font-display text-4xl font-semibold tracking-tightest text-ink sm:text-5xl">Get your free website &amp; SEO audit</h1>
-          <p className="mt-5 max-w-md text-pretty text-muted sm:text-lg">Tell us about your business. We&apos;ll review your site, Google presence and competitors, then send an honest report within 24 hours.</p>
+          <h1 className="mt-4 font-display text-4xl font-semibold tracking-tightest text-ink sm:text-5xl">{sa ? 'Get your free website audit' : <>Get your free website &amp; SEO audit</>}</h1>
+          <p className="mt-5 max-w-md text-pretty text-muted sm:text-lg">{sa ? 'Tell us about your business. We’ll review your website and how it shows up in Google search, then send an honest report within 24 hours.' : <>Tell us about your business. We&apos;ll review your site, Google presence and competitors, then send an honest report within 24 hours.</>}</p>
           <ul className="mt-10 space-y-4 text-sm">
             {['Delivered within 24 hours', 'Honest — even if you don’t need us', 'No sales pressure, no lock-in'].map((t) => (
               <li key={t} className="flex items-center gap-3">
@@ -81,25 +85,25 @@ export default function FreeAuditPage() {
             </Field>
 
             {f.hasWebsite === 'Yes' && (
-              <Field label="Website URL"><input type="text" value={f.websiteUrl} onChange={u('websiteUrl')} className={inputCls} placeholder="www.yourbusiness.co.nz" /></Field>
+              <Field label="Website URL"><input type="text" value={f.websiteUrl} onChange={u('websiteUrl')} className={inputCls} placeholder={sa ? 'www.yourbusiness.com' : 'www.yourbusiness.co.nz'} /></Field>
             )}
 
             <Field label="Google Maps link (optional)"><input type="text" value={f.mapsLink} onChange={u('mapsLink')} className={inputCls} placeholder="Paste your Google Business link" /></Field>
 
             <div className="grid gap-5 sm:grid-cols-2">
-              <Field label="Email" req><input type="email" value={f.email} onChange={u('email')} className={inputCls} placeholder="you@business.co.nz" /></Field>
-              <Field label="Phone"><input type="tel" value={f.phone} onChange={u('phone')} className={inputCls} placeholder="+64 ..." /></Field>
+              <Field label="Email" req><input type="email" value={f.email} onChange={u('email')} className={inputCls} placeholder={sa ? 'you@business.com' : 'you@business.co.nz'} /></Field>
+              <Field label="Phone"><input type="tel" value={f.phone} onChange={u('phone')} className={inputCls} placeholder={sa ? '+966 ...' : '+64 ...'} /></Field>
             </div>
 
             <Field label="Service required">
               <select value={f.service} onChange={u('service')} className={inputCls}>
-                {SERVICES.map((s) => <option key={s.slug}>{s.title}</option>)}
+                {(sa ? SA_SERVICES : SERVICES.map((x) => x.title)).map((t) => <option key={t}>{t}</option>)}
               </select>
             </Field>
 
-            <Field label="Budget">
+            {!sa && <Field label="Budget">
               <div className="flex flex-wrap gap-2">{BUDGETS.map((b) => <Chip key={b} active={f.budget === b} onClick={() => pick('budget', b)}>{b}</Chip>)}</div>
-            </Field>
+            </Field>}
 
             <Field label="When do you want to start?">
               <div className="flex flex-wrap gap-2">{START.map((s) => <Chip key={s} active={f.startWhen === s} onClick={() => pick('startWhen', s)}>{s}</Chip>)}</div>

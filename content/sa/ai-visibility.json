@@ -499,7 +499,7 @@
         60
       ],
       "en": {
-        "text": "Request a [free website & SEO audit](/free-audit) and tell us you are interested in AI visibility. We look at whether search and AI crawlers can reach your key pages, what your site says about your business, and what to fix first. The audit is a review of your website, with no commitment to buy anything afterwards.",
+        "text": "Request a [free website & SEO audit](/sa/free-audit) and tell us you are interested in AI visibility. We look at whether search and AI crawlers can reach your key pages, what your site says about your business, and what to fix first. The audit is a review of your website, with no commitment to buy anything afterwards.",
         "reviewStatus": "approved",
         "reviewedBy": null,
         "reviewedAt": null,
@@ -575,5 +575,8 @@
         "history": []
       }
     }
+  },
+  "ctaHrefs": {
+    "en": "/sa/free-audit"
   }
 }

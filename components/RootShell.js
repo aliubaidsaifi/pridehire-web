@@ -6,6 +6,7 @@ import { OrganizationSchema, WebsiteSchema } from '@/components/Schema';
 import { GTMScript, GTMNoScript } from '@/components/Analytics';
 import PageTracking from '@/components/PageTracking';
 import AiReferrerTracking from '@/components/AiReferrerTracking';
+import MarketBeacon from '@/components/MarketBeacon';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
 import { getLocale } from '@/lib/markets';
 
@@ -25,10 +26,11 @@ export default function RootShell({ market = 'global', locale = 'en', fontClass 
         <GTMNoScript />
         <PageTracking />
         <AiReferrerTracking />
+        <MarketBeacon market={market} />
         <SmoothScroll>
           <OrganizationSchema />
           <WebsiteSchema />
-          <Navbar />
+          <Navbar market={market} />
           <main>{children}</main>
           <Footer market={market} locale={locale} />
           <CookieConsent />

@@ -4,6 +4,9 @@ import { SITE, OFFICES } from '@/lib/site';
 import { waLink, ORG } from '@/lib/markets';
 import { saFooterLink } from '@/lib/sa-links';
 import { inFooterLink } from '@/lib/in-links';
+import FooterContact from '@/components/FooterContact';
+
+const SA_PATHS = { '/free-audit': '/sa/free-audit', '/contact': '/sa/contact' };
 
 const NAV_LEFT = [
   { label: 'Services', href: '/services' },
@@ -25,6 +28,12 @@ const SOCIAL = [
 export default function Footer({ market = 'global', locale = 'en' }) {
   // Staged inbound links: each is null until its market gate is open, its page is approved and its routes are live (lib/sa-links.js, lib/in-links.js)
   const marketLinks = [saFooterLink({ market, locale }), inFooterLink({ market, locale })].filter(Boolean);
+  // Saudi footer: the audit/contact links go to the Saudi (+966 only) pages. Switch links appear only when the other market is live.
+  const sa = market === 'sa';
+  const navRight = NAV_RIGHT.map((l) => (sa && SA_PATHS[l.href] ? { ...l, href: SA_PATHS[l.href] } : l));
+  const auditHref = sa ? SA_PATHS['/free-audit'] : '/free-audit';
+  const inSwitch = inFooterLink({ market: 'global', locale: 'en' });
+  const saSwitch = saFooterLink({ market: 'global', locale: 'en' });
   const year = new Date().getFullYear(); // founding year is unverified, so only the current year is shown
   return (
     <footer className="border-t border-line bg-white">
@@ -44,9 +53,10 @@ export default function Footer({ market = 'global', locale = 'en' }) {
                   {o.address.split('\n').map((line, i) => <span key={i} className="block">{line}</span>)}
                 </div>
               ))}
+              <FooterContact inHref={inSwitch ? inSwitch.href : null} saHref={saSwitch ? saSwitch.href : null} />
               <p className="text-sm text-muted">Udyam Registration No: {ORG.udyam}</p>
             </div>
-            <Link href="/free-audit" className="btn-primary mt-6">{SITE.cta.primary}</Link>
+            <Link href={auditHref} className="btn-primary mt-6">{SITE.cta.primary}</Link>
           </div>
 
           {/* RIGHT — nav + social */}
@@ -58,7 +68,7 @@ export default function Footer({ market = 'global', locale = 'en' }) {
                 ))}
               </ul>
               <ul className="space-y-3">
-                {NAV_RIGHT.map((l) => (
+                {navRight.map((l) => (
                   <li key={l.label}><Link href={l.href} className="font-display text-base font-medium text-ink transition-colors hover:text-accent">{l.label}</Link></li>
                 ))}
               </ul>

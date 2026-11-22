@@ -26,7 +26,7 @@ export default function HomePage() {
       <Reviews />
       <PortfolioPreview />
       <BlogPreview />
-      <AuditCTA />
+      <AuditCTA showPhones />
     </>
   );
 }

@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { SITE } from '@/lib/site';
 import { waLink } from '@/lib/markets';
 import { track } from '@/lib/track';
+import { currentMarket } from '@/lib/lead-market';
 
 const input = 'w-full rounded-xl border border-line bg-paper px-4 py-3 text-[0.95rem] text-ink placeholder:text-ink/40 outline-none transition focus:border-accent focus:ring-4 focus:ring-accent/10';
 
@@ -25,7 +26,7 @@ export default function LeadForm({ service = '' }) {
           name: f.name, email: f.email || 'not provided', company: '',
           projectType: service, budget: '',
           message: `Landing page: ${service}\nPhone: ${f.phone}\n\n${f.message || 'No message'}`,
-          website: f.website,
+          website: f.website, market: currentMarket(),
         }),
       });
       const data = await res.json().catch(() => ({}));
