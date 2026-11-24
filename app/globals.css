@@ -11,6 +11,9 @@
 @layer base {
   html { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; scroll-behavior: auto; }
   body { background-color: var(--background); color: var(--foreground); font-feature-settings: 'ss01', 'cv01'; }
+  /* Justified body text across the site. Centered text (hero lines, CTA blocks), headings, buttons, nav and footer keep their own alignment. */
+  main p:not(.text-center):not([class*="text-center"]),
+  main .prose-ph li { text-align: justify; text-justify: inter-word; hyphens: auto; -webkit-hyphens: auto; overflow-wrap: break-word; }
   ::selection { background-color: rgba(238,106,82,0.16); color: #0a0a0b; }
 :focus-visible { outline: 2px solid #EE6A52; outline-offset: 3px; border-radius: 4px; } 
   @media (prefers-reduced-motion: reduce) {
@@ -107,3 +110,6 @@
 .prose-ph hr { @apply my-12 border-line; }
 .prose-ph img { @apply mt-8 w-full rounded-3xl border border-line; }
 .prose-ph code { @apply rounded bg-paper px-1.5 py-0.5 text-[0.9em] text-ink; }
+/* Arabic (RTL): letter-spacing breaks the joining of Arabic letters, so it is reset; justified text keeps the kashida-free inter-word mode. */
+[dir='rtl'] *, [dir='rtl'] *::before, [dir='rtl'] *::after { letter-spacing: 0 !important; }
+[dir='rtl'] body { font-feature-settings: normal; }

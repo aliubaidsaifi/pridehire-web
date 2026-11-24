@@ -41,7 +41,7 @@ export default async function ServiceDetail({ params }) {
     <ServiceSchema name={s.title} description={d.intro} slug={slug} />
       {/* No FAQPage markup here: the FAQ is not visible on this page, and markup must match visible content. See SEO-TODO.md. */}
       <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: 'Services', path: '/services' }, { name: s.title, path: `/services/${slug}` }]} />
-      <section className="relative overflow-hidden pt-32 sm:pt-44">
+      <section className="relative overflow-hidden pt-28 sm:pt-36">
         <div aria-hidden className="bg-grid bg-grid-fade pointer-events-none absolute inset-x-0 top-0 h-[440px]" />
         <div className="container-px relative pb-8 text-center sm:pb-14">
           {/* Visible trail matching the BreadcrumbList markup above (Home > Services > this service). Replaces the old "← All services" link. */}
@@ -61,7 +61,7 @@ export default async function ServiceDetail({ params }) {
         </div>
       </section>
 
-      <section className="py-16 sm:py-24">
+      <section className="py-12 sm:py-16">
         <div className="container-px grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           <div>
             <span className="eyebrow">Overview</span>
@@ -84,7 +84,7 @@ export default async function ServiceDetail({ params }) {
         </div>
       </section>
 
-      <section className="border-y border-line bg-paper py-20 sm:py-28">
+      <section className="border-y border-line bg-paper py-14 sm:py-20">
         <div className="container-px">
           <h2 className="max-w-2xl font-display text-3xl font-semibold leading-[1.05] tracking-tightest text-ink sm:text-5xl">
             What do you get with {s.title}?
@@ -101,7 +101,7 @@ export default async function ServiceDetail({ params }) {
         </div>
       </section>
 
-      <section className="py-20 sm:py-28">
+      <section className="py-14 sm:py-20">
         <div className="container-px">
           <h2 className="font-display text-3xl font-semibold tracking-tightest text-ink sm:text-5xl">What are the stages of {s.title}?</h2>
           <p className="mt-6 max-w-3xl text-pretty text-lg leading-relaxed text-muted">{stagesIntro(s.title, d.stages)}</p>

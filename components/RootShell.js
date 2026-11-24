@@ -1,6 +1,7 @@
 import SmoothScroll from '@/components/SmoothScroll';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import SaFooter from '@/components/SaFooter';
 import CookieConsent from '@/components/CookieConsent';
 import { OrganizationSchema, WebsiteSchema } from '@/components/Schema';
 import { GTMScript, GTMNoScript } from '@/components/Analytics';
@@ -9,6 +10,7 @@ import AiReferrerTracking from '@/components/AiReferrerTracking';
 import MarketBeacon from '@/components/MarketBeacon';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
 import { getLocale } from '@/lib/markets';
+import { saNav, saFooterStrings } from '@/lib/sa-nav';
 
 /**
  * The <html> document shared by every root layout. lang and dir come from lib/markets.js, so a locale's
@@ -16,6 +18,8 @@ import { getLocale } from '@/lib/markets';
  */
 export default function RootShell({ market = 'global', locale = 'en', fontClass = '', children }) {
   const loc = getLocale(market, locale);
+  const nav = market === 'sa' ? saNav(locale) : null; // Saudi service set + /sa links (null elsewhere)
+  const footerStrings = market === 'sa' ? saFooterStrings(locale) : null; // Saudi footer + cookie banner labels, in the page language
   return (
     <html lang={loc.lang} dir={loc.dir} className={fontClass} style={{ '--font-display': 'var(--font-body)' }}>
       <head>
@@ -29,11 +33,11 @@ export default function RootShell({ market = 'global', locale = 'en', fontClass 
         <MarketBeacon market={market} />
         <SmoothScroll>
           <OrganizationSchema />
-          <WebsiteSchema />
-          <Navbar market={market} />
+          <WebsiteSchema inLanguage={market === 'sa' && locale === 'ar' ? 'ar-SA' : 'en'} />
+          <Navbar market={market} saNav={nav} />
           <main>{children}</main>
-          <Footer market={market} locale={locale} />
-          <CookieConsent />
+          {nav ? <SaFooter nav={nav} strings={footerStrings} /> : <Footer market={market} locale={locale} saNav={nav} />}
+          <CookieConsent strings={footerStrings} />
         </SmoothScroll>
       </body>
     </html>

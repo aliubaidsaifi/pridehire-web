@@ -52,7 +52,7 @@ export async function POST(request) {
         sender: { name: 'Pride Hire', email: FROM_EMAIL },
         to: [{ email: d.email, name: d.name }],
         subject: 'We’ve received your free audit request — Pride Hire',
-        htmlContent: `<div style="font-family:Inter,Arial,sans-serif;font-size:15px;color:#0a0a0b;line-height:1.6"><p>Hi ${esc(d.name.split(' ')[0])},</p><p>Thanks for requesting your free website &amp; SEO audit. Our team will review everything and get back to you <b>within 24 hours</b>.</p><p>— The Pride Hire team</p></div>`,
+        htmlContent: `<div style="font-family:Inter,Arial,sans-serif;font-size:15px;color:#0a0a0b;line-height:1.6"><p>Hi ${esc(d.name.split(' ')[0])},</p><p>${market === 'sa' ? 'Thanks for requesting your free website audit. Our team will review everything and get back to you.' : 'Thanks for requesting your free website &amp; SEO audit. Our team will review everything and get back to you <b>within 24 hours</b>.'}</p><p>— The Pride Hire team</p></div>`,
       }),
     }).catch(() => {});
 

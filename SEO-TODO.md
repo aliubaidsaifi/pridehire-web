@@ -4,10 +4,9 @@ Every value below is a clearly-marked placeholder in code (`grep -rn "TODO(" lib
 
 | Where | Placeholder | Needs |
 |---|---|---|
-| `lib/site.js` `SITE.calendly` | `https://calendly.com/pridehire/free-consultation` returns 404 | Correct Calendly URL (used by `components/ContactClient.js`: iframe, card link, button) |
 | `lib/markets.js` `ORG.address` | Only `addressCountry: 'IN'` is emitted in schema | Full real registered Indian address (street, locality, region, postal code) |
 | `lib/markets.js` `ORG.officeLabel/addressDisplay` | Footer still prints "India (Head Office) / Delhi NCR / Remote Delivery Worldwide" (kept byte-for-byte, no visible change) | Same real address; then replace |
-| `lib/markets.js` `sa.businessHours`, `global.businessHours` | Days set, times `null` | Real hours; must match Calendly settings (Sun–Thu / AST must be configured IN Calendly, not in code) |
+| `lib/markets.js` `sa.businessHours`, `global.businessHours` | Days set, times `null` | Real hours |
 | Saudi number (+966535239163) | In `PHONES.SA`; in schema only. No page displays it yet | Phase 3 decision: which number shows on which page |
 | `lib/markets.js` `global.currency` | `null` | Currency for the global audience |
 | `lib/markets.js` `ORG.ogImagePath` | `/public/og-image.png` does not exist — every social share preview currently 404s | Create a 1200x630 image |
@@ -90,7 +89,6 @@ Schema describes what the site actually does today, never what it will do. If un
 - GEO: `/llms.txt` and `/llms-full.txt` are an EXPERIMENT (never described as a technique that works); AI-crawler allow rules are in `app/robots.js`. Owner is checking Vercel Bot Management/Firewall for AI-bot rules.
 
 ## Manual steps outside the code
-- **Calendly**: fix the URL; set working days/hours/timezone there (Sun–Thu, AST for Saudi) — cannot be done in code.
 - **Vercel → Domains**: confirm apex→www is a permanent redirect and that `http://` upgrades to `https://` in one hop.
 - **Search Console**: add the `www` URL-prefix property (and Domain property); submit `https://www.pridehire.com/sitemap.xml`; use URL Inspection on `/`; check the Pages report for the four restored portfolio URLs.
 - **Rich Results Test / Schema validator**: run on `/`, `/services/seo`, a blog post (only a structural local check was possible offline).
@@ -102,4 +100,6 @@ Schema describes what the site actually does today, never what it will do. If un
 - **Saudi navbar services dropdown** still lists the global services (Graphic Design, Meta Ads, Google Ads...) and links to global `/services/*` pages (which carry +91 links). Needs the Saudi service set decision; hub rewrite is blocked on the owner.
 - **Arabic:** the Arabic text still links to `/free-audit` and `/contact` (global pages, +91). Before any Arabic page ships: build `/sa/ar/contact` + `/sa/ar/free-audit` (Arabic copy, native review) and repoint.
 - **India:** `/in/*` routes do not exist yet. When built, verify in built HTML that only +91 appears (FooterContact already handles it by path); the Saudi switch link on `/in/*` and the India switch link on `/sa/*` appear automatically only when the other market's hub is live.
-- **Owner confirms:** WhatsApp active on +966 53 523 9163; Calendly URL.
+- **Owner confirms:** WhatsApp active on +966 53 523 9163.
+
+- **Booking (2026-11-22):** there is no Calendly account / booking system. Google Meet card, booking section and SITE.calendly removed; secondary CTA reworded "Contact Us". Do not reintroduce booking wording until a real scheduler exists. Trust badge "Free Consultation" (homepage) left as is: owner to decide.

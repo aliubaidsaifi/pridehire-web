@@ -108,7 +108,7 @@ export default function Reviews() {
   }, [open]);
 
   return (
-    <section className="relative overflow-hidden bg-paper py-16 sm:py-28"
+    <section className="relative overflow-hidden bg-paper py-12 sm:py-20"
       onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)}>
       <div aria-hidden className="pointer-events-none absolute -start-32 top-1/2 h-[420px] w-[420px] -translate-y-1/2 rounded-full bg-accent/[0.07] blur-[120px]" />
 

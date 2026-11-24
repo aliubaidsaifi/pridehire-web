@@ -1,0 +1,181 @@
+{
+  "id": "blog",
+  "market": "sa",
+  "paths": {
+    "en": "/sa/blog",
+    "ar": "/sa/ar/blog"
+  },
+  "cluster": "blog index (Saudi)",
+  "notes": "NEW 2026-11-23, all DRAFT. Index only: the guide list is built from the Saudi guide pages (SFDA menu labelling, AI visibility) that are renderable in the current environment.",
+  "ctaHref": "/sa/contact",
+  "ctaHrefs": {
+    "en": "/sa/contact",
+    "ar": "/sa/ar/contact"
+  },
+  "fields": {
+    "meta.title": {
+      "context": "Browser tab / search result title",
+      "required": true,
+      "kind": "heading",
+      "maxChars": 60,
+      "en": {
+        "text": "Guides for Businesses in Khobar, Dammam | Pride Hire",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "أدلة للشركات في الخبر والدمام | Pride Hire",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "meta.description": {
+      "context": "Search result description",
+      "required": true,
+      "kind": "text",
+      "maxChars": 160,
+      "en": {
+        "text": "Plain-language guides from Pride Hire for businesses and restaurants in Khobar, Dammam and Dhahran.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "أدلة مبسطة من Pride Hire للشركات والمطاعم في الخبر والدمام والظهران.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "h1": {
+      "context": "Main page heading",
+      "required": true,
+      "kind": "heading",
+      "en": {
+        "text": "Guides for businesses and restaurants in Khobar, Dammam and Dhahran",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "أدلة للشركات والمطاعم في الخبر والدمام والظهران",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "answer": {
+      "context": "Answer block directly under the heading (self-contained)",
+      "required": true,
+      "kind": "answer",
+      "en": {
+        "text": "Plain-language guides from Pride Hire for businesses and restaurants in Al Khobar, Dammam and Dhahran. Each guide states what it is based on and what we could not verify.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "أدلة مبسطة من Pride Hire للشركات والمطاعم في الخبر والدمام والظهران. يبيّن كل دليل ما يستند إليه وما لم نتمكن من التحقق منه.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": "OWNER: confirm the second sentence is true of EVERY listed guide (it is true of the SFDA guide). Remove it otherwise.",
+        "sources": [],
+        "history": []
+      }
+    },
+    "cta.text": {
+      "context": "Button text at the end of the page (links to /sa/contact)",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Contact us",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "تواصل معنا",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "nav.label": {
+      "context": "Navbar dropdown item",
+      "required": false,
+      "kind": "text",
+      "en": {
+        "text": "Blog",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "المدونة",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": "«المدونة» = Blog (as in the India nav). Please say if «الأدلة» or «المقالات» is more natural.",
+        "sources": [],
+        "history": []
+      }
+    }
+  }
+}

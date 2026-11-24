@@ -64,7 +64,7 @@ export default async function LandingPage({ params }) {
       </section>
 
       {detail && (
-        <section className="border-t border-line py-16 sm:py-24">
+        <section className="border-t border-line py-12 sm:py-16">
           <div className="container-px">
             <div className="max-w-3xl">
               <span className="eyebrow">What we do</span>
@@ -75,7 +75,7 @@ export default async function LandingPage({ params }) {
         </section>
       )}
 
-      <section className="border-t border-line bg-paper py-16 sm:py-24">
+      <section className="border-t border-line bg-paper py-12 sm:py-16">
         <div className="container-px">
           <div className="max-w-2xl">
             <span className="eyebrow">Why choose us</span>
@@ -95,7 +95,7 @@ export default async function LandingPage({ params }) {
         </div>
       </section>
 
-      <section className="border-t border-line py-16 sm:py-24">
+      <section className="border-t border-line py-12 sm:py-16">
         <div className="container-px">
           <div className="max-w-2xl">
             <span className="eyebrow">Our work</span>
@@ -120,7 +120,7 @@ export default async function LandingPage({ params }) {
       </section>
 
       {reviews.length > 0 && (
-        <section className="border-t border-line bg-paper py-16 sm:py-24">
+        <section className="border-t border-line bg-paper py-12 sm:py-16">
           <div className="container-px">
             <div className="max-w-2xl">
               <span className="eyebrow">Testimonials</span>
@@ -145,7 +145,7 @@ export default async function LandingPage({ params }) {
         </section>
       )}
 
-      <section className="border-t border-line py-16 sm:py-24">
+      <section className="border-t border-line py-12 sm:py-16">
         <div className="container-px grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
           <div>
             <span className="eyebrow">FAQ</span>

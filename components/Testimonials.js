@@ -19,7 +19,7 @@ export default function Testimonials() {
   const t = TESTIMONIALS[active];
 
   return (
-    <section className="py-24 sm:py-32" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)}>
+    <section className="py-16 sm:py-20" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)}>
       <div className="container-px">
         <div className="flex items-center justify-between">
           <span className="eyebrow">What clients say</span>

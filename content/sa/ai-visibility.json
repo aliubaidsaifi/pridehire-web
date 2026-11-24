@@ -510,7 +510,7 @@
         "history": []
       },
       "ar": {
-        "text": "اطلب [تدقيقًا مجانيًا لموقعك ولظهوره في محركات البحث](/free-audit) وأخبرنا أنك مهتم بالظهور في الذكاء الاصطناعي. نفحص هل تستطيع زواحف البحث والذكاء الاصطناعي الوصول إلى صفحاتك المهمة، وماذا يقول موقعك عن نشاطك، وما الذي يجب إصلاحه أولًا. التدقيق مراجعة لموقعك، دون أي التزام بالشراء بعده.",
+        "text": "اطلب [تدقيقًا مجانيًا لموقعك ولظهوره في محركات البحث](/sa/ar/free-audit) وأخبرنا أنك مهتم بالظهور في الذكاء الاصطناعي. نفحص هل تستطيع زواحف البحث والذكاء الاصطناعي الوصول إلى صفحاتك المهمة، وماذا يقول موقعك عن نشاطك، وما الذي يجب إصلاحه أولًا. التدقيق مراجعة لموقعك، دون أي التزام بالشراء بعده.",
         "reviewStatus": "draft",
         "reviewedBy": null,
         "reviewedAt": null,
@@ -553,18 +553,7 @@
       "required": false,
       "kind": "related",
       "en": {
-        "text": "Looking for websites, automation or design? See what we offer businesses in [Khobar, Dammam and Dhahran](/sa).",
-        "reviewStatus": "approved",
-        "reviewedBy": null,
-        "reviewedAt": null,
-        "approvedBy": "Suhail",
-        "approvedAt": "2026-11-18T12:55:39.128Z",
-        "reviewerNote": null,
-        "sources": [],
-        "history": []
-      },
-      "ar": {
-        "text": "تبحث عن مواقع أو أتمتة أو تصميم؟ تعرّف على ما نقدمه للشركات في [الخبر والدمام والظهران](/sa/ar).",
+        "text": "Looking for a website or business automation? See what we offer businesses in [Khobar, Dammam and Dhahran](/sa).",
         "reviewStatus": "draft",
         "reviewedBy": null,
         "reviewedAt": null,
@@ -573,10 +562,22 @@
         "reviewerNote": null,
         "sources": [],
         "history": []
+      },
+      "ar": {
+        "text": "تبحث عن موقع إلكتروني أو أتمتة للأعمال؟ تعرّف على ما نقدمه للشركات في [الخبر والدمام والظهران](/sa/ar).",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": "The English closing line used to mention design; it now says “a website or business automation”. Please check the Arabic reads naturally.",
+        "sources": [],
+        "history": []
       }
     }
   },
   "ctaHrefs": {
-    "en": "/sa/free-audit"
+    "en": "/sa/free-audit",
+    "ar": "/sa/ar/free-audit"
   }
 }

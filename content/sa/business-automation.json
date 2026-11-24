@@ -1,0 +1,614 @@
+{
+  "id": "business-automation",
+  "market": "sa",
+  "paths": {
+    "en": "/sa/business-automation",
+    "ar": "/sa/ar/business-automation"
+  },
+  "cluster": "business automation + AI agents (Saudi)",
+  "notes": "Adapted from the owner-confirmed India page (content/in/business-automation-muzaffarnagar.json): workflow automation + custom AI agents. No video-call, timeline, price, hours or response-time claims. No proof or client counts. No link to /services/*.",
+  "ctaHref": "/sa/contact",
+  "ctaHrefs": {
+    "en": "/sa/contact",
+    "ar": "/sa/ar/contact"
+  },
+  "fields": {
+    "meta.title": {
+      "context": "Browser tab / search result title",
+      "required": true,
+      "kind": "heading",
+      "maxChars": 60,
+      "en": {
+        "text": "Business Automation & AI Agents | Khobar, Dammam",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "أتمتة الأعمال ووكلاء الذكاء الاصطناعي | الخبر والدمام",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": "Length and wording of the search-result title/description: please judge whether you would click it. Term for \"business automation\": the draft uses «أتمتة الأعمال». Please confirm it is what Saudi business owners say, rather than «الأتمتة» alone or «ربط الأنظمة».",
+        "sources": [],
+        "history": []
+      }
+    },
+    "meta.description": {
+      "context": "Search result description",
+      "required": true,
+      "kind": "text",
+      "maxChars": 160,
+      "en": {
+        "text": "Pride Hire connects the tools your business uses, automates WhatsApp and lead handling, and builds custom AI agents, for businesses in Khobar, Dammam and Dhahran.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "تربط Pride Hire الأدوات التي تستخدمها شركتك، وتؤتمت واتساب والتعامل مع العملاء المحتملين، وتبني وكلاء ذكاء اصطناعي مخصصين، للشركات في الخبر والدمام والظهران.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": "Length and wording of the search-result title/description: please judge whether you would click it. Term for \"AI agent\": the draft uses «وكلاء الذكاء الاصطناعي». Unsure whether Saudi business owners say this, or «مساعدون أذكياء» / «روبوتات محادثة». Please choose.",
+        "sources": [],
+        "history": []
+      }
+    },
+    "h1": {
+      "context": "Main page heading",
+      "required": true,
+      "kind": "heading",
+      "en": {
+        "text": "Business automation and custom AI agents for businesses in Khobar, Dammam and Dhahran",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "أتمتة الأعمال ووكلاء الذكاء الاصطناعي المخصصون للشركات في الخبر والدمام والظهران",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": "Term for \"business automation\": the draft uses «أتمتة الأعمال». Please confirm it is what Saudi business owners say, rather than «الأتمتة» alone or «ربط الأنظمة». Term for \"AI agent\": the draft uses «وكلاء الذكاء الاصطناعي». Unsure whether Saudi business owners say this, or «مساعدون أذكياء» / «روبوتات محادثة». Please choose.",
+        "sources": [],
+        "history": []
+      }
+    },
+    "answer": {
+      "context": "Answer block directly under the heading (self-contained)",
+      "required": true,
+      "kind": "answer",
+      "en": {
+        "text": "Pride Hire builds business automation and custom AI agents for businesses in Al Khobar, Dammam and Dhahran. We connect the tools you already use so routine work happens without someone doing it by hand, and we build AI agents that answer customers or make judgement calls within agreed rules. What gets built is agreed in writing first.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "تبني Pride Hire أتمتة الأعمال ووكلاء الذكاء الاصطناعي المخصصين للشركات في الخبر والدمام والظهران. نربط الأدوات التي تستخدمها بالفعل لتتم الأعمال الروتينية دون تدخل يدوي، ونبني وكلاء ذكاء اصطناعي يجيبون العملاء أو يتخذون قرارات ضمن قواعد متفق عليها. ويُتفق كتابةً على ما سيُبنى أولًا.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": "Term for \"business automation\": the draft uses «أتمتة الأعمال». Please confirm it is what Saudi business owners say, rather than «الأتمتة» alone or «ربط الأنظمة». Term for \"AI agent\": the draft uses «وكلاء الذكاء الاصطناعي». Unsure whether Saudi business owners say this, or «مساعدون أذكياء» / «روبوتات محادثة». Please choose.",
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.1.heading": {
+      "context": "Section 1 heading (a question)",
+      "required": true,
+      "kind": "heading",
+      "en": {
+        "text": "What does business automation include?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "ماذا تشمل أتمتة الأعمال؟",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.1.answer": {
+      "context": "Section 1 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "We build two kinds of automation. Workflow automation connects the tools a business already uses, so routine work happens on its own. Custom AI agents handle a task in conversation, or make a judgement call within rules agreed with you. Before any work starts, we agree in writing exactly what will be built.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "نبني نوعين من الأتمتة. أتمتة سير العمل تربط الأدوات التي تستخدمها الشركة بالفعل، فتتم الأعمال الروتينية من تلقاء نفسها. أما وكلاء الذكاء الاصطناعي المخصصون فيتولون مهمة عبر المحادثة، أو يتخذون قرارًا ضمن قواعد نتفق عليها معك. وقبل بدء أي عمل نتفق كتابةً على ما سيُبنى بالضبط.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": "Term for \"business automation\": the draft uses «أتمتة الأعمال». Please confirm it is what Saudi business owners say, rather than «الأتمتة» alone or «ربط الأنظمة». Term for \"AI agent\": the draft uses «وكلاء الذكاء الاصطناعي». Unsure whether Saudi business owners say this, or «مساعدون أذكياء» / «روبوتات محادثة». Please choose.",
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.2.heading": {
+      "context": "Section 2 heading (a question)",
+      "required": true,
+      "kind": "heading",
+      "en": {
+        "text": "What is workflow automation?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "ما أتمتة سير العمل؟",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.2.answer": {
+      "context": "Section 2 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "It connects the tools you already use so routine work happens without someone doing it by hand. Examples: a website enquiry arrives as a WhatsApp or email notification, new leads are captured into a spreadsheet or CRM automatically, and WhatsApp auto-replies and follow-up reminders go out on their own, as agreed with you.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "هي ربط الأدوات التي تستخدمها بالفعل لتتم الأعمال الروتينية دون تدخل يدوي. من أمثلتها: وصول استفسار الموقع كإشعار على واتساب أو البريد، وتسجيل العملاء المحتملين الجدد تلقائيًا في جدول بيانات أو نظام لإدارة العملاء، وإرسال ردود واتساب التلقائية وتذكيرات المتابعة من تلقاء نفسها، وفق ما نتفق عليه معك.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": "Please check «نظام لإدارة العملاء» is the natural phrase for “CRM”, or whether «CRM» in Latin letters is normal.",
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.3.heading": {
+      "context": "Section 3 heading (a question)",
+      "required": true,
+      "kind": "heading",
+      "en": {
+        "text": "What is a custom AI agent?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "ما وكيل الذكاء الاصطناعي المخصص؟",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.3.answer": {
+      "context": "Section 3 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "A custom AI agent is software that handles a task conversationally, or makes a judgement call within rules agreed with you, instead of following a fixed script. For example, an agent can answer common customer questions using your own business information. What it may and may not answer is agreed with you in writing before we build it.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "وكيل الذكاء الاصطناعي المخصص برنامج يتولى مهمة عبر المحادثة، أو يتخذ قرارًا ضمن قواعد متفق عليها معك، بدل اتباع نص ثابت. فمثلًا، يمكن للوكيل الإجابة عن أسئلة العملاء الشائعة اعتمادًا على معلومات نشاطك نفسه. وما يجوز له الإجابة عنه وما لا يجوز نتفق عليه معك كتابةً قبل أن نبنيه.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": "Term for \"AI agent\": the draft uses «وكلاء الذكاء الاصطناعي». Unsure whether Saudi business owners say this, or «مساعدون أذكياء» / «روبوتات محادثة». Please choose.",
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.4.heading": {
+      "context": "Section 4 heading (a question)",
+      "required": true,
+      "kind": "heading",
+      "en": {
+        "text": "What is WhatsApp automation?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "ما أتمتة واتساب؟",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.4.answer": {
+      "context": "Section 4 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "It means WhatsApp messages are sent or answered automatically, for example an instant reply to a new enquiry. Beyond simple replies, this usually goes through the WhatsApp Business Platform, where Meta charges businesses per message sent, depending on the message type and country. Meta’s rates change, so check the current rate card.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "تعني أن تُرسَل رسائل واتساب أو يُرَدّ عليها تلقائيًا، مثل رد فوري على استفسار جديد. وما يتجاوز الردود البسيطة يتم عادةً عبر منصة واتساب للأعمال، حيث تحتسب Meta على الشركات رسومًا عن كل رسالة مرسلة بحسب نوع الرسالة والدولة. وتتغير أسعار Meta، فراجع قائمة الأسعار الحالية.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": "Please check «واجهة واتساب للأعمال» / «منصة واتساب للأعمال» is the name people use for the WhatsApp Business Platform. The Meta per-message charge statement is carried over from the India page; please confirm it reads correctly for Saudi Arabia.",
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.5.heading": {
+      "context": "Section 5 heading (a question)",
+      "required": true,
+      "kind": "heading",
+      "en": {
+        "text": "What exactly gets built before work starts?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "ما الذي يُحدَّد بالضبط قبل بدء العمل؟",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.5.answer": {
+      "context": "Section 5 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "Before work starts, we write down what will be built: which tools are connected, what triggers each step, and what should happen as a result. You agree to that in writing. We do not build anything you have not agreed to, and you can ask questions at any point.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "قبل بدء العمل نكتب ما سيُبنى: ما الأدوات التي ستُربط، وما الذي يُطلق كل خطوة، وما الذي ينبغي أن يحدث نتيجةً لذلك. وتوافق على ذلك كتابةً. ولا نبني شيئًا لم توافق عليه، ويمكنك طرح أسئلتك في أي وقت.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.6.heading": {
+      "context": "Section 6 heading (a question)",
+      "required": true,
+      "kind": "heading",
+      "en": {
+        "text": "How do you work with a business in Saudi Arabia from India?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "كيف تعملون مع شركة في السعودية من الهند؟",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.6.answer": {
+      "context": "Section 6 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "Remotely, by phone and WhatsApp. Our team works from India. If you would rather meet in person, in-person meetings are available through our partner in Al Khobar. Because the work is delivered online, it makes no difference to how we work whether you are in Al Khobar, Dammam, Dhahran or elsewhere in the Eastern Province.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "عن بُعد، عبر الهاتف وواتساب. يعمل فريقنا من الهند. وإذا فضّلت اللقاء حضوريًا، فاللقاءات الحضورية متاحة عبر شريكنا في الخبر. ولأن العمل يُنجز عبر الإنترنت، فلا فرق في طريقة عملنا سواء كنت في الخبر أو الدمام أو الظهران أو في أي مكان آخر من المنطقة الشرقية.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": "Check \"شريكنا في الخبر\" reads as a partner for in-person meetings only and does not suggest an office or a Saudi team.",
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.7.heading": {
+      "context": "Section 7 heading (a question)",
+      "required": true,
+      "kind": "heading",
+      "en": {
+        "text": "How do I get started?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "كيف أبدأ؟",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.7.answer": {
+      "context": "Section 7 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "Send us a message or use the contact form. Tell us about your business and which repetitive tasks you would like to remove, or which customer questions you would like answered automatically. We review your situation and reply with a recommendation and a proposed scope, so you can decide what makes sense without any obligation.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "راسلنا أو استخدم نموذج التواصل. أخبرنا عن نشاطك وعن المهام المتكررة التي تريد التخلص منها، أو أسئلة العملاء التي تريد الإجابة عنها تلقائيًا. سنراجع وضعك ونرد عليك بتوصية ونطاق عمل مقترح، لتقرر ما يناسبك دون أي التزام.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "cta.text": {
+      "context": "Button text at the end of the page (links to /sa/contact)",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Contact us",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "تواصل معنا",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "related": {
+      "context": "Optional closing line with one internal link",
+      "required": false,
+      "kind": "text",
+      "en": {
+        "text": "Want a website to go with it? See [website development for businesses in Khobar, Dammam and Dhahran](/sa/web-development).",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "تريد موقعًا إلكترونيًا مع ذلك؟ تعرّف على [تطوير المواقع الإلكترونية للشركات في الخبر والدمام والظهران](/sa/ar/web-development).",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "nav.label": {
+      "context": "Navbar dropdown item",
+      "required": false,
+      "kind": "text",
+      "en": {
+        "text": "Business automation & AI agents",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "أتمتة الأعمال ووكلاء الذكاء الاصطناعي",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    }
+  }
+}

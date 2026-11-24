@@ -1,0 +1,20 @@
+import { notFound } from 'next/navigation';
+import SaServicePage from '@/components/SaServicePage';
+import { loadRenderablePage, pageView, isDraftPreview } from '@/lib/market-pages';
+import { saNav } from '@/lib/sa-nav';
+import { buildMetadata } from '@/lib/seo';
+
+const ID = 'restaurant-digital-menu'; // content/sa/restaurant-digital-menu.json (ar)
+
+export async function generateMetadata() {
+  const page = loadRenderablePage('sa', ID, 'ar');
+  if (!page) return {};
+  const v = pageView(page, 'ar');
+  return buildMetadata({ title: v.title, description: v.description, path: v.path, market: 'sa', locale: 'ar', absoluteTitle: true });
+}
+
+export default function Page() {
+  const page = loadRenderablePage('sa', ID, 'ar');
+  if (!page) notFound(); // not approved, or not allowed to render here
+  return <SaServicePage view={pageView(page, 'ar')} locale="ar-SA" draft={isDraftPreview(page, 'ar')} nav={saNav('ar')} />;
+}

@@ -2161,6 +2161,7 @@
     }
   },
   "ctaHrefs": {
-    "en": "/sa/contact"
+    "en": "/sa/contact",
+    "ar": "/sa/ar/contact"
   }
 }

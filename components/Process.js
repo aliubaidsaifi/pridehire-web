@@ -45,7 +45,7 @@ export default function Process() {
   }, []);
 
   return (
-    <section ref={root} className="bg-white py-24 sm:py-32">
+    <section ref={root} className="bg-white py-16 sm:py-20">
       <div className="container-px">
         <div className="max-w-2xl">
           <span className="eyebrow">How we work</span>

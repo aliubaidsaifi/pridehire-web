@@ -9,7 +9,7 @@ export const metadata = buildMetadata({ title: 'Services', description: 'Website
 export default function ServicesPage() {
   return (
     <>
-      <section className="relative overflow-hidden pt-32 sm:pt-44">
+      <section className="relative overflow-hidden pt-28 sm:pt-36">
         <div aria-hidden className="bg-grid bg-grid-fade pointer-events-none absolute inset-x-0 top-0 h-[420px]" />
         <div className="container-px relative pb-8 text-center sm:pb-12">
           <span className="eyebrow justify-center">Our services</span>
@@ -24,7 +24,7 @@ export default function ServicesPage() {
 
       <ServicesList />
 
-     <section className="bg-paper py-24 sm:py-32">
+     <section className="bg-paper py-16 sm:py-20">
         <div className="container-px">
           <h2 className="max-w-2xl font-display text-4xl font-semibold leading-[1.05] tracking-tightest text-ink sm:text-6xl">
             Benefits of<br />working with us

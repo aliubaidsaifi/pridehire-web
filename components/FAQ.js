@@ -23,7 +23,7 @@ function Item({ q, a, open, onClick }) {
 export default function FAQ({ faqs = FAQS }) {
   const [open, setOpen] = useState(0);
   return (
-    <section className="py-20 sm:py-24">
+    <section className="py-14 sm:py-16">
       <div className="container-px grid gap-12 lg:grid-cols-[0.7fr_1.3fr] lg:gap-16">
         <div>
           <span className="eyebrow">FAQ</span>

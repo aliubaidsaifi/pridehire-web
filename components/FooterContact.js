@@ -23,7 +23,7 @@ export default function FooterContact({ inHref = null, saHref = null }) {
         <p key={k} className="text-sm text-muted">
           <span className="text-xs font-semibold uppercase tracking-wider text-ink">{LINES[k].label}</span>
           <br />
-          <a href={`tel:${LINES[k].phone.e164}`} className="link-underline text-ink">{LINES[k].phone.display}</a>
+          <a href={`tel:${LINES[k].phone.e164}`} dir="ltr" className="link-underline text-ink">{LINES[k].phone.display}</a>
         </p>
       ))}
       {switchLink && <p className="text-xs text-muted"><a href={switchLink.href} className="link-underline hover:text-ink">{switchLink.text}</a></p>}

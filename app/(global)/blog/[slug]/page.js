@@ -50,7 +50,7 @@ export default async function BlogPost({ params }) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
-      <section className="relative overflow-hidden pt-32 sm:pt-40">
+      <section className="relative overflow-hidden pt-28 sm:pt-32">
         <div aria-hidden className="bg-grid bg-grid-fade pointer-events-none absolute inset-x-0 top-0 h-[360px]" />
         <div className="container-px relative">
           <div className="mx-auto max-w-3xl">
@@ -90,7 +90,7 @@ export default async function BlogPost({ params }) {
       </article>
 
       {related.length > 0 && (
-        <section className="border-t border-line bg-paper py-16 sm:py-24">
+        <section className="border-t border-line bg-paper py-12 sm:py-16">
           <div className="container-px">
             <h2 className="font-display text-3xl font-semibold tracking-tightest text-ink sm:text-4xl">Related articles</h2>
             <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">

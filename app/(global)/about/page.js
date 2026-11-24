@@ -15,7 +15,7 @@ const STATS = [
 export default function CompanyPage() {
   return (
     <>
-      <section className="relative overflow-hidden pt-32 sm:pt-44">
+      <section className="relative overflow-hidden pt-28 sm:pt-36">
         <div aria-hidden className="bg-grid bg-grid-fade pointer-events-none absolute inset-x-0 top-0 h-[420px]" />
         <div className="container-px relative text-center">
           <span className="eyebrow justify-center">Company</span>
@@ -29,7 +29,7 @@ export default function CompanyPage() {
         </div>
       </section>
 
-      <section className="py-20 sm:py-28">
+      <section className="py-14 sm:py-20">
         <div className="container-px grid gap-8 sm:grid-cols-[220px_1fr] sm:gap-16">
           <span className="font-display text-xs font-semibold uppercase tracking-[0.16em] text-muted">Our goal</span>
           <p className="max-w-2xl text-pretty text-xl leading-relaxed text-ink sm:text-2xl">
@@ -47,7 +47,7 @@ export default function CompanyPage() {
         </div>
       </section>
 
-      <section className="py-20 sm:py-28">
+      <section className="py-14 sm:py-20">
         <div className="container-px">
           <h2 className="max-w-4xl text-balance font-display text-4xl font-semibold leading-[1.05] tracking-tightest text-ink sm:text-6xl">
             Simply put, we tell you the <span className="text-accent">truth.</span>
@@ -117,7 +117,7 @@ export default function CompanyPage() {
         </div>
       </section>
 
-      <section className="border-t border-line bg-paper py-24 sm:py-32">
+      <section className="border-t border-line bg-paper py-16 sm:py-20">
         <div className="container-px">
           <h2 className="max-w-2xl font-display text-4xl font-semibold leading-[1.05] tracking-tightest text-ink sm:text-6xl">
             Benefits of<br />working with us

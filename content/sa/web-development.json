@@ -1,0 +1,614 @@
+{
+  "id": "web-development",
+  "market": "sa",
+  "paths": {
+    "en": "/sa/web-development",
+    "ar": "/sa/ar/web-development"
+  },
+  "cluster": "web development (Saudi)",
+  "notes": "Adapted from the owner-confirmed India web page (content/in/web-design-muzaffarnagar.json). No proof/stats/reviews/images, no timelines, prices, response times or hours. Arabic/RTL capability confirmed by the owner. No link to /services/* (global pages show +91).",
+  "ctaHref": "/sa/free-audit",
+  "ctaHrefs": {
+    "en": "/sa/free-audit",
+    "ar": "/sa/ar/free-audit"
+  },
+  "fields": {
+    "meta.title": {
+      "context": "Browser tab / search result title",
+      "required": true,
+      "kind": "heading",
+      "maxChars": 60,
+      "en": {
+        "text": "Website Development in Khobar, Dammam & Dhahran",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "تطوير المواقع الإلكترونية في الخبر والدمام والظهران",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": "Length and wording of the search-result title/description: please judge whether you would click it.",
+        "sources": [],
+        "history": []
+      }
+    },
+    "meta.description": {
+      "context": "Search result description",
+      "required": true,
+      "kind": "text",
+      "maxChars": 160,
+      "en": {
+        "text": "Pride Hire designs and builds business websites, landing pages and online stores, in English or Arabic, for businesses in Khobar, Dammam and Dhahran.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "تصمم Pride Hire وتبني مواقع الشركات وصفحات الهبوط والمتاجر الإلكترونية، بالعربية أو الإنجليزية، للشركات في الخبر والدمام والظهران.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": "Length and wording of the search-result title/description: please judge whether you would click it.",
+        "sources": [],
+        "history": []
+      }
+    },
+    "h1": {
+      "context": "Main page heading",
+      "required": true,
+      "kind": "heading",
+      "en": {
+        "text": "Website development for businesses in Khobar, Dammam and Dhahran",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "تطوير المواقع الإلكترونية للشركات في الخبر والدمام والظهران",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "answer": {
+      "context": "Answer block directly under the heading (self-contained)",
+      "required": true,
+      "kind": "answer",
+      "en": {
+        "text": "Pride Hire designs and builds websites for businesses in Al Khobar, Dammam and Dhahran: company sites, landing pages and online stores, in English or Arabic. We work remotely from India, with in-person meetings available through our partner in Al Khobar. We agree the scope with you in writing before work starts.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "تصمم Pride Hire وتبني مواقع إلكترونية للشركات في الخبر والدمام والظهران: مواقع شركات وصفحات هبوط ومتاجر إلكترونية، بالعربية أو الإنجليزية. نعمل عن بُعد من الهند، ويمكن ترتيب اللقاءات الحضورية عبر شريكنا في الخبر. ونتفق معك كتابةً على نطاق العمل قبل البدء.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": "Check \"شريكنا في الخبر\" reads as a partner for in-person meetings only and does not suggest an office or a Saudi team.",
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.1.heading": {
+      "context": "Section 1 heading (a question)",
+      "required": true,
+      "kind": "heading",
+      "en": {
+        "text": "What does website development include?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "ماذا يشمل تطوير المواقع الإلكترونية؟",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.1.answer": {
+      "context": "Section 1 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "We design and build company websites, landing pages and online stores. Every site is built mobile-first and for fast loading, and structured so that search engines can read it clearly. We agree the pages, features and content with you at the start, so you know what is being built before work begins.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "نصمم وننفذ مواقع الشركات وصفحات الهبوط والمتاجر الإلكترونية. ويُبنى كل موقع للجوال أولًا وبسرعة تحميل عالية، ومهيّأ بحيث تقرأه محركات البحث بوضوح. ونتفق معك في البداية على الصفحات والمزايا والمحتوى، لتعرف ما سيُبنى قبل بدء العمل.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.2.heading": {
+      "context": "Section 2 heading (a question)",
+      "required": true,
+      "kind": "heading",
+      "en": {
+        "text": "Can you build the website in Arabic?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "هل يمكنكم بناء الموقع باللغة العربية؟",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.2.answer": {
+      "context": "Section 2 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "Yes. We build websites in English or in Arabic. Arabic sites are built with proper right-to-left layout, so text, menus and forms read naturally from right to left. Tell us which language you need, and we agree the pages and content with you at the start.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "نعم. نبني المواقع بالعربية أو بالإنجليزية. وتُبنى المواقع العربية بتخطيط صحيح من اليمين إلى اليسار، فتُقرأ النصوص والقوائم والنماذج بشكل طبيعي. أخبرنا باللغة التي تحتاجها، ونتفق معك في البداية على الصفحات والمحتوى.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": "“تخطيط من اليمين إلى اليسار” — please check this phrase is natural for “right-to-left layout”.",
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.3.heading": {
+      "context": "Section 3 heading (a question)",
+      "required": true,
+      "kind": "heading",
+      "en": {
+        "text": "What do I need to get started?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "ماذا أحتاج لأبدأ؟",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.3.answer": {
+      "context": "Section 3 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "Only the basics: your business name, what you offer, your logo if you have one, and any photos or text you want on the site. If something is missing, we can help you work it out. Tell us what the site needs to do, and we suggest the pages it should have.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "الأساسيات فقط: اسم نشاطك وما تقدمه وشعارك إن كان لديك، وأي صور أو نصوص تريدها في الموقع. وإن نقص شيء فيمكننا مساعدتك في تحديده. أخبرنا بما يجب أن يفعله الموقع، ونقترح عليك الصفحات التي ينبغي أن يضمها.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.4.heading": {
+      "context": "Section 4 heading (a question)",
+      "required": true,
+      "kind": "heading",
+      "en": {
+        "text": "How does the process work?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "كيف تتم العملية؟",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.4.answer": {
+      "context": "Section 4 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "You tell us about your business and what the website needs to do. We reply with a recommendation and a proposed scope in writing, and work starts once you agree to it. You can reach us by phone, WhatsApp or the contact form at any point while the work is going on.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "تخبرنا عن نشاطك وما يجب أن يفعله الموقع. نرد عليك بتوصية ونطاق عمل مقترح كتابةً، ويبدأ العمل بعد موافقتك عليه. ويمكنك التواصل معنا عبر الهاتف أو واتساب أو نموذج التواصل في أي وقت أثناء العمل.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.5.heading": {
+      "context": "Section 5 heading (a question)",
+      "required": true,
+      "kind": "heading",
+      "en": {
+        "text": "How do you work with a business in Saudi Arabia from India?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "كيف تعملون مع شركة في السعودية من الهند؟",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.5.answer": {
+      "context": "Section 5 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "Remotely, by phone and WhatsApp. Our team works from India. If you would rather meet in person, in-person meetings are available through our partner in Al Khobar. Because the work is delivered online, it makes no difference to how we work whether you are in Al Khobar, Dammam, Dhahran or elsewhere in the Eastern Province.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "عن بُعد، عبر الهاتف وواتساب. يعمل فريقنا من الهند. وإذا فضّلت اللقاء حضوريًا، فاللقاءات الحضورية متاحة عبر شريكنا في الخبر. ولأن العمل يُنجز عبر الإنترنت، فلا فرق في طريقة عملنا سواء كنت في الخبر أو الدمام أو الظهران أو في أي مكان آخر من المنطقة الشرقية.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": "Check \"شريكنا في الخبر\" reads as a partner for in-person meetings only and does not suggest an office or a Saudi team.",
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.6.heading": {
+      "context": "Section 6 heading (a question)",
+      "required": true,
+      "kind": "heading",
+      "en": {
+        "text": "Can you promise that my website will rank on Google?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "هل تضمنون ظهور موقعي في نتائج Google؟",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.6.answer": {
+      "context": "Section 6 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "No. Nobody can honestly promise a ranking, because it depends on competition, content and time. What we can do is build the site so that search engines can crawl and read it properly. If you want to know where your current site stands, ask us for a free audit when you get in touch.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "لا. لا يستطيع أحد أن يعد بترتيب معين بصدق، لأنه يتوقف على المنافسة والمحتوى والوقت. ما نستطيعه هو بناء الموقع بحيث تتمكن محركات البحث من الوصول إليه وقراءته جيدًا. وإن أردت معرفة وضع موقعك الحالي، فاطلب منا تدقيقًا مجانيًا عند التواصل معنا.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.7.heading": {
+      "context": "Section 7 heading (a question)",
+      "required": true,
+      "kind": "heading",
+      "en": {
+        "text": "How do I get started?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "كيف أبدأ؟",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.7.answer": {
+      "context": "Section 7 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "Request a [free website audit](/sa/free-audit), or [send us a message](/sa/contact). Tell us about your business, what you want to achieve and any deadline you have in mind. We review your situation and reply with a recommendation and a proposed scope, so you can decide what makes sense without any obligation.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "اطلب [تدقيقًا مجانيًا لموقعك](/sa/ar/free-audit)، أو [راسلنا](/sa/ar/contact). أخبرنا عن نشاطك وما تريد تحقيقه وأي موعد نهائي لديك. سنراجع وضعك ونرد عليك بتوصية ونطاق عمل مقترح، لتقرر ما يناسبك دون أي التزام.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "cta.text": {
+      "context": "Button text at the end of the page (links to /sa/free-audit)",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Get your free website audit",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "احصل على تدقيق مجاني لموقعك",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "related": {
+      "context": "Optional closing line with one internal link",
+      "required": false,
+      "kind": "text",
+      "en": {
+        "text": "Need a logo or brand identity as well? See [graphic design for businesses in Khobar, Dammam and Dhahran](/sa/graphic-design).",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "تحتاج إلى شعار أو هوية بصرية أيضًا؟ تعرّف على [التصميم الجرافيكي للشركات في الخبر والدمام والظهران](/sa/ar/graphic-design).",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": "Term for \"graphic design\": the draft uses «التصميم الجرافيكي». Unsure whether «تصميم الهوية والمطبوعات» or another phrase is more natural. We do NOT print: the draft says so. Please check the wording is clear and not blunt.",
+        "sources": [],
+        "history": []
+      }
+    },
+    "nav.label": {
+      "context": "Navbar dropdown item",
+      "required": false,
+      "kind": "text",
+      "en": {
+        "text": "Website development",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "تطوير المواقع الإلكترونية",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    }
+  }
+}

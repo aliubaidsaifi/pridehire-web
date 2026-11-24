@@ -2,24 +2,27 @@ import { notFound } from 'next/navigation';
 import ContactClient from '@/components/ContactClient';
 import { WebPageSchema } from '@/components/Schema';
 import { buildMetadata } from '@/lib/seo';
-import { saPagesRenderable } from '@/lib/market-pages';
+import { loadRenderablePage, pageStrings, isDraftPreview } from '@/lib/market-pages';
 
-// Saudi contact page: +966 only, no India number anywhere on it. Same render gate as every /sa page (dev, or PH_SHOW_SA=1).
-// Utility page: not listed in the sitemap or llms.txt.
-const TITLE = 'Contact Pride Hire — Saudi Arabia';
-const DESCRIPTION = 'Contact Pride Hire about website development, digital menus for restaurants or business automation. Message us on WhatsApp or email us.';
+// Saudi contact page (English): +966 only, no India number anywhere on it. Text comes from content/sa/contact.json, so it goes through
+// the same review/approval gates as every other Saudi page. Utility page: not listed in the sitemap or llms.txt.
+const ID = 'contact';
 
 export function generateMetadata() {
-  if (!saPagesRenderable()) return {};
-  return buildMetadata({ title: TITLE, description: DESCRIPTION, path: '/sa/contact', market: 'sa', locale: 'en', absoluteTitle: true });
+  const page = loadRenderablePage('sa', ID, 'en');
+  if (!page) return {};
+  const s = pageStrings(page, 'en');
+  return buildMetadata({ title: s['meta.title'], description: s['meta.description'], path: page.paths['en'], market: 'sa', locale: 'en', absoluteTitle: true });
 }
 
 export default function Page() {
-  if (!saPagesRenderable()) notFound();
+  const page = loadRenderablePage('sa', ID, 'en');
+  if (!page) notFound();
+  const s = pageStrings(page, 'en');
   return (
     <>
-      <WebPageSchema path="/sa/contact" name={TITLE} description={DESCRIPTION} type="ContactPage" locale="en-SA" />
-      <ContactClient market="sa" />
+      <WebPageSchema path={page.paths['en']} name={s['meta.title']} description={s['meta.description']} type="ContactPage" locale="en-SA" />
+      <ContactClient market="sa" strings={s} />
     </>
   );
 }

@@ -52,14 +52,14 @@ export function OrganizationSchema() {
 }
 
 // No SearchAction: the site has no search endpoint, and Google retired the sitelinks search box. Do not add one without a real search page.
-export function WebsiteSchema() {
+export function WebsiteSchema({ inLanguage = 'en' } = {}) {
   return ld({
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     '@id': `${BASE}/#website`,
     name: ORG.name,
     url: absoluteUrl('/'),
-    inLanguage: 'en',
+    inLanguage,
     publisher: { '@id': `${BASE}/#organization` },
   });
 }

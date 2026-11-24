@@ -4,7 +4,7 @@ import { SERVICES } from '@/lib/site';
 /* Clean solutions list — no accordion. Each row: label + description + Read more. */
 export default function ServicesList() {
   return (
-    <section className="py-20 sm:py-28">
+    <section className="py-14 sm:py-20">
       <div className="container-px">
         <h2 className="font-display text-4xl font-semibold tracking-tightest text-ink sm:text-6xl">Our solutions</h2>
 

@@ -1,0 +1,471 @@
+{
+  "id": "about",
+  "market": "sa",
+  "paths": {
+    "en": "/sa/about",
+    "ar": "/sa/ar/about"
+  },
+  "cluster": "about / company (Saudi)",
+  "notes": "NEW 2026-11-23, all DRAFT. Facts only: Indian agency, works remotely, partner in Al Khobar for in-person meetings, four services, digital design only. NO stats, team photo, office, years, client counts or proof (the global About page has figures that must NOT be copied here).",
+  "ctaHref": "/sa/contact",
+  "ctaHrefs": {
+    "en": "/sa/contact",
+    "ar": "/sa/ar/contact"
+  },
+  "fields": {
+    "meta.title": {
+      "context": "Browser tab / search result title",
+      "required": true,
+      "kind": "heading",
+      "maxChars": 60,
+      "en": {
+        "text": "About Pride Hire | Digital Agency for Khobar, Dammam",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "عن Pride Hire | وكالة رقمية للخبر والدمام",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "meta.description": {
+      "context": "Search result description",
+      "required": true,
+      "kind": "text",
+      "maxChars": 160,
+      "en": {
+        "text": "Pride Hire is an Indian digital agency that builds websites and digital menus, automates workflows and designs for businesses in Khobar, Dammam and Dhahran.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "Pride Hire وكالة رقمية هندية تبني المواقع والقوائم الرقمية وتؤتمت سير العمل وتصمم للشركات في الخبر والدمام والظهران.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "h1": {
+      "context": "Main page heading",
+      "required": true,
+      "kind": "heading",
+      "en": {
+        "text": "About Pride Hire: an Indian digital agency serving businesses in Khobar, Dammam and Dhahran",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "عن Pride Hire: وكالة رقمية هندية تخدم الشركات في الخبر والدمام والظهران",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "answer": {
+      "context": "Answer block directly under the heading (self-contained)",
+      "required": true,
+      "kind": "answer",
+      "en": {
+        "text": "Pride Hire is an Indian digital agency. We build websites and digital menus, automate business workflows with AI agents, and do digital design for businesses in Al Khobar, Dammam and Dhahran. We work remotely, and in-person meetings are available through our partner in Al Khobar.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "Pride Hire وكالة رقمية هندية. نبني المواقع والقوائم الرقمية، ونؤتمت سير العمل بوكلاء الذكاء الاصطناعي، ونصمم رقميًا للشركات في الخبر والدمام والظهران. نعمل عن بُعد، واللقاءات الحضورية متاحة عبر شريكنا في الخبر.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": "Check \"شريكنا في الخبر\" reads as a partner for in-person meetings only and does not suggest an office or a Saudi team.",
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.1.heading": {
+      "context": "Section 1 heading (a question)",
+      "required": true,
+      "kind": "heading",
+      "en": {
+        "text": "Who is Pride Hire?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "من هي Pride Hire؟",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.1.answer": {
+      "context": "Section 1 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "Pride Hire is an Indian digital agency. Our team works from India, and we serve businesses in Al Khobar, Dammam and Dhahran remotely. We keep the way we work simple: we tell you what we recommend, agree the scope with you in writing, and only then start the work.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "Pride Hire وكالة رقمية هندية. يعمل فريقنا من الهند، ونخدم الشركات في الخبر والدمام والظهران عن بُعد. وطريقتنا بسيطة: نخبرك بما نوصي به، ونتفق معك كتابةً على نطاق العمل، ثم نبدأ.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.2.heading": {
+      "context": "Section 1 heading (a question)",
+      "required": true,
+      "kind": "heading",
+      "en": {
+        "text": "What do you offer businesses in Saudi Arabia?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "ماذا تقدمون للشركات في السعودية؟",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.2.answer": {
+      "context": "Section 1 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "We offer four services: [website development](/sa/web-development), [digital menus for restaurants](/sa/restaurant-digital-menu), [business automation and AI agents](/sa/business-automation), and [digital graphic design](/sa/graphic-design). Design is digital only, and we do not print. You can hire us for one service or combine them.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "نقدم أربع خدمات: [تطوير المواقع الإلكترونية](/sa/ar/web-development) و[القوائم الرقمية للمطاعم](/sa/ar/restaurant-digital-menu) و[أتمتة الأعمال ووكلاء الذكاء الاصطناعي](/sa/ar/business-automation) و[التصميم الجرافيكي الرقمي](/sa/ar/graphic-design). والتصميم رقمي فقط، ونحن لا نطبع. ويمكنك طلب خدمة واحدة أو الجمع بينها.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.3.heading": {
+      "context": "Section 1 heading (a question)",
+      "required": true,
+      "kind": "heading",
+      "en": {
+        "text": "How do you work with a business in Saudi Arabia from India?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "كيف تعملون مع شركة في السعودية من الهند؟",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.3.answer": {
+      "context": "Section 1 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "Remotely, by phone and WhatsApp. Our team works from India. If you would rather meet in person, in-person meetings are available through our partner in Al Khobar. Because the work is delivered online, it makes no difference to how we work whether you are in Al Khobar, Dammam, Dhahran or elsewhere in the Eastern Province.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "عن بُعد، عبر الهاتف وواتساب. يعمل فريقنا من الهند. وإذا فضّلت اللقاء حضوريًا، فاللقاءات الحضورية متاحة عبر شريكنا في الخبر. ولأن العمل يُنجز عبر الإنترنت، فلا فرق في طريقة عملنا سواء كنت في الخبر أو الدمام أو الظهران أو في أي مكان آخر من المنطقة الشرقية.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": "Check \"شريكنا في الخبر\" reads as a partner for in-person meetings only and does not suggest an office or a Saudi team.",
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.4.heading": {
+      "context": "Section 1 heading (a question)",
+      "required": true,
+      "kind": "heading",
+      "en": {
+        "text": "Do you print what you design?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "هل تطبعون ما تصممونه؟",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.4.answer": {
+      "context": "Section 1 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "No. Our design service is digital only, and we deliver digital files. We do not print, so any printing is arranged separately with a printer of your choice. If you plan to print a design later, tell us at the start so we design the files with that in mind.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "لا. خدمة التصميم لدينا رقمية فقط، ونسلّمك ملفات رقمية. نحن لا نطبع، وتُرتَّب أي طباعة بشكل منفصل لدى المطبعة التي تختارها. وإذا كنت تنوي طباعة تصميم لاحقًا، فأخبرنا في البداية لنُعدّ الملفات مع مراعاة ذلك.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": "We do NOT print: please check the wording is clear and not blunt.",
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.5.heading": {
+      "context": "Section 1 heading (a question)",
+      "required": true,
+      "kind": "heading",
+      "en": {
+        "text": "How do I get started?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "كيف أبدأ؟",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sections.5.answer": {
+      "context": "Section 1 answer, directly under its heading (self-contained, 40-60 words)",
+      "required": true,
+      "kind": "answer",
+      "words": [
+        40,
+        60
+      ],
+      "en": {
+        "text": "Send us a message or use the contact form. Tell us about your business and what you need, and share any examples you like. We review your situation and reply with a recommendation and a proposed scope, so you can decide what makes sense without any obligation.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "راسلنا أو استخدم نموذج التواصل. أخبرنا عن نشاطك وما تحتاجه، وشاركنا أي نماذج تعجبك. سنراجع وضعك ونرد عليك بتوصية ونطاق عمل مقترح، لتقرر ما يناسبك دون أي التزام.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "cta.text": {
+      "context": "Button text at the end of the page (links to /sa/contact)",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Contact us",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "تواصل معنا",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "nav.label": {
+      "context": "Navbar dropdown item",
+      "required": false,
+      "kind": "text",
+      "en": {
+        "text": "Company",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "الشركة",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": "The India nav says \"Company\". Please say if «الشركة» or «من نحن» is more natural as a menu label.",
+        "sources": [],
+        "history": []
+      }
+    }
+  }
+}

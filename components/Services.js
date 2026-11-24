@@ -26,9 +26,9 @@ const TINTS = [
 ];
 
 function Card({ s, i }) {
-  // ✅ Fix 1: sm:mt-20 — stagger sm breakpoint se hi shuru hoga (640px+)
+  // ✅ Fix 1: sm:mt-10 — stagger sm breakpoint se hi shuru hoga (640px+)
   // Even index = normal, Odd index = pushed down
-  const offset = i % 2 === 1 ? 'sm:mt-20' : 'sm:mt-0';
+  const offset = i % 2 === 1 ? 'sm:mt-10' : 'sm:mt-0';
 
   return (
     <Link href={`/services/${s.slug}`} className={`svc-card group block ${offset}`}>
@@ -129,7 +129,7 @@ export default function Services() {
   }, []);
 
   return (
-    <section id="services" ref={root} className="py-16 sm:py-28">
+    <section id="services" ref={root} className="py-12 sm:py-20">
       <div className="container-px">
 
         {/* ✅ Fix 4: Bigger heading + more breathing space */}

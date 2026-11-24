@@ -21,7 +21,7 @@ const SECTIONS = [
 export default function TermsPage() {
   return (
     <>
-      <section className="relative overflow-hidden pt-32 sm:pt-44">
+      <section className="relative overflow-hidden pt-28 sm:pt-36">
         <div aria-hidden className="bg-grid bg-grid-fade pointer-events-none absolute inset-x-0 top-0 h-[360px]" />
         <div className="container-px relative pb-8">
           <span className="eyebrow">Legal</span>

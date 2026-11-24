@@ -12,7 +12,7 @@ export default function BlogPreview() {
   if (posts.length === 0) return null;
 
   return (
-    <section className="border-t border-line py-16 sm:py-28">
+    <section className="border-t border-line py-12 sm:py-20">
       <div className="container-px">
         {/* heading — same pattern as Services / Portfolio */}
         <div className="max-w-2xl">

@@ -49,7 +49,7 @@ export default function Hero() {
   }, []);
 
   return (
-   <section ref={root} className="relative overflow-hidden pt-32 sm:pt-40 lg:pt-44">
+   <section ref={root} className="relative overflow-hidden pt-28 sm:pt-32 lg:pt-44">
       <div aria-hidden className="bg-grid bg-grid-fade pointer-events-none absolute inset-x-0 top-0 h-[640px]" />
 
       {/* subject-tied background glyph, replaces generic blur blob */}

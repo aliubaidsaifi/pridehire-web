@@ -1,0 +1,933 @@
+{
+  "id": "contact",
+  "market": "sa",
+  "paths": {
+    "en": "/sa/contact",
+    "ar": "/sa/ar/contact"
+  },
+  "cluster": "utility: contact page (+966 only)",
+  "notes": "Utility page (not in sitemap / llms.txt). UI strings for the Saudi contact page. No response-time claim (owner, 2026-11-22: strike until the partner confirms what he can commit to; working week there is Sunday to Thursday). No India number anywhere. Option VALUES emailed to the team stay English.",
+  "utility": true,
+  "fields": {
+    "meta.title": {
+      "context": "Browser tab / search result title",
+      "required": true,
+      "kind": "heading",
+      "maxChars": 60,
+      "en": {
+        "text": "Contact Pride Hire — Saudi Arabia",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "تواصل مع Pride Hire — السعودية",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": "Length and wording of the search-result title/description: please judge whether you would click it.",
+        "sources": [],
+        "history": []
+      }
+    },
+    "meta.description": {
+      "context": "Search result description",
+      "required": true,
+      "kind": "text",
+      "maxChars": 160,
+      "en": {
+        "text": "Contact Pride Hire about websites, digital menus for restaurants, business automation or graphic design. Message us on WhatsApp or email us.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "تواصل مع Pride Hire بشأن المواقع الإلكترونية والقوائم الرقمية للمطاعم وأتمتة الأعمال والتصميم الجرافيكي. راسلنا عبر واتساب أو البريد الإلكتروني.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": "Length and wording of the search-result title/description: please judge whether you would click it.",
+        "sources": [],
+        "history": []
+      }
+    },
+    "eyebrow": {
+      "context": "Small label above the heading",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Contact",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "تواصل معنا",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "h1.pre": {
+      "context": "Main heading, first part",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Let’s talk about your",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "لنتحدث عن",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "h1.accent": {
+      "context": "Main heading, highlighted last word",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "growth.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "نمو عملك.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": "The English is “Let’s talk about your growth.” Please rewrite so it reads like something a Saudi business would say, and tell us if “growth” sounds like marketing hype.",
+        "sources": [],
+        "history": []
+      }
+    },
+    "intro": {
+      "context": "Line under the heading",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Call, email or WhatsApp — whatever’s easiest.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "اتصل أو راسلنا بالبريد أو عبر واتساب، بما يناسبك.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "remote": {
+      "context": "Delivery statement under the intro",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "We work remotely from India, and in person through our partner in Al Khobar.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "نعمل عن بُعد من الهند، وحضوريًا عبر شريكنا في الخبر.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": "Check \"شريكنا في الخبر\" reads as a partner for in-person meetings only and does not suggest an office or a Saudi team.",
+        "sources": [],
+        "history": []
+      }
+    },
+    "card.call": {
+      "context": "Contact card label",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Call us",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "اتصل بنا",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "card.email": {
+      "context": "Contact card label",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Email",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "البريد الإلكتروني",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "card.whatsapp": {
+      "context": "Contact card label",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "WhatsApp",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "واتساب",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "card.whatsapp.value": {
+      "context": "WhatsApp card text",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Chat with us",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "تحدث معنا",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "form.title": {
+      "context": "Form heading",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Tell us what you need",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "أخبرنا بما تحتاجه",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "form.name": {
+      "context": "Field label",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Your name",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "اسمك",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "form.name.ph": {
+      "context": "Field placeholder",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Jane Smith",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "محمد العتيبي",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": "Placeholder name: please replace with a name you would normally see.",
+        "sources": [],
+        "history": []
+      }
+    },
+    "form.email": {
+      "context": "Field label",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Email",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "البريد الإلكتروني",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "form.email.ph": {
+      "context": "Field placeholder",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "you@business.com",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "you@business.com",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "form.phone": {
+      "context": "Field label",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Phone",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "الجوال",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": "«الجوال» vs «رقم الهاتف» — which is natural here?",
+        "sources": [],
+        "history": []
+      }
+    },
+    "form.service": {
+      "context": "Field label",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Service",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "الخدمة",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "service.web": {
+      "context": "Service option (the English value is what we receive)",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Website development",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "تطوير المواقع الإلكترونية",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "service.menus": {
+      "context": "Service option",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Digital menu for a restaurant",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "قائمة رقمية لمطعم",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": "Term for \"digital menu\": the draft uses «قائمة رقمية». Unsure vs «منيو إلكتروني» / «قائمة طعام رقمية» / «منيو رقمي». Please choose what restaurant owners actually say.",
+        "sources": [],
+        "history": []
+      }
+    },
+    "service.automation": {
+      "context": "Service option",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Business automation and AI agents",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "أتمتة الأعمال ووكلاء الذكاء الاصطناعي",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": "Term for \"business automation\": the draft uses «أتمتة الأعمال». Please confirm it is what Saudi business owners say, rather than «الأتمتة» alone or «ربط الأنظمة». Term for \"AI agent\": the draft uses «وكلاء الذكاء الاصطناعي». Unsure whether Saudi business owners say this, or «مساعدون أذكياء» / «روبوتات محادثة». Please choose.",
+        "sources": [],
+        "history": []
+      }
+    },
+    "service.design": {
+      "context": "Service option",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Graphic design",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "التصميم الجرافيكي",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": "Term for \"graphic design\": the draft uses «التصميم الجرافيكي». Unsure whether «تصميم الهوية والمطبوعات» or another phrase is more natural. We do NOT print: the draft says so. Please check the wording is clear and not blunt.",
+        "sources": [],
+        "history": []
+      }
+    },
+    "form.message": {
+      "context": "Field label",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Message",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "رسالتك",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "form.message.ph": {
+      "context": "Field placeholder",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "What are you looking to achieve?",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "ما الذي تريد تحقيقه؟",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "form.submit": {
+      "context": "Button",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Send message",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "إرسال الرسالة",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "form.sending": {
+      "context": "Button while sending",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Sending…",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "جارٍ الإرسال…",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "form.privacy": {
+      "context": "Small line under the button",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Your details stay private.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "تبقى بياناتك خاصة.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "err.required": {
+      "context": "Error message",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Please fill in your name, email and a short message.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "يرجى إدخال اسمك وبريدك الإلكتروني ورسالة قصيرة.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "err.email": {
+      "context": "Error message",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "That email doesn’t look right.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "يبدو أن البريد الإلكتروني غير صحيح.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "err.send": {
+      "context": "Error message ({email} is replaced by our email address)",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Couldn’t send right now. Email us at {email}.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "تعذّر الإرسال الآن. راسلنا على {email}.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sent.title": {
+      "context": "Confirmation heading",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Message sent",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "تم إرسال الرسالة",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sent.body": {
+      "context": "Confirmation text ({name} is replaced by the first name). No response-time claim.",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "Thanks, {name}. We’ve received your message.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "شكرًا، {name}. وصلتنا رسالتك.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "sent.fallback": {
+      "context": "Used in place of {name} when no name",
+      "required": true,
+      "kind": "text",
+      "en": {
+        "text": "there",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "بك",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": "Used when no name is given: “Thanks, there.” In Arabic this slot is awkward — please rewrite the whole sentence if needed.",
+        "sources": [],
+        "history": []
+      }
+    },
+    "nav.label": {
+      "context": "Navbar link",
+      "required": false,
+      "kind": "text",
+      "en": {
+        "text": "Contact",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "تواصل معنا",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    }
+  }
+}

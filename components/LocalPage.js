@@ -9,7 +9,7 @@ export default function LocalPage({ page }) {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden pt-32 sm:pt-40">
+      <section className="relative overflow-hidden pt-28 sm:pt-32">
         <div aria-hidden className="bg-grid bg-grid-fade pointer-events-none absolute inset-x-0 top-0 h-[420px]" />
         <div className="container-px relative pb-14 sm:pb-20">
           <span className="eyebrow">{eyebrow}</span>
@@ -25,7 +25,7 @@ export default function LocalPage({ page }) {
       </section>
 
       {/* Benefits */}
-      <section className="border-y border-line bg-paper py-20 sm:py-24">
+      <section className="border-y border-line bg-paper py-14 sm:py-16">
         <div className="container-px">
           <h2 className="font-display text-2xl font-semibold tracking-tight text-ink sm:text-4xl">What you get</h2>
           <div className="mt-10 grid gap-4 sm:grid-cols-2">
@@ -42,7 +42,7 @@ export default function LocalPage({ page }) {
       </section>
 
       {/* Why choose us */}
-      <section className="py-20 sm:py-24">
+      <section className="py-14 sm:py-16">
         <div className="container-px grid gap-10 lg:grid-cols-2 lg:items-center lg:gap-16">
           <div>
             <span className="eyebrow">Why choose us</span>
@@ -60,7 +60,7 @@ export default function LocalPage({ page }) {
       </section>
 
       {/* Process */}
-      <section className="border-y border-line bg-paper py-20 sm:py-24">
+      <section className="border-y border-line bg-paper py-14 sm:py-16">
         <div className="container-px">
           <h2 className="font-display text-2xl font-semibold tracking-tight text-ink sm:text-4xl">Our process</h2>
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">

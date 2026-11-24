@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import MarketContentPage from '@/components/MarketContentPage';
 import { loadRenderablePage, pageView, isDraftPreview } from '@/lib/market-pages';
+import { saNav } from '@/lib/sa-nav';
 import { buildMetadata } from '@/lib/seo';
 
 const ID = 'ai-visibility'; // content/sa/ai-visibility.json
@@ -15,5 +16,5 @@ export async function generateMetadata() {
 export default function Page() {
   const page = loadRenderablePage('sa', ID, 'en');
   if (!page) notFound(); // gate closed, text not approved, or not allowed to render here
-  return <MarketContentPage view={pageView(page, 'en')} locale="en-SA" draft={isDraftPreview(page, 'en')} />;
+  return <MarketContentPage view={pageView(page, 'en')} locale="en-SA" draft={isDraftPreview(page, 'en')} audit={saNav('en').cta} />;
 }

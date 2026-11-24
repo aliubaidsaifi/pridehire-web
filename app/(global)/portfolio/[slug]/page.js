@@ -35,7 +35,7 @@ export default async function ProjectDetail({ params }) {
     <>
     <WebPageSchema path={`/portfolio/${slug}`} name={p.client} description={d.intro} />
     <PortfolioView slug={slug} />
-      <section className="relative overflow-hidden pt-32 sm:pt-44">
+      <section className="relative overflow-hidden pt-28 sm:pt-36">
         <div aria-hidden className="bg-grid bg-grid-fade pointer-events-none absolute inset-x-0 top-0 h-[420px]" />
         <div className="container-px relative pb-10 text-center sm:pb-14">
           <Link href="/portfolio" className="link-underline text-sm font-semibold text-muted">← All projects</Link>
@@ -53,7 +53,7 @@ export default async function ProjectDetail({ params }) {
         </div>
       </section>
 
-      <section className="py-16 sm:py-24">
+      <section className="py-12 sm:py-16">
         <div className="container-px grid gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:gap-16">
           <div>
             <span className="eyebrow">Overview</span>
@@ -88,7 +88,7 @@ export default async function ProjectDetail({ params }) {
         </div>
       </section>
 
-      <section className="border-y border-line bg-paper py-16 sm:py-24">
+      <section className="border-y border-line bg-paper py-12 sm:py-16">
         <div className="container-px grid gap-12 lg:grid-cols-2 lg:gap-16">
           <div>
             <span className="eyebrow">The challenge</span>
@@ -109,7 +109,7 @@ export default async function ProjectDetail({ params }) {
         </div>
       </section>
 
-      <section className="py-16 sm:py-24">
+      <section className="py-12 sm:py-16">
         <div className="container-px">
           <span className="eyebrow">The results</span>
           <h2 className="mt-4 max-w-2xl font-display text-3xl font-semibold tracking-tightest text-ink sm:text-5xl">

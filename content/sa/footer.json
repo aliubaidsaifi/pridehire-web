@@ -1,0 +1,315 @@
+{
+  "id": "footer",
+  "market": "sa",
+  "utility": true,
+  "paths": {
+    "en": "/sa/footer-labels",
+    "ar": "/sa/ar/footer-labels"
+  },
+  "cluster": "Saudi footer + cookie banner labels (utility, no page of its own)",
+  "notes": "NEW 2026-11-23, DRAFT. Labels only. The Saudi footer deliberately has NO office/address, NO Udyam/registration line and NO India number (Saudi blocklist: no office / registration wording). Privacy and Terms link to the shared /privacy and /terms pages (English). Not a page: utility=true keeps it out of the sitemap and llms.txt.",
+  "ctaHref": "/sa/contact",
+  "ctaHrefs": {
+    "en": "/sa/contact",
+    "ar": "/sa/ar/contact"
+  },
+  "fields": {
+    "footer.explore": {
+      "context": "Footer column heading (links)",
+      "required": false,
+      "kind": "text",
+      "en": {
+        "text": "Explore",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "استكشف",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "footer.contact": {
+      "context": "Footer column heading (contact)",
+      "required": false,
+      "kind": "text",
+      "en": {
+        "text": "Contact",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "تواصل معنا",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "footer.follow": {
+      "context": "Footer column heading (social icons)",
+      "required": false,
+      "kind": "text",
+      "en": {
+        "text": "Follow us",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "تابعنا",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "footer.phone": {
+      "context": "Label above the Saudi phone number",
+      "required": false,
+      "kind": "text",
+      "en": {
+        "text": "Saudi Arabia",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "المملكة العربية السعودية",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": "Label only: please confirm it reads naturally above a +966 number.",
+        "sources": [],
+        "history": []
+      }
+    },
+    "footer.rights": {
+      "context": "Copyright line, after \"© <year> Pride Hire.\"",
+      "required": false,
+      "kind": "text",
+      "en": {
+        "text": "All rights reserved.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "جميع الحقوق محفوظة.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "footer.privacy": {
+      "context": "Footer link to the privacy page",
+      "required": false,
+      "kind": "text",
+      "en": {
+        "text": "Privacy",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "الخصوصية",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "footer.terms": {
+      "context": "Footer link to the terms page",
+      "required": false,
+      "kind": "text",
+      "en": {
+        "text": "Terms",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "الشروط",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      }
+    },
+    "cookie.text": {
+      "context": "Cookie banner sentence",
+      "required": false,
+      "kind": "text",
+      "en": {
+        "text": "We use essential cookies to make this site work and, with your consent, to understand how it’s used.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "نستخدم ملفات تعريف الارتباط الأساسية لتشغيل هذا الموقع، ومع موافقتك لفهم كيفية استخدامه.",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": "Cookie/consent wording is user-facing legal text: please have it checked by a native Arabic reader (and the owner) before approval.",
+        "sources": [],
+        "history": []
+      }
+    },
+    "cookie.more": {
+      "context": "Cookie banner link to the privacy page",
+      "required": false,
+      "kind": "text",
+      "en": {
+        "text": "Learn more",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "اعرف المزيد",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": "Cookie/consent wording is user-facing legal text: please have it checked by a native Arabic reader (and the owner) before approval.",
+        "sources": [],
+        "history": []
+      }
+    },
+    "cookie.decline": {
+      "context": "Cookie banner button",
+      "required": false,
+      "kind": "text",
+      "en": {
+        "text": "Decline",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "رفض",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": "Cookie/consent wording is user-facing legal text: please have it checked by a native Arabic reader (and the owner) before approval.",
+        "sources": [],
+        "history": []
+      }
+    },
+    "cookie.accept": {
+      "context": "Cookie banner button",
+      "required": false,
+      "kind": "text",
+      "en": {
+        "text": "Accept",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": null,
+        "sources": [],
+        "history": []
+      },
+      "ar": {
+        "text": "قبول",
+        "reviewStatus": "draft",
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "reviewerNote": "Cookie/consent wording is user-facing legal text: please have it checked by a native Arabic reader (and the owner) before approval.",
+        "sources": [],
+        "history": []
+      }
+    }
+  }
+}
