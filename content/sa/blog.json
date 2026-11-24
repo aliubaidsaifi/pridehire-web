@@ -20,11 +20,11 @@
       "maxChars": 60,
       "en": {
         "text": "Guides for Businesses in Khobar, Dammam | Pride Hire",
-        "reviewStatus": "draft",
+        "reviewStatus": "approved",
         "reviewedBy": null,
         "reviewedAt": null,
-        "approvedBy": null,
-        "approvedAt": null,
+        "approvedBy": "Owner (Ubaid): told me in session on 2026-11-24 that the content is approved",
+        "approvedAt": "2026-11-24T07:05:59.732Z",
         "reviewerNote": null,
         "sources": [],
         "history": []
@@ -48,11 +48,11 @@
       "maxChars": 160,
       "en": {
         "text": "Plain-language guides from Pride Hire for businesses and restaurants in Khobar, Dammam and Dhahran.",
-        "reviewStatus": "draft",
+        "reviewStatus": "approved",
         "reviewedBy": null,
         "reviewedAt": null,
-        "approvedBy": null,
-        "approvedAt": null,
+        "approvedBy": "Owner (Ubaid): told me in session on 2026-11-24 that the content is approved",
+        "approvedAt": "2026-11-24T07:05:59.733Z",
         "reviewerNote": null,
         "sources": [],
         "history": []
@@ -75,11 +75,11 @@
       "kind": "heading",
       "en": {
         "text": "Guides for businesses and restaurants in Khobar, Dammam and Dhahran",
-        "reviewStatus": "draft",
+        "reviewStatus": "approved",
         "reviewedBy": null,
         "reviewedAt": null,
-        "approvedBy": null,
-        "approvedAt": null,
+        "approvedBy": "Owner (Ubaid): told me in session on 2026-11-24 that the content is approved",
+        "approvedAt": "2026-11-24T07:05:59.733Z",
         "reviewerNote": null,
         "sources": [],
         "history": []
@@ -101,18 +101,18 @@
       "required": true,
       "kind": "answer",
       "en": {
-        "text": "Plain-language guides from Pride Hire for businesses and restaurants in Al Khobar, Dammam and Dhahran. Each guide states what it is based on and what we could not verify.",
-        "reviewStatus": "draft",
+        "text": "Plain-language guides from Pride Hire for businesses and restaurants in Al Khobar, Dammam and Dhahran.",
+        "reviewStatus": "approved",
         "reviewedBy": null,
         "reviewedAt": null,
-        "approvedBy": null,
-        "approvedAt": null,
+        "approvedBy": "Owner (Ubaid): told me in session on 2026-11-24 that the content is approved",
+        "approvedAt": "2026-11-24T07:05:59.733Z",
         "reviewerNote": null,
         "sources": [],
         "history": []
       },
       "ar": {
-        "text": "أدلة مبسطة من Pride Hire للشركات والمطاعم في الخبر والدمام والظهران. يبيّن كل دليل ما يستند إليه وما لم نتمكن من التحقق منه.",
+        "text": "أدلة مبسطة من Pride Hire للشركات والمطاعم في الخبر والدمام والظهران.",
         "reviewStatus": "draft",
         "reviewedBy": null,
         "reviewedAt": null,
@@ -129,11 +129,11 @@
       "kind": "text",
       "en": {
         "text": "Contact us",
-        "reviewStatus": "draft",
+        "reviewStatus": "approved",
         "reviewedBy": null,
         "reviewedAt": null,
-        "approvedBy": null,
-        "approvedAt": null,
+        "approvedBy": "Owner (Ubaid): told me in session on 2026-11-24 that the content is approved",
+        "approvedAt": "2026-11-24T07:05:59.733Z",
         "reviewerNote": null,
         "sources": [],
         "history": []
@@ -156,11 +156,11 @@
       "kind": "text",
       "en": {
         "text": "Blog",
-        "reviewStatus": "draft",
+        "reviewStatus": "approved",
         "reviewedBy": null,
         "reviewedAt": null,
-        "approvedBy": null,
-        "approvedAt": null,
+        "approvedBy": "Owner (Ubaid): told me in session on 2026-11-24 that the content is approved",
+        "approvedAt": "2026-11-24T07:05:59.733Z",
         "reviewerNote": null,
         "sources": [],
         "history": []

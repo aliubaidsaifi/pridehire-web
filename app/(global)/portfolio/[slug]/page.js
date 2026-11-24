@@ -43,7 +43,7 @@ export default async function ProjectDetail({ params }) {
           <h1 className="mx-auto mt-4 max-w-4xl text-balance font-display text-5xl font-semibold leading-[1.02] tracking-tightest text-ink sm:text-7xl">
             {p.client}
           </h1>
-          <p className="mx-auto mt-6 max-w-xl text-pretty text-lg leading-relaxed text-muted">{d.headline}</p>
+          <p className="mx-auto mt-6 max-w-xl text-pretty text-center text-lg leading-relaxed text-muted">{d.headline}</p>
         </div>
       </section>
 

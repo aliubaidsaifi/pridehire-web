@@ -103,3 +103,10 @@ Schema describes what the site actually does today, never what it will do. If un
 - **Owner confirms:** WhatsApp active on +966 53 523 9163.
 
 - **Booking (2026-11-22):** there is no Calendly account / booking system. Google Meet card, booking section and SITE.calendly removed; secondary CTA reworded "Contact Us". Do not reintroduce booking wording until a real scheduler exists. Trust badge "Free Consultation" (homepage) left as is: owner to decide.
+
+## Saudi English: PUBLISHED 2026-11-24 (owner approved the English copy; Arabic stays OFF)
+- English content approved for hub, about, blog, web-development, restaurant-digital-menu, business-automation, graphic-design, contact, free-audit, footer, ai-visibility, sfda-menu-labelling. `MARKETS.sa.locales.en.live: true`.
+- Still needed on the host: `PH_SHOW_SA=1` in Vercel (Production). Without it every /sa route is a 404 (render gate in lib/market-pages.js).
+- Arabic (/sa/ar/*) stays a 404 in production until a native reviewer reviews it and the owner approves it; the EN/AR toggle in the navbar only appears when both languages render.
+- Open: photo for /sa/restaurant-digital-menu (drop public/services/restaurant-digital-menu.webp, it is picked up automatically); menu delivery details (QR, languages) and the 3D menu card format are not claimed anywhere; Privacy/Terms link to the shared English pages.
+- To REVERSE: remove PH_SHOW_SA in Vercel and/or set `MARKETS.sa.locales.en.live: false`.

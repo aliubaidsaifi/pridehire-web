@@ -58,7 +58,7 @@ export default function MarketContentPage({ view, locale = 'en', draft = false, 
           <div className="container-px relative pb-8 text-center sm:pb-14">
             {eyebrow && <span className="eyebrow justify-center">{eyebrow}</span>}
             <h1 className={`mx-auto mt-5 max-w-4xl text-balance text-4xl sm:text-5xl lg:text-6xl ${h1Cls}`}>{view.h1}</h1>
-            <p className="mx-auto mt-6 max-w-3xl text-pretty text-lg leading-relaxed text-muted sm:text-xl"><RichText text={view.answer} /></p>
+            <p className="mx-auto mt-6 max-w-3xl text-pretty text-center text-lg leading-relaxed text-muted sm:text-xl"><RichText text={view.answer} /></p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3">{ctas}</div>
           </div>
         )}

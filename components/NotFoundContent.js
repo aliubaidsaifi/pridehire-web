@@ -6,7 +6,7 @@ export default function NotFoundContent() {
       <div className="text-center">
         <div className="font-display text-[7rem] font-semibold leading-none tracking-tightest text-accent sm:text-[10rem]">404</div>
         <h1 className="mt-4 font-display text-3xl font-semibold tracking-tight text-ink sm:text-4xl">Page not found</h1>
-        <p className="mx-auto mt-4 max-w-md text-pretty text-muted">The page you&apos;re looking for doesn&apos;t exist or has moved. Let&apos;s get you back on track.</p>
+        <p className="mx-auto mt-4 max-w-md text-pretty text-center text-muted">The page you&apos;re looking for doesn&apos;t exist or has moved. Let&apos;s get you back on track.</p>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
           <Link href="/" className="btn-primary">Back to home</Link>
           <Link href="/contact" className="btn-ghost">Contact us</Link>

@@ -554,11 +554,11 @@
       "kind": "related",
       "en": {
         "text": "Looking for a website or business automation? See what we offer businesses in [Khobar, Dammam and Dhahran](/sa).",
-        "reviewStatus": "draft",
+        "reviewStatus": "approved",
         "reviewedBy": null,
         "reviewedAt": null,
-        "approvedBy": null,
-        "approvedAt": null,
+        "approvedBy": "Owner (Ubaid): told me in session on 2026-11-24 that the content is approved",
+        "approvedAt": "2026-11-24T07:06:00.702Z",
         "reviewerNote": null,
         "sources": [],
         "history": []

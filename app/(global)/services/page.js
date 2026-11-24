@@ -16,7 +16,7 @@ export default function ServicesPage() {
           <h1 className="mx-auto mt-5 max-w-4xl text-balance font-display text-5xl font-semibold leading-[1.02] tracking-tightest text-ink sm:text-7xl lg:text-[5.5rem]">
             Going beyond <span className="text-accent">what&apos;s possible</span>
           </h1>
-          <p className="mx-auto mt-6 max-w-xl text-pretty text-lg leading-relaxed text-muted">
+          <p className="mx-auto mt-6 max-w-xl text-pretty text-center text-lg leading-relaxed text-muted">
             From high-converting websites to SEO and ads — everything your business needs to get more calls, bookings and customers.
           </p>
         </div>

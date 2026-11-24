@@ -15,7 +15,7 @@ export default function PortfolioPage() {
             Our projects
           </h1>
           ...
-          <p className="mx-auto mt-6 max-w-xl text-pretty text-lg leading-relaxed text-muted">
+          <p className="mx-auto mt-6 max-w-xl text-pretty text-center text-lg leading-relaxed text-muted">
             We help bring ideas to life and create digital products that work.
           </p>
         </div>

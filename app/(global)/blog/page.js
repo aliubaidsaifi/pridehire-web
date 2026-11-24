@@ -18,7 +18,7 @@ export default function BlogPage() {
           <h1 className="mx-auto mt-5 max-w-3xl text-balance font-display text-5xl font-semibold leading-[1.02] tracking-tightest text-ink sm:text-7xl">
             Honest advice,<br />no <span className="text-accent">jargon.</span>
           </h1>
-          <p className="mx-auto mt-6 max-w-xl text-pretty text-lg leading-relaxed text-muted">
+          <p className="mx-auto mt-6 max-w-xl text-pretty text-center text-lg leading-relaxed text-muted">
             Practical guides on websites, SEO and ads — written for business owners, not marketers.
           </p>
         </div>

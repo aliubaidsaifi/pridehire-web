@@ -35,7 +35,7 @@ export default function SaServicePage({ view, locale = 'en', draft = false, nav,
           )}
           {label && <span className="mt-6 block font-display text-xs font-semibold uppercase tracking-[0.16em] text-accent">{label}</span>}
           <h1 className={`mx-auto mt-4 max-w-4xl text-balance font-display text-4xl font-semibold text-ink sm:text-5xl lg:text-6xl ${ar ? 'leading-[1.3]' : 'leading-[1.03] tracking-tightest'}`}>{view.h1}</h1>
-          <p className="mx-auto mt-6 max-w-3xl text-pretty text-lg leading-relaxed text-muted sm:text-xl"><RichText text={view.answer} /></p>
+          <p className="mx-auto mt-6 max-w-3xl text-pretty text-center text-lg leading-relaxed text-muted sm:text-xl"><RichText text={view.answer} /></p>
         </div>
       </section>
 

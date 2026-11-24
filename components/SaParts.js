@@ -1,3 +1,6 @@
+import fs from 'fs';
+import path from 'path';
+
 // Shared visual pieces for the Saudi pages (decoration only, no text).
 
 // Subtle eight-point-star lattice (a geometric motif common to Gulf design). Hidden from assistive tech by the callers.
@@ -11,11 +14,14 @@ export function Arrow({ className = 'h-4 w-4' }) {
   );
 }
 
-// Real photos (the same ones the India service cards use). A service with no photo yet (restaurant menus) simply shows the tinted icon block.
+// Real photos (the same ones the India service cards use). The restaurant-menu photo is picked up automatically as soon as the file
+// public/services/restaurant-digital-menu.webp exists; until then that service shows the tinted icon block instead of a broken image.
+const hasPublic = (rel) => { try { return fs.existsSync(/*turbopackIgnore: true*/ path.join(process.cwd(), 'public', rel)); } catch { return false; } };
 export const SA_IMAGES = {
   'web-development': '/services/website-development.webp',
   'business-automation': '/services/business-automation.webp',
   'graphic-design': '/services/graphic-design.webp',
+  ...(hasPublic('services/restaurant-digital-menu.webp') ? { 'restaurant-digital-menu': '/services/restaurant-digital-menu.webp' } : {}),
 };
 
 // Same icon language as the India service cards, keyed by Saudi page id.

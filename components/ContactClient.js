@@ -79,10 +79,10 @@ export default function ContactPage({ market = 'global', strings = null }) {
           <h1 className="mx-auto mt-4 max-w-3xl text-balance font-display text-4xl font-semibold leading-[1.05] tracking-tightest text-ink sm:text-6xl">
             {strings ? <>{S('h1.pre')} <span className="text-accent">{S('h1.accent')}</span></> : <>Let&apos;s talk about your <span className="text-accent">growth.</span></>}
           </h1>
-          <p className="mx-auto mt-5 max-w-xl text-pretty text-base leading-relaxed text-muted sm:text-lg">
+          <p className="mx-auto mt-5 max-w-xl text-pretty text-center text-base leading-relaxed text-muted sm:text-lg">
             {strings ? S('intro') : <>Call, email or WhatsApp — whatever&apos;s easiest. We reply within one business day.</>}
           </p>
-          {strings && S('remote') && <p className="mx-auto mt-3 max-w-xl text-pretty text-sm leading-relaxed text-muted">{S('remote')}</p>}
+          {strings && S('remote') && <p className="mx-auto mt-3 max-w-xl text-pretty text-center text-sm leading-relaxed text-muted">{S('remote')}</p>}
         </div>
       </section>
 
